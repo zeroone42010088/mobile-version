@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /scripts/
+Allow: /pages/
+Allow: /images/

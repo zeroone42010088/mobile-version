@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /js/
+Allow: /pages/
+Allow: /img/
+Host: https://www.remontservo.ru/
