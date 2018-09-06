@@ -3,25 +3,25 @@ require 'config.php';
 ?>
 <!DOCTYPE html>
 <html lang=ru style=height:100%>
-
 <head>
-    <meta charset=utf-8 />
+    <meta charset="utf-8" />
     <title>Ремонтируемое оборудование</title>
     <link rel="shortcut icon" type=image/png href=img/logo2.png>
     <meta name=keywords content="FANUC DELTA ABB OMRON" />
-    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />   
-    <link href=css/shop.css rel=stylesheet> 
-    <link href=css/style.css rel=stylesheet>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
+    <link href=css/shop.css rel=stylesheet>
+    <link href=css/style.css rel=stylesheet>    
 </head>
+
 <body>
     <div class=container>
-        <header class=header>
+        <header class="header">
             <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
             </div>
             <div class=h-title>
                 <h2 style="margin:1em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОПРИВОДОВ И СЕРВОДВИГАТЕЛЕЙ</h2>
-                <h2>Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов Москва Санкт-Петербург СПБ Екатеринбург Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
+                <h2>
+                    <!--Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов-->Москва Санкт-Петербург СПБ Екатеринбург Самара Казань Челябинск Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
             </div>
             <div class=h-contacts>
                 <p><a href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
@@ -42,176 +42,104 @@ require 'config.php';
                     <li><a class=a-public href=pages/contacts.html>контакты</a></li>
                     <li><a class=a-public href=pages/list-publications.html>публикации</a></li>
                     <li><a class=a-public href=pages/sell.html>на продажу</a></li>
-                     <li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>каталог ремонтируемого оборудования</a></li>     
+                    <li><a class=a-public style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>каталог ремонтируемого оборудования</a></li>
                 </ul>
             </div>
         </nav>
         <main class=content style="background-color: #E9F4C8;">
 
-            <div class="header-bottom" style="display:none;">
-                <div class="container">
-                    <div class="header">
-                        <div class="col-md-9 header-left" >
+            <div class="header-bottom" style="background-color:white;" >
+             <!--   <div class="container" style="background-color:orange;">-->
+                    <div class="header-electronica" style="background-color:grey; position:relative;">
+                        <div class="col-md-9 header-left" style="background-color:#E9F4C8;">
                             <div class="top-nav">
-                                <ul class="memenu skyblue" style="diplay:none;">
-                                    <li class="active"><a href="index.html">Общий список</a></li>
-                                    <li class="grid" style="diplay:none;"><a href="#">Серводвигатели</a>
+                                <ul class="memenu skyblue" >
+
+                                    <li class="grid"><a href="#">Серводвигатели</a>
                                         <div class="mepanel">
                                             <div class="row">
                                                 <div class="col1 me-one">
-                                                    <h4>Shop</h4>
+                                                    <h4>Сервомоторы</h4>
                                                     <ul>
-                                                        <li><a href="products.html">New Arrivals</a></li>
-                                                        <li><a href="products.html">Blazers</a></li>
-                                                        <li><a href="products.html">Swem Wear</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Handbags</a></li>
-                                                        <li><a href="products.html">T-Shirts</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">My Shopping Bag</a></li>
+                                                        <li><a href="#">FANUC</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Style Zone</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">Shoes</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">Brands</a></li>
-                                                        <li><a href="products.html">Coats</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Trousers</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Popular Brands</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">499 Store</a></li>
-                                                        <li><a href="products.html">Fastrack</a></li>
-                                                        <li><a href="products.html">Casio</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">Maxima</a></li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">TomTom</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                    </ul>
-                                                </div>
+
+
                                             </div>
                                         </div>
                                     </li>
+
                                     <li class="grid"><a href="#">Сервоприводы</a>
-                                        <div class="mepanel">
-                                            <div class="row">
-                                                <div class="col1 me-one">
-                                                    <h4>Shop</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">New Arrivals</a></li>
-                                                        <li><a href="products.html">Blazers</a></li>
-                                                        <li><a href="products.html">Swem Wear</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Handbags</a></li>
-                                                        <li><a href="products.html">T-Shirts</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">My Shopping Bag</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Style Zone</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">Shoes</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">Brands</a></li>
-                                                        <li><a href="products.html">Coats</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Trousers</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Popular Brands</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">499 Store</a></li>
-                                                        <li><a href="products.html">Fastrack</a></li>
-                                                        <li><a href="products.html">Casio</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">Maxima</a></li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">TomTom</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </li>
-                                    <li class="grid"><a href="#">Серводрайверы</a>
-                                        <div class="mepanel">
-                                            <div class="row">
-                                                <div class="col1 me-one">
-                                                    <h4>Shop</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">New Arrivals</a></li>
-                                                        <li><a href="products.html">Blazers</a></li>
-                                                        <li><a href="products.html">Swem Wear</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Handbags</a></li>
-                                                        <li><a href="products.html">T-Shirts</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">My Shopping Bag</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Style Zone</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">Shoes</a></li>
-                                                        <li><a href="products.html">Watches</a></li>
-                                                        <li><a href="products.html">Brands</a></li>
-                                                        <li><a href="products.html">Coats</a></li>
-                                                        <li><a href="products.html">Accessories</a></li>
-                                                        <li><a href="products.html">Trousers</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col1 me-one">
-                                                    <h4>Popular Brands</h4>
-                                                    <ul>
-                                                        <li><a href="products.html">499 Store</a></li>
-                                                        <li><a href="products.html">Fastrack</a></li>
-                                                        <li><a href="products.html">Casio</a></li>
-                                                        <li><a href="products.html">Fossil</a></li>
-                                                        <li><a href="products.html">Maxima</a></li>
-                                                        <li><a href="products.html">Timex</a></li>
-                                                        <li><a href="products.html">TomTom</a></li>
-                                                        <li><a href="products.html">Titan</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="grid"><a href="#">Частотные преобразователи</a>
                                     </li>
-                                    <li class="grid"><a href="typo.html">Частотные преобразователи</a>
-                                    </li>
-                                    <li class="grid"><a href="contact.html">Сенсорные панели оператора</a>
+                                    <li class="grid"><a href="#">Сенсорные панели оператора</a>
                                     </li>
                                 </ul>
+                                
+                                <!--searsh -->
+                               <div class="search-bar" style="position:absolute; right:5%; top:10%;">
+                                <input type="text" value="Поиск по оборудованию" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" >
+                                <input type="submit" value="" style="" >
+                            </div> 
+                               <!--searsh -->
+                                
+                              
+                                
                             </div>
-                            <div class="clearfix"> </div>
+                         <!--    <div class="clearfix"> </div>-->
                         </div>
-                        <div class="col-md-3 header-right">
-                            <div class="search-bar">
-                                <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                                <input type="submit" value="">
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
+                       <!-- <div class="col-md-3 header-right" style="background-color:aqua"> -->
+                            
+                      <!--  </div> -->
+                      <!--  <div class="clearfix" style="background-color: #E9F4C8;"> </div> -->
                     </div>
-                </div>
+             <!--   </div> -->
             </div>
             <!--bottom-header-->
 
-            <div class="logo">
-                <a href="index.html">
-                    <h2 style="text-align:center; margin-top: 10px;">Диагностика и ремонт</h2>
-                </a>
+          
+
+
+            
+            <!--about-end-->
+            <!--product-starts-->
+          <!--  <div class="product">  -->
+                <div class="container">
+                    <div class="product-top">
+                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;">
+
+
+                            <?php
+if (isset($_GET['pageno'])) {
+    $pageno = $_GET['pageno'];
+} else {
+    $pageno = 1;
+}
+$no_of_records_per_page = 13;
+$offset = ($pageno-1) * $no_of_records_per_page;                          
+
+
+if(empty($_GET['id'])) {
+$result = $db->query("SELECT COUNT(*) FROM products");
+$total_rows = $result->fetch_array();
+$total_pages = ceil($total_rows[0] / $no_of_records_per_page);
+$query = $db->query("SELECT * FROM products LIMIT $offset, $no_of_records_per_page");
+if($query->num_rows > 0){
+    
+    
+    
+    echo '   <div class="logo" >
+                
+                    <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:90%; white-space:nowrap;">Диагностика и ремонт</h2>
+                
             </div>
-
-
-            <div class="about" style="padding:0;">
+    
+    
+    <div class="about" style="margin:  0 -1.5% 0 -1.5%">
                 <div class="container" style="max-width: 100%; padding:0; margin:0;">
                     <div class="about-top grid-1">
                         <div class="col-md-4 about-left">
@@ -232,7 +160,7 @@ require 'config.php';
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-4 about-left backround-color:green;">
+                        <div class="col-md-4 about-left">
                             <figure class="effect-bubba">
                                 <img class="img-responsive" src="img/our-works/servoprivod-deimotion-6103.jpg" alt="Сервопривод" />
                                 <figcaption>
@@ -244,40 +172,21 @@ require 'config.php';
                         <div class="clearfix"></div>
                     </div>
                 </div>
-            </div>
-            <!--about-end-->
-            <!--product-starts-->
-            <div class="product">
-                <div class="container">
-                    <div class="product-top">
-                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;  ">
-
-
-                            <?php
-if (isset($_GET['pageno'])) {
-    $pageno = $_GET['pageno'];
-} else {
-    $pageno = 1;
-}
-$no_of_records_per_page = 13;
-$offset = ($pageno-1) * $no_of_records_per_page;
-
-
-if(empty($_GET['id'])) {
-$result = $db->query("SELECT COUNT(*) FROM products");
-$total_rows = $result->fetch_array();
-$total_pages = ceil($total_rows[0] / $no_of_records_per_page);
-$query = $db->query("SELECT * FROM products LIMIT $offset, $no_of_records_per_page");
-if($query->num_rows > 0){
+            </div>';
+    
+    
+    
+    
     while($row = $query->fetch_assoc()){
 								echo '
 								<div class="col-md-4 product-left p-left" style="max-width:30%;">
 								<div class="product-main simpleCart_shelfItem style="padding:1em; margin: 5%;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
-										<h3 style="margin-left: 5%; max-width: 80%; word-break: break-all;">'.$row["name"].'</h3>
+										<p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
+    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;"><font>'.$row["name"].'</font color="red"></p>
 										 <p>'.$row["manefacter"].'</p> 
-										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></h4>
+										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
 									<div class="srch srch1">
 										<span>-'.$row["sale"].'. Диагностика и настройка</span>
@@ -292,13 +201,23 @@ $query = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
-								<div class="col-md-4 product-left p-left" style="margin:auto;">
+                                
+                                <div class="logo" >
+                
+                    <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:1%; white-space:normal;">Диагностика и ремонт'.$row["manufacter"].'</h2>
+                
+            </div>
+                                
+                                
+                                
+								<div class="col-md-4 product-left p-left" style="">
 								<div class="product-main simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
-										<h3>'.$row["name"].'</h3>
-										<p>'.$row["manefacter"].'</p> 
-										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></h4>
+										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal;">'.$row["name"].'</h3>										
+										</span></h4>
 									</div>
 									<div class="srch srch1">
 										<span>-'.$row["sale"].'. Диагностика и настройка</span>
@@ -306,40 +225,93 @@ if($query->num_rows > 0){
 								</div>
 							</div>
                             <div class="catalog_cardinfo">
-                            <p>Диагностика от 3 дней</p>
-                            <p>Ремонт от 7 дней</p>
-                            <p>Гарантия на ремонт 6 месяцев</p>
-                            <p>Работаем по безналичному расчету и договору</p>                      
+                            
+                            <ol class="rounded">
+                              <li><a href="#">Диагностика от 3 дней</a></li>
+                              <li><a href="#">Ремонт от 7 дней</a></li>
+                              <li><a href="#">Гарантия на ремонт 6 месяцев</a></li>
+                              <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
+                            </ol>
                             </div>
-								';
+                             
+  <!--Данные введенные пользователем обрабатываются кодом в mail.php-->
+  <form action="./mail.php" method="post" >
+  <!--Тег используется для группировки связанных элементов в форме-->
+  <fieldset style="margin-bottom:1em margin-left:50%; border:0; padding-left:140%; padding-bottom:10%; ">
+  <!--Тег задает заголовок для групповых элементов-->
+  
+  Ваше имя: 
+  <!--Устанавливает однострочное текстовое поле ввода:-->
+  <input type="text" name="name" style="display:block;">
+  <!--Используется для полей ввода, которые должны содержать адрес электронной почты.-->
+  E-mail:
+  <input type="text" name="email" style="display:block;">
+  Номер телефона:
+  <input type="text" name="phone" style="display:block;">
+  Сообщение:
+  <!--Тег разрешает многострочный ввод текста.-->
+ <!-- Текстовая область может содержать неограниченное количество символов-->
+  <textarea rows="10" cols="45" name="message" value="Текст" style="display:block;"></textarea>
+  <!--Устанавливает кнопку для отправки данных формы в обработчик формы.-->
+  <input type="submit" value="Отправить сообщение" style="display:block;">
+  </fieldset>
+  </form>                         
 
-} }
 
-} ?>
-</div>
-</div>
-<? if(empty($_GET['id'])) { ?>
-<ul class="pagination" style="display:flex">
-    <li><a href="?pageno=1">Первая</a></li>
-    <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-        <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Предыдущая</a>
-    </li>
-    <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
-        <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Следующая</a>
-    </li>
-    <li><a href="?pageno=<?php echo $total_pages; ?>">Последняя</a></li>
-</ul> 
-<? } ?>                           
+<div style="display:none;">
+<h2>Контактная форма</h2>
+		<div class="form-container">
+			<div class="note"></div>
+			<div class="fields">
+				<form class="ajax-contact-form" action="">
+					<p><input type="text" name="name" value="" placeholder="Имя"></p>
+					<div class="row">
+						<div class="col"><input type="tel" name="tel" value="" placeholder="Телефон"></div>
+						<div class="col"><input type="email" name="email" value="" placeholder="E-mail"></div>
+						</div>
+					<label>Текст</label>
+					<textarea name="message" cols="40" rows="3"></textarea>
+					<input type="submit" name="submit" class="form-container__btn" value="Отправить">
+				</form>
+			</div>
+		</div>
+             <script src="/js/contactform.js"></script>               
+				</div>				
+    ';} }}                      
+?>
+                         
+                        </div>
+                        <!-- product-one -->
+                    </div>
+                    <!-- product-top -->
+                    <!-- buttons -->
+                    <? if(empty($_GET['id'])) { ?>
+                        <ul class="pagination" style="display:flex">
+                            <li><a href="?pageno=1" class="button28">Первая</a></li>
+                            <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
+                                <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1); } ?>" class="button28">Предыдущая</a>
+                            </li>
+                            <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+                                <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo " ?pageno=".($pageno + 1); } ?>" class="button28">Следующая</a>
+                            </li>
+                            <li><a href="?pageno=<?php echo $total_pages; ?>" class="button28">Последняя</a></li>
+                        </ul>
+                        <? } ?>
+                    <!-- buttons -->
 
         </main>
-        <footer class=foot style=position:absolute;width:100%>
+        <footer class="foot" style="position:absolute;width:100%;">
             <div class=f-logo-l><img src=img/logo3.png alt=kerneltlt></div>
             <div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
             <div class=f-logo-r><img src=img/logo3.png alt=kerneltlt></div>
         </footer>
         </div>
+            <!-- container -->
+ <!--   </div> -->
+    <!-- product -->
+    
         <!--scripts-->
-        <script type="application/x-javascript">
+        <script>
             addEventListener("load", function() {
                 setTimeout(hideURLbar, 0);
             }, false);
@@ -354,7 +326,7 @@ if($query->num_rows > 0){
 
 
         </script>
-        <script type="text/javascript" src="js/memenu.js"></script>
+        <script  src="js/memenu.js"></script>
         <script>
             $(document).ready(function() {
                 $(".memenu").memenu();
@@ -365,7 +337,7 @@ if($query->num_rows > 0){
         <!--scripts-->
 
         <!-- yandex metrica begin -->
-    <!--    <script>
+        <!--    <script>
             (function(d, w, c) {
                 (w[c] = w[c] || []).push(function() {
                     try {
