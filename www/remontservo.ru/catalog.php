@@ -185,7 +185,7 @@ if($query->num_rows > 0){
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; color: #444;"><font color: #444;>'.$row["name"].'</font></p>
+    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
 										 <p>'.$row["manefacter"].'</p> 
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
@@ -214,11 +214,11 @@ if($query->num_rows > 0){
                                 
                                 
                                 
-								<div class="col-md-4 product-left p-left" style="">
+								<div class="col-md-4 product-left p-left">
 								<div class="product-main simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
-										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal;">'.$row["name"].'</h3>										
+										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal; color: #444;"><font color: #444;>'.$row["name"].'<font></h3>										
 										</span></h4>
 									</div>
 									<div class="srch srch1">
@@ -239,8 +239,8 @@ if($query->num_rows > 0){
 
 
 
-		<div class="form-container transparent">
-			<div class="form-inner-main"></div>
+		<div class="form-container transparent" style="margin-left:-40%;">
+			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
 				<form class="form-inner ajax-contact-form" action="">

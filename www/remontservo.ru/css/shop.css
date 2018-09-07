@@ -650,7 +650,7 @@ a.button28:active {
 .form-inner h3 {
   position: relative;
   margin-top: 0;
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 26px;
@@ -681,7 +681,7 @@ a.button28:active {
   border-width: 0;
   line-height: 40px;
   border-radius: 20px;
-  color: white;
+  color: #808080;
   background: #fff;
   font-family: 'Roboto', sans-serif;
 }
