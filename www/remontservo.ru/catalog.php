@@ -238,19 +238,21 @@ if($query->num_rows > 0){
 
 
 
-<h2>Контактная форма</h2>
-		<div class="form-container">
-			<div class="note"></div>
+
+		<div class="form-container transparent">
+			<div class="form-inner-main"></div>
+            <h3>Контактная форма</h3>
 			<div class="fields">
-				<form class="ajax-contact-form" action="">
-											
+				<form class="form-inner ajax-contact-form" action="">
+						<label for="email">Ваш почтовый адрес</label>				
 						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail"></div>
+                        <label for="tel">Телефон</label>
                         <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон"></div>
-						
-                    <p><input type="text" name="name" value="" placeholder="Тип, модель неисправного блока"></p>					
+						<label src="name">Тип, модель неисправного блока</label>
+                    <input type="text" name="name" value="" placeholder="">					
 					<label>Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="3"></textarea>
-					<input type="submit" name="submit" class="form-container__btn" value="Отправить">
+					<input type="submit" name="submit" class="submit" value="Отправить">
                     
 				</form>
 			</div>
