@@ -10,8 +10,7 @@ require 'config.php';
     <meta name=keywords content="FANUC DELTA ABB OMRON" />
     <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
     <link href=css/shop.css rel=stylesheet>
-    <link href=css/style.css rel=stylesheet> 
-    
+    <link href=css/style.css rel=stylesheet>    
 </head>
 
 <body>
@@ -135,7 +134,7 @@ if($query->num_rows > 0){
                 
                     <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:25%; white-space:nowrap;">Диагностика и ремонт cерводвигателей</h2>
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:90%; white-space:nowrap;">Диагностика и ремонт</h2>
                 
             </div>
     
@@ -201,14 +200,13 @@ if($query->num_rows > 0){
 $query = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
-        
 								echo '
                                 
                                 <div class="logo" >
                 
                     <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:1%; white-space:normal;">Диагностика и ремонт '.$row["manufacter"].'</h2>
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:1%; white-space:normal;">Диагностика и ремонт'.$row["manufacter"].'</h2>
                 
             </div>
                                 
@@ -235,32 +233,52 @@ if($query->num_rows > 0){
                               <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
                             </ol>
                             </div>
+                             
+  <!--Данные введенные пользователем обрабатываются кодом в mail.php-->
+  <form action="./mail.php" method="post" >
+  <!--Тег используется для группировки связанных элементов в форме-->
+  <fieldset style="margin-bottom:1em margin-left:50%; border:0; padding-left:140%; padding-bottom:10%; ">
+  <!--Тег задает заголовок для групповых элементов-->
+  
+  Ваше имя: 
+  <!--Устанавливает однострочное текстовое поле ввода:-->
+  <input type="text" name="name" style="display:block;">
+  <!--Используется для полей ввода, которые должны содержать адрес электронной почты.-->
+  E-mail:
+  <input type="text" name="email" style="display:block;">
+  Номер телефона:
+  <input type="text" name="phone" style="display:block;">
+  Сообщение:
+  <!--Тег разрешает многострочный ввод текста.-->
+ <!-- Текстовая область может содержать неограниченное количество символов-->
+  <textarea rows="10" cols="45" name="message" value="Текст" style="display:block;"></textarea>
+  <!--Устанавливает кнопку для отправки данных формы в обработчик формы.-->
+  <input type="submit" value="Отправить сообщение" style="display:block;">
+  </fieldset>
+  </form>                         
 
 
-
+<div style="display:none;">
 <h2>Контактная форма</h2>
 		<div class="form-container">
 			<div class="note"></div>
 			<div class="fields">
 				<form class="ajax-contact-form" action="">
-											
-						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail"></div>
-                        <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон"></div>
-						
-                    <p><input type="text" name="name" value="" placeholder="Тип, модель неисправного блока"></p>					
-					<label>Описание, неисправности. Номер ошибки</label>
+					<p><input type="text" name="name" value="" placeholder="Имя"></p>
+					<div class="row">
+						<div class="col"><input type="tel" name="tel" value="" placeholder="Телефон"></div>
+						<div class="col"><input type="email" name="email" value="" placeholder="E-mail"></div>
+						</div>
+					<label>Текст</label>
 					<textarea name="message" cols="40" rows="3"></textarea>
 					<input type="submit" name="submit" class="form-container__btn" value="Отправить">
-                    
 				</form>
 			</div>
-		</div>            
-				
-                
-    ';} }}
-                         
+		</div>
+             <script src="/js/contactform.js"></script>               
+				</div>				
+    ';} }}                      
 ?>
-                            
                          
                         </div>
                         <!-- product-one -->
@@ -308,7 +326,7 @@ if($query->num_rows > 0){
 
 
         </script>
-        <script  src="js/memenu.js"></script> 
+        <script  src="js/memenu.js"></script>
         <script>
             $(document).ready(function() {
                 $(".memenu").memenu();
@@ -350,9 +368,32 @@ if($query->num_rows > 0){
         </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
         <!-- yandex metrica complete -->
         <!-- форма обратной связи -->
-        <script type='text/javascript'>
-(function(){ var widget_id = 'smo9Ly9F6j';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+        <script>
+            (function() {
+                var c = "ON5DROotFX";
+                var e = document;
+                var b = window;
+
+                function a() {
+                    var f = document.createElement("script");
+                    f.type = "text/javascript";
+                    f.async = true;
+                    f.src = "//code.jivosite.com/script/widget/" + c;
+                    var d = document.getElementsByTagName("script")[0];
+                    d.parentNode.insertBefore(f, d)
+                }
+                if (e.readyState == "complete") {
+                    a()
+                } else {
+                    if (b.attachEvent) {
+                        b.attachEvent("onload", a)
+                    } else {
+                        b.addEventListener("load", a, false)
+                    }
+                }
+            })();
+
+        </script>
         <!-- форма обратной связи -->
         <!-- последовательная загрузка изображений  -->
         <script>
@@ -383,7 +424,6 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 
         </script>
         <!-- последовательная загрузка изображений  -->
-    <script src="js/contactform.js"> </script>
 </body>
 
 </html>
