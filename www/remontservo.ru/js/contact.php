@@ -5,10 +5,11 @@ $post = (!empty($_POST)) ? true : false;
 if($post)
 {
 $email = trim($_POST['email']);
-$name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
+$tel = htmlspecialchars($_POST["tel"]);    
+$name = htmlspecialchars($_POST['name']);
 $message = htmlspecialchars($_POST['message']);
-$tel = htmlspecialchars($_POST["tel"]);
+
 $error = '';
 
 if(!$name)
