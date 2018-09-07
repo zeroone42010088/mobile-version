@@ -54,7 +54,7 @@ $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
 /*
 $message ="\n\nСообщение: ".$message."\n\nИмя: " .$name."\n\nТелефон: ".$tel."\n\n";
 */
-$message1 ="\n\nИмя: ".$name."\n\nТелефон: " .$tel."\n\nE-mail: " .$email."\n\nСообщение: ".$message."\n\n";	
+$message1 ="\n\nE-mail: " .$email. "\n\nТелефон: " .$tel. "\n\nТип, модель неисправного блока:".$name."\n\nОписание неисправности, номер ошибки: ".$message."\n\n";	
 
 
 $header = "Content-Type: text/plain; charset=utf-8\n";
