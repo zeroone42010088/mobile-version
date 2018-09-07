@@ -81,7 +81,7 @@ require 'config.php';
                                 
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
-                                <input type="text" value="Поиск по оборудованию" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" >
+                                <input type="text" value="Поиск оборудован" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" >
                                 <input type="submit" value="" style="" >
                             </div> 
                                <!--searsh -->
@@ -185,7 +185,7 @@ if($query->num_rows > 0){
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;"><font>'.$row["name"].'</font color="red"></p>
+    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; color: #444;"><font color: #444;>'.$row["name"].'</font></p>
 										 <p>'.$row["manefacter"].'</p> 
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
@@ -208,7 +208,7 @@ if($query->num_rows > 0){
                 
                     <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:1%; white-space:normal;">Диагностика и ремонт '.$row["manufacter"].'</h2>
+	                 0px -5px 35px rgba(255,255,255,0.3); margin:auto; margin-left: 30%; white-space:normal;">Диагностика и ремонт '.$row["manufacter"].'</h2>
                 
             </div>
                                 
@@ -241,7 +241,7 @@ if($query->num_rows > 0){
 
 		<div class="form-container transparent">
 			<div class="form-inner-main"></div>
-            <h3>Контактная форма</h3>
+            <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
 				<form class="form-inner ajax-contact-form" action="">
 						<label for="email">Ваш почтовый адрес</label>				
