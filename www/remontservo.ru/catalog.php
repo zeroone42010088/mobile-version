@@ -49,11 +49,11 @@ require 'config.php';
         </nav>
         <main class=content style="background-color: #E9F4C8;">
 
-            <div class="header-bottom" style="background-color:white;" >
+         <!--    <div class="header-bottom" style="background-color:white;" >-->
              <!--   <div class="container" style="background-color:orange;">-->
-                    <div class="header-electronica" style="background-color:grey; position:relative;">
-                        <div class="col-md-9 header-left" style="background-color:#E9F4C8;">
-                            <div class="top-nav">
+                 <!--   <div class="header-electronica" style="background-color:grey; position:relative;">-->
+                     <!--   <div class="col-md-9 header-left" style="background-color:#E9F4C8;"> -->
+                            <div class="top-nav" style="position:relative;">
                                 <ul class="memenu skyblue" >
 
                                     <li class="grid"><a href="#">Серводвигатели</a>
@@ -90,14 +90,14 @@ require 'config.php';
                                 
                             </div>
                          <!--    <div class="clearfix"> </div>-->
-                        </div>
+                    <!--    </div> -->
                        <!-- <div class="col-md-3 header-right" style="background-color:aqua"> -->
                             
                       <!--  </div> -->
                       <!--  <div class="clearfix" style="background-color: #E9F4C8;"> </div> -->
-                    </div>
+                 <!--   </div>-->
              <!--   </div> -->
-            </div>
+          <!--  </div> -->
             <!--bottom-header-->
 
           
@@ -107,7 +107,7 @@ require 'config.php';
             <!--about-end-->
             <!--product-starts-->
           <!--  <div class="product">  -->
-                <div class="container">
+          <!--      <div class="container">  -->
                     <div class="product-top">
                         <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;">
 
@@ -140,7 +140,7 @@ if($query->num_rows > 0){
             </div>
     
     
-    <div class="about" style="margin:  0 -1.5% 0 -1.5%">
+   
                 <div class="container" style="max-width: 100%; padding:0; margin:0;">
                     <div class="about-top grid-1">
                         <div class="col-md-4 about-left">
@@ -173,7 +173,7 @@ if($query->num_rows > 0){
                         <div class="clearfix"></div>
                     </div>
                 </div>
-            </div>';
+           ';
     
     
     
@@ -243,7 +243,7 @@ if($query->num_rows > 0){
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
-				<form class="form-inner ajax-contact-form" action="">
+				<form class="form-inner ajax-contact-form" >
 						<label for="catalog_form_email">Ваш почтовый адрес</label>				
 						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
                         <label for="catalog_form_tel">Телефон</label>
@@ -253,7 +253,7 @@ if($query->num_rows > 0){
 					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="10"></textarea>
                     <label for="catalog_form_files">Прикрепить файлы:</label>
-<input name="attachments[]" type="file" multiple id="catalog_form_files">
+<input name="file" type="file" multiple="" id="catalog_form_files">
 					<input id="catalog_form_submit" type="submit" name="submit" class="submit" value="Отправить">
                     
 				</form>
@@ -286,7 +286,7 @@ if($query->num_rows > 0){
                     <!-- buttons -->
 
         </main>
-        <footer class="foot" style="position:absolute;width:100%;">
+        <footer class="foot" >
             <div class=f-logo-l><img src=img/logo3.png alt=kerneltlt></div>
             <div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
             <div class=f-logo-r><img src=img/logo3.png alt=kerneltlt></div>

@@ -9,7 +9,8 @@ $email = htmlspecialchars($_POST['email']);
 $tel = htmlspecialchars($_POST["tel"]);    
 $name = htmlspecialchars($_POST['name']);
 $message = htmlspecialchars($_POST['message']);
-
+$file = htmlspecialchars($_POST['file']);
+    
 $error = '';
 
 if(!$name)
@@ -54,7 +55,7 @@ $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
 /*
 $message ="\n\nСообщение: ".$message."\n\nИмя: " .$name."\n\nТелефон: ".$tel."\n\n";
 */
-$message1 ="\n\nE-mail: " .$email. "\n\nТелефон: " .$tel. "\n\nТип, модель неисправного блока:".$name."\n\nОписание неисправности, номер ошибки: ".$message."\n\n";	
+$message1 ="\n\nE-mail: " .$email. "\n\nТелефон: " .$tel. "\n\nТип, модель неисправного блока:".$name."\n\nОписание неисправности, номер ошибки: ".$message."\n\nФайл: " .$File. "\n\n";	
 
 
 $header = "Content-Type: text/plain; charset=utf-8\n";
