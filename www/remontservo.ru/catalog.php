@@ -218,8 +218,8 @@ if($query->num_rows > 0){
 								<div class="product-main simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
-										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal; color: #444;">'.$row["name"].'</h3>										
-										</span></h4>
+										<h3>'.$row["name"].'</h3>										
+										
 									</div>
 									<div class="srch srch1">
 										<span>-'.$row["sale"].'. Диагностика и настройка</span>
@@ -239,7 +239,7 @@ if($query->num_rows > 0){
 
 
 
-		<div class="form-container transparent" style="margin-rigth: 60%;">
+		<div class="form-container transparent">
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
@@ -248,7 +248,7 @@ if($query->num_rows > 0){
 						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
                         <label for="catalog_form_tel">Телефон</label>
                         <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон" id="catalog_form_tel"></div>
-						<label src="name" for="catalog_form_name">Тип, модель неисправного блока</label>
+						<label for="catalog_form_name">Тип, модель неисправного блока</label>
                     <input type="text" name="name" value="" placeholder="" id="catalog_form_name"> 					
 					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="10"></textarea>
