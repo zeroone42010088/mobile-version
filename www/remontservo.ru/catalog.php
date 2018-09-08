@@ -251,7 +251,9 @@ if($query->num_rows > 0){
 						<label src="name">Тип, модель неисправного блока</label>
                     <input type="text" name="name" value="" placeholder="">					
 					<label>Описание, неисправности. Номер ошибки</label>
-					<textarea name="message" cols="40" rows="3"></textarea>
+					<textarea name="message" cols="40" rows="10"></textarea>
+                    <label for="question_answer">Прикрепить файлы:</label>
+<input name="attachments[]" type="file" multiple>
 					<input type="submit" name="submit" class="submit" value="Отправить">
                     
 				</form>
