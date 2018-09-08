@@ -181,11 +181,11 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
 								echo '
 								<div class="col-md-4 product-left p-left" style="max-width:30%;">
-								<div class="product-main simpleCart_shelfItem style="padding:1em; margin: 5%;">
+								<div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
+    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
 										 <p>'.$row["manefacter"].'</p> 
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
@@ -203,7 +203,7 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         
 								echo '
-                                
+                               
                                 <div class="logo" >
                 
                     <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
@@ -239,22 +239,22 @@ if($query->num_rows > 0){
 
 
 
-		<div class="form-container transparent" style="margin-left:-40%;">
+		<div class="form-container transparent" style="margin-rigth: 60%;">
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
 				<form class="form-inner ajax-contact-form" action="">
-						<label for="email">Ваш почтовый адрес</label>				
-						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail"></div>
-                        <label for="tel">Телефон</label>
-                        <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон"></div>
-						<label src="name">Тип, модель неисправного блока</label>
-                    <input type="text" name="name" value="" placeholder="">					
-					<label>Описание, неисправности. Номер ошибки</label>
+						<label for="email" for="catalog_form_email">Ваш почтовый адрес</label>				
+						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_tel"></div>
+                        <label for="tel" for="catalog_form_tel">Телефон</label>
+                        <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон" id="catalog_form_tel"></div>
+						<label src="name" for="catalog_form_name">Тип, модель неисправного блока</label>
+                    <input type="text" name="name" value="" placeholder="" id="catalog_form_name"> 					
+					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="10"></textarea>
-                    <label for="question_answer">Прикрепить файлы:</label>
-<input name="attachments[]" type="file" multiple>
-					<input type="submit" name="submit" class="submit" value="Отправить">
+                    <label for="question_answer" for="catalog_form_files">Прикрепить файлы:</label>
+<input name="attachments[]" type="file" multiple id="catalog_form_files">
+					<input id="catalog_form_submit" type="submit" name="submit" class="submit" value="Отправить">
                     
 				</form>
 			</div>
