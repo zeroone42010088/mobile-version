@@ -218,7 +218,7 @@ if($query->num_rows > 0){
 								<div class="product-main simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="product-bottom">
-										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal; color: #444;"><font color: #444;>'.$row["name"].'<font></h3>										
+										<h3 style="font-size: 20px;" font-family: "Trebuchet MS", "Lucida Sans" text-shadow: 0 1px 0 rgba(255,255,255,.5); white-space:normal; color: #444;">'.$row["name"].'</h3>										
 										</span></h4>
 									</div>
 									<div class="srch srch1">
@@ -244,15 +244,15 @@ if($query->num_rows > 0){
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
 				<form class="form-inner ajax-contact-form" action="">
-						<label for="email" for="catalog_form_email">Ваш почтовый адрес</label>				
-						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_tel"></div>
-                        <label for="tel" for="catalog_form_tel">Телефон</label>
+						<label for="catalog_form_email">Ваш почтовый адрес</label>				
+						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
+                        <label for="catalog_form_tel">Телефон</label>
                         <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон" id="catalog_form_tel"></div>
 						<label src="name" for="catalog_form_name">Тип, модель неисправного блока</label>
                     <input type="text" name="name" value="" placeholder="" id="catalog_form_name"> 					
 					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="10"></textarea>
-                    <label for="question_answer" for="catalog_form_files">Прикрепить файлы:</label>
+                    <label for="catalog_form_files">Прикрепить файлы:</label>
 <input name="attachments[]" type="file" multiple id="catalog_form_files">
 					<input id="catalog_form_submit" type="submit" name="submit" class="submit" value="Отправить">
                     
@@ -354,7 +354,7 @@ if($query->num_rows > 0){
         </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
         <!-- yandex metrica complete -->
         <!-- форма обратной связи -->
-        <script type='text/javascript'>
+        <script>
 (function(){ var widget_id = 'smo9Ly9F6j';
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
         <!-- форма обратной связи -->
