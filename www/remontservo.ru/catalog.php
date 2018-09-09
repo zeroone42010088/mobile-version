@@ -2,7 +2,7 @@
 require 'config.php';
 ?>
 <!DOCTYPE html>
-<html lang=ru style=height:100%>
+<html lang=ru >
 <head>
     <meta charset="utf-8" />
     <title>Ремонтируемое оборудование</title>
@@ -11,11 +11,15 @@ require 'config.php';
     <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
     <link href=css/shop.css rel=stylesheet>
     <link href=css/style.css rel=stylesheet> 
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
-<body>
-    <div class=container>
+<body style=height:100% style="
+    max-width: 1366px;
+    margin: auto;">
+    <div class=container-catalog style=" min-width: 1000px;
+    max-width: 1366px;
+    margin: 0 auto;" >
         <header class="header">
             <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
             </div>
@@ -30,7 +34,7 @@ require 'config.php';
                     <a href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
             </div>
         </header>
-        <nav class=nav>
+        <nav class="nav-catalog">
             <div class=n-menu>
                 <ul class=menu>
                     <li><a class=a-public href=index.html>главная</a></li>
@@ -42,7 +46,7 @@ require 'config.php';
                     <li><a class=a-public href=pages/departure.html>выезд специалиста</a></li>
                     <li><a class=a-public href=pages/contacts.html>контакты</a></li>
                     <li><a class=a-public href=pages/list-publications.html>публикации</a></li>
-                    <li><a class=a-public href=pages/sell.html>на продажу</a></li>
+                    <li><a class=a-public href=pages/sell.html>на продажу</a></li> 
                     <li><a class=a-public style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>каталог ремонтируемого оборудования</a></li>
                 </ul>
             </div>
@@ -141,7 +145,7 @@ if($query->num_rows > 0){
     
     
    
-                <div class="container" style="max-width: 100%; padding:0; margin:0;">
+                <div class="container-upblock" style="max-width: 100%; padding:0; margin:0;">
                     <div class="about-top grid-1">
                         <div class="col-md-4 about-left">
                             <figure class="effect-bubba">
@@ -215,15 +219,15 @@ if($query->num_rows > 0){
                                 
                                 
 								<div class="col-md-4 product-left p-left">
-								<div class="product-main simpleCart_shelfItem">
+								<div class=" simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
-									<div class="product-bottom">
-										<h3>'.$row["name"].'</h3>										
+									<div class="">
+										<h3 style="word-wrap:normal; font-size:1em; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-top:5px;">'.$row["name"].'</h3>										
 										
 									</div>
-									<div class="srch srch1">
-										<span>-'.$row["sale"].'. Диагностика и настройка</span>
-									</div>
+									
 								</div>
 							</div>
                             <div class="catalog_cardinfo">
@@ -243,7 +247,7 @@ if($query->num_rows > 0){
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
 			<div class="fields">
-				<form class="form-inner ajax-contact-form" >
+				<form class="form-inner ajax-contact-form" enctype="multipart/form-data method="post">
 						<label for="catalog_form_email">Ваш почтовый адрес</label>				
 						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
                         <label for="catalog_form_tel">Телефон</label>
@@ -388,6 +392,7 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
         </script>
         <!-- последовательная загрузка изображений  -->
     <script src="js/contactform.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>
