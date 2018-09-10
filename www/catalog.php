@@ -2,7 +2,7 @@
 require 'config.php';
 ?>
 <!DOCTYPE html>
-<html lang=ru >
+<html lang=ru style="heigt:100%;">
 <head>
     <meta charset="utf-8" />
     <title>Ремонтируемое оборудование</title>
@@ -85,10 +85,8 @@ require 'config.php';
                                 
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
-                                <form action="catalog.php" method="get">
-                                <input type="text" name="search" value="Поиск оборудован" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
+                                <input type="text" value="Поиск оборудован" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" >
                                 <input type="submit" value="" style="" >
-                                </form>
                             </div> 
                                <!--searsh -->
                                 
@@ -118,33 +116,7 @@ require 'config.php';
                         <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;">
 
 
-<?php
-if($_GET['search']) {
-echo '<h1>Поисковой запрос: '.$_GET['search'].'</h1>';
-$query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
-if($query->num_rows > 0){
-    while($row = $query->fetch_assoc()){
-        
-                                echo '
-                    <div class="col-md-4 product-left p-left" style="max-width:30%;">
-                                <div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
-                                    <a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
-                                    <div class="product-bottom">
-                                        <p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
-                                         <p>'.$row["manefacter"].'</p> 
-                                        <p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
-                                    </div>
-                                    <div class="srch srch1">
-                                        <span>-'.$row["sale"].'. Диагностика и настройка</span>
-                                    </div>
-                                </div>
-                            </div>
-                
-                
-    ';
- } } 
-} else {
+                            <?php
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
 } else {
@@ -228,7 +200,7 @@ if($query->num_rows > 0){
 							</div>
 								';
 
-} } }  else {
+} } } else {
 
 $query = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query->num_rows > 0){
@@ -293,8 +265,7 @@ if($query->num_rows > 0){
 		</div>            
 				
                 
-    ';
-} }} 
+    ';} }}
                          
 ?>
                             
@@ -317,7 +288,6 @@ if($query->num_rows > 0){
                         </ul>
                         <? } ?>
                     <!-- buttons -->
-<? } ?>
 
         </main>
         <footer class="foot" >
@@ -388,27 +358,38 @@ if($query->num_rows > 0){
         </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
         <!-- yandex metrica complete -->
         <!-- форма обратной связи -->
-       <?php
-$VivodimJivoSiteilinet = '';
-$VivodimJivoSite = "<script type='text/javascript'>
+        <script>
 (function(){ var widget_id = 'smo9Ly9F6j';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>";
- 
-$chasov = date("H.m");
-$den = date("D");
- 
-if($chasov > '9.00' && $chasov < '10.55') {
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+        <!-- форма обратной связи -->
+        <!-- последовательная загрузка изображений  -->
+        <script>
+            function isVisible(c) {
+                var d = c.getBoundingClientRect();
+                var e = document.documentElement.clientHeight;
+                var b = d.top > 0 && d.top < e;
+                var a = d.bottom < e && d.bottom > 0;
+                return b || a
+            }
 
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
+            function showVisible() {
+                var d = document.getElementsByTagName("img");
+                for (var b = 0; b < d.length; b++) {
+                    var a = d[b];
+                    var c = a.getAttribute("realsrc");
+                    if (!c) {
+                        continue
+                    }
+                    if (isVisible(a)) {
+                        a.src = c;
+                        a.setAttribute("realsrc", "")
+                    }
+                }
+            }
+            window.onscroll = showVisible;
+            showVisible();
 
-} elseif($chasov > '12.05' && $chasov < '17.00') {
-
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
-}
- 
-
- 
- echo $VivodimJivoSiteilinet; ?>
+        </script>
         <!-- последовательная загрузка изображений  -->
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
 <script src="js/contactform.js"> </script>
