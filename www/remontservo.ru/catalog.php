@@ -14,9 +14,9 @@ require 'config.php';
     
 </head>
 
-<body style=height:100% style="
+<body style="
     max-width: 1366px;
-    margin: auto;">
+    margin: auto; min-height:100%;">
     <div class=container-catalog style=" min-width: 1000px;
     max-width: 1366px;
     margin: 0 auto;" >
@@ -346,13 +346,13 @@ if($query->num_rows > 0){
 
 
         </script>
-        <script  src="js/memenu.js"></script> 
+       <!-- <script  src="js/memenu.js"></script> 
         <script>
             $(document).ready(function() {
                 $(".memenu").memenu();
             });
 
-        </script>
+        </script> -->
        
         <!--scripts-->
 
@@ -411,10 +411,13 @@ if($chasov > '9.00' && $chasov < '10.55') {
  echo $VivodimJivoSiteilinet; ?>
         <!-- последовательная загрузка изображений  -->
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
-<script src="js/contactform.js"> </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/contactform.js"> </script>
+
+<!-- Отрпавка данных формы обратной связи на почту -->
     <script>
-        $(function() {
+
+$(function() {
 
  document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
 
@@ -424,7 +427,7 @@ if($chasov > '9.00' && $chasov < '10.55') {
 
   evt.preventDefault();
 
-  http.open("POST", "js/contact.php", true);
+  http.open("POST", "contact.php", true);
 
   http.onreadystatechange = function() {
 
@@ -452,8 +455,10 @@ if($chasov > '9.00' && $chasov < '10.55') {
 
  }, false);
 
-});</script>
+});
 
+</script>
+<!-- Отрпавка данных формы обратной связи на почту -->
 </body>
 
 </html>
