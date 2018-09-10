@@ -1793,72 +1793,112 @@ body {
     body {'overflow-x:hidden;'}
 }
 
-@media (min-width:768px) and (max-width: 979px) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:768px; max-width: 979px;
+@media (min-width:769px) and (max-width: 979px) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
     body {'overflow-x:hidden;'}
+    
 }
 
 
-@media (max-width:767px) {
+@media (max-width:768px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:767px; 
      overflow-x:hidden; overflow:hidden;}
     body {'overflow-x:hidden;'}
+    .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
+    .f-logo-r img {position: absolute; right: 13%; top:12%;}
+    
 }
 
 @media (max-width:480px) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px; 
-    overflow-x:hidden; overflow:hidden;}
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
     body {'overflow-x:hidden;'}
+    .header {position: relative; height: 350px; }
+    .h-logo {position: absolute; margin-left: 15%; margin-top: -2%; }
+    .h1-main-page {position: absolute; top:30%; left: 20%; }
+    .h2-main-page {position: absolute; top:45%; left: 2%; } 
+    .h2-main-page {max-width:400px; }
+    .phone-main {position: absolute; top:65%; left: 20%;} 
+    .phone-second {position: absolute; top:75%; left: 20%; }
+    .mail {position: absolute; top:85%; left: 20%; }
+    .main-motors {width:100%;}
+    .nav {height: 380px;
+    } 
+    .menu {list-style-type: none; padding-left: 0; margin-left: 0;}    
+    .menu li {display:block; width:100%;}
+    .main-motors {width:100%;}  
+    .how-body p {zoom:75%;}
+   .how-body p img {font-size:1em;}
+    .logomanufacturers ul li {height: 15px;}
+    
+    .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 20px; margin-top: 2%;}
+    .f-logo-r img {display: none;}
+    .f-logo-l img {position: absolute; left: 5%; top:12%;}
+    
+}
+@media (max-width:414px) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:413px;}
+   body {'overflow-x:hidden;'}
+    .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
+}    
+
+@media (max-width:411px) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 411px;}
+   
 }
 
-@media (max-width:375px) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 375px; 
-    }
-    body {'overflow:hidden; max-width: 150px;'}
-}
-
-@media (max-width:320px) and (orientation:portrait) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 320px; 
-    }
-    body {'overflow:hidden;'}
-}
-
-@media (max-width:240px) and (orientation:portrait) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 240px; 
-    }
-    body {'overflow:hidden;'}
-}
 
 @media (max-width: 375px)  { 
-.nav {   
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 375px; 
+    }
+    
+    .nav {   
    
      height: 390px;
     }    
-    .menu {list-style-type: none; padding-left: 0; margin-left: 0;}    
-    .menu li {display:block; width:100%;}
+    
     .carousel  {min-height:230px;}
     .item img  {min-height:230px;}
-    .logomanufacturers ul  {  }
+    
     .logomanufacturers ul li {height: 15px;}
-    .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:50%; margin-left:-35%;}
+    .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:30%; margin-left:-35%;}
    
     item-factory {display: none;}
     .factory {display: none;}
     .how-body p {zoom:75%;}
    .how-body p img {font-size:1em;}
-    .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 20px;}
+    .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 2%;}
     .f-logo-r img {display: none;}
-    .f-logo-l img {position: absolute; left: 5%;}
-    .header {position: relative; height: 350px;}
-    .h-logo {position: absolute; margin-left: 15%; margin-top: -2%;}
-    .h1-main-page {position: absolute; top:30%; left: 20%;}
-    .h2-main-page {position: absolute; top:45%; left: 5%;}
-    .phone-main {position: absolute; top:65%; left: 25%;} 
-    .phone-second {position: absolute; top:75%; left: 25%;}
-    .mail {position: absolute; top:85%; left: 25%;}
-    .main-motors {width:100%;}
+    .f-logo-l img {position: absolute; left: 5%; top:12%;}
+    .header {position: relative; height: 350px; }
+    .h-logo {position: absolute; margin-left: 10%; margin-top: -5%; }
+    .h1-main-page {position: absolute; top:30%; left: 15%; }
+    .h2-main-page {position: absolute; top:45%; left: 2%; }   
+    .phone-main {position: absolute; top:65%; left: 20%;} 
+    .phone-second {position: absolute; top:75%; left: 20%; }
+    .mail {position: absolute; top:85%; left: 20%; }
+    
 }
+
+@media (max-width:320px) and (orientation:portrait) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 320px; 
+    }
+    
+    .header {position: relative; height: 400px;  }
+    .h2-main-page {max-width:320px; }
+    .phone-main {position: absolute; top:65%; left: 17%;} 
+    .phone-second {position: absolute; top:75%; left: 17%; }
+    .mail {position: absolute; top:85%; left: 17%; }
+    
+}
+/*
+@media (max-width:240px) and (orientation:portrait) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 240px; 
+    }
+    body {'overflow:hidden;'}
+}
+*/
+
     
   
 
