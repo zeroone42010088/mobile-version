@@ -4,7 +4,7 @@ if (isset ($_POST['contactFF'])) {
 
  $to = "114polaris@gmail.com";
 
- $from = "example@gmail.com";
+ $from = "stroikagoda@yandex.ru";
 
  $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
 

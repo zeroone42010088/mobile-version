@@ -240,7 +240,7 @@ if($query->num_rows > 0){
                 
                     <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin:auto; margin-left: 30%; white-space:normal;">Диагностика и ремонт '.$row["manufacter"].'</h2>
+	                 0px -5px 35px rgba(255,255,255,0.3); margin:auto; margin-left: 30%; white-space:normal;">Диагностика и ремонт '.$row["upcomment"].'</h2>
                 
             </div>
                                 
@@ -277,11 +277,11 @@ if($query->num_rows > 0){
 			<div class="fields">
 				<form class="form-inner ajax-contact-form" enctype="multipart/form-data">
 						<label for="catalog_form_email">Ваш почтовый адрес</label>				
-						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
+						<div class="col"><input type="email" name="email" value="" placeholder="E-mail" id="catalog_form_email"></div>
                         <label for="catalog_form_tel">Телефон</label>
-                        <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон" id="catalog_form_tel"></div>
+                        <div class="col"><input type="tel" name="tel" value="" placeholder="Телефон" id="catalog_form_tel"></div>
 						<label for="catalog_form_name">Тип, модель неисправного блока</label>
-                    <input type="text" name="name" value="" placeholder="" id="catalog_form_name"> 					
+                    <input type="text" name="name" value="" placeholder="Тип, модель неисправного блока" id="catalog_form_name"> 					
 					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
 					<textarea name="message" cols="40" rows="10"></textarea>
                     <label for="catalog_form_files">Прикрепить файлы:</label>
@@ -329,7 +329,7 @@ if($query->num_rows > 0){
             <!-- container -->
  <!--   </div> -->
     <!-- product -->
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <!--scripts-->
         <script>
             addEventListener("load", function() {
@@ -345,7 +345,7 @@ if($query->num_rows > 0){
         
 
 
-        </script>
+        
        <!-- <script  src="js/memenu.js"></script> 
         <script>
             $(document).ready(function() {
@@ -425,7 +425,7 @@ $(function() {
 
   evt.preventDefault();
 
-  http.open("POST", "contact.php", true);
+  http.open("POST", "http://www.glebwebsite.ru/js/contact.php", true);
 
   http.onreadystatechange = function() {
 
@@ -458,8 +458,8 @@ $(function() {
 </script>
 <!-- Отрпавка данных формы обратной связи на почту -->
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/contactform.js"> </script>
+
+<!-- <script src="js/contactform.js"> </script> -->
 </body>
 
 </html>
