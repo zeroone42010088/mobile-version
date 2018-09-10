@@ -10,7 +10,7 @@ require 'config.php';
     <meta name=keywords content="FANUC DELTA ABB OMRON" />
     <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
     <link href=css/shop.css rel=stylesheet>
-    <link href=css/style.css rel=stylesheet> 
+    <link href=css/style.css rel=stylesheet>
     
 </head>
 
@@ -387,7 +387,7 @@ if($query->num_rows > 0){
 
         </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
         <!-- yandex metrica complete -->
-        <!-- форма обратной связи -->
+        <!-- форма обратной связи jivoscript -->
        <?php
 $VivodimJivoSiteilinet = '';
 $VivodimJivoSite = "<script type='text/javascript'>
@@ -409,12 +409,10 @@ if($chasov > '9.00' && $chasov < '10.55') {
 
  
  echo $VivodimJivoSiteilinet; ?>
-        <!-- последовательная загрузка изображений  -->
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/contactform.js"> </script>
+        <!-- форма обратной связи jivoscript  -->
 
-<!-- Отрпавка данных формы обратной связи на почту -->
+
+<!-- Отрпавка данных формы обратной связи на почту начало -->
     <script>
 
 $(function() {
@@ -459,6 +457,9 @@ $(function() {
 
 </script>
 <!-- Отрпавка данных формы обратной связи на почту -->
+<!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/contactform.js"> </script>
 </body>
 
 </html>
