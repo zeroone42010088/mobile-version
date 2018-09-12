@@ -1877,6 +1877,7 @@ body {
     .phone-main {position: absolute; top:65%; left: 20%;} 
     .phone-second {position: absolute; top:75%; left: 20%; }
     .mail {position: absolute; top:85%; left: 20%; }
+    .badge {zoom:70%;}
     
 }
 
@@ -1889,6 +1890,7 @@ body {
     .phone-main {position: absolute; top:65%; left: 17%;} 
     .phone-second {position: absolute; top:75%; left: 17%; }
     .mail {position: absolute; top:85%; left: 17%; }
+    .about-us-text  {margin:1%; word-break: break-all;}
     
 }
 /*
