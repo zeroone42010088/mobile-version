@@ -1789,18 +1789,19 @@ body {
 @media (max-width:1366px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
      overflow-x:hidden; overflow:hidden;}
-    body {'overflow-x:hidden;'}
+    body {overflow-x:hidden;margin:auto;}
+    .main-motors {width: 100%;}
 }
 @media (min-width:992px) and (max-width: 1199px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:992px; max-width:1199px; 
      overflow-x:hidden; overflow:hidden;}
-    body {'overflow-x:hidden;'}
+    body {overflow-x:hidden;}
 }
 
 @media (min-width:769px) and (max-width: 979px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
-    body {'overflow-x:hidden;'}
+    body {overflow-x:hidden;}
     
 }
 
@@ -1808,7 +1809,7 @@ body {
 @media (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
-    body {'overflow-x:hidden;'}
+    body {overflow-x:hidden;}
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
     
@@ -1817,7 +1818,7 @@ body {
 
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
-    body {'overflow-x:hidden;'}
+    body {overflow-x:hidden;}
     .header {position: relative; height: 350px; }
     .h-logo {position: absolute; margin-left: 15%; margin-top: -2%; }
     .h1-main-page {position: absolute; top:30%; left: 20%; }
@@ -1843,7 +1844,7 @@ body {
 }
 @media (max-width:414px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:413px;}
-   body {'overflow-x:hidden;'}
+   body {overflow-x:hidden;}
     .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
 }    
 
@@ -2009,7 +2010,7 @@ body {
     .mail {position: absolute; top:85%; left: 17%; }
     
 }
-
+ .main-motors {width: 100%;}
     
   
 
