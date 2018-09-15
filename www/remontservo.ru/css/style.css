@@ -1801,14 +1801,15 @@ body {
 }
 
 
-@media (max-width:768px) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:767px; 
+@media (max-width:768px) and (orientation:portrait)   {
+.header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
     body {'overflow-x:hidden;'}
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
     
 }
+
 
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
@@ -1844,7 +1845,7 @@ body {
 
 @media (max-width:411px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 411px;}
-   
+   .h1-main-page {position: absolute; top:29%;  }
 }
 
 
@@ -1881,8 +1882,35 @@ body {
     
 }
 
-@media (min-width:769px) and (max-width:320px) and (orientation:portrait) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 320px; 
+
+
+@media (max-width: 360px) and (orientation:portrait)   { 
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
+    }   
+    
+}
+
+@media (max-width: 320px) and (orientation:portrait)  { 
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 320px; }
+    .how-body p {zoom:70%;}
+    .how-body p img {font-size:0.8em;}
+    
+    
+}
+@media (max-width:823px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 823px; 
+    }
+    .f-logo-r img {position: absolute; right: 5%; top:12%;}
+    .f-logo-l img {position: absolute; left: 5%; top:12%;}
+}
+@media (max-width:800px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 800px; 
+    }
+  }  
+
+
+@media (max-width:769px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 769px; 
     }
     
     .header {position: relative; height: 400px;  }
@@ -1900,11 +1928,53 @@ body {
     body {'overflow:hidden;'}
 }
 */
-@media (max-width:812px) and (orientation:landscape) {
+@media (max-width:736px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 736px; 
+    }
+    .header {position: relative; height: 150px;  }
+    .h2-main-page {max-width:320px; }
+    .phone-main {position: absolute; top:25%; right: -45%;} 
+    .phone-second {position: absolute; top:45%; right: -45%; }
+    .mail {position: absolute; top:65%; right: -45%; }
+    }
 
-    .f-logo-r img {position: absolute; right: 5%; top:12%;}
-    .f-logo-l img {position: absolute; left: 5%; top:12%;}
+@media (max-width:640px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 640px; 
+    }
+    .header {position: relative; height: 250px;  } 
+    .h-logo {position: absolute; top:20%; left:2%;}
     
+    .h1-main-page {position: absolute; top:2%; left: 47%; }
+    .h2-main-page {max-width:320px; position: absolute; top:23%; left: 40%; }
+    .phone-main {position: absolute; top:53%; right: -10%;} 
+    .phone-second {position: absolute; top:67%; right: -10%; }
+    .mail {position: absolute; top:80%; right: -10%; }
+    .f-title {text-align: left; max-width: 90%; margin-left: 20%; padding-top: 6%;}
+     .f-logo-r img {display:none;}
+    }
+@media (max-width:568px) and (orientation:landscape) {
+  .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 568px; 
+    } 
+    .nav {height:125px;}
+   .h1-main-page {position: absolute; top:-2%; left: 55%; }
+    .h2-main-page {position: absolute; top:20%; left: 50%; }
+   /* .h2-main-page {max-width:320px; position: absolute; top:20%; left: 50%; }
+*/    
+    .phone-main {position: absolute; top:57%; right: -31%;} 
+    .phone-second {position: absolute; top:70%; right: -31%; }
+    .mail {position: absolute; top:82%; right: -31%; }
+    .f-title {text-align: left; max-width: 90%; margin-left: 20%; padding-top: 5%;}
+    
+}
+@media (max-width:480px) and (orientation:landscape) {
+.header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 480px; 
+    }
+    
+    .header {position: relative; height: 400px;  }
+    .h2-main-page {max-width:320px; }
+    .phone-main {position: absolute; top:65%; left: 17%;} 
+    .phone-second {position: absolute; top:75%; left: 17%; }
+    .mail {position: absolute; top:85%; left: 17%; }
     
 }
 
