@@ -1813,7 +1813,25 @@ body {
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
     
+    
+    
 }
+
+@media (min-width:765px) and (max-width:768px) and (orientation:portrait)   {
+.header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
+     overflow-x:hidden; overflow:hidden;}
+    body {overflow-x:hidden;}
+    .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
+    .f-logo-r img {position: absolute; right: 13%; top:12%;}
+    
+    
+    .badge {margin: 5px;}
+    .about-us-text {word-break: normal;padding-left: 0px;overflow:hidden;}
+    .filling-page-whyus {width: 100%; margin:0; padding:0; }
+    
+    
+}
+
 
 
 @media (max-width:480px) {
@@ -1918,21 +1936,14 @@ body {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 769px; 
     }
     
-    .header {position: relative; height: 400px;  }
+    .header {position: relative; height: 400px; display: none;  }
     .h2-main-page {max-width:320px; }
     .phone-main {position: absolute; top:65%; left: 17%;} 
     .phone-second {position: absolute; top:75%; left: 17%; }
     .mail {position: absolute; top:85%; left: 17%; }
-    .about-us-text  {margin:1%; word-break: break-all;}
     
 }
-/*
-@media (max-width:240px) and (orientation:portrait) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 240px; 
-    }
-    body {'overflow:hidden;'}
-}
-*/
+
 @media (max-width:736px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 736px; 
     }
