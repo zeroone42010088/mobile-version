@@ -1200,7 +1200,7 @@ body {
     z-index: 50;
 }
 @media (min-width: 1300px) {
-  .nav {height:45px;}
+  .nav {height:44px;}
 }
 
 .n-menu {
@@ -1228,6 +1228,12 @@ body {
 
 .menu li a:hover {
     text-decoration: underline;
+   /* background:#444;
+	color: #fff;
+	transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;*/
+    
 }
 
 
@@ -1812,8 +1818,9 @@ body {
     body {overflow-x:hidden;}
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
-    
-    
+    .map {display: block; margin-left: -40%; width: 100%;height: 60%;}
+    .contacts {display:block;width: 100%;word-break; margin-left:3%;padding: 0;}
+    .map {margin: auto;margin-left:2%;; margin-bottom: 15%; max-width:95%;}    
     
 }
 
@@ -1864,11 +1871,14 @@ body {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:413px;}
    body {overflow-x:hidden;}
     .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
+    .map {margin: auto;}
 }    
 
 @media (max-width:411px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 411px;}
    .h1-main-page {position: absolute; top:29%;  }
+    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
+    
 }
 
 
@@ -1902,7 +1912,7 @@ body {
     .phone-second {position: absolute; top:75%; left: 20%; }
     .mail {position: absolute; top:85%; left: 20%; }
     .badge {zoom:70%;}
-    
+    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
 }
 
 
@@ -1917,6 +1927,7 @@ body {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 320px; }
     .how-body p {zoom:70%;}
     .how-body p img {font-size:0.8em;}
+    .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}
     
     
 }
@@ -1925,6 +1936,9 @@ body {
     }
     .f-logo-r img {position: absolute; right: 5%; top:12%;}
     .f-logo-l img {position: absolute; left: 5%; top:12%;}
+    .map {display: block; margin-left: -40%; width: 100%;height: 60%;}
+    .contacts {display:block;width: 100%;word-break; margin-left:3%;padding: 0;}
+    .map {margin-left:2%;; margin-bottom: 15%; max-width:95%;}
 }
 @media (max-width:800px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 800px; 
@@ -1996,6 +2010,7 @@ body {
     .phone-second {position: absolute; top:70%; right: -31%; }
     .mail {position: absolute; top:82%; right: -31%; }
     .f-title {text-align: left; max-width: 90%; margin-left: 20%; padding-top: 5%;}
+    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
     
 }
 @media (max-width:480px) and (orientation:landscape) {
@@ -2020,8 +2035,10 @@ body {
     .phone-second {position: absolute; top:75%; left: 17%; }
     .mail {position: absolute; top:85%; left: 17%; }
     
-}
+
  .main-motors {width: 100%;}
+
+}
     
   
 
