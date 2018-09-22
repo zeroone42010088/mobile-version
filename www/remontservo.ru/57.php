@@ -86,7 +86,7 @@ require 'config.php';
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
                                 <form action="catalog.php" method="get">
-                                <input type="text" name="search" value="Поиск оборудован" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
+                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
                                 <input type="submit" value="" style="" >
                                 </form>
                             </div> 
@@ -120,7 +120,7 @@ require 'config.php';
 
 <?php
 if($_GET['search']) {
-echo '<h1>Поисковой запрос: '.$_GET['search'].'</h1>';
+echo '<h1>Поисковый запрос: '.$_GET['search'].'</h1>';
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
@@ -274,21 +274,33 @@ if($query->num_rows > 0){
 		<div class="form-container transparent">
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
-			<div class="fields">
-				<form class="form-inner ajax-contact-form" enctype="multipart/form-data">
-						<label for="catalog_form_email">Ваш почтовый адрес</label>				
-						<div class="col"><input type="email" name="email" value="" placeholder="E-mail" id="catalog_form_email"></div>
-                        <label for="catalog_form_tel">Телефон</label>
-                        <div class="col"><input type="tel" name="tel" value="" placeholder="Телефон" id="catalog_form_tel"></div>
-						<label for="catalog_form_name">Тип, модель неисправного блока</label>
-                    <input type="text" name="name" value="" placeholder="Тип, модель неисправного блока" id="catalog_form_name"> 					
-					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
-					<textarea name="message" cols="40" rows="10"></textarea>
-                    <label for="catalog_form_files">Прикрепить файлы:</label>
-<input name="file" type="file" multiple="" id="catalog_form_files">
-					<input id="catalog_form_submit" type="submit" name="submit" class="submit" value="Отправить">
-                    
-				</form>
+			<div class="fields">				
+						
+                        <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">
+          <div class="form-group">
+            <label for="nameFF">Имя:</label>
+            <input id="nameFF" name="nameFF" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="contactFF">E-mail:</label>
+            <input id="contactFF" name="contactFF" type="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" required>
+          </div>
+          <div class="form-group">
+            <label for="projectFF">Сообщение</label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить файл:</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn" type="submit" id="submitFF">Отправить сообщение</button>
+        </form>
+
+                        
 			</div>
 		</div>            
 				
@@ -327,20 +339,10 @@ if($query->num_rows > 0){
         </footer>
         </div>
             <!-- container -->
- <!--   </div> -->
-    <!-- product -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!--scripts-->
-   <!--     <script>
-            addEventListener("load", function() {
-                setTimeout(hideURLbar, 0);
-            }, false);
 
-            function hideURLbar() {
-                window.scrollTo(0, 1);
-            }
-
-        </script> -->
+    
+    
+     
         
         
 
@@ -348,112 +350,15 @@ if($query->num_rows > 0){
         
        
        
-        <!--scripts-->
-
-        <!-- yandex metrica begin -->
-        <!--    <script>
-            (function(d, w, c) {
-                (w[c] = w[c] || []).push(function() {
-                    try {
-                        w.yaCounter44532427 = new Ya.Metrika({
-                            id: 44532427,
-                            clickmap: true,
-                            trackLinks: true,
-                            accurateTrackBounce: true,
-                            webvisor: true
-                        });
-                    } catch (e) {}
-                });
-                var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function() {
-                        n.parentNode.insertBefore(s, n);
-                    };
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://mc.yandex.ru/metrika/watch.js";
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else {
-                    f();
-                }
-            })(document, window, "yandex_metrika_callbacks");
-
-        </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
-        <!-- yandex metrica complete -->
-        <!-- форма обратной связи jivoscript -->
-       <?php
-$VivodimJivoSiteilinet = '';
-$VivodimJivoSite = "<script type='text/javascript'>
-(function(){ var widget_id = 'smo9Ly9F6j';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>";
- 
-$chasov = date("H.m");
-$den = date("D");
- 
-if($chasov > '9.00' && $chasov < '10.55') {
-
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
-
-} elseif($chasov > '12.05' && $chasov < '17.00') {
-
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
-}
- 
-
- 
- echo $VivodimJivoSiteilinet; ?>
-        <!-- форма обратной связи jivoscript  -->
+    
+        
 
 
 <!-- Отрпавка данных формы обратной связи на почту начало -->
-    <script>
-
-$(function() {
-
- document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
-
-  var http = new XMLHttpRequest(), f = this;
-
-  var th = $(this);
-
-  evt.preventDefault();
-
-  http.open("POST", "http://www.glebwebsite.ru/js/contact.php", true);
-
-  http.onreadystatechange = function() {
-
-   if (http.readyState == 4 && http.status == 200) {
-
-    alert(http.responseText);
-
-    if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
-
-     th.trigger("reset");
-
-    }
-
-   }
-
-  }
-
-  http.onerror = function() {
-
-   alert('Ошибка, попробуйте еще раз');
-
-  }
-
-  http.send(new FormData(f));
-
- }, false);
-
-});
-
-</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/cat_contactform.js"></script>
 <!-- Отрпавка данных формы обратной связи на почту -->
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
 
-<!-- <script src="js/contactform.js"> </script> -->
 </body>
 
 </html>
