@@ -274,30 +274,29 @@ if($query->num_rows > 0){
 		<div class="form-container transparent">
 			
             <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
-			<div class="fields">				
-						
-                        <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">
+			<div class="fields">					
+                        <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">          
           <div class="form-group">
-            <label for="nameFF">Имя:</label>
-            <input id="nameFF" name="nameFF" type="text" required>
-          </div>
-          <div class="form-group">
-            <label for="contactFF">E-mail:</label>
-            <input id="contactFF" name="contactFF" type="email" required>
+            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required>
           </div>
           <div class="form-group">
             <label for="telFF">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" required>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
           </div>
           <div class="form-group">
-            <label for="projectFF">Сообщение</label>
+            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+            <input id="nameFF" name="nameFF" type="text">
+          </div>
+          <div class="form-group">
+            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
             <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
           </div>
           <div class="control-file">
             <label for="fileFF">Прикрепить файл:</label>
             <input id="fileFF" name="fileFF" type="file">
           </div>
-          <button class="btn" type="submit" id="submitFF">Отправить сообщение</button>
+          <button class="btn" type="submit" id="submitFF">Отправить</button>          
         </form>
 
                         

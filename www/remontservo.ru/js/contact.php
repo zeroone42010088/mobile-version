@@ -3,7 +3,11 @@ if (isset ($_POST['contactFF'])) {
   $to = "114polaris@gmail.com";
   $from = "new_client@remontservo.ru";
   $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
-  $message = "Имя пользователя: ".$_POST['nameFF']."\nEmail пользователя ".$_POST['contactFF']."\nТелефон пользователя ".$_POST['telFF']."\nСообщение: ".$_POST['projectFF']."\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];
+$message = "\nEmail".$_POST['contactFF'].
+    "\nТелефон".$_POST['telFF'].
+    "\nТип, модель неисправного блока: ".$_POST['nameFF'].
+    "\nОписание неисправности. номер ошибки: ".$_POST['projectFF'].
+    "\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];
  
   $boundary = md5(date('r', time()));
   $filesize = '';
@@ -38,7 +42,7 @@ $attachment";
  
   if ($filesize < 10000000) { // проверка на общий размер всех файлов. Многие почтовые сервисы не принимают вложения больше 10 МБ
     mail($to, $subject, $message, $headers);
-    echo $_POST['nameFF'].', Ваше сообщение отправлено, спасибо!';
+    echo $_POST['nameFF'].' Ваша заявка отправлена, спасибо!';
   } else {
     echo 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';
   }

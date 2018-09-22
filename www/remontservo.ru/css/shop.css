@@ -528,6 +528,9 @@ skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skybl
 .skyblue form.contact input[type="submit"]{
 	background:#0194be; 
 }
+.skyblue form.contact button[type="submit"]{
+	background:#0194be; 
+}
 @media(max-width:768px){
 	.memenu>li{display:block;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 	.memenu>li:hover,.memenu>li.active{border-top:0}
@@ -717,7 +720,21 @@ a.button28:active {
   transform: rotate(45deg);
 }
 .form-inner input[type="submit"] {background: #1762EE; color:#fff; font-size:1em;}
-
+ 
+.btn {
+   display: block;
+  width: 100%;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  line-height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  background: #1762EE;
+  font-family: 'Roboto', sans-serif;
+    font-size:1em;
+    
+}
 /*mail form */
 
 
