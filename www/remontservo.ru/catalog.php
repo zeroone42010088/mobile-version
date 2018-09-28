@@ -58,7 +58,7 @@ require 'config.php';
                  <!--   <div class="header-electronica" style="background-color:grey; position:relative;">-->
                      <!--   <div class="col-md-9 header-left" style="background-color:#E9F4C8;"> -->
                             <div class="top-nav" style="position:relative;">
-                                <ul class="memenu skyblue" >
+                                <ul class="memenu skyblue" style="margin-left:15px;">
 
                                     <li class="grid"><a href="#">Серводвигатели</a>
                                         <div class="mepanel">
@@ -86,7 +86,7 @@ require 'config.php';
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
                                 <form action="catalog.php" method="get">
-                                <input type="text" name="search" value="Поиск оборудован" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
+                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
                                 <input type="submit" value="" style="" >
                                 </form>
                             </div> 
@@ -95,32 +95,31 @@ require 'config.php';
                               
                                 
                             </div>
-                         <!--    <div class="clearfix"> </div>-->
-                    <!--    </div> -->
-                       <!-- <div class="col-md-3 header-right" style="background-color:aqua"> -->
-                            
-                      <!--  </div> -->
-                      <!--  <div class="clearfix" style="background-color: #E9F4C8;"> </div> -->
-                 <!--   </div>-->
-             <!--   </div> -->
-          <!--  </div> -->
-            <!--bottom-header-->
+                       
 
           
-
+<h2 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC </h2> 
 
             
             <!--about-end-->
             <!--product-starts-->
           <!--  <div class="product">  -->
           <!--      <div class="container">  -->
+                  <?php
+    if($_GET['search']) {
+                   echo '<h1 style="margin-left:10px; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h1>';}?>
+                   
                     <div class="product-top">
-                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap;">
+                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap; align-content:flex-start;">
 
 
 <?php
 if($_GET['search']) {
-echo '<h1>Поисковой запрос: '.$_GET['search'].'</h1>';
+
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
@@ -163,56 +162,14 @@ if($query->num_rows > 0){
     
     
     
-    echo '   <div class="logo" >
-                
-                    <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
-	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:25%; white-space:nowrap;">Диагностика и ремонт cерводвигателей</h2>
-                
-            </div>
     
-    
-   
-                <div class="container-upblock" style="max-width: 100%; padding:0; margin:0;">
-                    <div class="about-top grid-1">
-                        <div class="col-md-4 about-left">
-                            <figure class="effect-bubba">
-                                <img class="img-responsive" src="img/our-works/block_deimotion_6025.jpg" alt="Электронный блок" />
-                                <figcaption>
-                                    <h2>Выполнена диагностика и ремонт</h2>
-                                    <p>Гарантия 6 месяцев. Любой регион</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-md-4 about-left">
-                            <figure class="effect-bubba">
-                                <img class="img-responsive" src="img/our-works/plata_paika.jpg" alt="Пайка плат" />
-                                <figcaption>
-                                    <h4>Выполнена диагностика и ремонт</h4>
-                                    <p>Гарантия 6 месяцев. Любой регион</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-md-4 about-left">
-                            <figure class="effect-bubba">
-                                <img class="img-responsive" src="img/our-works/servoprivod-deimotion-6103.jpg" alt="Сервопривод" />
-                                <figcaption>
-                                    <h4>Выполнена диагностика и ремонт</h4>
-                                    <p>Гарантия 6 месяцев. Любой регион</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-           ';
     
     
     
     
     while($row = $query->fetch_assoc()){
 								echo '
-								<div class="col-md-4 product-left p-left" style="max-width:30%;">
+								<div class="col-md-4 product-left p-left catalog" style="max-width:30%;">
 								<div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
@@ -235,14 +192,8 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         
 								echo '
-                               
-                                <div class="logo" >
-                
-                    <h2 style="text-align:center; margin-top: 10px; color: rgba(0,0,0,0.6);
-	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin:auto; margin-left: 30%; white-space:normal;">Диагностика и ремонт '.$row["manufacter"].'</h2>
-                
-            </div>
+                               <section">
+                                
                                 
                                 
                                 
@@ -258,7 +209,8 @@ if($query->num_rows > 0){
 									
 								</div>
 							</div>
-                            <div class="catalog_cardinfo">
+                            <div style="position:relative; left:30vw; bottom:25vh;">
+                            <div class="catalog_cardinfo" >
                             
                             <ol class="rounded">
                               <li><a href="#">Диагностика от 3 дней</a></li>
@@ -267,32 +219,46 @@ if($query->num_rows > 0){
                               <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
                             </ol>
                             </div>
+                            </div>
 
 
 
-
+<div style="position:relative; left:25vw; top:-20vh;">
 		<div class="form-container transparent">
 			
-            <h3 style="margin-bottom:10px; text-align: center;">Контактная форма</h3>
-			<div class="fields">
-				<form class="form-inner ajax-contact-form" enctype="multipart/form-data">
-						<label for="catalog_form_email">Ваш почтовый адрес</label>				
-						<div class="col"><input type="email" name="email" value="E-mail" placeholder="E-mail" id="catalog_form_email"></div>
-                        <label for="catalog_form_tel">Телефон</label>
-                        <div class="col"><input type="tel" name="tel" value="Телефон" placeholder="Телефон" id="catalog_form_tel"></div>
-						<label for="catalog_form_name">Тип, модель неисправного блока</label>
-                    <input type="text" name="name" value="" placeholder="" id="catalog_form_name"> 					
-					<label style="margin-bottom:0.5em;">Описание, неисправности. Номер ошибки</label>
-					<textarea name="message" cols="40" rows="10"></textarea>
-                    <label for="catalog_form_files">Прикрепить файлы:</label>
-<input name="file" type="file" multiple="" id="catalog_form_files">
-					<input id="catalog_form_submit" type="submit" name="submit" class="submit" value="Отправить">
-                    
-				</form>
+            <h3 style="margin-bottom:10px; text-align: center; color: rgba(0,0,0,0.6);
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3);">Контактная форма</h3>
+			<div class="fields">					
+                        <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">          
+          <div class="form-group" >
+            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+          </div>
+          <div class="form-group">
+            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+            <input id="nameFF" name="nameFF" type="text">
+          </div>
+          <div class="form-group">
+            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить файл:</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn" type="submit" id="submitFF">Отправить</button>          
+        </form>
+
+                        
 			</div>
 		</div>            
-				
-                
+				</div>
+            </section>    
     ';
 } }} 
                          
@@ -327,139 +293,26 @@ if($query->num_rows > 0){
         </footer>
         </div>
             <!-- container -->
- <!--   </div> -->
-    <!-- product -->
+
     
-        <!--scripts-->
-        <script>
-            addEventListener("load", function() {
-                setTimeout(hideURLbar, 0);
-            }, false);
-
-            function hideURLbar() {
-                window.scrollTo(0, 1);
-            }
-
-        </script>
+    
+     
         
         
 
 
-        </script>
-       <!-- <script  src="js/memenu.js"></script> 
-        <script>
-            $(document).ready(function() {
-                $(".memenu").memenu();
-            });
-
-        </script> -->
+        
        
-        <!--scripts-->
-
-        <!-- yandex metrica begin -->
-        <!--    <script>
-            (function(d, w, c) {
-                (w[c] = w[c] || []).push(function() {
-                    try {
-                        w.yaCounter44532427 = new Ya.Metrika({
-                            id: 44532427,
-                            clickmap: true,
-                            trackLinks: true,
-                            accurateTrackBounce: true,
-                            webvisor: true
-                        });
-                    } catch (e) {}
-                });
-                var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function() {
-                        n.parentNode.insertBefore(s, n);
-                    };
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://mc.yandex.ru/metrika/watch.js";
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else {
-                    f();
-                }
-            })(document, window, "yandex_metrika_callbacks");
-
-        </script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript>  -->
-        <!-- yandex metrica complete -->
-        <!-- форма обратной связи jivoscript -->
-       <?php
-$VivodimJivoSiteilinet = '';
-$VivodimJivoSite = "<script type='text/javascript'>
-(function(){ var widget_id = 'smo9Ly9F6j';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>";
- 
-$chasov = date("H.m");
-$den = date("D");
- 
-if($chasov > '9.00' && $chasov < '10.55') {
-
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
-
-} elseif($chasov > '12.05' && $chasov < '17.00') {
-
-    $VivodimJivoSiteilinet = $VivodimJivoSite;
-}
- 
-
- 
- echo $VivodimJivoSiteilinet; ?>
-        <!-- форма обратной связи jivoscript  -->
+       
+    
+        
 
 
 <!-- Отрпавка данных формы обратной связи на почту начало -->
-    <script>
-
-$(function() {
-
- document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
-
-  var http = new XMLHttpRequest(), f = this;
-
-  var th = $(this);
-
-  evt.preventDefault();
-
-  http.open("POST", "contact.php", true);
-
-  http.onreadystatechange = function() {
-
-   if (http.readyState == 4 && http.status == 200) {
-
-    alert(http.responseText);
-
-    if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
-
-     th.trigger("reset");
-
-    }
-
-   }
-
-  }
-
-  http.onerror = function() {
-
-   alert('Ошибка, попробуйте еще раз');
-
-  }
-
-  http.send(new FormData(f));
-
- }, false);
-
-});
-
-</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/cat_contactform.js"></script>
 <!-- Отрпавка данных формы обратной связи на почту -->
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->   
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- <script src="js/contactform.js"> </script> -->
+
 </body>
 
 </html>
