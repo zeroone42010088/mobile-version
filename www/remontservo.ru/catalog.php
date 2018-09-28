@@ -192,13 +192,15 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         
 								echo '
-                               <section">
-                                
+                               
+                                <div class="product-row" style="	display: flex;
+
+justify-content: space-between;>
                                 
                                 
                                 
 								<div class="col-md-4 product-left p-left">
-								<div class=" simpleCart_shelfItem">
+								<div class="simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="">
 										<h3 style="word-wrap:normal; font-size:1em; color: rgba(0,0,0,0.6);
@@ -209,7 +211,7 @@ if($query->num_rows > 0){
 									
 								</div>
 							</div>
-                            <div style="position:relative; left:30vw; bottom:25vh;">
+                            
                             <div class="catalog_cardinfo" >
                             
                             <ol class="rounded">
@@ -219,11 +221,11 @@ if($query->num_rows > 0){
                               <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
                             </ol>
                             </div>
-                            </div>
+                         
 
 
 
-<div style="position:relative; left:25vw; top:-20vh;">
+
 		<div class="form-container transparent">
 			
             <h3 style="margin-bottom:10px; text-align: center; color: rgba(0,0,0,0.6);
@@ -257,8 +259,9 @@ if($query->num_rows > 0){
                         
 			</div>
 		</div>            
-				</div>
-            </section>    
+				
+                </div>
+               
     ';
 } }} 
                          

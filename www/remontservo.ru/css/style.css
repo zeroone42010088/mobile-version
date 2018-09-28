@@ -1920,7 +1920,7 @@ body {
 @media (max-width: 360px) and (orientation:portrait)   { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
     }   
-    .carousel-inner {max-width:100%; height:auto;}
+    
     
 }
 
