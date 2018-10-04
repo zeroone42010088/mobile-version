@@ -1797,6 +1797,7 @@ body {
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;margin:auto;}
     .main-motors {width: 100%;}
+    
 }
 @media (min-width:992px) and (max-width: 1199px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:992px; max-width:1199px; 
@@ -1844,7 +1845,7 @@ body {
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
     body {overflow-x:hidden;}
-    .header {position: relative; height: 350px; }
+    .header {position: relative; height: 350px; background-color: #4169E1;}    
     .h-logo {position: absolute; margin-left: 15%; margin-top: -2%; }
     .h1-main-page {position: absolute; top:30%; left: 20%; }
     .h2-main-page {position: absolute; top:45%; left: 2%; } 
@@ -1856,7 +1857,8 @@ body {
     .nav {height: 380px;
     } 
     .menu {list-style-type: none; padding-left: 0; margin-left: 0;}    
-    .menu li {display:block; width:100%;}
+   /* .menu li {display:block; width:100%;} */
+    
     .main-motors {width:100%;}  
     .how-body p {zoom:75%;}
    .how-body p img {font-size:1em;}
@@ -1888,14 +1890,13 @@ body {
     
     .nav {   
    
-     height: 390px;
+     height: 225px;
     }    
+    nomobile-menu {display: none; background-color: aqua;}
+   
     
-    .carousel  {min-height:230px;}
-    .item img  {min-height:230px;}
-    
-    .logomanufacturers ul li {height: 15px;}
-    .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:30%; margin-left:-35%;}
+    .logomanufacturers ul li {height: 50px;}
+   .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
    
     item-factory {display: none;}
     .factory {display: none;}
@@ -1919,19 +1920,24 @@ body {
 
 @media (max-width: 360px) and (orientation:portrait)   { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
-    }   
-    
-    
+    }           
 }
 
 @media (max-width: 320px) and (orientation:portrait)  { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 320px; }
     .how-body p {zoom:70%;}
     .how-body p img {font-size:0.8em;}
-    .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}
-    
+    .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}    
     
 }
+
+@media (max-width: 240px) and (orientation:portrait)  { 
+.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 240px; }
+    .how-body p {zoom:70%;}
+    .how-body p img {font-size:0.8em;}
+    .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}
+}
+
 @media (max-width:823px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 823px; 
     }
