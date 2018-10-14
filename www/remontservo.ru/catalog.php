@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'config.php';
 ?>
 <!DOCTYPE html>
@@ -34,52 +34,44 @@ require 'config.php';
                     <a href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
             </div>
         </header>
-        <nav class="nav-catalog">
-            <div class=n-menu>
-                <ul class=menu>
-                    <li><a class=a-public href=index.html>главная</a></li>
-                    <li><a class=a-public href=pages/about_us.html>о нас</a></li>
-                    <li><a class=a-public href=pages/guarantees.html>гарантии</a></li>
-                    <li><a class=a-public href=pages/our-works.html>выполненные работы</a></li>
-                    <li><a class=a-public href=pages/repairs.html>ремонт электроники</a></li>
-                    <li><a class=a-public href=pages/delivery.html>доставка в ремонт</a></li>
-                    <li><a class=a-public href=pages/departure.html>выезд специалиста</a></li>
-                    <li><a class=a-public href=pages/contacts.html>контакты</a></li>
-                <!--    <li><a class=a-public href=pages/list-publications.html>публикации</a></li> 
-                    <li><a class=a-public href=pages/sell.html>на продажу</a></li> -->
-                    <li><a class=a-public style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>каталог ремонтируемого оборудования</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav class=nav> 
+<ul class="menu topmenu" >
+<li><a  href=index.html>О компании</a></li>
+<li><a href=pages/about_us.html>Условия работ &#11167;</a>
+            <ul class="submenu">
+            <li><a href="pages/guarantees.html">Гарантия</a></li>
+            <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
+            <li><a href="pages/oplata.html">Порядок оплаты</a></li>
+            <li><a href="request.html">Заявка на ремонт</a></li>
+        </ul>
+<li><a href=pages/our-works.html>Выполненные работы</a></li>
+<li><a style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>Ремонт электроники в сервисном центре</a></li>
+<li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
+<li><a href=pages/contacts.html>Контакты</a></li>
+</ul>
+</nav>
         <main class=content style="background-color: #E9F4C8;">
 
-         <!--    <div class="header-bottom" style="background-color:white;" >-->
-             <!--   <div class="container" style="background-color:orange;">-->
-                 <!--   <div class="header-electronica" style="background-color:grey; position:relative;">-->
-                     <!--   <div class="col-md-9 header-left" style="background-color:#E9F4C8;"> -->
+         
                             <div class="top-nav" style="position:relative;">
                                 <ul class="memenu skyblue" style="margin-left:15px;">
 
-                                    <li class="grid"><a href="#">Серводвигатели</a>
-                                        <div class="mepanel">
-                                            <div class="row">
-                                                <div class="col1 me-one">
-                                                    <h4>Сервомоторы</h4>
-                                                    <ul>
-                                                        <li><a href="#">FANUC</a></li>
-                                                    </ul>
-                                                </div>
+                                    <li class="grid"><a href="?type=Серводвигатели">Серводвигатели</a>
 
-
-                                            </div>
-                                        </div>
                                     </li>
 
-                                    <li class="grid"><a href="#">Сервоприводы</a>
+                                    <li class="grid"><a href="?type=Сервоприводы">Сервоприводы</a>
+                                    
+                                    
+
                                     </li>
-                                    <li class="grid"><a href="#">Частотные преобразователи</a>
+                                    <li class="grid"><a href="?type=Частотные преобразователи">Частотные преобразователи</a>
+                                    
+                                    
                                     </li>
-                                    <li class="grid"><a href="#">Сенсорные панели оператора</a>
+                                    <li class="grid"><a href="?type=Сенсорные панели оператора">Сенсорные панели оператора</a>
+                                    
+                                    
                                     </li>
                                 </ul>
                                 
@@ -97,7 +89,45 @@ require 'config.php';
                             </div>
                        
 
-          
+
+<?
+if(empty($_GET['id'])) {
+
+	$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
+	if (strlen($type)) {
+		$type_cond = " WHERE type like '".$type."'";
+		$type_pages = "&type=".$type;
+
+	}
+
+	$diller = filter_var($_GET["diller"],  FILTER_SANITIZE_STRING);
+	if (strlen($diller)) {
+		$diller_cond = " AND diller like '".$diller."'";
+		$diller_pages = "&diller=".$diller;
+
+	}
+
+	if (strlen($type)) {
+		?><!-- выборка -->
+		<div style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span><?
+
+		$query = $db->query("SELECT diller FROM products ".$type_cond." GROUP by diller");
+		echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\"><option>Выбрать</option>";
+		while($row = $query->fetch_assoc()){
+			if ($diller == $row["diller"]) $sel = " selected";
+			else $sel = "";
+			echo "<option value='" .$row["diller"]. "'".$sel.">".$row["diller"]."</option>";
+		}
+		echo "</select>";
+	}
+
+
+}
+
+?>
+</div>
+<!-- выборка end -->
+
 <h2 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC </h2> 
@@ -154,10 +184,11 @@ $offset = ($pageno-1) * $no_of_records_per_page;
 
 
 if(empty($_GET['id'])) {
-$result = $db->query("SELECT COUNT(*) FROM products");
+
+$result = $db->query("SELECT COUNT(*) FROM products".$type_cond.$diller_cond);
 $total_rows = $result->fetch_array();
 $total_pages = ceil($total_rows[0] / $no_of_records_per_page);
-$query = $db->query("SELECT * FROM products LIMIT $offset, $no_of_records_per_page");
+$query = $db->query("SELECT * FROM products ".$type_cond.$diller_cond." LIMIT $offset, $no_of_records_per_page");
 if($query->num_rows > 0){
     
     
@@ -166,7 +197,7 @@ if($query->num_rows > 0){
     
     
     
-    
+
     while($row = $query->fetch_assoc()){
 								echo '
 								<div class="col-md-4 product-left p-left catalog" style="max-width:30%;">
@@ -275,14 +306,14 @@ justify-content: space-between;>
                     <!-- buttons -->
                     <? if(empty($_GET['id'])) { ?>
                         <ul class="pagination" style="display:flex">
-                            <li><a href="?pageno=1" class="button28">Первая</a></li>
+                            <li><a href="?pageno=1<? echo $type_pages.$diller_pages; ?>" class="button28">Первая</a></li>
                             <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-                                <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1); } ?>" class="button28">Предыдущая</a>
+                                <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1).$type_pages.$diller_pages; } ?>" class="button28">Предыдущая</a>
                             </li>
                             <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
-                                <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo " ?pageno=".($pageno + 1); } ?>" class="button28">Следующая</a>
+                                <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo " ?pageno=".($pageno + 1).$type_pages.$diller_pages; } ?>" class="button28">Следующая</a>
                             </li>
-                            <li><a href="?pageno=<?php echo $total_pages; ?>" class="button28">Последняя</a></li>
+                            <li><a href="?pageno=<?php echo $total_pages.$type_pages.$diller_pages; ?>" class="button28">Последняя</a></li>
                         </ul>
                         <? } ?>
                     <!-- buttons -->
