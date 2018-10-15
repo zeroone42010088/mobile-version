@@ -14,7 +14,7 @@ html {
     src: url('../fonts/glyphicons-halflings-regular.eot');
     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-
+/*
 .glyphicon {
     position: relative;
     top: 1px;
@@ -1075,7 +1075,7 @@ html {
 
 .glyphicon-menu-up:before {
     content: "\e260";
-}
+} */
 
 article,
 aside,
@@ -1133,15 +1133,16 @@ body {
 }
 
 .h-logo {
-    float: left;
+    float: left;   
     width: 33%;
     height: 100%;
     text-align: center;
 }
 
-.h-logo img {
+.h-logo img {    
     height: 100px;
     margin: 25px 0;
+    margin-left:-60px;
 }
 
 .h-title {
@@ -1197,19 +1198,16 @@ body {
     background: lightgray;
     background: linear-gradient(to top, lightgray, white);
     box-shadow: 0 0 5px #000;
-    z-index: 50;
+    z-index: 50;    
 }
-@media (min-width: 1300px) {
+@media (min-width: 1151px) {
   .nav {height:44px;}
 }
 
-.n-menu {
-    height: 100%;
-    width: 100%;
-}
 
 .menu {
     float: left;
+    margin-left: 50px;
 }
 
 .menu li {
@@ -1223,21 +1221,17 @@ body {
     display: block;
     text-decoration: none;
     color: black;
-    padding: 12px 15px;
+    padding: 12px 10px;    
 }
 
-.menu li a:hover {
-    text-decoration: underline;
-   /* background:#444;
-	color: #fff;
+.menu li a:hover {   
+    background: #C0C0C0;
+	color: #000;
 	transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
-	-webkit-transition-duration: 0.3s;*/
+	-webkit-transition-duration: 0.3s;
     
 }
-
-
-
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -1245,9 +1239,6 @@ body {
 .content {
     height: 100%;
 }
-
-.content-ourworks {}
-
 /* Carousel
 -----------------------------------------------------------------------------*/
 
@@ -1652,7 +1643,6 @@ body {
     left: 0;
   /*  width: 100%;  */
 }
-
 .foot {
     display: block;
     margin: 0 auto;
@@ -1665,21 +1655,18 @@ body {
     box-shadow: 0 0 5px #000;
     z-index: 10;
 }
-
 .f-logo-l img {
     position: absolute;
     top: 15px;
     left: 15%;
     height: 70px;
 }
-
 .f-logo-r img {
     position: absolute;
     top: 15px;
     right: 15%;
     height: 70px;
 }
-
 .f-title {
     text-align: center;
     padding-top: 40px;
@@ -1687,59 +1674,45 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
 }
-
 .p-public {
     text-indent: 30px;
     text-align: left;
 }
-
 .h1-public {
     font-size: 20px;
     margin: 15px;
     text-align: center;
 }
-
 .h2-public {
     font-size: 18px;
     margin: 15px;
     text-align: center;
 }
-
 .image-public {
     display: block;
     margin: auto;
 }
-
-/*.a-public {
-    font-size: 0.95em;
-} */
-
 .filling-page-public {
     ;
     margin: 0;
     padding-top: 15px;
     padding-bottom: 30%;
 }
-
 .background-public {
     background-color: #E9F4C8;
 }
-
 .article-position {
     padding-top: 20px;
     padding-bottom: 25px;
 }
-
 .ourworks_description {
     font-family: sans-serif;
     font-size: 16px;
 }
-
 .filling-page-public-our {
     ;
     margin: 0;
 }
-
 .p-sell {
     text-align:center;    
 }
@@ -1747,7 +1720,6 @@ body {
     text-align:center;
     margin-bottom: 10px;
 }
-
 .img-sell {
 	margin:30px;
 	cursor:zoom-in;
@@ -1755,7 +1727,6 @@ body {
     max-height: 225px;
     margin: 5px 15px 5px;    
 }
-
 .popup {
 	position: absolute;
 	height:100%;
@@ -1765,7 +1736,6 @@ body {
 	display:none;
 	text-align:center;    
 }
-
 .popup_bg {
 	background:rgba(0,0,0,0.3);
 	position:fixed;
@@ -1777,8 +1747,6 @@ body {
 	width: auto;
   height: auto;   
 }
-
-
 .popup_img {
 	position: fixed;
 	z-index:2;
@@ -1788,31 +1756,113 @@ body {
     z-index: 51;
 	max-height: 90%;
 }
-
 .popup_img {
   pointer-events: none;    
 }
+
+.main-motors {width: 100%;}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.submenu {
+  background: #F8F8FF;
+  border: 2px solid #C0C0C0;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 155px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+    z-index: 55;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+	transform: perspective(600px) rotateX(0deg);
+    z-index: 55;    
+}
+.submenu li {
+    display: block;
+    float:none;
+    border-bottom:1px solid #C0C0C0;
+    z-index: 55;
+}
+.header__buttonCall {
+    background-color: rgba(50, 76, 151, 0.5);    
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:75px;
+    height: 100px;   
+    margin-top:-105px;
+    float: right;
+    margin-right: 5px;
+    padding: 0;
+}
+.header__buttonCall:hover {
+    transform: scale(1.1);
+    background-color: rgba(50, 106, 151, 0.6);
+    transition: 0.15s;
+}
+.header__buttonCall__text {
+    max-width: 100%;
+    word-break: break-all;
+}
+.nav__drop__icon::after {
+    content: url(https://www.glebwebsite.ru/img/drop-down-arrow.svg); 
+    width:15px;
+    height: 15px;
+}
+.index__carousel__text, .index__carousel__textOneString, .index__carousel__textRasxodomer {
+    position: absolute; top:43%; left:15%; color:white;  font-size: 1.7em; font-weight: bold; max-width:30%; font-family:sans-serif;
+}
+.index__carousel__textUp {
+    position: absolute; top:40%; left:15%; color:white;  font-size: 1.7em; font-weight: bold; max-width:30%; font-family:sans-serif;
+}
+
 @media (max-width:1366px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;margin:auto;}
-    .main-motors {width: 100%;}
-    
+    .main-motors {width: 100%;}    
 }
+
+@media (max-width:1250px) {
+  .index__carousel__text {top:33%;}
+  .index__carousel__textUp {top:30%;}  
+  .index__carousel__textOneString {top:41%;}
+  .index__carousel__textRasxodomer {top:15%;}
+}
+
 @media (min-width:992px) and (max-width: 1199px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:992px; max-width:1199px; 
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;}
 }
-
 @media (min-width:769px) and (max-width: 979px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;}
     
 }
-
-
 @media (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
@@ -1820,28 +1870,19 @@ body {
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
     .map {display: block; margin-left: -40%; width: 100%;height: 60%;}
-    .contacts {display:block;width: 100%;word-break; margin-left:3%;padding: 0;}
+    .contacts {display:block;width: 100%; margin-left:3%;padding: 0;}
     .map {margin: auto;margin-left:2%;; margin-bottom: 15%; max-width:95%;}    
-    
 }
-
 @media (min-width:765px) and (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;}
     .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
-    .f-logo-r img {position: absolute; right: 13%; top:12%;}
-    
-    
+    .f-logo-r img {position: absolute; right: 13%; top:12%;}    
     .badge {margin: 5px;}
     .about-us-text {word-break: normal;padding-left: 0px;overflow:hidden;}
-    .filling-page-whyus {width: 100%; margin:0; padding:0; }
-    
-    
+    .filling-page-whyus {width: 100%; margin:0; padding:0; }    
 }
-
-
-
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
     body {overflow-x:hidden;}
@@ -1856,48 +1897,35 @@ body {
     .main-motors {width:100%;}
     .nav {height: 380px;
     } 
-    .menu {list-style-type: none; padding-left: 0; margin-left: 0;}    
-   /* .menu li {display:block; width:100%;} */
-    
+    .menu {list-style-type: none; padding-left: 0; margin-left: 0;}     
     .main-motors {width:100%;}  
     .how-body p {zoom:75%;}
    .how-body p img {font-size:1em;}
-    .logomanufacturers ul li {height: 15px;}
-    
+    .logomanufacturers ul li {height: 15px;}    
     .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 20px; margin-top: 2%;}
     .f-logo-r img {display: none;}
-    .f-logo-l img {position: absolute; left: 5%; top:12%;}
-    
+    .f-logo-l img {position: absolute; left: 5%; top:12%;}    
 }
 @media (max-width:414px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:413px;}
    body {overflow-x:hidden;}
     .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
     .map {margin: auto;}
-}    
-
+}
 @media (max-width:411px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 411px;}
    .h1-main-page {position: absolute; top:29%;  }
-    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
-    
+    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}    
 }
-
-
 @media (max-width: 375px)  { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 375px; 
-    }
-    
+    }    
     .nav {   
-   
      height: 225px;
     }    
-    nomobile-menu {display: none; background-color: aqua;}
-   
-    
+    nomobile-menu {display: none; background-color: aqua;}    
     .logomanufacturers ul li {height: 50px;}
-   .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}
-   
+   .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}   
     item-factory {display: none;}
     .factory {display: none;}
     .how-body p {zoom:75%;}
@@ -1915,14 +1943,10 @@ body {
     .badge {zoom:70%;}
     .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
 }
-
-
-
 @media (max-width: 360px) and (orientation:portrait)   { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
     }           
 }
-
 @media (max-width: 320px) and (orientation:portrait)  { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 320px; }
     .how-body p {zoom:70%;}
@@ -1930,29 +1954,25 @@ body {
     .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}    
     
 }
-
 @media (max-width: 240px) and (orientation:portrait)  { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 240px; }
     .how-body p {zoom:70%;}
     .how-body p img {font-size:0.8em;}
     .map {margin: auto;margin-left:2%;; margin-bottom: 30%; max-width:95%;}
 }
-
 @media (max-width:823px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 823px; 
     }
     .f-logo-r img {position: absolute; right: 5%; top:12%;}
     .f-logo-l img {position: absolute; left: 5%; top:12%;}
     .map {display: block; margin-left: -40%; width: 100%;height: 60%;}
-    .contacts {display:block;width: 100%;word-break; margin-left:3%;padding: 0;}
+    .contacts {display:block;width: 100%; margin-left:3%;padding: 0;}
     .map {margin-left:2%;; margin-bottom: 15%; max-width:95%;}
 }
 @media (max-width:800px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 800px; 
     }
-  }  
-
-
+  }
 @media (max-width:769px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 769px; 
     }
@@ -1964,7 +1984,6 @@ body {
     .mail {position: absolute; top:85%; left: 17%; }
     
 }
-
 @media (max-width:736px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 736px; 
     }
@@ -1974,7 +1993,6 @@ body {
     .phone-second {position: absolute; top:45%; right: -45%; }
     .mail {position: absolute; top:65%; right: -45%; }
     }
-
 @media (max-width:667px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 667px; 
     }
@@ -1989,8 +2007,6 @@ body {
     .f-title {text-align: left; max-width: 90%; margin-left: 20%; padding-top: 6%;}
     
 }
-    
-
 @media (max-width:640px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 640px; 
     }
@@ -2031,7 +2047,6 @@ body {
     .mail {position: absolute; top:85%; left: 17%; }
     
 }
-
 @media (max-width:320px) and (orientation:landscape) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu  { max-width: 320px; 
     }
@@ -2041,12 +2056,7 @@ body {
     .phone-main {position: absolute; top:65%; left: 17%;} 
     .phone-second {position: absolute; top:75%; left: 17%; }
     .mail {position: absolute; top:85%; left: 17%; }
-    
-
- .main-motors {width: 100%;}
-
 }
     
-  
 
-
+ 
