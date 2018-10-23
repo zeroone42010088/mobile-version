@@ -1806,10 +1806,9 @@ nav ul {
     border-bottom:1px solid #C0C0C0;
     z-index: 55;
 }
-.header__buttonCall, .content__sellForm__button {   
+.header__buttonCall, .content__sellForm__button, .carousel-inner__item__buttonDetails__button {   
     box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .0.5em .0.5em .1em #800;
-    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);    
-    padding: 15px 32px;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);   
     text-align: center;
     text-decoration: none;
     display: inline-block;   
@@ -1820,26 +1819,30 @@ nav ul {
     border-radius: 5px;
 }
 .header__buttonCall {
-     width:130px;
-    height: 100px;   
-    margin-top:-105px;
+    width:130px;
+    height: 70px;   
+    margin-top:-95px;
     float: right;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 .content__sellForm__button {    
     width:150px;
-    height: 70px;     
-    margin-left: 45%;
-    margin-top: 5px;
+    height: 50px;     
+    margin-left: 30%; 
+    position: absolute;
+    margin-left: -16%;
+    margin-top: 0;
 }
-.header__buttonCall:hover, .content__sellForm__button:hover {  
+.header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover  {  
   transform: scale(1.1);
   transition: 0.15s;  
+  cursor:pointer;
+  font-weight: bold;
 }
-.header__buttonCall:active {
+.header__buttonCall:active, .content__sellForm__button:active, .carousel-inner__item__buttonDetails__button:active {
   padding: calc(.25em + 1px) .5em calc(.25em - 1px);
   border-color: rgba(177,159,0,1);
-  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);  
 }
 
 .header__buttonCall__text {
@@ -1850,6 +1853,14 @@ nav ul {
     color: #fff;
     text-shadow: 0 -1px 1px #777;
     outline: none;
+}
+
+.carousel-inner__item__buttonDetails__button {
+    height: 70px;
+    width: 120px;
+    color: #fff;
+    text-shadow: 0 -1px 1px #777;
+    font-weight: 700;
 }
 .nav__drop__iconText::after {
 /*    content: url(https://www.glebwebsite.ru/img/drop-down-arrow.svg); */
@@ -1868,10 +1879,9 @@ nav ul {
 .index__carousel__textRasxodomer {top:30%;}
 .index__carousel__textRasxodomerCor {top:15%; font-size: 1.6em;}
 
-.h2-main-page {
-    font-size:0.3em;
+.carousel-inner__item__buttonDetails {
+   position: absolute;  left:15%; color:white;  font-size: 1em; max-width:30%; text-decoration: none; top:15%; 
 }
-
 
 @media (max-width:1366px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
@@ -1885,19 +1895,31 @@ nav ul {
   .index__carousel__textUp {top:30%;}  
   .index__carousel__textOneString {top:41%;}
   .index__carousel__textRasxodomer {top:15%;}
- .index__carousel__textRasxodomerCor {top:5%;}
-    .h2-main-page {font-size:0.15em; color: greenyellow;}
+ .index__carousel__textRasxodomerCor {top:5%;}    
+    .header__fontSize {font-size:0.8em; /*color: yellow;*/}
 }
 
 @media (min-width:992px) and (max-width: 1199px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:992px; max-width:1199px; 
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;}
+    .header__fontSize {font-size:0.7em; /*color: aqua;*/}
+     
 }
+
+@media (max-width:1060px) {
+    .header__fontSize__part2 {display: none;}
+}
+
+@media (max-width:1025px) {
+    .header__fontSize__part1 {display: none;}
+}
+
 @media (min-width:769px) and (max-width: 979px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;}    
+    body {overflow-x:hidden;} 
+    
 }
 @media (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
@@ -1907,7 +1929,8 @@ nav ul {
     .f-logo-r img {position: absolute; right: 13%; top:12%;}
     .map {display: block; margin-left: -40%; width: 100%;height: 60%;}
     .contacts {display:block;width: 100%; margin-left:3%;padding: 0;}
-    .map {margin: auto;margin-left:2%;; margin-bottom: 15%; max-width:95%;}    
+    .map {margin: auto;margin-left:2%;; margin-bottom: 15%; max-width:95%;} 
+    
 }
 @media (min-width:765px) and (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
@@ -1922,6 +1945,7 @@ nav ul {
 @media (max-width: 979px) {
     .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor {font-size: 1em;}
     .card-img-top {max-height:250px;}
+    .header__fontSize__part2 {display: none;}
 }
     
 }
@@ -1965,7 +1989,7 @@ nav ul {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 375px; 
     }    
     .nav {height: 225px;}    
-    nomobile-menu {display: none; background-color: aqua;}    
+    nomobile-menu {display: none; /*background-color: aqua;*/}    
     .logomanufacturers ul li {height: 50px;}
    .logomanufacturers ul li img:nth-child(odd) {max-height: 5px; display:inline; width:160%; zoom:670%; margin-left:-35%;}   
     item-factory {display: none;}
@@ -2116,7 +2140,7 @@ nav ul {
   background-clip: border-box;
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  max-width: calc(25% );
+  max-width: 25%;
     
 }
 
@@ -2155,7 +2179,8 @@ nav ul {
 .card-title {
   margin-bottom: 0.75rem;
   font-size: 1em;
-    text-align:center;
+  text-align:center;
+  font-weight: bold;
     
 }
 
@@ -2166,7 +2191,8 @@ nav ul {
 
 .card-text {
   margin-bottom: 0;
-  text-align:center;    
+  text-align:center; 
+    list-style: none; 
 }
 
 .card-text:last-child {
@@ -2392,8 +2418,91 @@ nav ul {
   }
 }
 
+/* index__ center searchForm begin*/
+.index__content__centerButtonAndSearch {
+    margin-top: -11px;
+/*    position: relative;  */
+     margin-left: 45%;
+     margin-top: 20px;
+}
 
+.index__content__searchForm {      
+ position: relative;
+    width: 300px;
+    display: inline-block;   
+}
+.index__content__search {    
+    display: inline-block;
+    background: #A3D0C3;
+    box-sizing: border-box;       
+    margin-left: 20px;    
+}
+.index__content__search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #3A63CE;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;   
+}
+.index__content__searchForm__button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #3A63CE;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 100%;
+  margin-right: -5%;
+  display: block;
+}
+.index__content__searchForm__button:before {
+  position: absolute;
+  content: url(../img/search-white.png);   
+  color: #F9F0DA;  
+  margin-left: 27%;
+  top:14px;  
+}
+/* index__searchForm end  */
 
+/* Fixed menu */
+.nav--clone {
 
+  /* Required styles */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 
- 
+  /* Additional styles */
+  background: #c95a5d;
+
+  /* Translate -100% to move off screen */
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+
+  /* Animations */
+  -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+
+}
+.index_detailsCards_box {     
+    width: 140px;
+    margin: 10px auto;
+    
+}
+.index__content__buttonDetails {
+   /* background-color:aqua; */
+    height:60px;
+    background: linear-gradient(to top, #3E66DA, #3760C7);
+    border-radius: 10px;
+    color: #fff;
+}
+
