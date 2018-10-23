@@ -1202,6 +1202,7 @@ body {
     box-shadow: 0 0 5px #000;
     z-index: 50;    
 }
+/* .nav {z-index: 10;} */
 @media (min-width: 1151px) {
   .nav {height:44px;}
   .nav {max-height:85px;}  
@@ -1798,13 +1799,13 @@ nav ul {
   visibility: visible;
   opacity: 1;
   transform: perspective(600px) rotateX(0deg);
-  z-index: 55;    
+  z-index: 57;    
 }
 .submenu li {
     display: block;
     float:none;
     border-bottom:1px solid #C0C0C0;
-    z-index: 55;
+    z-index: 56;
 }
 .header__buttonCall, .content__sellForm__button, .carousel-inner__item__buttonDetails__button {   
     box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .0.5em .0.5em .1em #800;
@@ -1833,11 +1834,10 @@ nav ul {
     margin-left: -16%;
     margin-top: 0;
 }
-.header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover  {  
+.header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover, {  
   transform: scale(1.1);
   transition: 0.15s;  
   cursor:pointer;
-  font-weight: bold;
 }
 .header__buttonCall:active, .content__sellForm__button:active, .carousel-inner__item__buttonDetails__button:active {
   padding: calc(.25em + 1px) .5em calc(.25em - 1px);
@@ -1863,7 +1863,6 @@ nav ul {
     font-weight: 700;
 }
 .nav__drop__iconText::after {
-/*    content: url(https://www.glebwebsite.ru/img/drop-down-arrow.svg); */
     width:15px;
     height: 15px;    
 }
@@ -1878,6 +1877,16 @@ nav ul {
 .index__carousel__textUp {top:36%;}
 .index__carousel__textRasxodomer {top:30%;}
 .index__carousel__textRasxodomerCor {top:15%; font-size: 1.6em;}
+
+.index__carousel__text__datails {
+    text-decoration: none;
+    font-size:0.7em;
+    color:#fff;
+}
+
+.index_detailsCards_box:hover {transform: scale(1.1);
+  transition: 0.15s;  
+  cursor:pointer;}
 
 .carousel-inner__item__buttonDetails {
    position: absolute;  left:15%; color:white;  font-size: 1em; max-width:30%; text-decoration: none; top:15%; 
