@@ -1871,7 +1871,7 @@ nav ul {
 .nav__drop__icon {
     width:10px; height:10px; margin-left:5px;
 }
-.index__carousel__text, .index__carousel__textOneString, .index__carousel__textUp, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor {
+.index__carousel__text, .index__carousel__textOneString, .index__carousel__textUp, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .index__carousel__textRasxodomerVp {
     position: absolute; left:20%; color:white;  font-size: 1.7em; font-weight: bold; max-width:30%; font-family:sans-serif;
 }
 
@@ -1879,6 +1879,8 @@ nav ul {
 .index__carousel__textUp {top:25%;}
 .index__carousel__textRasxodomer {top:20%; font-size: 1.5em;}
 .index__carousel__textRasxodomerCor {top:10%; font-size: 1.3em;}
+.index__carousel__textRasxodomerVp {top:7%; font-size: 1.2em;}
+
 
 .index__carousel__text__datails {
     text-decoration: none;
@@ -1906,7 +1908,7 @@ nav ul {
   .index__carousel__textUp {top:25%;}  
   .index__carousel__textOneString {top:40%;}
   .index__carousel__textRasxodomer {top:15%;}
- .index__carousel__textRasxodomerCor {top:5%;}    
+ .index__carousel__textRasxodomerCor, .index__carousel__textRasxodomerVp {top:5%;}    
     .header__fontSize {font-size:0.8em; /*color: yellow;*/}
 }
 
@@ -1954,7 +1956,7 @@ nav ul {
     .filling-page-whyus {width: 100%; margin:0; padding:0; }    
 }
 @media (max-width: 979px) {
-    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor {font-size: 1em;}
+    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .index__carousel__textRasxodomerVp {font-size: 1em;}
     .card-img-top {max-height:250px;}
     .header__fontSize__part2 {display: none;}
 }
@@ -1983,7 +1985,7 @@ nav ul {
     .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 20px; margin-top: 2%;}
     .f-logo-r img {display: none;}
     .f-logo-l img {position: absolute; left: 5%; top:12%;} 
-    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators {display:none;}    
+    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__textRasxodomerVp {display:none;}    
 }
 @media (max-width:414px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:413px;}
@@ -2184,15 +2186,14 @@ nav ul {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 0.7rem 1.25rem 0.7rem;
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+/*  margin-bottom: 0.75rem;*/
   font-size: 1em;
   text-align:center;
-  font-weight: bold;
-    
+  font-weight: bold;    
 }
 
 /*.card-subtitle {
@@ -2203,7 +2204,7 @@ nav ul {
 .card-text {
   margin-bottom: 0;
   text-align:center; 
-    list-style: none; 
+  list-style: none; 
 }
 
 .card-text:last-child {
@@ -2246,7 +2247,7 @@ nav ul {
 .card-header-tabs {
   margin-right: -0.625rem; 
   margin-bottom: -0.75rem;
-   margin-left: -0.625rem; 
+  margin-left: -0.625rem; 
   border-bottom: 0;
 }
 
@@ -2266,7 +2267,7 @@ nav ul {
 
 .card-img {
   width: 100%;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(0.25rem - 1px);  
 }
 
 .card-img-top {
@@ -2274,7 +2275,7 @@ nav ul {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   height:auto;
-/*   margin-top:10px; */
+/*   margin-top:-20px; */
 }
 .card-img-top:hover {
  transform: scale(1.2);
