@@ -88,7 +88,7 @@
                         <li>- предоставление гарантии на ремонт электронного устройства 6 месяцев.</li>
                     </ul> 
                   
-                 <form action="our-works.html" style="text-decoration: none; margin-left: 50%; display: block; margin-top: 40px; "><button type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
+                 <form action="our-works.html" class="pages__linkOurWorks" style="text-decoration: none; margin-left: 50%; display: block; margin-top: 40px; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
                
               
              <!--      <a href="our-works.html" style="text-decoration: none; margin-left: 50%; display: block; color:#000; margin-top: 40px;"><b>Cписок всех выполненных работ (Посмотреть...)</b></a> -->
@@ -221,8 +221,9 @@
 
         });
     </script>
-         <!-- slider end -->
-         
+         <!-- slider end -->         
+           
+           
             <!--chat begin-->
     <script>
         (function() {
@@ -250,7 +251,21 @@
         })();
 
     </script>
-    <!--chat end-->  
+    <!--chat end--> 
+     
+    <!--form to take call from client start-->
+    <script src="../js/jquery.jbcallme.js"></script>
+    <!--form to take call from client end-->
+    
+     <!--form to take call from client begin-->
+    <script>
+        $(function() {
+            $('.callme_button').jbcallme();
+        });
+
+    </script>
+    <!--form to take call from client end-->
+    
 
   
 </body>
