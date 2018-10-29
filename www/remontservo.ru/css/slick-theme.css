@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -41,6 +41,18 @@
     outline: none;
     background: transparent;
 }
+.slick-slide img {
+display: block;
+margin: 7px;
+}
+
+.slick-prev {
+left: -35px;
+}
+.slick-next {
+right: -35px;
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -67,11 +79,12 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 35px;
     line-height: 1;
+    
 
     opacity: .75;
-    color: white;
+    color: #000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,7 +101,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '←';    
 }
 [dir='rtl'] .slick-prev:before
 {
