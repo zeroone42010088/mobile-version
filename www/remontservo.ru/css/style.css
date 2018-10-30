@@ -1836,6 +1836,26 @@ nav ul {
     position: absolute;    
     margin-top: -57px;
 }
+.repair_btn_block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.repair_btn_block > div {
+    width: 50%;
+}
+.repair_sellForm{
+    max-width: 350px;
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+}
+.list_works{
+    padding-left: 6%;
+}
 .header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover, {  
   transform: scale(1.1);
   transition: 0.15s;  
@@ -1895,6 +1915,28 @@ nav ul {
 .carousel-inner__item__buttonDetails {
    position: absolute;  left:15%; color:white;  font-size: 1em; max-width:30%; text-decoration: none; top:15%; 
 }
+.slick-slide img {
+    margin: 7px auto!important;
+}
+.repair_block {
+    margin-bottom: 120px;
+}
+.repair_block h2 {
+    text-align: right;
+}
+.flex_top_row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex_top_row > div {
+    width: 50%;
+}
+
+
 
 @media (max-width:1366px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
@@ -2459,7 +2501,13 @@ nav ul {
     position: relative; width: 300px; margin-left: -1rem; top: -44rem;
 }
 
-
+.repair_search {
+    margin-left: auto;
+    top: auto;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 25px;
+}
 
 .index__content__search input, .pages__content__search input {
   width: 100%;
