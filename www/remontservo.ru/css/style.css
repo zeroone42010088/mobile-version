@@ -1832,7 +1832,7 @@ nav ul {
 .content__sellForm__button {    
     width:150px;
     height: 50px;     
-    margin-left: 51%; 
+/*    margin-left: 51%; */
     position: absolute;    
     margin-top: -57px;
 }
@@ -1851,7 +1851,7 @@ nav ul {
     max-width: 350px;
     width: 100%;
     position: static;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 .list_works{
     padding-left: 6%;
@@ -2589,3 +2589,15 @@ nav ul {
 .pages__linkOurWorks__button:hover {
     cursor: pointer;
 }
+
+.pages_cards_li {
+    list-style-position: outside;
+    list-style-type: "\2714";
+}
+
+.pages_cards_liLetterA {list-style-type: "а)";}
+.pages_cards_liLetterB {list-style-type: "б)";}
+.pages_cards_liLetterV {list-style-type: "в)";}
+.pages_cards_liLetterG {list-style-type: "г)";}
+.pages_cards_liLetterD {list-style-type: "д)";}
+.pages_cards_liLetterE {list-style-type: "е)";}

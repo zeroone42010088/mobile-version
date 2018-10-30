@@ -48,9 +48,11 @@ margin: 7px;
 
 .slick-prev {
 left: -35px;
+    z-index: 10;
 }
 .slick-next {
 right: -35px;
+    z-index: 10;
 }
 
 .slick-prev:hover,
