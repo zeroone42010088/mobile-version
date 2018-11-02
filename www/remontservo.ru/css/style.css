@@ -1829,6 +1829,9 @@ nav ul {
     float: right;
     margin-right: 15px;
 }
+.header__buttonCall:hover, .content__sellForm__button:hover {
+    cursor: pointer;
+}
 .content__sellForm__button {    
     width:150px;
     height: 50px;     
