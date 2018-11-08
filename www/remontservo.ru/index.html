@@ -11,6 +11,23 @@
     <link href=css/style.css rel=stylesheet>
     <link href="css/jquery.jbcallme.css" rel=stylesheet>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    
+    <!-- Begin Talk-Me {literal} -->
+<script type='text/javascript'>
+	(function(d, w, m) {
+		window.supportAPIMethod = m;
+		var s = d.createElement('script');
+		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+		s.async = true;
+		var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+		var sc = d.getElementsByTagName('script')[0];
+		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+		if (sc) sc.parentNode.insertBefore(s, sc); 
+		else d.documentElement.firstChild.appendChild(s);
+	})(document, window, 'TalkMe');
+</script>
+    <!-- End Talk-Me {literal} -->
 </head>
 
 <body>
@@ -914,6 +931,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <!--form to take call from client start-->
     <script src="js/jquery.jbcallme.js"></script>
+    <script src="js/cat_contactform.js"></script>
     <!--form to take call from client end-->
     <!--for slider begin-->
     <script src=js/bootstrap.min.js></script>
@@ -937,7 +955,7 @@
     <!--<script>(function(g,a,i){(a[i]=a[i]||[]).push(function(){try{a.yaCounter44532427=new Ya.Metrika({id:44532427,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})}catch(c){}});var h=g.getElementsByTagName("script")[0],b=g.createElement("script"),e=function(){h.parentNode.insertBefore(b,h)};b.type="text/javascript";b.async=true;b.src="https://mc.yandex.ru/metrika/watch.js";if(a.opera=="[object Opera]"){g.addEventListener("DOMContentLoaded",e,false)}else{e()}})(document,window,"yandex_metrika_callbacks");</script> <noscript><div><img src=../https@mc.yandex.ru/watch/44532427 style=position:absolute;left:-9999px alt /></div></noscript> -->
 
     <!--chat begin-->
-    <script>
+ <!--   <script>
         (function() {
             var h = "ON5DROotFX";
             var g = document;
@@ -962,13 +980,19 @@
             }
         })();
 
-    </script>
+    </script> -->
     <!--chat end-->
 
     <!--form to take call from client begin-->
     <script>
         $(function() {
-            $('.callme_button').jbcallme();
+            //$('.callme_button').jbcallme();
+            $('.callme_button').on("click", function() {
+                $(".form-main").css({"display": "flex"})
+            })
+            $('.form-main .close').on("click", function() {
+                $(".form-main").hide();
+            })
         });
 
     </script>
@@ -1013,6 +1037,35 @@
 
     </script>
     <!-- more details end -->
+
+<!-- форма всплывающего окна формы обратной связи -->
+    <div class="fields form-main">                    
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+          <div class="form-group">
+            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+          </div>
+          <div class="form-group">
+            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+            <input id="nameFF" name="nameFF" type="text">
+          </div>
+          <div class="form-group">
+            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить файл:</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn" type="submit" id="submitFF">Отправить</button> 
+          <span class="close">&#215;</span>         
+        </form>            
+    </div>
+<!-- форма всплывающего окна формы обратной связи -->
 </body>
 
 </html>

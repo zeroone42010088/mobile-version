@@ -52,7 +52,7 @@
         </nav>
         <!-- .wrapper -->
         <main class="content" style="flex: 1;">
-            <div class="filling-page" style="height:100%; padding-top:10px; position: relative;">
+            <div class="filling-page__indexCards" style="height:100%; padding-top:10px; position: relative;">
                 
                     
                <!--     <img src="../img/index-pictures/picture9.jpg" style="position: absolute; left:2%;" alt="Ремонтируем сервоприводы">  -->
@@ -60,10 +60,10 @@
                
                 
                 
-                <section class="repair_block" style="outline: #DCDCDC solid 3px;">
+                <section class="repair_block" style="outline: #DCDCDC solid 3px; width:100%; margin-right: -60px;">
                     <h1 style="margin-bottom: 10px; text-align: center;">Ремонт серводвигателей, ремонт сервомоторов</h1>
                     <div class="flex_top_row">
-                        <div class="center slider" style="margin-left: -8%; margin-top: 40px;">
+                        <div class="center slider" style="margin-left: 30px; margin-top: 10px;">
                             <section class="regular slider"> 
                                <div>
                                     <img src="../img/servodrive-slider-pictures/berger_6154.jpg">
@@ -100,12 +100,13 @@
                         </div> 
                         <!--slider-->
                         <div class="right_block">
-                            <ul style="margin-bottom: 20px; padding-left: 10%; width: 600px;">                        
-                                <li style="text-decoration: underline;">Разновидности серводвигателей для ремонта:</li>               <li class="pages_cards_liLetterA">ремонт Servomotor;</li>
-                                <li class="pages_cards_liLetterB">ремонт Servo motor;</li>
-                                <li class="pages_cards_liLetterV">ремонт серводвигателя переменного тока;</li>
-                                <li class="pages_cards_liLetterG">ремонт серводвигателя постоянного тока;</li>
-                                <li class="pages_cards_liLetterD">ремонт шагового двигателя.</li>
+                            <ol type="буквы" style="padding-left: 10%; width: 600px;">                        
+                                <li style="text-decoration: underline;">Разновидности серводвигателей для ремонта:</li>
+                                <li class="pages_cards_liLetterA">ремонт Servomotor;</li>
+                                <li class="pages_cards_liLetterB"> ремонт Servo motor;</li>
+                                <li class="pages_cards_liLetterV"> ремонт серводвигателя переменного тока;</li>
+                                <li class="pages_cards_liLetterG"> ремонт серводвигателя постоянного тока;</li>
+                                <li class="pages_cards_liLetterD"> ремонт шагового двигателя.</li>
                                 <li style="text-decoration: underline;">&#160;Услуги в сервисном центре:</li>
                                 <li class="pages_cards_li">диагностика серводвигателя;</li>
                                 <li class="pages_cards_li">настройка энкодера;</li>
@@ -127,17 +128,17 @@
                             </ul> 
                         </div>
                     </div>
-                <div class="repair_btn_block">
+                <div class="repair_btn_block" style="margin-top: 25px;">
                     <!--request begin -->
                     <div>
-                        <button class="callme_button content__sellForm__button repair_sellForm" style="margin-left:0;  display: block;"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
+                        <button class="callme_button content__sellForm__button repair_sellForm" style="margin-left:25%;  display: block;"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
                     </div>
                     <!--reauest begin -->
                     <div class="list_works">
-                        <form action="our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff; margin-left:-100px;;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
+                        <form action="our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff; margin-left:15px;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
                         
                         <!--searsh start -->
-                        <div class="pages__content__search repair_search" style="margin-left: -100px;">
+                        <div class="pages__content__search repair_search" style="margin-left: 15px;">
                             <form class="pages__content__searchForm">
                                 <input type="text" placeholder="Найти оборудование">
                                 <!--  <button type="submit">--><a class="pages__content__searchForm__button" href="our-works.html"></a>
@@ -213,6 +214,9 @@
      <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="../js/jquery-2.2.0.min.js"></script> 
     <script src="../js/slick.js"></script>
+    <script src="../js/cat_contactform.js"></script>
+    <!--form to take call from client end-->
+  <!--  <script src="../js/letters.js"></script> --> <!--for ol letters -->
    <!-- slider begin -->
         <script>
         $(document).on('ready', function() {
@@ -268,12 +272,19 @@
     
     <!--form to take call from client start-->
     <script src="../js/jquery.jbcallme.js"></script>
+    <script src="js/cat_contactform.js"></script>
     <!--form to take call from client end-->
     
      <!--form to take call from client begin-->
     <script>
         $(function() {
-            $('.callme_button').jbcallme();
+            //$('.callme_button').jbcallme();
+            $('.callme_button').on("click", function() {
+                $(".form-main").css({"display": "flex"})
+            })
+            $('.form-main .close').on("click", function() {
+                $(".form-main").hide();
+            })
         });
 
     </script>
@@ -284,6 +295,35 @@
 <!--	<script src="../js/cat_contactform.js"></script> -->
 <!-- Отправка данных формы обратной связи на почту -->
 
-  
+    <!-- форма всплывающего окна формы обратной связи -->
+      <div class="fields form-main">                    
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+          <div class="form-group">
+            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+          </div>
+          <div class="form-group">
+            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+            <input id="nameFF" name="nameFF" type="text">
+          </div>
+          <div class="form-group">
+            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить файл:</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn" type="submit" id="submitFF">Отправить</button> 
+          <span class="close">&#215;</span>         
+        </form>
+<!-- форма всплывающего окна формы обратной связи -->
+                        
+    </div>
+    
 </body>
 </html>

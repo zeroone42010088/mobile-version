@@ -1,5 +1,7 @@
 ﻿$(function() {
+  console.log(77)
   document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
+    console.log(66)
     var http = new XMLHttpRequest(), f = this;
     var th = $(this);
     evt.preventDefault();
