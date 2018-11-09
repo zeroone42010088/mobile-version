@@ -1634,7 +1634,8 @@ body {
 
 .contacts {
     float: center;
-    width: 40%;   
+    width: 40%; 
+    margin-left: 125px;
 }
 
 .phone-main, .phone-second, .mail {
@@ -1645,6 +1646,8 @@ body {
     float: left;
     height: 200px;
     width: 40%;
+    margin-top: -350px;
+    margin-left: 625px;
 }
 
 /*---------------------------------*/
@@ -2773,6 +2776,10 @@ content: '✓';
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
+}
+.form-button:hover {
+  transform: scale(1.05);
+  transition: 0.15s;  
 }
 /*mail form */
 
