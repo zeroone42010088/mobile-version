@@ -5,39 +5,55 @@ require 'config.php';
 <html lang=ru >
 <head>
     <meta charset="utf-8" />
-    <title>Ремонтируемое оборудование</title>
+    <title>Каталог ремонтируемого оборудования и электроники</title>
     <link rel="shortcut icon" type=image/png href=img/logo2.png>
-    <meta name=keywords content="FANUC DELTA ABB OMRON" />
-    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка" />
+    <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT"/>
+    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. Даже устаревшее оборудование. Гарантия" />
+    <link href=css/normalize.css rel=stylesheet>
     <link href=css/shop.css rel=stylesheet>
     <link href=css/style.css rel=stylesheet>
-    
+    <link href="css/jquery.jbcallme.css" rel=stylesheet>
+    <!-- Begin Talk-Me {literal} -->
+<script>
+	(function(d, w, m) {
+		window.supportAPIMethod = m;
+		var s = d.createElement('script');
+		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+		s.async = true;
+		var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+		var sc = d.getElementsByTagName('script')[0];
+		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+		if (sc) sc.parentNode.insertBefore(s, sc); 
+		else d.documentElement.firstChild.appendChild(s);
+	})(document, window, 'TalkMe');
+</script>
+    <!-- End Talk-Me {literal} -->
 </head>
 
-<body style="
-    max-width: 1366px;
-    margin: auto; min-height:100%;">
-    <div class=container-catalog style=" min-width: 1000px;
-    max-width: 1366px;
-    margin: 0 auto;" >
+<body style="display: flex;
+  min-height: 100vh;
+  flex-direction: column;">
+    <div class=container-catalog>
         <header class="header">
-            <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
+              <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
             </div>
             <div class=h-title>
-                <h2 style="margin:1em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОПРИВОДОВ И СЕРВОДВИГАТЕЛЕЙ</h2>
-                <h2>
-                    <!--Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов-->Москва Санкт-Петербург СПБ Екатеринбург Самара Казань Челябинск Томск и любой регион <br> Страны СНГ и ближнее зарубежье</h2>
+                <p class="h1-main-page cardPagesHeader">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
+                <p class="h2-main-page"><span class="header__fontSize">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ<span class="header__fontSize__part1">, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ</span><span class="header__fontSize__part2">, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</span></span>
+                </p>
             </div>
             <div class=h-contacts>
-                <p><a href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-                    <a href=tel:+7(937)215-78-97 style=color:#FFF;text-decoration:none;font-size:1em>+7(937)215-78-97</a><br>
-                    <a href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
+                <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
+                    <a class="phone-second" href=tel:+7(937)215-78-97 style=color:#FFF;text-decoration:none;font-size:1em>+7(937)215-78-97</a><br>
+                    <a class="mail" href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
+                <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
             </div>
         </header>
     <nav class=nav> 
 <ul class="menu topmenu" >
 <li><a  href=index.html>О компании</a></li>
-<li><a href=pages/about_us.html>Условия работ &#11167;</a>
+<li><a href=#><span class="nav__drop__iconText">Условия работ</span> <img class="nav__drop__icon" src="img/drop-down-arrow.svg" alt="Раскрыть"></a>
             <ul class="submenu">
             <li><a href="pages/guarantees.html">Гарантия</a></li>
             <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
@@ -50,7 +66,7 @@ require 'config.php';
 <li><a href=pages/contacts.html>Контакты</a></li>
 </ul>
 </nav>
-        <main class=content style="background-color: #E9F4C8;">
+        <main class=content>
 
          
                             <div class="top-nav" style="position:relative;">
@@ -78,7 +94,7 @@ require 'config.php';
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
                                 <form action="catalog.php" method="get">
-                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" >
+                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" style="border: 2px solid #DCDCDC;">
                                 <input type="submit" value="" style="" >
                                 </form>
                             </div> 
@@ -128,9 +144,9 @@ if(empty($_GET['id'])) {
 </div>
 <!-- выборка end -->
 
-<h2 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
+<h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC </h2> 
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC</h1> 
 
             
             <!--about-end-->
@@ -165,7 +181,7 @@ if($query->num_rows > 0){
                                         <p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
                                     </div>
                                     <div class="srch srch1">
-                                        <span>-'.$row["sale"].'. Диагностика и настройка</span>
+                                        <span>-Ремонтируем. Диагностика и настройка</span>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +226,7 @@ if($query->num_rows > 0){
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
 									<div class="srch srch1">
-										<span>-'.$row["sale"].'. Диагностика и настройка</span>
+										<span>-Ремонтируем. Диагностика и настройка</span>
 									</div>
 								</div>
 							</div>
@@ -305,7 +321,7 @@ justify-content: space-between;>
                     <!-- product-top -->
                     <!-- buttons -->
                     <? if(empty($_GET['id'])) { ?>
-                        <ul class="pagination" style="display:flex">
+                        <ul class="pagination" style="display:flex;">
                             <li><a href="?pageno=1<? echo $type_pages.$diller_pages; ?>" class="button28">Первая</a></li>
                             <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
                                 <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1).$type_pages.$diller_pages; } ?>" class="button28">Предыдущая</a>
@@ -320,32 +336,56 @@ justify-content: space-between;>
 <? } ?>
 
         </main>
-        <footer class="foot" >
+        <footer class="foot" style="width:100%; flex: 0;">
             <div class=f-logo-l><img src=img/logo3.png alt=kerneltlt></div>
             <div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
             <div class=f-logo-r><img src=img/logo3.png alt=kerneltlt></div>
         </footer>
         </div>
             <!-- container -->
-
+   <script src="js/jquery-3.3.1.min.js"></script>
+    <!--form to take call from client start-->
+    <script src="js/jquery.jbcallme.js"></script>
+    <script src="js/cat_contactform.js"></script>
+    <!--form to take call from client end-->
+   
+   
+   
+    <!-- fixed menu start  -->
+    <script src=js/fixedmenu.js></script>
+    <!-- mail form start-->
+    <script src=js/callmefile.js></script>
+    <!-- mail form end-->
+    <script src=js/gorizontalmenu.js></script>
     
-    
-     
-        
-        
-
-
-        
-       
-       
-    
-        
-
-
-<!-- Отправка данных формы обратной связи на почту начало -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/cat_contactform.js"></script>
-<!-- Отправка данных формы обратной связи на почту -->
+    <!-- форма всплывающего окна формы обратной связи -->
+    <div class="fields form-main">                    
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+          <div class="form-group">
+            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+          </div>
+          <div class="form-group">
+            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+            <input id="nameFF" name="nameFF" type="text">
+          </div>
+          <div class="form-group">
+            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить файл:</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+          <span class="close">&#215;</span>         
+        </form>            
+    </div>
+<!-- форма всплывающего окна формы обратной связи -->
 
 </body>
 

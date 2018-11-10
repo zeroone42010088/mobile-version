@@ -1255,8 +1255,8 @@ body {
 .carousel-inner > .item > a > img {
     display: block;
     max-width: 100%;
-    /*height: auto;*/
-    height: 240px;
+    height: auto;
+ /*   height: 240px;*/
     
 }
 
@@ -1634,7 +1634,8 @@ body {
 
 .contacts {
     float: center;
-    width: 40%;   
+    width: 40%; 
+    margin-left: 125px;
 }
 
 .phone-main, .phone-second, .mail {
@@ -1645,6 +1646,8 @@ body {
     float: left;
     height: 200px;
     width: 40%;
+    margin-top: -350px;
+    margin-left: 625px;
 }
 
 /*---------------------------------*/
@@ -2600,7 +2603,16 @@ nav ul {
 .pages_cards_li {
     list-style-position: outside;
     list-style-type: "\2714";
-}
+}    
+/*
+.pages_cards_li {
+    list-style-position: outside;
+    list-style-type: "JjEwMDAzOw==";
+} */ 
+    /*
+.pages_cards_li::before {
+content: '✓';
+} */
 
 .pages_cards_liLetterA {list-style-type: "а)";}
 .pages_cards_liLetterB {list-style-type: "б)";}
@@ -2764,6 +2776,10 @@ nav ul {
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
+}
+.form-button:hover {
+  transform: scale(1.05);
+  transition: 0.15s;  
 }
 /*mail form */
 
