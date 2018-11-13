@@ -58,7 +58,7 @@ require 'config.php';
             <li><a href="pages/guarantees.html">Гарантия</a></li>
             <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
             <li><a href="pages/oplata.html">Порядок оплаты</a></li>
-            <li><a href="request.html">Заявка на ремонт</a></li>
+            <li><a href="pages/request.html">Заявка на ремонт</a></li>
         </ul>
 <li><a href=pages/our-works.html>Выполненные работы</a></li>
 <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>Ремонт электроники в сервисном центре</a></li>
@@ -148,7 +148,7 @@ if(empty($_GET['id'])) {
 
 <h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC</h1> 
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт электроники</h1> 
 
             
             <!--about-end-->
@@ -157,9 +157,9 @@ if(empty($_GET['id'])) {
           <!--      <div class="container">  -->
                   <?php
     if($_GET['search']) {
-                   echo '<h1 style="margin-left:10px; color: rgba(0,0,0,0.6);
+                   echo '<h2 style="margin-left:10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h1>';}?>
+	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
                    
                     <div class="product-top">
                         <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap; align-content:flex-start;">
@@ -261,7 +261,7 @@ justify-content: space-between;>
 								</div>
 							</div>
                             
-                            <div class="catalog_cardinfo" >
+                            <div class="catalog_cardinfo" style="margin-left:100px;">
                             
                             <ol class="rounded">
                               <li><a href="#">Диагностика от 3 дней</a></li>

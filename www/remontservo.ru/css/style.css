@@ -1335,9 +1335,9 @@ body {
     left: 100%;
 }
 
-.carousel-control {
+.carousel-control, .works-carousel-control {
     position: absolute;
-    top: 188px;
+    top: 0;
     bottom: 0;
     left: 0;
     width: 15%;
@@ -1349,7 +1349,9 @@ body {
     filter: alpha(opacity=50);
     opacity: .5;
 }
-
+.works-carousel-control {
+    top: 0;
+}
 .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
