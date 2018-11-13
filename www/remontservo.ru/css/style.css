@@ -1464,7 +1464,7 @@ body {
 .carousel-caption .btn {
     text-shadow: none;
 }
-main.content {
+main {
     min-height: calc(100vh - 294px);
     position: relative;
     padding-bottom: 32px;

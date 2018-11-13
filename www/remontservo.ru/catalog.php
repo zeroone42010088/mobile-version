@@ -134,15 +134,17 @@ if(empty($_GET['id'])) {
 			else $sel = "";
 			echo "<option value='" .$row["diller"]. "'".$sel.">".$row["diller"]."</option>";
 		}
-		echo "</select>";
+		echo "</select>";?>
+        </div>
+<!-- выборка end -->
+<?php
 	}
 
 
 }
 
 ?>
-</div>
-<!-- выборка end -->
+
 
 <h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
