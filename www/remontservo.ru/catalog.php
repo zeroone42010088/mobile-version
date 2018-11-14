@@ -31,7 +31,7 @@ require 'config.php';
     <!-- End Talk-Me {literal} -->
 </head>
 
-<body style="display: flex;
+<body style="/*display: flex;*/
   min-height: 100vh;
   flex-direction: column; margin:0 auto; max-width:1365px;">
     <div class=container-catalog style="">
@@ -146,9 +146,39 @@ if(empty($_GET['id'])) {
 ?>
 
 
+<?php 
+$def_word = 'электроники';
+if(isset($_GET['type']) && $_GET['type'] != ''):
+	$type_ = strip_tags($_GET['type']);
+	switch ($type_) {
+		case 'Серводвигатели':
+			$def_word = 'серводвигателей';
+			break;
+		case 'Сервоприводы':
+			$def_word = 'сервоприводов';
+			break;
+		case 'Частотные преобразователи':
+			$def_word = 'частотных преобразователей';
+			break;
+		case 'Сенсорные панели оператора':
+			$def_word = 'сенсорных панелей оператора';
+			break;
+	}
+endif;
+
+if( isset($_GET['id']) && $_GET['id'] != '' ):
+	$id_ = (int)$_GET['id'];
+	$query1 = $db->query("SELECT upcomment FROM products WHERE `id`='$id_'");
+	$row1 = $query1->fetch_assoc();
+	if($row1["upcomment"] != ''):
+		$def_word = $row1["upcomment"];
+	endif;
+endif;
+?>
+
 <h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт электроники</h1> 
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт <?php echo $def_word ;?></h1> 
 
             
             <!--about-end-->
