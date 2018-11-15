@@ -565,7 +565,7 @@ skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skybl
 .search-bar input[type="text"] {
 	width: 130%;
 	padding: 8px 15px 8px 8px;
-	border: 1px solid #F5F5F5;
+	border: 2px solid #D3D3D3;
 	background: #FFF;
 	outline: none;
 	-webkit-appearance: none;
