@@ -2,7 +2,7 @@
 require 'config.php';
 ?>
 <!DOCTYPE html>
-<html lang=ru >
+<html lang=ru>
 <head>
     <meta charset="utf-8" />
     <title>Каталог ремонтируемого оборудования и электроники</title>
@@ -31,10 +31,10 @@ require 'config.php';
     <!-- End Talk-Me {literal} -->
 </head>
 
-<body style="display: flex;
+<body style="/*display: flex;*/
   min-height: 100vh;
-  flex-direction: column;">
-    <div class=container-catalog>
+  flex-direction: column; margin:0 auto; max-width:1365px;">
+    <div class=container-catalog style="">
         <header class="header">
               <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
             </div>
@@ -58,8 +58,9 @@ require 'config.php';
             <li><a href="pages/guarantees.html">Гарантия</a></li>
             <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
             <li><a href="pages/oplata.html">Порядок оплаты</a></li>
-            <li><a href="request.html">Заявка на ремонт</a></li>
+            <li><a href="pages/request.html">Заявка на ремонт</a></li>
         </ul>
+    </li>
 <li><a href=pages/our-works.html>Выполненные работы</a></li>
 <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>Ремонт электроники в сервисном центре</a></li>
 <li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
@@ -94,8 +95,8 @@ require 'config.php';
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
                                 <form action="catalog.php" method="get">
-                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>" style="border: 2px solid #DCDCDC;">
-                                <input type="submit" value="" style="" >
+                                <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                                <input type="submit" value="">
                                 </form>
                             </div> 
                                <!--searsh -->
@@ -134,19 +135,51 @@ if(empty($_GET['id'])) {
 			else $sel = "";
 			echo "<option value='" .$row["diller"]. "'".$sel.">".$row["diller"]."</option>";
 		}
-		echo "</select>";
+		echo "</select>";?>
+        </div>
+<!-- выборка end -->
+<?php
 	}
 
 
 }
 
 ?>
-</div>
-<!-- выборка end -->
+
+
+<?php 
+$def_word = 'электроники';
+if(isset($_GET['type']) && $_GET['type'] != ''):
+	$type_ = strip_tags($_GET['type']);
+	switch ($type_) {
+		case 'Серводвигатели':
+			$def_word = 'серводвигателей';
+			break;
+		case 'Сервоприводы':
+			$def_word = 'сервоприводов';
+			break;
+		case 'Частотные преобразователи':
+			$def_word = 'частотных преобразователей';
+			break;
+		case 'Сенсорные панели оператора':
+			$def_word = 'сенсорных панелей оператора';
+			break;
+	}
+endif;
+
+if( isset($_GET['id']) && $_GET['id'] != '' ):
+	$id_ = (int)$_GET['id'];
+	$query1 = $db->query("SELECT upcomment FROM products WHERE `id`='$id_'");
+	$row1 = $query1->fetch_assoc();
+	if($row1["upcomment"] != ''):
+		$def_word = $row1["upcomment"];
+	endif;
+endif;
+?>
 
 <h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт cерводвигателей FANUC</h1> 
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт <?php echo $def_word ;?></h1> 
 
             
             <!--about-end-->
@@ -155,9 +188,9 @@ if(empty($_GET['id'])) {
           <!--      <div class="container">  -->
                   <?php
     if($_GET['search']) {
-                   echo '<h1 style="margin-left:10px; color: rgba(0,0,0,0.6);
+                   echo '<h2 style="margin-left:10px; color: rgba(0,0,0,0.6);
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h1>';}?>
+	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
                    
                     <div class="product-top">
                         <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap; align-content:flex-start;">
@@ -259,7 +292,7 @@ justify-content: space-between;>
 								</div>
 							</div>
                             
-                            <div class="catalog_cardinfo" >
+                            <div class="catalog_cardinfo" style="margin-left:100px;">
                             
                             <ol class="rounded">
                               <li><a href="#">Диагностика от 3 дней</a></li>
