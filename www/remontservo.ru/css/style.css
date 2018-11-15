@@ -1350,7 +1350,7 @@ body {
     opacity: .5;
 }
 .works-carousel-control {
-    top: 0;
+    
 }
 .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
@@ -1572,6 +1572,7 @@ ul.pagination {
     background: #4CBB17;
     background: linear-gradient(to top, #4CBB17, #228B22);
     font-size: 18px;
+    margin-bottom: -50px;
 }
 
 .how-body {
@@ -1987,7 +1988,7 @@ nav ul {
 }
 
 @media (max-width:1025px) {
-    .header__fontSize__part1 {display: none;}
+    .header__fontSize__part1, .header__buttonCall {display: none;}
 }
 
 @media (min-width:769px) and (max-width: 979px) {

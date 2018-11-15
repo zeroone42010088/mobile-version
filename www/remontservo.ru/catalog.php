@@ -60,6 +60,7 @@ require 'config.php';
             <li><a href="pages/oplata.html">Порядок оплаты</a></li>
             <li><a href="pages/request.html">Заявка на ремонт</a></li>
         </ul>
+    </li>
 <li><a href=pages/our-works.html>Выполненные работы</a></li>
 <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>Ремонт электроники в сервисном центре</a></li>
 <li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
