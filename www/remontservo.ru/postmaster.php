@@ -1,5 +1,5 @@
 <?php
-$EMAIL = '114polaris@gmail.com'; //  Ваш e-mail на который будут приходить заявки
+$EMAIL = 'msulianov@gmail.com'; //  Ваш e-mail на который будут приходить заявки
 $FROM = 'zyavka@remontservo.ru';  //  e-mail отправителя (иногда требуется указать разрешенный настройками e-mail)
 $REPLY = 'noreplay@mail.ru';   //  e-mail для ответа 
 $PRIORITY = false;       //  пометить как важное

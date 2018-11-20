@@ -1,10 +1,10 @@
 <?php
 if (isset ($_POST['contactFF'])) {
-  $to = "114polaris@gmail.com";//"114polaris@gmail.com";
+  $to = "msulianov@gmail.com";
   $from = "new_client@remontservo.ru";
   $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
-$message = "\nEmail".$_POST['contactFF'].
-    "\nТелефон".$_POST['telFF'].
+$message = "\nEmail:   ".$_POST['contactFF'].
+    "\nТелефон:   ".$_POST['telFF'].
     "\nТип, модель неисправного блока: ".$_POST['nameFF'].
     "\nОписание неисправности. номер ошибки: ".$_POST['projectFF'].
     "\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];

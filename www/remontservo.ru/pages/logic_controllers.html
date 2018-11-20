@@ -13,6 +13,22 @@
     <link href="../css/slick-theme.css" rel="stylesheet">
     <link href="../css/jquery.jbcallme.css" rel="stylesheet">
   <!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+     <!-- Begin Talk-Me {literal} -->
+<script>
+	(function(d, w, m) {
+		window.supportAPIMethod = m;
+		var s = d.createElement('script');
+		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+		s.async = true;
+		var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+		var sc = d.getElementsByTagName('script')[0];
+		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+		if (sc) sc.parentNode.insertBefore(s, sc); 
+		else d.documentElement.firstChild.appendChild(s);
+	})(document, window, 'TalkMe');
+</script>
+    <!-- End Talk-Me {literal} -->
 </head>
 <body style="display: flex;
   min-height: 100vh;
@@ -40,12 +56,12 @@
                     <ul class="submenu">
                         <li><a href="guarantees.html">Гарантия</a></li>
                         <li><a href="delivery.html">Доставка в ремонт</a></li>
-                        <li><a href="oplata.html">Порядок оплаты</a></li>
+                      <!--  <li><a href="oplata.html">Порядок оплаты</a></li> -->
                         <li><a href="request.html">Заявка на ремонт</a></li>
                     </ul>
                 </li>
-                <li><a href=/our-works.html>Выполненные работы</a></li>
-                <li><a href=../catalog.php>Ремонт электроники в сервисном центре</a></li>
+                <li><a href=our-works.html>Выполненные работы</a></li>
+             <!--   <li><a href=../catalog.php>Ремонт электроники в сервисном центре</a></li> -->
                 <li><a href=departure.html>Выезд специалиста к Заказчику</a></li>
                 <li><a href=contacts.html>Контакты</a></li>
             </ul>
@@ -238,6 +254,7 @@
     <script src=../js/callmefile.js></script>
     <script src=../js/sliderslick.js></script>
   <!--  <script src="../js/letters.js"></script> --> <!--for ol letters -->
+    <!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
     <!-- форма всплывающего окна формы обратной связи -->
       <div class="fields form-main">                    
         <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          

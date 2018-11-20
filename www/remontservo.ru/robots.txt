@@ -1,6 +1,12 @@
 User-agent: *
 Disallow: /js/
-Disallow: /pages/
-Disallow: /img/
-Disallow: /
+Disallow: /pages/publications/article-5-2018-04-26/article-5-2018-04-26.html
+Disallow: /pages/publications/article-10-2018-04-26/article-10-2018-04-26.html
+Disallow: /pages/publications/article-12-2018-04-26/article-12-2018-04-26.html
+Disallow: /pages/publications/article-13-2018-04-27/article-13-2018-04-27.html
+Disallow: /pages/publications/article-14-2018-04-27/article-14-2018-04-27.html
 Disallow: /*utm_source=
+Allow: /pages/
+Allow: /img/
+Sitemap: https://www.remontservo.ru/sitemap.xml
+Host: https://www.remontservo.ru/

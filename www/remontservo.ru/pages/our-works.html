@@ -10,6 +10,22 @@
 <link href="../css/style.css" rel="stylesheet">
 <link href="../css/jquery.jbcallme.css" rel=stylesheet>
 <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+ <!-- Begin Talk-Me {literal} -->
+<script>
+(function(d, w, m) {
+window.supportAPIMethod = m;
+var s = d.createElement('script');
+s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+s.async = true;
+var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+var sc = d.getElementsByTagName('script')[0];
+w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+if (sc) sc.parentNode.insertBefore(s, sc); 
+else d.documentElement.firstChild.appendChild(s);
+})(document, window, 'TalkMe');
+</script>
+    <!-- End Talk-Me {literal} -->    
 </head>
 <body style=min-height:100%>
 <div class=container style=margin-bottom:0;padding-bottom:0>
@@ -29,16 +45,16 @@
 <nav class=nav> 
 <ul class="menu topmenu">
 <li><a href="../index.html">О компании</a></li>
-<li><a href=#><span class="nav__drop__iconText">Условия работ</span> <img class="nav__drop__icon" src="../img/drop-down-arrow.svg" alt="Раскрыть"></a>
+<li><a href=guarantees.html><span class="nav__drop__iconText">Условия работ</span> <img class="nav__drop__icon" src="../img/drop-down-arrow.svg" alt="Раскрыть"></a>
             <ul class="submenu">
             <li><a href="guarantees.html">Гарантия</a></li>
             <li><a href="delivery.html">Доставка в ремонт</a></li>
-            <li><a href="oplata.html">Порядок оплаты</a></li>
+           <!-- <li><a href="oplata.html">Порядок оплаты</a></li> -->
             <li><a href="request.html">Заявка на ремонт</a></li>
         </ul>
     </li>
 <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=our-works.html>Выполненные работы</a></li>
-<li><a href=../catalog.php>Ремонт электроники в сервисном центре</a></li>
+<!-- <li><a href=../catalog.php>Ремонт электроники в сервисном центре</a></li> -->
 <li><a href=departure.html>Выезд специалиста к Заказчику</a></li>
 <li><a href=contacts.html>Контакты</a></li>
 </ul>
@@ -428,8 +444,8 @@
 <p class=ourworks_description style=margin-top:5px>Ремонт пульта управления MULTIVAC от станка</p>
 </div>
 <div class=item>
-<img class=lazy src=# data-original=../img/our-works/servodrive_beckhoff_6140.jpgalt="Фото сервомотор Parker NX310EAKR0001" title="Parker NX310EAKR0001">
-<p class=ourworks_description style=margin-top:5px>Ремонт сервомотора PARKER NX310EAKR0001</p>
+<img class=lazy src=# data-original=../img/our-works/servodrive_beckhoff_6140.jpg alt="Фото сервомотор Beckhoff" title="Beckhoff">
+<p class=ourworks_description style=margin-top:5px>Ремонт сервомотора BECKHOFF AM3044</p>
 </div>
 <div class=item>
 <img class=lazy src=# data-original=../img/our-works/preobrazovatel_kone_6141.jpg alt="Фото частотный преобразователь KONE V3F16L" title="KONE V3F16L">
@@ -2144,8 +2160,8 @@
     
     
     <script src=../js/callmefile.js></script>
-    
      <!-- form to take call from client end -->
+    <!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
     <!-- форма всплывающего окна формы обратной связи --> 
       <div class="fields form-main">                    
         <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
