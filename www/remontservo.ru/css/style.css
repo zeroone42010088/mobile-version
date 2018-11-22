@@ -1106,7 +1106,7 @@ body {
 
 .container {
     min-width: 1000px;
-    max-width: 1366px;
+/*    max-width: 1366px; */
     margin: 0 auto;
 }
 
@@ -1574,7 +1574,8 @@ ul.pagination {
     background: #4CBB17;
     background: linear-gradient(to top, #4CBB17, #228B22);
     font-size: 18px;
-    margin-bottom: -50px;
+    margin-bottom: -30px; 
+    margin-top: -23px; 
 }
 
 .how-body {
@@ -1678,7 +1679,7 @@ ul.pagination {
     display: block;
     margin: 0 auto;
     /*min-width: 1000px;*/
-    max-width: 1366px;   
+   /* max-width: 1366px; */   
     height: 100px;
     background-color: #4169E1;
     background: linear-gradient(to top, #1A4780, #4169E1);
@@ -1958,8 +1959,19 @@ nav ul {
 .flex_top_row > div {
     width: 50%;
 }
+.index_carousel-inner_img {
+    margin-left: 57%;
+}
+.index_carousel-inner_img_encoder, .index_carousel-inner_img_ibp {margin-left: 53%;}
+@media (min-width:1600px) {
+    .card-group {margin-left: 15%;}
+    .phone-main, .phone-second, .mail {margin-left:150px;}
+    .index_sale {margin-left: -50px;}     
+}
 
-
+@media (min-width:1670px) and (max-width: 1795px) {
+    .index_sale {margin-left: 15px;}     
+}
 
 @media (max-width:1366px) {
     .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
