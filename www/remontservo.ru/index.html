@@ -10,7 +10,7 @@
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
     
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <!-- Begin Talk-Me {literal} -->
 <!-- <script>
@@ -54,7 +54,7 @@
                     <ul class="submenu">
                         <li><a href="pages/guarantees.html">Гарантия</a></li>
                         <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
-                        <li><a href="pages/oplata.html">Порядок оплаты</a></li>
+                      <!--  <li><a href="pages/oplata.html">Порядок оплаты</a></li> -->
                         <li><a href="pages/request.html">Заявка на ремонт</a></li>
                     </ul>
                 </li>
@@ -92,21 +92,21 @@
                     <li data-target=#carousel-example-generic data-slide-to=22></li>
                     <li data-target=#carousel-example-generic data-slide-to=23></li>
                     <li data-target=#carousel-example-generic data-slide-to=24></li>
-                    <li data-target=#carousel-example-generic data-slide-to=25></li>
+                  <!--  <li data-target=#carousel-example-generic data-slide-to=25></li> -->
                 </ol>
                 <div class=carousel-inner role=listbox>
                     <div class="item active" style="margin-top: 0; background-color: #F6BE00;">
-                        <p class="index__carousel__textUp">РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ<br><a class="index__carousel__text__datails" href="index.html#remont"> Узнать больше...</a></p>
+                        <p class="index__carousel__service">1.РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ <a class="index__carousel__text__datails" href="index.html#cards-spisok"> Узнать больше...</a><br><br>2.ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
                         <!--<form class="carousel-inner__item__buttonDetails" action="pages/about_us.html">
 <button class="carousel-inner__item__buttonDetails__button" type="submit"><p>Узнать подробнее</p></button>
                         </form>-->
-                        <img class="index_carousel-inner_img" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">
+                        <img class="index_carousel-inner-spisok_img" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">                        
                     </div>
-                    <div class=item style="background-color:#F6BE00;">
+                 <!--   <div class=item style="background-color:#F6BE00;">
                         <p class="index__carousel__textUp">ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<br><a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
 
                         <img class="index_carousel-inner_img" src=img/slider/kernel24-sl.jpg alt="Выезд на неисправное оборудование">
-                    </div>                   
+                    </div>   -->                
                     <div class=item style="background-color:#F6BE00;">
                         <p class="index__carousel__textUp">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<br><a class="index__carousel__text__datails" href="pages/servodrive.html"> Узнать подробнее...</a></p>
 
@@ -240,6 +240,7 @@
 <span class=sr-only>Next</span>
 </a>
             </div>
+            <a id="cards-spisok"></a> 
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
                 <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый ремонт <?php Get_utm();?> скидка 10%</b></p>
@@ -251,10 +252,10 @@
             <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
                 <!--search block-->
 
-                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
+                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку на ремонт</span></button>
 
                 <!--searsh begin -->
-
+ 
                 <div class="index__content__search">
                     <form class="index__content__searchForm">
                         <input type="text" placeholder="Найти оборудование">
@@ -265,13 +266,13 @@
                 <!--searsh end -->
             </div>
             <!--image-->
-            <a id="remont"></a>
+                      
             <div>
                 <h2 style="text-align:center; margin: 0 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em;">Мы занимаемся ремонтом промышленной электроники</h2>
             </div>
 
 
-            <div class="card-group" style="max-width: 1365px;">
+            <div class="card-group">
                 <div class="card">
                     <a href="pages/servodrive.html"><img class="card-img-top" src="img/index-pictures/picture1.png" alt="Серводвигатель, сервомотор"></a>
                     <div class="card-body">
@@ -505,7 +506,7 @@
             <!-- группа 1 -->
 
             <!-- группа 2 -->
-            <div class="card-group" style="max-width: 1365px;">
+            <div class="card-group">
                 <div class="card">
                     <a href="pages/chpu_repair.html"> <img class="card-img-top" src="img/index-pictures/picture10.png" alt="Система ЧПУ"> </a>
                     <div class="card-body">
@@ -686,7 +687,7 @@
             <!-- группа 2 -->
 
             <!-- группа 3 -->
-            <div class="card-group" style="max-width: 1365px;">
+            <div class="card-group">
                 <div class="card">
                     <a href="pages/logic_controllers.html"> <img class="card-img-top" src="img/index-pictures/picture11.jpg" alt="Логические контроллеры"> </a>
                     <div class="card-body">
@@ -829,163 +830,189 @@
                 </div>
             </div>
             
-            <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em;">Выезд на неисправное оборудование Заказчика</h2>  
+            <!--image-->
+            <div class="index__content__centerButtonAndSearch" style="position: relative;">
+                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый выезд на неисправное оборудование скидка 10%</b></p>
+                <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style="height: 55px;">
+                <img src=img/percent.png class="index_sale" alt="скидка 10%" style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
+
+<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={38599933}&utm_content={ad_id}&utm_term={cpu}  -->
+<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={35411413}&utm_content={ad_id}&utm_term={encoder}  -->
+            <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
+                <!--search block-->
+
+                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку нв выезд</span></button>
+
+                <!--searsh begin -->
+
+                <div class="index__content__search">
+                    <form class="index__content__searchForm">
+                        <input type="text" placeholder="Найти оборудование">
+                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
+                        <!--</button>-->
+                    </form>
+                </div>
+                <!--searsh end -->
+            </div>
+            <!--image-->
             
-                  <div class="center slider" style="width:93%; height: 240px; margin-left: 40px; margin-bottom: 70px;">
+            <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>  
+            
+                  <div class="center slider" style="width:93%; max-width:1365px; height: 240px; margin:0 auto 70px;">
                             <section class="regular slider" style="width:100%; height: 240px;"> 
                                <div>
                                     <img src="img/slider-down/chpu_stanki.jpg" alt="Токарные станки с ЧПУ фото">
-                                   <p><b>1. Ремонт токарных станков с ЧПУ</b><p>
+                                   <p class="slider-down__text"><b>Ремонт токарных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/frezer_stanki.jpg" alt="Фрезерные станки с ЧПУ после ремонта">
-                                    <p><b>2. Ремонт фрезерных станков с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт фрезерных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/chpu_centre.jpg" alt="Обарабатывающие центры с ЧПУ ремонт">
-                                    <p><b>3. Ремонт обрабатывающих центров с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт обрабатывающих центров с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/ecstruder.jpg" alt="Экструдеры ремонт и диагностика">
-                                    <p><b>4. Ремонт экструдеров</b><p>
+                                    <p class="slider-down__text"><b>Ремонт экструдеров</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/metall_chpu.jpg" alt="Металлобрабатывающий центр с ЧПУ ремонт">
-                                    <p><b>5. Ремонт металлообрабатывающего центра с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт металлообрабатывающего центра с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/wood_chpu.jpg" alt="Деревообрабатывающий центр с ЧПУ ремонтируем">
-                                    <p><b>6. Ремонт деревообрабатывающего центра с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт деревообрабатывающего центра с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/laser_chpu.jpg" alt="Лазерные станки с ЧПУ ремонт">
-                                    <p><b>8. Ремонт лазерных резок с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт лазерных резок с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/listogib.jpg" alt="Листогибы с ЧПУ фотография">
-                                    <p><b>9. Ремонт листогибов с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт листогибов с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/termo_avtomat.jpg" alt="Термопластавтоматы ремонт и диагностика">
-                                    <p><b>10. Ремонт термопластавтоматов</b><p>
+                                    <p class="slider-down__text"><b>Ремонт термопластавтоматов</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/compressor_industrial.jpg" alt="Компрессорное оборудование ремонт фото">
-                                    <p><b>11. Ремонт компрессорного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт компрессорного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/manipulator.jpg" alt="Роботы промышленных манипуляторов ремонт изображение">
-                                    <p><b>12. Ремонт роботов промышленных манипуляторов</b><p>
+                                    <p class="slider-down__text"><b>Ремонт роботов промышленных манипуляторов</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/nasos.jpg" alt="Насосное оборудование ремонт фотография">
-                                    <p><b>13. Ремонт насосного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт насосного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/food_equipment.jpg" alt="Пищевое оборудование ремонт и диагностика">
-                                    <p><b>14. Ремонт пищевого оборудования (линия розлива)</b><p>
+                                    <p class="slider-down__text"><b>Ремонт пищевого оборудования (линия розлива)</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/carusel_stanok.jpg" alt="Карусельные станки ЧПУ ремонт фото">
-                                    <p><b>15. Ремонт карусельных станков ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт карусельных станков ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/press_chpu.jpg" alt="Прессы с ЧПУ ремонт и наладка">
-                                    <p><b>16. Ремонт прессов с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт прессов с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/sverliln_stanok.jpg" alt="Сверлильные станки с ЧПУ ремонт фотография">
-                                    <p><b>17. Ремонт сверлильных станков с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт сверлильных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/line_industry.jpg" alt="Производственные линии ремонт фото">
-                                    <p><b>18. Ремонт линий производственных</b><p>
+                                    <p class="slider-down__text"><b>Ремонт линий производственных</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/shlif_mashines.jpg" alt="Шлифовальные станки с ЧПУ ремонт и наладка">
-                                    <p><b>19. Ремонт шлифовальных станков с ЧПУ</b><p>
+                                    <p class="slider-down__text"><b>Ремонт шлифовальных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/metall_equip_remont.jpg" alt="Металлообрабатывающее оборудование ремонт фотография">
-                                    <p><b>21. Ремонт металлообрабатывающего оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт металлообрабатывающего оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/steklo_equipment.jpg" alt="Оборудование стеклообработки ремонт">
-                                    <p><b>22. Ремонт оборудования стеклообработки</b><p>
+                                    <p class="slider-down__text"><b>Ремонт оборудования стеклообработки</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/packaging_equipment.jpg" alt="Упаковочное оборудование ремонт, наладка, диагностика">
-                                    <p><b>23. Ремонт упаковочного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт упаковочного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/mining_equipment.jpg" alt="Добывающее оборудование после ремонта">
-                                    <p><b>24. Ремонт добывающего оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт добывающего оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/light_industry.jpg" alt="Оборудование легкой промышленности ремонт изображение">
-                                    <p><b>25. Ремонт оборудования легкой промышленности</b><p>
+                                    <p class="slider-down__text"><b>Ремонт оборудования легкой промышленности</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/polymer_industry.jpg" alt="Полимерное оборудование ремонт и наладка">
-                                    <p><b>26. Ремонт полимерного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт полимерного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/furniture_equipment.jpg" alt="Мебельное оборудование процесс ремонта и наладки">
-                                    <p><b>27. Ремонт мебельного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт мебельного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/paper_industry.jpg" alt="Целлюлозно-бумажное оборудование ремонт и диагностика">
-                                    <p><b>28. Ремонт целлюлозно-бумажного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт целлюлозно-бумажного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/stone_processing.jpg" alt="Камнеобрабатывающее оборудование ремонт, наладка">
-                                    <p><b>29. Ремонт камнеобрабатывающего оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт камнеобрабатывающего оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/cabel_industry.jpg" alt="Оборудования по производству кабеля ремонт">
-                                    <p><b>30. Ремонт оборудования по производству кабеля</b><p>
+                                    <p class="slider-down__text"><b>Ремонт оборудования по производству кабеля</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/building_equipment.jpg" alt="Строительное оборудование после ремонта">
-                                    <p><b>31. Ремонт строительного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт строительного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/railway_equipment.jpg" alt="Железнодорожное оборудование ремонт фото">
-                                    <p><b>32. Ремонт железнодорожного оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт железнодорожного оборудования</b><p>
                                 </div>
                                 
                                 <div>
                                     <img src="img/slider-down/paper_industry.jpg" alt="Полиграфическое оборудование ремонт фотография">
-                                    <p><b>33. Ремонт полиграфического оборудования</b><p>
+                                    <p class="slider-down__text"><b>Ремонт полиграфического оборудования</b><p>
                                 </div>
                                 
                                   
@@ -1015,31 +1042,7 @@
                 </ul>
             </div> -->
             <a id="stanki"></a>
-             <!--image-->
-            <div class="index__content__centerButtonAndSearch" style="position: relative;">
-                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый ремонт <?php Get_utm();?> скидка 10%</b></p>
-                <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style="height: 55px;">
-                <img src=img/percent.png alt=скидка style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
-
-<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={38599933}&utm_content={ad_id}&utm_term={cpu}  -->
-<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={35411413}&utm_content={ad_id}&utm_term={encoder}  -->
-            <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
-                <!--search block-->
-
-                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
-
-                <!--searsh begin -->
-
-                <div class="index__content__search">
-                    <form class="index__content__searchForm">
-                        <input type="text" placeholder="Найти оборудование">
-                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
-                        <!--</button>-->
-                    </form>
-                </div>
-                <!--searsh end -->
-            </div>
-            <!--image-->
+             
             <div class=howweareworking>
                 <div class=how-title>
                     <p>Как мы работаем:</p>

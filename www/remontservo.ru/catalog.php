@@ -33,7 +33,7 @@ require 'config.php';
 
 <body style="/*display: flex;*/
   min-height: 100vh;
-  flex-direction: column; margin:0 auto; max-width:1365px;">
+  flex-direction: column; margin:0 auto;">
     <div class=container-catalog style="">
         <header class="header">
               <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
@@ -249,7 +249,7 @@ if($query->num_rows > 0){
 
     while($row = $query->fetch_assoc()){
 								echo '
-								<div class="col-md-4 product-left p-left catalog" style="max-width:30%;">
+								<div class="col-md-4 product-left p-left catalog" style="max-width:33.333336%;">
 								<div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
