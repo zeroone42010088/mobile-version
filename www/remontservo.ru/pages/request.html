@@ -28,9 +28,12 @@
     <!-- End Talk-Me {literal} -->
 </head>
 
-<body style="    
+<body style="
+    max-width: 1366px;
     margin: auto; min-height:100%;">
-    <div class=container-catalog>
+    <div class=container-catalog style=" min-width: 1000px;
+    max-width: 1366px;
+    margin: 0 auto;" >
         <header class="header">
            <div class=h-logo><a href=../index.html><img src=../img/logo1.png alt=KERNEL></a></div>
 <div class=h-title>
@@ -39,8 +42,8 @@
 </div>
 <div class=h-contacts>
 <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-<a class="phone-second" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(937)215-78-97</a><br>
-<a class="mail" href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
+<a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
+<a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
 <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>    
 </div>
         </header>
@@ -69,15 +72,15 @@
                         <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">          
           <div class="form-group" >
             <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required style="border: 1px solid #808080">
           </div>
           <div class="form-group">
             <label for="telFF">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон" style="border: 1px solid #808080">
           </div>
           <div class="form-group">
             <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-            <input id="nameFF" name="nameFF" type="text">
+            <input id="nameFF" name="nameFF" type="text" style="border: 1px solid #808080">
           </div>
           <div class="form-group">
             <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
@@ -103,7 +106,7 @@
 
 <!-- Отрпавка данных формы обратной связи на почту начало -->
     <script src="../js/jquery-3.3.1.min.js"></script>
-	<script src="../js/cat_contactform.js"></script>
+	<script src="../js/request_contactform.js"></script>
 <!-- Отрпавка данных формы обратной связи на почту -->
     <!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
 

@@ -42,8 +42,8 @@
             </div>
             <div class=h-contacts>
                 <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-                    <a class="phone-second" href=tel:+7(937)215-78-97 style=color:#FFF;text-decoration:none;font-size:1em>+7(937)215-78-97</a><br>
-                    <a class="mail" href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
+                    <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
+                    <a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
                 <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
             </div>
         </header>
@@ -856,10 +856,11 @@
             </div>
             <!--image-->
             
-            <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>  
             
-                  <div class="center slider" style="width:93%; max-width:1365px; height: 240px; margin:0 auto 70px;">
-                            <section class="regular slider" style="width:100%; height: 240px;"> 
+            
+                  <div class="center slider" style="width:93%; max-width:1365px; height: 270px; margin:0 auto 70px;">
+                        <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>
+                            <div class="regular slider" style="width:100%; height: 240px;"> 
                                <div>
                                     <img src="img/slider-down/chpu_stanki.jpg" alt="Токарные станки с ЧПУ фото">
                                    <p class="slider-down__text"><b>Ремонт токарных станков с ЧПУ</b><p>
@@ -1014,9 +1015,7 @@
                                     <img src="img/slider-down/paper_industry.jpg" alt="Полиграфическое оборудование ремонт фотография">
                                     <p class="slider-down__text"><b>Ремонт полиграфического оборудования</b><p>
                                 </div>
-                                
-                                  
-                          </section> 
+                          </div> 
                         </div> 
           
         <!--    <div class=logomanufacturers>
@@ -1235,9 +1234,17 @@
     <!--slider end-->
       <!-- Yandex.Metrika counter --> <!-- <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> --> <!-- /Yandex.Metrika counter -->
 
-<!-- форма всплывающего окна формы обратной связи -->
+<!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
     <div class="fields form-main">                    
-        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" >
+             <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio">
+                <span class="checkmark"></span>
+            </label>
           <div class="form-group">
             <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
             <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
@@ -1261,8 +1268,49 @@
           <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
           <span class="close">&#215;</span>         
         </form>            
-    </div>
-<!-- форма всплывающего окна формы обратной связи -->
+    </div> 
+<!-- форма всплывающего окна формы обратной связи заявка на ремонт end -->
+
+<!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->
+  <!--  <div class="fields form-main">                    
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio"  name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+          <div class="form-group">
+            <label for="contactFF">Ваш почтовый адрес</label>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+          </div>
+          <div class="form-group">
+            <label for="telFF">Телефон:</label>
+            <input id="telFF" name="telFF" type="tel" placeholder="Телефон" style="border: 1px solid #B0C4DE">
+          </div>
+          <div class="form-group">
+            <label for="nameFF">Тип/модель неисправного станка</label>
+            <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+          </div>
+            <div class="form-group">
+            <label for="nameFF">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+            <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+          </div>            
+          <div class="form-group">
+            <label for="projectFF">Описание неисправности. Номер ошибки </label>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="4"></textarea>
+          </div>
+          <div class="control-file">
+            <label for="fileFF">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<br>3.фото панели оператора в момент неисправности;</label>
+            <input id="fileFF" name="fileFF" type="file">
+          </div>
+          <button class="btn form-button" type="submit" id="submitFF">Отправить заявку на выезд</button> 
+          <span class="close">&#215;</span>         
+        </form>            
+    </div> -->
+<!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
 </body>
 
 </html>

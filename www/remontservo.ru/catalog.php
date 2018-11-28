@@ -45,8 +45,8 @@ require 'config.php';
             </div>
             <div class=h-contacts>
                 <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-                    <a class="phone-second" href=tel:+7(937)215-78-97 style=color:#FFF;text-decoration:none;font-size:1em>+7(937)215-78-97</a><br>
-                    <a class="mail" href=mailto:msulianov@gmail.com>msulianov@gmail.com</a></p>
+                    <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
+                    <a class="mail" href=89171215301@mail.ru>89171215301@mail.ru</a></p>
                 <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
             </div>
         </header>
@@ -82,11 +82,11 @@ require 'config.php';
                                     
 
                                     </li>
-                                    <li class="grid"><a href="?type=Частотные преобразователи">Частотные преобразователи</a>
+                                    <li class="grid"><a href="?type=<?php echo urlencode('Частотные преобразователи');?>">Частотные преобразователи</a>
                                     
                                     
                                     </li>
-                                    <li class="grid"><a href="?type=Сенсорные панели оператора">Сенсорные панели оператора</a>
+                                    <li class="grid"><a href="?type=<?php echo urlencode('Сенсорные панели оператора');?>">Сенсорные панели оператора</a>
                                     
                                     
                                     </li>
@@ -393,7 +393,7 @@ justify-content: space-between;>
     
     <!-- форма всплывающего окна формы обратной связи -->
     <div class="fields form-main">                    
-        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" >          
           <div class="form-group">
             <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
             <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
