@@ -1493,6 +1493,7 @@ body {
     text-align: center;
     line-height: 1.4em;
     margin-left: -4%;
+    margin: auto auto;
 }
 
 .h-title > h1 {
@@ -2332,7 +2333,7 @@ nav ul {
     margin-left: 53%;
 }
 @media (min-width:1600px) {    
-    .phone-main, .phone-second, .mail {margin-left:150px;}
+    .phone-main, .phone-second, .mail {padding-left: 7%;}
     .index_sale {margin-left: -50px;}
     .index__carousel__service {top:12%;}
 }
@@ -2346,6 +2347,9 @@ nav ul {
      overflow-x:hidden; overflow:hidden;}
     body {overflow-x:hidden;margin:auto;}
     .main-motors {width: 100%;}    
+}
+@media (min-width:1310px) {
+    .phone-main, .phone-second, .mail {margin: auto auto;}     
 }
 
 @media (max-width:1250px) {
@@ -2369,8 +2373,9 @@ nav ul {
     .header__fontSize__part2 {display: none;}
 }
 
-@media (max-width:1025px) {
+@media (max-width:1190px) {
     .header__fontSize__part1, .header__buttonCall {display: none;}
+    .h-contacts {float: right; margin-right: 5%;}
 }
 
 @media (min-width:769px) and (max-width: 979px) {
@@ -3250,4 +3255,4 @@ content: '✓';
 }
 .container-radio__span {margin-left: 20px;}
 
-/*contact-form viezd end/*
+/*contact-form viezd end*/

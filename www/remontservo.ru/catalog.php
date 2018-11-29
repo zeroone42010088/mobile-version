@@ -228,7 +228,7 @@ if (isset($_GET['pageno'])) {
 } else {
     $pageno = 1;
 }
-$no_of_records_per_page = 13;
+$no_of_records_per_page = 12;
 $offset = ($pageno-1) * $no_of_records_per_page;                          
 
 
@@ -315,25 +315,25 @@ justify-content: space-between;>
                         <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">          
           <div class="form-group" >
             <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required>
+            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border:1px solid #696969" required>
           </div>
           <div class="form-group">
             <label for="telFF">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+            <input id="telFF" name="telFF" type="tel" placeholder="Номер телефона" style="border:1px solid #696969">
           </div>
           <div class="form-group">
             <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-            <input id="nameFF" name="nameFF" type="text">
+            <input id="nameFF" name="nameFF" type="text" placeholder="Модель блока" style="border:1px solid #696969">
           </div>
           <div class="form-group">
             <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+            <textarea id="projectFF" name="projectFF" cols="40" rows="9" placeholder="Опишите неисправность"></textarea>
           </div>
           <div class="control-file">
             <label for="fileFF">Прикрепить файл:</label>
             <input id="fileFF" name="fileFF" type="file">
           </div>
-          <button class="btn" type="submit" id="submitFF">Отправить</button>          
+          <button class="btn" type="submit" id="submitFF">Отправить заявку</button>          
         </form>
 
                         
