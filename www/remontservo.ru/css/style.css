@@ -1443,7 +1443,8 @@ body {
 }
 
 .container {
-    min-width: 1000px;
+      width: 100%;
+ /*   min-width: 1000px; */
 /*    max-width: 1366px; */
     margin: 0 auto;
 }
@@ -3161,12 +3162,24 @@ content: '✓';
 .form-main form textarea {
     max-width: 100%;
 }
-.form-main form {
+.form-main form,
+.form-main .form-wrap {
     max-width: 320px;
     margin: auto;
     background-color: #eee;
     padding: 20px 15px;
     position: relative;
+}
+.form-wrap {
+    max-height: calc(100vh - 9%);
+    overflow-y: scroll;
+} 
+span#close {
+    position: absolute;
+    top: 8px;
+    left: calc(50vw + 150px);
+    z-index: 99999;
+    color: #fff;
 }
 .form-main .close {
     position: absolute;
