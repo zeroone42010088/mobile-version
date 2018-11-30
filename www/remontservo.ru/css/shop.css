@@ -320,13 +320,14 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
 	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+/*
 .pagination {
     display: inline-block;
-}
+}*/
 
 .pagination a {
     color: black;
-    float: left;
+    /*float: left;*/
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -615,7 +616,7 @@ a.button28 {
    0 1px rgba(255,255,255,.2) inset,
    0 3px 5px rgba(0,1,6,.5),
    0 0 1px 1px rgba(0,1,6,.2);
-  transition: .2s ease-in-out;
+  transition: .2s ease-in-out;   
 }
 a.button28:hover:not(:active) {
   background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
@@ -649,6 +650,13 @@ a.button28:active {
   bottom: 0;
   background: none;
 }
+.top-nav {position:relative; margin-top:20px;}
+/*@media (min-width:1300px) {
+  .form-container {left:10%;}  
+}
+@media (min-width:1300px) {
+  .form-container {left:10%;}  
+} */
 .form-inner {position: relative;}
 .form-inner h3 {
   position: relative;

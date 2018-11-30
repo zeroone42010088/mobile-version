@@ -70,7 +70,7 @@ require 'config.php';
         <main class=content>
 
          
-                            <div class="top-nav" style="position:relative;">
+                            <div class="top-nav">
                                 <ul class="memenu skyblue" style="margin-left:15px;">
 
                                     <li class="grid"><a href="?type=Серводвигатели">Серводвигатели</a>
@@ -177,7 +177,7 @@ if( isset($_GET['id']) && $_GET['id'] != '' ):
 endif;
 ?>
 
-<h1 style="text-align:center; margin:auto; color: rgba(0,0,0,0.6);
+<h1 style="text-align:center; margin:auto; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт <?php echo $def_word ;?></h1> 
 
@@ -188,7 +188,7 @@ endif;
           <!--      <div class="container">  -->
                   <?php
     if($_GET['search']) {
-                   echo '<h2 style="margin-left:10px; color: rgba(0,0,0,0.6);
+                   echo '<h2 style="margin-left:10px; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
                    
@@ -209,7 +209,7 @@ if($query->num_rows > 0){
                                     <a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
                                     <div class="product-bottom">
                                         <p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
+    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #000;">'.$row["name"].'</p>
                                          <p>'.$row["manefacter"].'</p> 
                                         <p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
                                     </div>
@@ -254,7 +254,7 @@ if($query->num_rows > 0){
 									<a href="?id='.$row["id"].'" class="mask"><img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" /></a>
 									<div class="product-bottom">
 										<p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
-    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #444;">'.$row["name"].'</p>
+    line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #000;">'.$row["name"].'</p>
 										 <p>'.$row["manefacter"].'</p> 
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
@@ -283,7 +283,7 @@ justify-content: space-between;>
 								<div class="simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="">
-										<h3 style="word-wrap:normal; font-size:1em; color: rgba(0,0,0,0.6);
+										<h3 style="word-wrap:normal; font-size:1em; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3); margin-top:5px;">'.$row["name"].'</h3>										
 										
@@ -308,7 +308,7 @@ justify-content: space-between;>
 
 		<div class="form-container transparent">
 			
-            <h3 style="margin-bottom:10px; text-align: center; color: rgba(0,0,0,0.6);
+            <h3 style="margin-bottom:10px; text-align: center; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3);">Контактная форма</h3>
 			<div class="fields">					

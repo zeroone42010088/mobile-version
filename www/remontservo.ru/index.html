@@ -64,7 +64,9 @@
                 <li><a href=pages/contacts.html>Контакты</a></li>
             </ul>
         </nav>
-        <main class=content>
+    
+        <main class=content>  
+            
             <div id=carousel-example-generic class="carousel slide" data-ride=carousel>
                 <ol class=carousel-indicators>
                     <li data-target=#carousel-example-generic data-slide-to=0 class=active></li>
@@ -93,7 +95,7 @@
                     <li data-target=#carousel-example-generic data-slide-to=23></li>
                     <li data-target=#carousel-example-generic data-slide-to=24></li>
                   <!--  <li data-target=#carousel-example-generic data-slide-to=25></li> -->
-                </ol>
+                </ol>              
                 <div class=carousel-inner role=listbox>
                     <div class="item active" style="margin-top: 0; background-color: #F6BE00;">
                         <p class="index__carousel__service">1.РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ <a class="index__carousel__text__datails" href="index.html#cards-spisok"> Узнать больше...</a><br><br>2.ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
@@ -101,7 +103,7 @@
 <button class="carousel-inner__item__buttonDetails__button" type="submit"><p>Узнать подробнее</p></button>
                         </form>-->
                         <img class="index_carousel-inner-spisok_img" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">                        
-                    </div>
+                    </div><a id="cards-spisok" style="position: absolute; top:150px;"></a>  
                  <!--   <div class=item style="background-color:#F6BE00;">
                         <p class="index__carousel__textUp">ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<br><a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
 
@@ -240,7 +242,7 @@
 <span class=sr-only>Next</span>
 </a>
             </div>
-            <a id="cards-spisok"></a> 
+            
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
                 <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый ремонт <?php Get_utm();?> скидка 10%</b></p>
@@ -685,7 +687,7 @@
                 </div>
             </div>
             <!-- группа 2 -->
-
+<a id="stanki"></a>
             <!-- группа 3 -->
             <div class="card-group">
                 <div class="card">
@@ -841,7 +843,7 @@
             <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
                 <!--search block-->
 
-                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку нв выезд</span></button>
+                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку на выезд</span></button>
 
                 <!--searsh begin -->
 
@@ -1040,7 +1042,7 @@
                     <li class=item><img src=img/mnf/15.jpg alt=masterdrives title=18></li>
                 </ul>
             </div> -->
-            <a id="stanki"></a>
+            
              
             <div class=howweareworking>
                 <div class=how-title>
@@ -1271,20 +1273,20 @@
                 <span class="checkmark"></span>
             </label>   
 
-            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" >
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
                 <div id="form_remont" class="frm">
              
                   <div class="form-group">
                     <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
                   </div>
                   <div class="form-group">
                     <label for="telFF">Телефон:</label>
-                    <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
                   </div>
                   <div class="form-group">
                     <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-                    <input id="nameFF" name="nameFF" type="text">
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
                   </div>
                   <div class="form-group">
                     <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
@@ -1293,8 +1295,8 @@
                   <div class="control-file">
                     <label for="fileFF">Прикрепить файл:</label>
                     <input id="fileFF" name="fileFF" type="file">
-                    <input id="fileFF2" name="fileFF2" type="file">
-                    <input id="fileFF3" name="fileFF3" type="file">
+                   <!-- <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> -->
                   </div>
                   <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
        
@@ -1309,7 +1311,7 @@
               </div>
               <div class="form-group">
                 <label for="telFF">Телефон:</label>
-                <input id="telFF" name="telFF" type="tel" placeholder="Телефон" style="border: 1px solid #B0C4DE">
+                <input id="telFF" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
               </div>
               <div class="form-group">
                 <label for="nameFF">Тип/модель неисправного станка</label>
@@ -1324,10 +1326,10 @@
                 <textarea id="projectFF" name="projectFF" cols="40" rows="4"></textarea>
               </div>
               <div class="control-file">
-                <label for="fileFF">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<br>3.фото панели оператора в момент неисправности;</label>
+                <label for="fileFF">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
                 <input id="fileFF" name="fileFF" type="file">
                 <input id="fileFF2" name="fileFF2" type="file">
-                <input id="fileFF3" name="fileFF3" type="file">
+              <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
               </div>
               <button class="btn form-button" type="submit" id="submitFF">Отправить заявку на выезд</button> 
                  
