@@ -71,27 +71,13 @@ require 'config.php';
 
          
                             <div class="top-nav">
-                                <ul class="memenu skyblue" style="margin-left:15px;">
-
-                                    <li class="grid"><a href="?type=Серводвигатели">Серводвигатели</a>
-
-                                    </li>
-
-                                    <li class="grid"><a href="?type=Сервоприводы">Сервоприводы</a>
-                                    
-                                    
-
-                                    </li>
-                                    <li class="grid"><a href="?type=<?php echo urlencode('Частотные преобразователи');?>">Частотные преобразователи</a>
-                                    
-                                    
-                                    </li>
-                                    <li class="grid"><a href="?type=<?php echo urlencode('Сенсорные панели оператора');?>">Сенсорные панели оператора</a>
-                                    
-                                    
-                                    </li>
-                                </ul>
-                                
+                                <span>Оборудование </span>
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
+                                    <option value="?type=Серводвигатели">Серводвигатели</option>
+                                    <option value="?type=Сервоприводы">Сервоприводы</option>
+                                    <option value="?type=<?php echo urlencode('Частотные преобразователи');?>">Частотные преобразователи</option>
+                                     <option value="?type=<?php echo urlencode('Сенсорные панели оператора');?>">Сенсорные панели оператора</option>
+                                  </select>
                                 <!--searsh -->
                                <div class="search-bar" style="position:absolute; right:5%; top:10%;">
                                 <form action="catalog.php" method="get">
@@ -306,7 +292,7 @@ justify-content: space-between;>
 
 
 
-		<div class="form-container transparent">
+		<div class="form-container transparent catalog-form">
 			
             <h3 style="margin-bottom:10px; text-align: center; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
@@ -379,6 +365,7 @@ justify-content: space-between;>
    <script src="js/jquery-3.3.1.min.js"></script>
     <!--form to take call from client start-->
     <script src="js/jquery.jbcallme.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/cat_contactform.js"></script>
     <!--form to take call from client end-->
    

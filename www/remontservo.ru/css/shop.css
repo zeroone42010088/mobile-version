@@ -730,7 +730,7 @@ a.button28:active {
 .form-inner input[type="submit"] {background: #1762EE; color:#fff; font-size:1em;}
  
 .btn {
-   display: block;
+  display: block;
   width: 100%;
   padding: 0 15px;
   margin: 10px 0 15px;
@@ -740,9 +740,20 @@ a.button28:active {
   color: #fff;
   background: #1762EE;
   font-family: 'Roboto', sans-serif;
-    font-size:1em;
+  font-size:1em;
     
 }
 /*mail form */
 
+/*contact-form on page catalog begin*/
+@media (min-width:760px) and (max-width:999px) {
+   .catalog-form {position: absolute; left: -4rem;} 
+}
+@media (min-width:1000px) and (max-width:1099px) {
+   .catalog-form {position: absolute; top:-320px;} 
+}
+@media (min-width:1500px) {
+   .catalog-form {position: absolute; top:300px; left: -50%; top: 12rem;} 
+}
+/*contact-form on page catalog end*/
 
