@@ -1,4 +1,3 @@
-
 $(".custom-select").each(function() {
   var classes = $(this).attr("class"),
       id      = $(this).attr("id"),
@@ -20,12 +19,13 @@ $(".custom-option:first-of-type").hover(function() {
 }, function() {
   $(this).parents(".custom-options").removeClass("option-hover");
 });
-$(".custom-select-trigger").on("click", function() {
+$(".custom-select-trigger").on("click", function(event) {
   $('html').one('click',function() {
     $(".custom-select").removeClass("opened");
   });
   $(this).parents(".custom-select").toggleClass("opened");
   event.stopPropagation();
+
 });
 $(".custom-option").on("click", function() {
   $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
@@ -33,4 +33,6 @@ $(".custom-option").on("click", function() {
   $(this).addClass("selection");
   $(this).parents(".custom-select").removeClass("opened");
   $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+  var url = $(this).data('value');
+  location.href = url;
 });

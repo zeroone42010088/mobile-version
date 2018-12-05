@@ -21,7 +21,6 @@
   }, false);
 
 });
-console.log('txmar');
 
 // $(function() {
 //   console.log(777)

@@ -69,69 +69,95 @@ require 'config.php';
 </nav>
         <main class=content>
 
-         
+<div class="top_wrap">
+
+							<div class="select_wrap diller">
+							<?
+							if(empty($_GET['id'])) {
+
+								$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
+								if (strlen($type)) {
+									$type_cond = " WHERE type like '".$type."'";
+									$type_pages = "&type=".$type;
+
+								}
+
+								$diller = filter_var($_GET["diller"],  FILTER_SANITIZE_STRING);
+								if (strlen($diller)) {
+									$diller_cond = " AND diller like '".$diller."'";
+									$diller_pages = "&diller=".$diller;
+
+								}
+
+								if (strlen($type)) {
+									?><!-- выборка -->
+									<div style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span><?
+
+									$query = $db->query("SELECT diller FROM products ".$type_cond." GROUP by diller");
+									echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\" class=\"custom-select\" placeholder=\"выбрать\">";
+
+									while($row = $query->fetch_assoc()){
+										$url = strtok($_SERVER['REQUEST_URI']);
+										$url .= '?diller='.$row["diller"];
+										if(isset($_GET['type'])):
+											$url .= '&type='.$_GET['type'];
+										endif;
+
+										if ($diller == $row["diller"]) $sel = " selected";
+										else $sel = "";
+										echo "<option data-name='".$row["diller"]."' value='" .$url. "'".$sel;
+
+										if($_GET['diller'] == $row["diller"] ) echo ' selected';
+
+										echo ">".$row["diller"]."</option>";
+									}
+									echo "</select>";?>
+							        </div>
+							<!-- выборка end -->
+							<?php
+								}
+							}
+							?>
+							</div>
+
+						<div class="select_wrap">
+						         <?php 
+						         $req_uri = str_replace('/catalog.php', '', $_SERVER['REQUEST_URI']);
+						         	?>
                             <div class="top-nav">
                                 <span>Оборудование </span>
-                                <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
-                                    <option value="?type=Серводвигатели>Серводвигатели</option>
-                                    <option value="?type=Сервоприводы>Сервоприводы</option>
-                                    <option value="?type=<?php echo urlencode('Частотные преобразователи');?>">Частотные преобразователи</option>
-                                     <option value="?type=<?php echo urlencode('Сенсорные панели оператора');?>">Сенсорные панели оператора</option>
-                                  </select>
-                                <!--searsh -->
-                               <div class="search-bar" style="position:absolute; right:5%; top:10%;">
+									<select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
+										<?php 
+										$arr_types = array(
+											'Серводвигатели',
+											'Сервоприводы',
+											'Частотные преобразователи',
+											'Сенсорные панели оператора'
+										);
+										for ($i=0; $i < count($arr_types); $i++) { 
+											$url = '?type='.urlencode($arr_types[$i]);
+											if(isset($_GET['diller'])):
+												$url .= '&diller='.strip_tags($_GET['diller']);
+											endif;
+
+
+											echo '<option data-name="'.$arr_types[$i].'" value="'.$url.'"'; 
+											if($_GET['type'] == $arr_types[$i] ) echo 'selected';
+											echo '>'.$arr_types[$i].'</option>';
+										}
+										?>
+									</select>    
+                              </div>
+						 </div>                    
+						 <!--searsh -->
+                            <div class="search-bar">
                                 <form action="catalog.php" method="get">
                                 <input type="text" name="search" placeholder="Поиск"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
                                 <input type="submit" value="">
                                 </form>
                             </div> 
                                <!--searsh -->
-                                
-                              
-                                
-                            </div>
-                       
-
-
-<?
-if(empty($_GET['id'])) {
-
-	$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
-	if (strlen($type)) {
-		$type_cond = " WHERE type like '".$type."'";
-		$type_pages = "&type=".$type;
-
-	}
-
-	$diller = filter_var($_GET["diller"],  FILTER_SANITIZE_STRING);
-	if (strlen($diller)) {
-		$diller_cond = " AND diller like '".$diller."'";
-		$diller_pages = "&diller=".$diller;
-
-	}
-
-	if (strlen($type)) {
-		?><!-- выборка -->
-		<div style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span><?
-
-		$query = $db->query("SELECT diller FROM products ".$type_cond." GROUP by diller");
-		echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\"><option>Выбрать</option>";
-		while($row = $query->fetch_assoc()){
-			if ($diller == $row["diller"]) $sel = " selected";
-			else $sel = "";
-			echo "<option value='" .$row["diller"]. "'".$sel.">".$row["diller"]."</option>";
-		}
-		echo "</select>";?>
-        </div>
-<!-- выборка end -->
-<?php
-	}
-
-
-}
-
-?>
-
+</div><!--end top_wrap-->
 
 <?php 
 $def_word = 'электроники';
@@ -406,6 +432,19 @@ justify-content: space-between;>
         </form>            
     </div>
 <!-- форма всплывающего окна формы обратной связи -->
+
+<script>
+$(document).ready(function(){
+  var type = "<?php echo $_GET['type'];?>";
+  var diller = "<?php echo $_GET['diller'];?>";
+  if(type.length != 0){
+    $(".top-nav span.custom-select-trigger").html(type); 
+  } 
+  if(diller.length != 0){
+    $(".diller span.custom-select-trigger").html(diller); 
+  }  
+});
+</script>
 
 </body>
 

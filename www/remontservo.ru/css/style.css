@@ -2338,6 +2338,21 @@ nav ul {
 /********* custom select */
 
 /** Custom Select **/
+.select_wrap {
+    display: inline-block;
+    width: 31.3333333%;
+    margin: 1%;
+}
+.top_wrap{
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.search-bar {
+    position: absolute;
+    right: 5%;
+    top: 36%;
+}
 .custom-select-wrapper {
   position: relative;
   display: inline-block;
@@ -2352,16 +2367,15 @@ nav ul {
   }
     .custom-select-trigger {
       position: relative;
-      display: block;
-      width: 225px;
-      padding: 0 84px 0 22px;
-      font-size: 22px;
-      font-weight: 300;
-      color: #fff;
-      line-height: 60px;
-      background: #5c9cd8;
-      border-radius: 4px;
-      cursor: pointer;
+    display: block;
+    width: 251px;
+    padding: 8px 84px 8px 22px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    background: #5c9cd8;
+    border-radius: 4px;
+    cursor: pointer;
     }
       .custom-select-trigger:after {
         position: absolute;
@@ -2425,10 +2439,10 @@ nav ul {
       position: relative;
       display: block;
       padding: 10px 22px;
-      border-bottom: 1px solid #b5b5b5;
+      border-bottom: 1px solid #333;
       font-size: 18px;
       font-weight: 600;
-      color: #b5b5b5;
+      color: #333;
       line-height: 1.3;
       cursor: pointer;
       transition: all .4s ease-in-out;
