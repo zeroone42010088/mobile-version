@@ -73,8 +73,8 @@ require 'config.php';
                             <div class="top-nav">
                                 <span>Оборудование </span>
                                 <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
-                                    <option value="?type=Серводвигатели">Серводвигатели</option>
-                                    <option value="?type=Сервоприводы">Сервоприводы</option>
+                                    <option value="?type=Серводвигатели>Серводвигатели</option>
+                                    <option value="?type=Сервоприводы>Сервоприводы</option>
                                     <option value="?type=<?php echo urlencode('Частотные преобразователи');?>">Частотные преобразователи</option>
                                      <option value="?type=<?php echo urlencode('Сенсорные панели оператора');?>">Сенсорные панели оператора</option>
                                   </select>
