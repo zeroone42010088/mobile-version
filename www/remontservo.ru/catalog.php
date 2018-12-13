@@ -7,9 +7,9 @@ require 'config.php';
     <meta charset="utf-8" />
     <title>Каталог ремонтируемого оборудования и электроники</title>
     <link rel="shortcut icon" type=image/png href=img/logo2.png>
-    <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT"/>
-    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. Даже устаревшее оборудование. Гарантия" />
-    <link href=css/normalize.css rel=stylesheet>
+    <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain"/>
+    <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
+    <!--<link href=css/normalize.css rel=stylesheet>-->
     <link href=css/shop.css rel=stylesheet>
     <link href=css/style.css rel=stylesheet>
     <link href="css/jquery.jbcallme.css" rel=stylesheet>
@@ -191,7 +191,7 @@ endif;
 
 <h1 style="text-align:center; margin:auto; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px;">Диагностика и ремонт <?php echo $def_word ;?></h1> 
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-left:10%;  white-space:nowrap; margin-top:20px; margin-bottom:10px;">Диагностика и ремонт <?php echo $def_word ;?></h1> 
 
             
             <!--about-end-->
@@ -287,7 +287,7 @@ if($query->num_rows > 0){
                                
                                 <div class="product-row" style="	display: flex;
 
-justify-content: space-between;>
+justify-content: space-between; margin: 0 auto;>
                                 
                                 
                                 
@@ -295,9 +295,9 @@ justify-content: space-between;>
 								<div class="simpleCart_shelfItem">
 									<img class="img-responsive zoom-img" src=".'.$row["imgFile"].'.jpg" alt="" />
 									<div class="">
-										<h3 style="word-wrap:normal; font-size:1em; color: #000;
+										<h3 style="word-wrap:normal; font-size:1em; color: #000; max-width:70%; text-align:center;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin-top:5px;">'.$row["name"].'</h3>										
+	                 0px -5px 35px rgba(255,255,255,0.3); margin-top:5px; margin-left:50px;">'.$row["name"].'</h3>										
 										
 									</div>
 									
@@ -307,8 +307,8 @@ justify-content: space-between;>
                             <div class="catalog_cardinfo" style="margin-left:100px;">
                             
                             <ol class="rounded">
-                              <li><a href="#">Диагностика от 3 дней</a></li>
-                              <li><a href="#">Ремонт от 7 дней</a></li>
+                              <li><a href="#">Диагностика от 1 дня</a></li>
+                              <li><a href="#">Ремонт от 3 дней</a></li>
                               <li><a href="#">Гарантия на ремонт 6 месяцев</a></li>
                               <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
                             </ol>
