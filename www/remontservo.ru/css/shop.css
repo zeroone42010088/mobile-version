@@ -672,7 +672,7 @@ a.button28:active {
   display: block;
   padding-left: 15px;
   font-family: 'Roboto', sans-serif;
-  color: #808080;
+  color: #000;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -684,7 +684,7 @@ a.button28:active {
   border-width: 0;
   line-height: 40px;
   border-radius: 20px;
-  color: #808080;
+  color: #000;
   background: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -722,7 +722,7 @@ a.button28:active {
 .form-inner input[type="submit"] {background: #1762EE; color:#fff; font-size:1em;}
  
 .btn {
-   display: block;
+  display: block;
   width: 100%;
   padding: 0 15px;
   margin: 10px 0 15px;
@@ -732,7 +732,7 @@ a.button28:active {
   color: #fff;
   background: #1762EE;
   font-family: 'Roboto', sans-serif;
-    font-size:1em;
+  font-size:1em;
     
 }
 /*mail form */

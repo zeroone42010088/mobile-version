@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="../img/logo2.png">
     <meta name="keywords" content="промышленные компьютеры, ремонт, диагностика"/>
     <meta name="description" content="Выполняем работы по диагностике и ремонту промышленных компьютеров. Работы по настройке"/>
-    <link href="../css/normalize.css" rel=stylesheet>    
+    <!-- <link href="../css/normalize.css" rel=stylesheet> -->   
     <!-- <link href="../css/mail-form.css" rel="stylesheet">-->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/slick.css" rel="stylesheet">
@@ -35,18 +35,18 @@
   flex-direction: column;">
     <div class="container">
        <header class=header>
-            <div class=h-logo><a href=https://www.remontservo.ru/><img src=../img/logo1.png alt=KERNEL></a>
+                 <div class=h-logo><a href=https://www.remontservo.ru/><img src=../img/logo1.png alt=KERNEL></a>
             </div>
             <div class=h-title>
                 <p class="h1-main-page cardPagesHeader">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
-                <p class="h2-main-page"><span class="header__fontSize">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ<span class="header__fontSize__part1">, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ</span><span class="header__fontSize__part2">, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</span></span> 
+                <p class="h2-main-page"><span class="header__fontSize">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ<span class="header__fontSize__part1">, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ</span><span class="header__fontSize__part2">, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</span></span>
                 </p>
             </div>
             <div class=h-contacts>
-                <p><a class="phone-main" href=tel:+7(8482)79-78-54 style="color:#FFF;text-decoration:none;font-size:1em;margin-left:-35px;">+7(8482)<b>79-78-54</b></a><br>
-                    <a class="phone-second" href=tel:+79171215301 style="color:#FFF;text-decoration:none;font-size:1em; margin-left:-35px;">+79171215301</a><br>
-                    <a class="mail" style="margin-left: -35px;" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
-                <button class="callme_button header__buttonCall" style="margin-right: 8%"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
+                <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
+                    <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
+                    <a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
+                <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
             </div>
         </header>
         <nav class=nav style="position: relative; top:auto; z-index: 100; max-height:85px;">
@@ -299,14 +299,14 @@
     <!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
     <!-- форма всплывающего окна формы обратной связи -->
       <div class="fields form-main">                    
-        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
+        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">          
           <div class="form-group">
             <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
             <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
           </div>
           <div class="form-group">
             <label for="telFF">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
+            <input id="telFF" name="telFF" type="tel" placeholder="Номер телефона">
           </div>
           <div class="form-group">
             <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>

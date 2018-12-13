@@ -8,8 +8,9 @@
     <meta name=description content="Сервисный центр производит: диагностику, ремонт, перемотку, настройку серводвигателей и сервомоторов, сервоприводов, промышленной электроники и оборудования" />    
     <link href=css/style.css rel=stylesheet>
     <link href="css/slick.css" rel="stylesheet">
-    <link href="css/slick-theme.css" rel="stylesheet">    
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <link href="css/slick-theme.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <!-- Begin Talk-Me {literal} -->
  <script>
@@ -42,7 +43,7 @@
             <div class=h-contacts>
                 <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
                     <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
-                    <a class="mail" href=mailto:msulianov@gmail.com>89171215301@mail.ru</a></p>
+                    <a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
                 <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
             </div>
         </header>
@@ -58,12 +59,14 @@
                     </ul>
                 </li>
                 <li><a href=pages/our-works.html>Выполненные работы</a></li>
-              <!--  <li><a href=catalog.php>Ремонт электроники в сервисном центре</a></li> -->
+                <!--<li><a href=catalog.php>Ремонт электроники в сервисном центре</a></li>-->
                 <li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
                 <li><a href=pages/contacts.html>Контакты</a></li>
             </ul>
         </nav>
-        <main class=content>
+    
+        <main class=content>  
+            
             <div id=carousel-example-generic class="carousel slide" data-ride=carousel>
                 <ol class=carousel-indicators>
                     <li data-target=#carousel-example-generic data-slide-to=0 class=active></li>
@@ -92,7 +95,7 @@
                     <li data-target=#carousel-example-generic data-slide-to=23></li>
                     <li data-target=#carousel-example-generic data-slide-to=24></li>
                   <!--  <li data-target=#carousel-example-generic data-slide-to=25></li> -->
-                </ol>
+                </ol>              
                 <div class=carousel-inner role=listbox>
                     <div class="item active" style="margin-top: 0; background-color: #F6BE00;">
                         <p class="index__carousel__service">1.РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ <a class="index__carousel__text__datails" href="index.html#cards-spisok"> Узнать больше...</a><br><br>2.ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
@@ -100,7 +103,7 @@
 <button class="carousel-inner__item__buttonDetails__button" type="submit"><p>Узнать подробнее</p></button>
                         </form>-->
                         <img class="index_carousel-inner-spisok_img" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">                        
-                    </div>
+                    </div><a id="cards-spisok" style="position: absolute; top:150px;"></a>  
                  <!--   <div class=item style="background-color:#F6BE00;">
                         <p class="index__carousel__textUp">ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<br><a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
 
@@ -239,10 +242,10 @@
 <span class=sr-only>Next</span>
 </a>
             </div>
-            <a id="cards-spisok"></a> 
+            
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
-                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В ноябре 2018 На первый ремонт промышленной электроники скидка 10%</b></p>
+                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание!  В декабре 2018 На первый ремонт промышленной электроники скидка 10%</b></p>
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style=" height: 55px;">
                 <img class="index_sale" src=img/percent.png alt=скидка style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
 
@@ -684,7 +687,7 @@
                 </div>
             </div>
             <!-- группа 2 -->
-
+<a id="stanki"></a>
             <!-- группа 3 -->
             <div class="card-group">
                 <div class="card">
@@ -831,7 +834,7 @@
             
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
-                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый выезд на неисправное оборудование скидка 10%</b></p>
+                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В декабре 2018 На первый выезд на неисправное оборудование скидка 10%</b></p>
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style="height: 55px;">
                 <img src=img/percent.png class="index_sale" alt="скидка 10%" style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
 
@@ -840,7 +843,7 @@
             <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
                 <!--search block-->
 
-                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку нв выезд</span></button>
+                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку на выезд</span></button>
 
                 <!--searsh begin -->
 
@@ -855,10 +858,11 @@
             </div>
             <!--image-->
             
-            <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>  
             
-                  <div class="center slider" style="width:93%; max-width:1365px; height: 240px; margin:0 auto 70px;">
-                            <section class="regular slider" style="width:100%; height: 240px;"> 
+            
+                  <div class="center slider" style="width:93%; max-width:1365px; height: 270px; margin:0 auto 70px;">
+                        <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>
+                            <div class="regular slider" style="width:100%; height: 240px;"> 
                                <div>
                                     <img src="img/slider-down/chpu_stanki.jpg" alt="Токарные станки с ЧПУ фото">
                                    <p class="slider-down__text"><b>Ремонт токарных станков с ЧПУ</b><p>
@@ -1013,9 +1017,7 @@
                                     <img src="img/slider-down/paper_industry.jpg" alt="Полиграфическое оборудование ремонт фотография">
                                     <p class="slider-down__text"><b>Ремонт полиграфического оборудования</b><p>
                                 </div>
-                                
-                                  
-                          </section> 
+                          </div> 
                         </div> 
           
         <!--    <div class=logomanufacturers>
@@ -1040,7 +1042,7 @@
                     <li class=item><img src=img/mnf/15.jpg alt=masterdrives title=18></li>
                 </ul>
             </div> -->
-            <a id="stanki"></a>
+            
              
             <div class=howweareworking>
                 <div class=how-title>
@@ -1100,6 +1102,27 @@
   console.log(77)
   document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
     console.log(66)
+    var http = new XMLHttpRequest(), f = this;
+    var th = $(this);
+    evt.preventDefault();
+    http.open("POST", "js/contact.php", true);
+    http.onreadystatechange = function() {
+      if (http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+        if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
+          th.trigger("reset");
+        }
+      }
+    }
+    http.onerror = function() {
+      alert('Ошибка, попробуйте еще раз');
+    }
+    http.send(new FormData(f));
+  }, false);
+
+
+  document.getElementById('ajax-contact-form1').addEventListener('submit', function(evt){
+    console.log(55)
     var http = new XMLHttpRequest(), f = this;
     var th = $(this);
     evt.preventDefault();
@@ -1232,36 +1255,109 @@
 
 </script>
     <!--slider end-->
-      <!-- Yandex.Metrika counter -->  <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+      <!-- Yandex.Metrika counter --> <!-- <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> --> <!-- /Yandex.Metrika counter -->
 
-<!-- форма всплывающего окна формы обратной связи -->
-    <div class="fields form-main">                    
-        <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" _lpchecked="1">          
-          <div class="form-group">
-            <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="">
-          </div>
-          <div class="form-group">
-            <label for="telFF">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" placeholder="Телефон">
-          </div>
-          <div class="form-group">
-            <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-            <input id="nameFF" name="nameFF" type="text">
-          </div>
-          <div class="form-group">
-            <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-            <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
-          </div>
-          <div class="control-file">
-            <label for="fileFF">Прикрепить файл:</label>
-            <input id="fileFF" name="fileFF" type="file">
-          </div>
-          <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
-          <span class="close">&#215;</span>         
-        </form>            
-    </div>
-<!-- форма всплывающего окна формы обратной связи -->
+<!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
+    <div class="fields form-main my-form">    
+                 <span class="close" id="close">&#215;</span>   
+        <div class="form-wrap">
+                 
+        
+        
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
+                <span class="checkmark"></span>
+            </label>   
+
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div id="form_remont" class="frm">
+             
+                  <div class="form-group">
+                    <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telFF">Телефон:</label>
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+                  </div>
+                  <div class="control-file">
+                    <label for="fileFF">Прикрепить файл:</label>
+                    <input id="fileFF" name="fileFF" type="file">
+                    <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> 
+                  </div>
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+       
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
+            </form>
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <div id="form_viezd" class="frm">
+              <div class="form-group">
+                <label for="contactFF1">Ваш почтовый адрес</label>
+                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="telFF1">Телефон:</label>
+                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="nameFF2">Тип/модель неисправного станка</label>
+                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+                <div class="form-group">
+                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>            
+              <div class="form-group">
+                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
+                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
+              </div>
+              <div class="control-file">
+                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
+                <input id="fileFF1" name="fileFF" type="file">
+                <input id="fileFF2" name="fileFF2" type="file">
+                <input id="fileFF3" name="fileFF3" type="file"> 
+              </div>
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
+                 
+            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
+        </form>
+
+        </div>
+    </div> 
+
+<script>
+    $('.my-form .form_change').on('change', function() {
+        var formID = $('input[name=radio]:checked', '.my-form').data('id');
+        console.log(formID);
+        DisplayForm(formID); 
+    });
+    $( document ).ready(function() {
+        var formID = $('input[name=radio]:checked', '.my-form').data('id');
+        console.log(formID);
+        DisplayForm(formID);
+    });
+    function DisplayForm(formID){
+        $('.frm').parent().css('display','none');
+        $('#'+formID).parent().css('display','block');
+    }
+    var txt = document.getElementById('ajax-contact-form1').innerHTML ;
+//console.log('***'+txt);
+</script>
+
 </body>
 
 </html>
