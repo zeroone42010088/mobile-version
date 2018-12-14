@@ -72,40 +72,7 @@ $attachment";
 Content-Type: \"$filetype\"; name=\"$filename\"
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename=\"$filename\"
-
-$attachment";
-     }
-
-
-          if(is_uploaded_file($_FILES['fileFF2']['tmp_name'])) {
-         $attachment = chunk_split(base64_encode(file_get_contents($_FILES['fileFF4']['tmp_name'])));
-         $filename = $_FILES['fileFF2']['name'];
-         $filetype = $_FILES['fileFF2']['type'];
-         $filesize = $_FILES['fileFF2']['size'];
-         $message.="
  
---$boundary
-Content-Type: \"$filetype\"; name=\"$filename\"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename=\"$filename\"
- 
-$attachment";
-     }
-
-
-
-          if(is_uploaded_file($_FILES['fileFF3']['tmp_name'])) {
-         $attachment = chunk_split(base64_encode(file_get_contents($_FILES['fileFF5']['tmp_name'])));
-         $filename = $_FILES['fileFF3']['name'];
-         $filetype = $_FILES['fileFF3']['type'];
-         $filesize = $_FILES['fileFF3']['size'];
-         $message.="
- 
---$boundary
-Content-Type: \"$filetype\"; name=\"$filename\"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename=\"$filename\"
-
 $attachment";
      }
    $message.="
