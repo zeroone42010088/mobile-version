@@ -2512,9 +2512,13 @@ nav ul {
 @media (min-width:769px) and (max-width: 979px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;} 
-    
+    body {overflow-x:hidden;}
 }
+@media (max-width:800px) {
+    .index__content__searchForm input, .index__content__searchForm__button {display: none;}
+}
+
+
 @media (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
@@ -2541,8 +2545,10 @@ nav ul {
     .card-img-top {max-height:250px;}
     .header__fontSize__part2 {display: none;}
 }
+@media (max-width:480px) {
     
 }
+
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
     body {overflow-x:hidden;}
@@ -2555,8 +2561,7 @@ nav ul {
     .phone-second {position: absolute; top:75%; left: 20%; }
     .mail {position: absolute; top:85%; left: 20%; }
     .main-motors {width:100%;}
-    .nav {height: 380px;
-    } 
+    .nav {height: 380px;} 
     .menu {list-style-type: none; padding-left: 0; margin-left: 0;}     
     .main-motors {width:100%;}
      .card-img-top {max-height:150px;}
@@ -2603,6 +2608,9 @@ nav ul {
     .badge {zoom:70%;}
     .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
      .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators {display:none;} 
+}
+@media (min-width: 376px) and (max-width: 480px)  { 
+    .nav {max-height: 176px;}    
 }
 @media (max-width: 360px) and (orientation:portrait)   { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
@@ -2922,10 +2930,12 @@ nav ul {
   flex-direction: column;    
   justify-content: center;
   max-width: 1365px;
+    flex-wrap:wrap;
 }
 
 .card-group > .card {
-  margin-bottom: 15px;    
+  margin-bottom: 15px;
+ /*  flex-basis: 25%; */
 }
 
 @media (min-width: 576px) {
@@ -3183,6 +3193,7 @@ content: '✓';
   margin: 50px auto 0;
   background-image: none;
   background-size: cover;
+  padding-top:0;
 }
 .transparent:before {
   content: "";
@@ -3399,4 +3410,8 @@ span#close {
 .container-radio__span {margin-left: 20px;}
 
 /*contact-form viezd end*/
+@media (min-width:300px) and (max-width: 1800px) {
+    .card {flex-basis: 33%;}
+}
+    
 
