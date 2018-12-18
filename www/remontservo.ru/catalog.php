@@ -296,7 +296,7 @@ if($query->num_rows > 0){
         
 								echo '
                                 <h1 class="catalog__h1 catalog__h1__item" >'.$row["block"].' '.$row["name"].'</h1>
-                                <div class="product-row" style="display: flex; flex-direction: row; justify-content:center; >
+                                <div class="product-row catalog_item_content" style="display: flex; flex-direction: row; justify-content: center;">
                                 
 								<div class="col-md-4">
 								<div class="simpleCart_shelfItem catalog_item_slider">
