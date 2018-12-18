@@ -12,11 +12,12 @@ require 'config.php';
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
         <!--<link href=css/normalize.css rel=stylesheet>-->
         <link href=css/shop.css rel=stylesheet>
-        <link href=css/style.css rel=stylesheet>
-        <link href="css/jquery.jbcallme.css" rel=stylesheet>
+        <link href=css/style.css rel=stylesheet>        
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
      <!--   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
         <!-- Begin Talk-Me {literal} -->
-        <script>
+     <!--   <script>
             (function(d, w, m) {
                 window.supportAPIMethod = m;
                 var s = d.createElement('script');
@@ -34,7 +35,7 @@ require 'config.php';
                 else d.documentElement.firstChild.appendChild(s);
             })(document, window, 'TalkMe');
 
-        </script>
+        </script> -->
         <!-- End Talk-Me {literal} -->
     </head>
 
@@ -215,7 +216,7 @@ endif;
 	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
 
                     <div class="product-top">
-                        <div class="product-one" style="display:flex; flex-direction:row; flex-wrap:wrap; align-content:flex-start;">
+                        <div class="product-one" style="display:flex; flex-direction:row; justify-content:center; flex-wrap:wrap; align-content:flex-start;">
 
 
                             <?php
@@ -294,16 +295,51 @@ if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         
 								echo '
-                               
-                                <div class="product-row" style="display: flex; flex-direction: row; >
+                                <h1 class="catalog__h1 catalog__h1__item" >'.$row["block"].' '.$row["name"].'</h1>
+                                <div class="product-row" style="display: flex; flex-direction: row; justify-content:center; >
                                 
 								<div class="col-md-4">
-								<div class="simpleCart_shelfItem">
-									<img class="img-responsive zoom-img catalogItemImg" src=".'.$row["imgFile"].'.jpg" alt="" />
-									<div class="">
-										<h3 class="catalog__card__h3">'.$row["block"].'<br> '.$row["name"].'</h3>										
+								<div class="simpleCart_shelfItem catalog_item_slider">
+								 
+                            <section class="regular"> 
+                               <div>
+                                    <img src="../img/servodrive-slider-pictures/berger_6154.jpg" alt="Ремонт серводвигателей BERGER LAHR">
+                                </div> 
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/drive_abb_6176.jpg" alt="Ремонт серводвигателей ABB">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/siemens_1fk7064_6231.jpg" alt="Ремонт серводвигателей SIEMENS">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/remont_elau_6034.jpg" alt="Ремонт серводвигателей ELAU ">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/remont_laferservo_6022.jpg" alt="Ремонт серводвигателей LAFERTSERVO">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/servodrive_6013.jpg" alt="Ремонт серводвигателей PSE-312-8">
+                                </div>
+                                 <div>
+                                    <img src="../img/servodrive-slider-pictures/servodrive_abb_6142.jpg" alt="Cервомоторы ABB ремонт">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/servomotor-lenze-6097.jpg" alt="Ремонт серводвигателей Lenze">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/servomotor_control_technigues.jpg" alt="Ремонт серводвигателей Control_Technigues">
+                                </div>
+                                <div>
+                                    <img src="../img/servodrive-slider-pictures/siemens_1ah3_6173.jpg" alt="Диагностика серводвигателей Siemens">
+                                </div>
+                               
+                          </section> 
+                         
+                        <!--slider-->	
+																								
+		            <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>                   					
 										
-									</div>
+									
 									
 								</div>
 							</div>
@@ -319,43 +355,26 @@ if($query->num_rows > 0){
                             </div>
                          
 
-		<div class="form-container transparent catalog-form">
-			
-            
-			<div class="fields">
-            <h3 style="margin-bottom:10px; text-align: center; color: #000;
-	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3);">Контактная форма</h3>
-                        <form class="form-inner"  id="ajax-contact-form" enctype="multipart/form-data" method="post">          
-          <div class="form-group" >
-            <label for="contactFF" style="color:#000">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-            <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border:1px solid #696969" required>
-          </div>
-          <div class="form-group">
-            <label for="telFF" style="color:#000">Телефон:</label>
-            <input id="telFF" name="telFF" type="tel" placeholder="Номер телефона" style="border:1px solid #696969">
-          </div>
-          <div class="form-group">
-            <label for="nameFF" style="color:#000">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-            <input id="nameFF" name="nameFF" type="text" placeholder="Модель блока" style="border:1px solid #696969">
-          </div>
-          <div class="form-group">
-            <label for="projectFF" style="color:#000">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-            <textarea id="projectFF" name="projectFF" cols="40" rows="9" placeholder="Опишите неисправность"></textarea>
-          </div>
-          <div class="control-file">
-            <label for="fileFF" style="color:#000">Прикрепить файл:</label>
-            <input id="fileFF" name="fileFF" type="file">
-          </div>
-          <button class="btn" type="submit" id="submitFF">Отправить заявку</button>          
-        </form>
-
+ 
+                    
+                    <div class="list_works" >
+                        <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
                         
-			</div>
-		</div>            
+                        
+                        <div class="pages__content__search repair_search catalog_search" style="">
+                            <form class="pages__content__searchForm catalog_search__item_serchForm">
+                                <input type="text" placeholder="Найти оборудование">
+                                  <a class="pages__content__searchForm__button" href="pages/our-works.html"></a>
+                                
+                            </form>
+                        </div>
+                        
+                   </div>
 				
                 </div>
+             
                
+                     
     ';
 } }} 
                          
@@ -389,13 +408,19 @@ if($query->num_rows > 0){
                 <div class=f-logo-r><img src=img/logo3.png alt=kerneltlt></div>
             </footer>
         </div>
+        <link href="css/jquery.jbcallme.css" rel=stylesheet>
         <!-- container -->
+        
         <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-2.2.0.min.js"></script>
+       <script src="js/slick.js"></script>
+        
         <!--form to take call from client start-->
         <script src="js/jquery.jbcallme.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/cat_contactform.js"></script>
         <!--form to take call from client end-->
+
 
 
 
@@ -405,6 +430,60 @@ if($query->num_rows > 0){
         <script src=js/callmefile.js></script>
         <!-- mail form end-->
         <script src=js/gorizontalmenu.js></script>
+        
+                <!--slider start-->
+<script>
+
+    $(document).on('ready', function() {
+
+            $(".regular").slick({
+            //    centerMode: true,
+  //centerPadding: '60px',
+                аccessibility: true,
+                autoplay:true,
+                arrows:true,
+                focusOnSelect:true,
+                pauseOnHover: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                pauseOnHover:true,
+            /*     responsive: [
+                      {
+      breakpoint: 1200,
+      settings: {        
+      //  centerMode: true,
+      //  centerPadding: '40px',
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+     //   centerMode: true,
+     //   centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+     //   centerMode: true,
+     //   centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ] */
+            });
+
+
+        });
+
+</script>
+    <!--slider end-->
 
         <!-- форма всплывающего окна формы обратной связи -->
         <div class="fields form-main">

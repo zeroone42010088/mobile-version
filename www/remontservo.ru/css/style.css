@@ -3331,9 +3331,13 @@ span#close {
     padding: 10px;
 }
 .form-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   transition: 0.15s;  
 }
+.form-button:active {
+  background-color: #7CFC00;  
+}
+
 /*mail form */
 .card-group {margin:auto auto;}
 .slider-down__text {text-align: center;}
