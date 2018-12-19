@@ -200,10 +200,11 @@ if( isset($_GET['id']) && $_GET['id'] != '' ):
 endif;
 ?>
 
-                <h1 class="catalog__h1" style="">Диагностика и ремонт
+<?php if( ! isset($_GET['id'])): ?>
+                <h1 class="catalog__h1">Диагностика и ремонт
                     <?php echo $def_word ;?>
                 </h1>
-
+<?php endif;?>
 
                 <!--about-end-->
                 <!--product-starts-->
@@ -214,9 +215,8 @@ endif;
                    echo '<h2 style="margin-left:10px; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
-
                     <div class="product-top">
-                        <div class="product-one" style="display:flex; flex-direction:row; justify-content:center; flex-wrap:wrap; align-content:flex-start;">
+                        <div class="product-one <?php if(isset($_GET['id'])): echo 'single'; else: echo 'catalog'; endif; ?>">
 
 
                             <?php
@@ -293,15 +293,29 @@ if($query->num_rows > 0){
 $query = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
+
+    	$folder = (int)$_GET['id'];
+    	$fileList = glob('img/slider/'.$folder.'/*');
+    	//var_dump($fileList);
+	
         
 								echo '
                                 <h1 class="catalog__h1 catalog__h1__item" >'.$row["block"].' '.$row["name"].'</h1>
-                                <div class="product-row catalog_item_content" style="display: flex; flex-direction: row; justify-content: center;">
+                                <div class="product-row catalog_item_content">
                                 
-								<div class="col-md-4">
+								<div class="">
 								<div class="simpleCart_shelfItem catalog_item_slider">
+								<section class="regular">';
 								 
-                            <section class="regular"> 
+								foreach($fileList as $filename){
+									?>
+									<div>
+	                                    <img src="<?= $filename;?>" alt="Ремонт серводвигателей BERGER LAHR">
+	                                </div>
+									<?php 
+								}
+                            
+                           /* echo ' 
                                <div>
                                     <img src="../img/servodrive-slider-pictures/berger_6154.jpg" alt="Ремонт серводвигателей BERGER LAHR">
                                 </div> 
@@ -331,15 +345,13 @@ if($query->num_rows > 0){
                                 </div>
                                 <div>
                                     <img src="../img/servodrive-slider-pictures/siemens_1ah3_6173.jpg" alt="Диагностика серводвигателей Siemens">
-                                </div>
-                               
-                          </section> 
+                                </div>';*/
+
+
+                            echo '
+                              </section> 
                          
-                        <!--slider-->	
-																								
-		            <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>                   					
-										
-									
+                        <!--slider-->      
 									
 								</div>
 							</div>
@@ -354,10 +366,20 @@ if($query->num_rows > 0){
                             </ol>
                             </div>
                          
-
- 
                     
-                    <div class="list_works" >
+                    
+				
+                </div>
+             
+               
+                     
+    ';
+} }} 
+                         
+?>
+<div class="product_row_button">
+    <div class=""> <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>  </div>
+    <div class="list_works">
                         <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
                         
                         
@@ -370,16 +392,7 @@ if($query->num_rows > 0){
                         </div>
                         
                    </div>
-				
-                </div>
-             
-               
-                     
-    ';
-} }} 
-                         
-?>
-
+</div>
 
                         </div>
                         <!-- product-one -->

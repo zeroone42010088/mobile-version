@@ -2462,6 +2462,18 @@ nav ul {
 
 
 /* end custom select */
+.product-one.catalog{max-width: 1170px; width: 100%; margin:0 auto; display:flex; flex-wrap:wrap; }
+.product-one.catalog .product_row_button {display: none;}
+/* catalog slide start */
+
+.product-one.single{max-width: 1170px; width: 100%; margin:0 auto; display:flex; flex-direction:column; justify-content:center; flex-wrap:wrap; align-content:flex-start;}
+.product-one .list_works {margin-left: 0;}
+.product-row, .product_row_button {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.product_row_button{justify-content:flex-start;}
+.product-row > div, .product_row_button > div {width: 45%;}
+.product_row_button > div:first-child{text-align: center;}
+
+/* catalog slide end */
 
 @media (min-width:1600px) {    
     .phone-main, .phone-second, .mail {padding-left: 7%;}
@@ -2937,6 +2949,23 @@ nav ul {
   margin-bottom: 15px;
  /*  flex-basis: 25%; */
 }
+
+@media (max-width: 1200px) {
+  .product-one{
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing:border-box;
+  }
+ }
+
+ @media (max-width: 600px) {
+  .product-row, .product_row_button{
+    flex-flow: row wrap;
+  }
+  .product-row > div, .product_row_button > div {
+    width: 100%!important;
+  }
+ }
 
 @media (min-width: 576px) {
   .card-group {
