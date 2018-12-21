@@ -2247,6 +2247,7 @@ nav ul {
 .list_works{
     padding-left: 6%;
 }
+
 .header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover, {  
   transform: scale(1.1);
   transition: 0.15s;  
@@ -2312,6 +2313,7 @@ nav ul {
 }
 .repair_block {
     margin-bottom: 120px;
+    outline: #DCDCDC solid 3px; width:100%; margin-right: -60px; margin-left: 5%;
 }
 .repair_block h2 {
     text-align: right;
@@ -2474,6 +2476,28 @@ nav ul {
 .product_row_button > div:first-child{text-align: center;}
 
 /* catalog slide end */
+@media (min-width:1900px) {
+.index_cards_list_works {margin-left:-3em;}    
+}
+@media (min-width:1800px) and (max-width:1860px) {
+.index_cards_list_works {margin-left:-5em;}    
+}
+@media (min-width:1770px) and (max-width:1899px) {
+.index_cards_list_works {margin-left:0;}    
+}
+@media (min-width:1600px) and (max-width:1769px) {
+.index_cards_list_works {margin-left:5em;}    
+}
+@media (min-width:1600px) and (max-width:1650px) {
+.index_cards_list_works {margin-left:8em;}    
+}
+@media (min-width:1000px) and (max-width:1600px) {
+.index_cards_list_works {margin-left:10em;}    
+}
+@media (max-width:1000px) {
+.pages__linkOurWorks__button, .pages__content__searchForm_input {display: none;}
+    index_car_slider {display: block; max-width: 100%; min-width: 100%;}
+}
 
 @media (min-width:1600px) {    
     .phone-main, .phone-second, .mail {padding-left: 7%;}
@@ -3446,5 +3470,7 @@ span#close {
 @media (min-width:300px) and (max-width: 1800px) {
     .card {flex-basis: 33%;}
 }
-    
+.indexCard__right_block__ul {
+    padding-left: 10%; max-width: 600px; padding-right: 15px; margin-bottom: 10px;
+}    
 
