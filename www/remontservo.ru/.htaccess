@@ -1,4 +1,17 @@
 DirectoryIndex index.html index.htm default.htm index.php index.php3 index.phtml index.php5 index.shtml mwindex.phtml
 
-RemoveHandler .html .htm
-AddType application/x-httpd-php .php .htm .html .phtml
+#RemoveHandler .html .htm
+#AddType application/x-httpd-php .php .htm .html .phtml
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+Redirect /pages/servodrive.html  /pages/servodrive
+Redirect /pages/servoprivod.html  /pages/servoprivod
+Redirect /pages/soft_starters.html  /pages/soft_starters
+Redirect /pages/resolver.html  /pages/resolver
+Redirect /pages/departure.html   /pages/departure
+Redirect /pages/our-works.html   /pages/our-works

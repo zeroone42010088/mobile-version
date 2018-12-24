@@ -65,7 +65,7 @@ require 'config.php';
                         <ul class="submenu">
                             <li><a href="pages/guarantees.html">Гарантия</a></li>
                             <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
-                            <li><a href="pages/oplata.html">Порядок оплаты</a></li>
+                           <!-- <li><a href="pages/oplata.html">Порядок оплаты</a></li>-->
                             <li><a href="pages/request.html">Заявка на ремонт</a></li>
                         </ul>
                     </li>
@@ -142,7 +142,8 @@ require 'config.php';
 											'Серводвигатели',
 											'Сервоприводы',
 											'Частотные преобразователи',
-											'Сенсорные панели оператора'
+											'Сенсорные панели оператора',
+											'Электронные блоки'
 										);
 										for ($i=0; $i < count($arr_types); $i++) { 
 											$url = '?type='.urlencode($arr_types[$i]);
@@ -186,6 +187,9 @@ if(isset($_GET['type']) && $_GET['type'] != ''):
 			break;
 		case 'Сенсорные панели оператора':
 			$def_word = 'сенсорных панелей оператора';
+			break;
+        case 'Электронные блоки':
+			$def_word = 'электронных блоков';
 			break;
 	}
 endif;
