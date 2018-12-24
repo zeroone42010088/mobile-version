@@ -2247,6 +2247,7 @@ nav ul {
 .list_works{
     padding-left: 6%;
 }
+
 .header__buttonCall:hover, .content__sellForm__button:hover, .carousel-inner__item__buttonDetails__button:hover, .index_detailsCards_box button:hover, {  
   transform: scale(1.1);
   transition: 0.15s;  
@@ -2312,6 +2313,7 @@ nav ul {
 }
 .repair_block {
     margin-bottom: 120px;
+    outline: #DCDCDC solid 3px; width:100%; margin-right: -60px; margin-left: 5%;
 }
 .repair_block h2 {
     text-align: right;
@@ -2334,6 +2336,169 @@ nav ul {
 .index_carousel-inner-spisok_img {
     margin-left: 53%;
 }
+
+/********* custom select */
+
+/** Custom Select **/
+.select_wrap {
+    display: inline-block;
+    width: 31.3333333%;
+    margin: 1%;
+}
+.top_wrap{
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.search-bar {
+    position: absolute;
+    right: 5%;
+    top: 36%;
+}
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+  .custom-select-wrapper select {
+    display: none;
+  }
+  .custom-select {
+    position: relative;
+    display: inline-block;
+  }
+    .custom-select-trigger {
+      position: relative;
+    display: block;
+    width: 251px;
+    padding: 8px 84px 8px 22px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    background: #5c9cd8;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+      .custom-select-trigger:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 10px; height: 10px;
+        top: 50%; right: 25px;
+        margin-top: -3px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg) translateY(-50%);
+        transition: all .4s ease-in-out;
+        transform-origin: 50% 0;
+      }
+      .custom-select.opened .custom-select-trigger:after {
+        margin-top: 3px;
+        transform: rotate(-135deg) translateY(-50%);
+      }
+  .custom-options {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    top: 100%; left: 0; right: 0;
+    min-width: 100%;
+    margin: 15px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0,0,0,.07);
+    background: #fff;
+    transition: all .4s ease-in-out;
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+  }
+  .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+    .custom-options:before {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 100%; right: 25px;
+      width: 7px; height: 7px;
+      margin-bottom: -4px;
+      border-top: 1px solid #b5b5b5;
+      border-left: 1px solid #b5b5b5;
+      background: #fff;
+      transform: rotate(45deg);
+      transition: all .4s ease-in-out;
+    }
+    .option-hover:before {
+      background: #f9f9f9;
+    }
+    .custom-option {
+      position: relative;
+      display: block;
+      padding: 10px 22px;
+      border-bottom: 1px solid #333;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      line-height: 1.3;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+    }
+    .custom-option:first-of-type {
+      border-radius: 4px 4px 0 0;
+    }
+    .custom-option:last-of-type {
+      border-bottom: 0;
+      border-radius: 0 0 4px 4px;
+    }
+    .custom-option:hover,
+    .custom-option.selection {
+      background: #f9f9f9;
+    }
+
+
+
+/* end custom select */
+.product-one.catalog{max-width: 1170px; width: 100%; margin:0 auto; display:flex; flex-wrap:wrap; }
+.product-one.catalog .product_row_button {display: none;}
+/* catalog slide start */
+
+.product-one.single{max-width: 1170px; width: 100%; margin:0 auto; display:flex; flex-direction:column; justify-content:center; flex-wrap:wrap; align-content:flex-start;}
+.product-one .list_works {margin-left: 0;}
+.product-row, .product_row_button {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.product_row_button{justify-content:flex-start;}
+.product-row > div, .product_row_button > div {width: 45%;}
+.product_row_button > div:first-child{text-align: center;}
+
+/* catalog slide end */
+@media (min-width:1900px) {
+.index_cards_list_works {margin-left:-3em;}    
+}
+@media (min-width:1800px) and (max-width:1860px) {
+.index_cards_list_works {margin-left:-5em;}    
+}
+@media (min-width:1770px) and (max-width:1899px) {
+.index_cards_list_works {margin-left:0;}    
+}
+@media (min-width:1600px) and (max-width:1769px) {
+.index_cards_list_works {margin-left:5em;}    
+}
+@media (min-width:1600px) and (max-width:1650px) {
+.index_cards_list_works {margin-left:8em;}    
+}
+@media (min-width:1000px) and (max-width:1600px) {
+.index_cards_list_works {margin-left:10em;}    
+}
+@media (max-width:1000px) {
+.pages__linkOurWorks__button, .pages__content__searchForm_input {display: none;}
+    index_car_slider {display: block; max-width: 100%; min-width: 100%;}
+}
+
 @media (min-width:1600px) {    
     .phone-main, .phone-second, .mail {padding-left: 7%;}
     .index_sale {margin-left: -50px;}
@@ -2383,9 +2548,13 @@ nav ul {
 @media (min-width:769px) and (max-width: 979px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
      overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;} 
-    
+    body {overflow-x:hidden;}
 }
+@media (max-width:800px) {
+    .index__content__searchForm input, .index__content__searchForm__button {display: none;}
+}
+
+
 @media (max-width:768px) and (orientation:portrait)   {
 .header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
      overflow-x:hidden; overflow:hidden;}
@@ -2412,8 +2581,10 @@ nav ul {
     .card-img-top {max-height:250px;}
     .header__fontSize__part2 {display: none;}
 }
+@media (max-width:480px) {
     
 }
+
 @media (max-width:480px) {
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
     body {overflow-x:hidden;}
@@ -2426,8 +2597,7 @@ nav ul {
     .phone-second {position: absolute; top:75%; left: 20%; }
     .mail {position: absolute; top:85%; left: 20%; }
     .main-motors {width:100%;}
-    .nav {height: 380px;
-    } 
+    .nav {height: 380px;} 
     .menu {list-style-type: none; padding-left: 0; margin-left: 0;}     
     .main-motors {width:100%;}
      .card-img-top {max-height:150px;}
@@ -2474,6 +2644,9 @@ nav ul {
     .badge {zoom:70%;}
     .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}
      .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators {display:none;} 
+}
+@media (min-width: 376px) and (max-width: 480px)  { 
+    .nav {max-height: 176px;}    
 }
 @media (max-width: 360px) and (orientation:portrait)   { 
 .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 360px; 
@@ -2793,11 +2966,30 @@ nav ul {
   flex-direction: column;    
   justify-content: center;
   max-width: 1365px;
+    flex-wrap:wrap;
 }
 
 .card-group > .card {
-  margin-bottom: 15px;    
+  margin-bottom: 15px;
+ /*  flex-basis: 25%; */
 }
+
+@media (max-width: 1200px) {
+  .product-one{
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing:border-box;
+  }
+ }
+
+ @media (max-width: 600px) {
+  .product-row, .product_row_button{
+    flex-flow: row wrap;
+  }
+  .product-row > div, .product_row_button > div {
+    width: 100%!important;
+  }
+ }
 
 @media (min-width: 576px) {
   .card-group {
@@ -3054,6 +3246,7 @@ content: '✓';
   margin: 50px auto 0;
   background-image: none;
   background-size: cover;
+  padding-top:0;
 }
 .transparent:before {
   content: "";
@@ -3191,9 +3384,13 @@ span#close {
     padding: 10px;
 }
 .form-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   transition: 0.15s;  
 }
+.form-button:active {
+  background-color: #7CFC00;  
+}
+
 /*mail form */
 .card-group {margin:auto auto;}
 .slider-down__text {text-align: center;}
@@ -3270,3 +3467,10 @@ span#close {
 .container-radio__span {margin-left: 20px;}
 
 /*contact-form viezd end*/
+@media (min-width:300px) and (max-width: 1800px) {
+    .card {flex-basis: 33%;}
+}
+.indexCard__right_block__ul {
+    padding-left: 10%; max-width: 600px; padding-right: 15px; margin-bottom: 10px;
+}    
+
