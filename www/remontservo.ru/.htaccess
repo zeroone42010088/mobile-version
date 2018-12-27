@@ -1,40 +1,48 @@
-# DirectoryIndex index.html index.htm default.htm index.php index.php3 index.phtml index.php5 index.shtml mwindex.phtml
+DirectoryIndex index.html index.htm default.htm index.php index.php3 index.phtml index.php5 index.shtml mwindex.phtml
 
-# RemoveHandler .html .htm
-# AddType application/x-httpd-php .php .htm .html .phtml
+#RemoveHandler .html .htm
+#AddType application/x-httpd-php .php .htm .html .phtml
 
-# Редирект с http на https создан автоматически при заказе бесплатного ssl-сертификата
+
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^remontservo.ru
-RewriteRule (.*) http://www.remontservo.ru/$1 [R=301,L]
-ErrorDocument 404 /404.html
-# Конец редиректа
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
 
-
-
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
-# Редирект с index.html на главную страницу
-
-<ifModule mod_expires.c>
-
- ExpiresActive On
- #кэшировать флэш и изображения на месяц
- ExpiresByType image/x-icon "access plus 7 days"
- ExpiresByType image/jpeg "access plus 7 days"
- ExpiresByType image/png "access plus 7 days"
- ExpiresByType image/gif "access plus 7 days"
- ExpiresByType application/x-shockwave-flash "access plus 7 days"
- #кэшировать css, javascript и текстовые файлы на одну неделю
- ExpiresByType text/css "access plus 7 days"
- ExpiresByType text/javascript "access plus 7 days"
- ExpiresByType application/javascript "access plus 7 days"
- ExpiresByType application/x-javascript "access plus 7 days"
- #кэшировать html и htm файлы на один день
- ExpiresByType text/html "access plus 1 day"
- #кэшировать xml файлы на десять минут
- ExpiresByType application/xhtml+xml "access plus 10 minutes"
-</ifModule>
-
-
-
+Redirect /pages/servodrive.html  /pages/servodrive
+Redirect /pages/servoprivod.html  /pages/servoprivod
+Redirect /pages/soft_starters.html  /pages/soft_starters
+Redirect /pages/resolver.html  /pages/resolver
+Redirect /pages/departure.html   /pages/departure
+Redirect /pages/our-works.html   /pages/our-works
+Redirect /pages/chpu_repair.html   /pages/chpu_repair
+Redirect /pages/encoder_and_roter.html   /pages/encoder_and_roter
+Redirect /pages/preobrazovatel.html   /pages/preobrazovatel
+Redirect /pages/industrial_computers.html   /pages/industrial_computers
+Redirect /pages/industrial_electronics.html   /pages/industrial_electronics
+Redirect /pages/logic_controllers.html  /pages/logic_controllers
+Redirect /pages/operator_panel.html  /pages/operator-panel
+Redirect /pages/about_us.html  /pages/about_us
+Redirect /pages/delivery.html  /pages/delivery
+Redirect /pages/guarantees.html  /pages/guarantees
+Redirect /pages/repairs.html  /pages/repairs
+Redirect /pages/request.html  /pages/request
+Redirect /pages/list-publications.html  /pages/list-publications
+Redirect /pages/publications/article-1-2018-04-26/article-1-2018-04-26.html  /pages/publications/article-1-2018-04-26/article-frequency-control
+Redirect /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types.php
+Redirect /pages/publications/article-3-2018-04-26/article-3-2018-04-26.html  /pages/publications/article-3-2018-04-26/article-servo-motor-winding
+Redirect /pages/publications/article-4-2018-04-26/article-4-2018-04-26.html  /pages/publications/article-4-2018-04-26/article-design-machine-series
+Redirect /pages/publications/article-5/article-5-servodriver.html  /pages/publications/article-5/article-servo-driver
+Redirect /pages/publications/article-6-2018-04-26/article-6-2018-04-26.html  /pages/publications/article-6-2018-04-26/article-materials
+Redirect /pages/publications/article-7-2018-04-26/article-7-2018-04-26.html  /pages/publications/article-7-2018-04-26/servo_motor_brushes
+Redirect /pages/publications/article-8-2018-04-26/article-8-2018-04-26.html  /pages/publications/article-8-2018-04-26/servo-motor-cooling
+Redirect /pages/publications/article-9-2018-04-26/article-9-2018-04-26.html  /pages/publications/article-9-2018-04-26/article-servo-design
+Redirect /pages/publications/article-10/article-10-servo-driver.html  /pages/publications/article-10/article-about-servodriver
+Redirect /pages/publications/article-11-2018-04-26/article-11-2018-04-26.html  /pages/publications/article-11-2018-04-26/article-rotor-core
+Redirect /pages/publications/article-12/article-12-servocontroller.html  /pages/publications/article-12/article-servo-motor-controller
+Redirect /pages/publications/article-13/article-13-pokupkaservomotora.html  /pages/publications/article-13/article-pokupka-servomotora
+Redirect /pages/publications/article-14/article-14-peremotka-servo.html  /pages/publications/article-14/faults-and-rewind-seromotor
+Redirect /pages/publications/article-15-2018-05-10/article-15-2018-05-10.html  /pages/publications/article-15-2018-05-10/article-repair-servomotor-yourself
+Redirect /pages/publications/article-16-2018-05-10/article-16-2018-05-10.html  /pages/publications/article-16-2018-05-10/windings-of-electrical-equipment
+Redirect /pages/publications/article-17/article-17-remont-servomotor.html  /pages/publications/article-17/servo-brake-repair
+Redirect /pages/publications/article-18/article-18-remont-servo-encoder.html  /pages/publications/article-18/service-servomotor-brake-failures

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ремонт серводвигателя и сервомотора с гарантией 6 месяцев</title>
     <link rel="shortcut icon" type="image/png" href="../img/logo2.png">
     <meta name="keywords" content="серводвигатель, сервомотор, servomotor, servo motor, электромотор, ремонт серводвигателя"/>
@@ -12,6 +13,7 @@
     <link href="../css/slick.css" rel="stylesheet">
     <link href="../css/slick-theme.css" rel="stylesheet">
     <link href="../css/jquery.jbcallme.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet" >
   <!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
      <!-- Begin Talk-Me {literal} -->
 <script>
@@ -30,7 +32,7 @@
 </script>
     <!-- End Talk-Me {literal} -->
 </head>
-<body style="display: flex;
+<body class="servodrive" style="display: flex;
   min-height: 100vh;
   flex-direction: column;">
     <div class="container">
@@ -74,7 +76,7 @@
                 <section class="repair_block">
                     <h1 style="margin-bottom: 10px; text-align: center;">Ремонт серводвигателей, ремонт сервомоторов</h1>
                     <div class="flex_top_row">
-                        <div class="center slider" style="margin-left: 30px; margin-top: 10px; max-width: 700px;">
+                        <div class="center slider">
                             <section class="regular slider index_car_slider"> 
                                <div>
                                     <img src="../img/servodrive-slider-pictures/berger_6154.jpg" alt="Ремонт серводвигателей BERGER LAHR">
@@ -224,7 +226,7 @@
                 <div class="repair_btn_block" style="margin-top: 25px;">
                     <!--request begin -->
                     <div>
-                        <button class="callme_button content__sellForm__button repair_sellForm" style="margin-left:25%;  display: block;"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
+                        <button class="callme_button content__sellForm__button repair_sellForm"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
                     </div>
                     <!--request end -->
                     <div class="index_cards_list_works">
@@ -300,6 +302,88 @@
         </form>
 <!-- форма всплывающего окна формы обратной связи -->                        
     </div>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+.servodrive .center.slider{
+    margin-left: 30px; 
+    margin-top: 10px; 
+    max-width: 700px;
+}
+.servodrive .content__sellForm__button{
+    margin-left:25%;  
+    display: block;
+}
+@media  (max-width: 991px){
+
+}
+@media  (max-width: 767px){
+    
+}
+@media  (max-width: 575px){
+    .filling-page__indexCards {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    section.repair_block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex_top_row {
+        display: block;
+        width: 100%;
+    }
+    .servodrive .center.slider {
+        width: calc(100% - 50px);
+        margin-left: 25px;
+    }
+    .servodrive .flex_top_row > div,
+    .right_block {
+        width: 100%;
+    }
+    .servodrive .content__sellForm__button{
+        margin-left:0;  
+        margin: 0 auto;
+        display: block;
+    }
+        
+}
+@media (max-width: 400px){
+    p.h1-main-page.cardPagesHeader {
+        width: calc(100vw - 2%);
+        text-align: center;
+        left: 1%;
+        top: 100px;
+    }
+    p.h2-main-page {
+        top: 194px;
+        width: calc(100vw - 4%);
+        left: 2%;
+    }
+    header a.phone-main {
+        top: 255px;
+    }
+    header a.phone-second {
+        top: 285px;
+    }
+    header a.mail {
+        top: 313px;
+        width: 100vw;
+        left: 0;
+        text-align: center;
+    }
+    .h-logo {
+        width: 100vw;
+        text-align: center;
+        margin-left: 0;
+        left: 0;
+    }
+    .h-logo img {
+        margin-left: 0;
+    }
+}
+    </style>
     
 </body>
 </html>

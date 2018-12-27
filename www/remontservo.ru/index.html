@@ -1,72 +1,96 @@
 <!DOCTYPE html>
-<html lang=ru style="overflow-x: hidden;">
+<html lang="en">
 <head>
-    <meta charset=utf-8 />
-    <title>Ремонт промышленной электроники Сервисный центр ООО Кернел</title>
-    <link rel="shortcut icon" type=image/png href=img/logo2.png>
-    <meta name=keywords content="Ремонт серводвигателей сервомоторов промышленной электроники сервоприводов, перемотка, юстировка, настройка энкодеров резольверов, энкодера, датчика положения ротора, ооо кернел"/>
-    <meta name=description content="Сервисный центр производит: диагностику, ремонт, перемотку, настройку серводвигателей и сервомоторов, сервоприводов, промышленной электроники и оборудования" />    
-    <link href=css/style.css rel=stylesheet>
-    <link href="css/slick.css" rel="stylesheet">
-    <link href="css/slick-theme.css" rel="stylesheet">
-    
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-    
-    <!-- Begin Talk-Me {literal} -->
- <script>
-	(function(d, w, m) {
-		window.supportAPIMethod = m;
-		var s = d.createElement('script');
-		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-		s.async = true;
-		var id = '641ef44ddd81dd7022bfea6ab1737d9a';
-		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
-		var sc = d.getElementsByTagName('script')[0];
-		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-		if (sc) sc.parentNode.insertBefore(s, sc); 
-		else d.documentElement.firstChild.appendChild(s);
-	})(document, window, 'TalkMe');
-</script> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ремонт промышленной электроники Сервисный центр ООО Кернел</title>
+	<link rel="shortcut icon" type="image/png" href="/img/logo2.png">
+	<meta name="keywords" content="<?= $keywords;?>"/>
+    <meta name="description" content="<?= $description;?>"/>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="/css/slick.css" rel="stylesheet">
+    <link href="/css/slick-theme.css" rel="stylesheet">
+    <link href="/css/jquery.jbcallme.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/form.css" rel="stylesheet">
+
+	<!-- Begin Talk-Me {literal} -->
+	<!--<script>
+		(function(d, w, m) {
+			window.supportAPIMethod = m;
+			var s = d.createElement('script');
+			s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+			s.async = true;
+			var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+			s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+			var sc = d.getElementsByTagName('script')[0];
+			w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+			if (sc) sc.parentNode.insertBefore(s, sc); 
+			else d.documentElement.firstChild.appendChild(s);
+		})(document, window, 'TalkMe');
+	</script>-->
     <!-- End Talk-Me {literal} -->
 </head>
 <?php include 'functions.php';?>
-<body>
-    <div class=container>
-        <header class=header>
-            <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
-            </div>
-            <div class=h-title>
-                <h1 class="h1-main-page">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</h1>
-                <h2 class="h2-main-page"><span class="header__fontSize">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ<span class="header__fontSize__part1">, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ</span><span class="header__fontSize__part2">, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</span></span>
-                </h2>
-            </div>
-            <div class=h-contacts>
-                <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-                    <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
-                    <a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
-                <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
-            </div>
-        </header>
-        <nav class=nav style="position: relative; top:auto; z-index: 100;">
-            <ul class="menu topmenu">
-                <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=pages/about_us.html>О компании</a></li>
-                <li><a href=pages/guarantees.html><span class="nav__drop__iconText">Условия работ</span> <img class="nav__drop__icon" src="img/drop-down-arrow.svg" alt="Раскрыть"></a>
-                    <ul class="submenu">
-                        <li><a href="pages/guarantees.html">Гарантия</a></li>
-                        <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
-                      <!--  <li><a href="pages/oplata.html">Порядок оплаты</a></li> -->
-                        <li><a href="pages/request.html">Заявка на ремонт</a></li>
-                    </ul>
-                </li>
-                <li><a href=pages/our-works.html>Выполненные работы</a></li>
-                <!--<li><a href=catalog.php>Ремонт электроники в сервисном центре</a></li>-->
-                <li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
-                <li><a href=pages/contacts.html>Контакты</a></li>
-            </ul>
-        </nav>
-    
-        <main class=content>  
-            
+<body class="<?= $classes;?>">
+
+<header>
+	<div class="container">
+		<div class="row order_wrap">
+
+			<div class="col-12 col-sm-12 col-md-5 col-lg-4 logo">
+				<img src="/img/logo1.png" alt="">
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
+				<p class="site-name">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
+				<p class="site-desc">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-7 col-lg-4 h-contacts">
+				<div class="row">
+					<div class="col-12 col-sm-7  col-md-8  contacts-info">
+						<a href="tel:+78482797854" class="phone">+7(8482) 79-78-54</a>
+						<a href="tel:+79171215301" class="phone">+7(917)  121-53-01</a>
+						<a href="mailto:89171215301@mail.ru" class="mail">89171215301@mail.ru</a>
+					</div>
+					<div class="col-12 col-sm-5 col-md-4 ">
+						<button class="callme_button header__buttonCall orange_btn">
+							<span class="header__buttonCall__text">Оставить<br>заявку</span>
+						</button>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
+<nav class="primary" data-id="<?= $menuID;?>">
+	<i class="fas fa-times"></i>
+	<ul class="container">
+		<li>
+			<a href="/" id="item-1">О компании</a>
+		</li>
+        <li class="has-submenu">
+        	<a href="#" id="item-2">Условия работ</a> <i class="fas fa-sort-down"></i>
+			<ul class="submenu">
+				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
+				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
+				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+			</ul>
+		</li>
+        <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
+		<!-- <li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>-->
+		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
+		<li><a href="/pages/contacts.html" id="item-8">Контакты</a></li>
+	</ul>
+</nav>
+<main>             
             <div id=carousel-example-generic class="carousel slide" data-ride=carousel>
                 <ol class=carousel-indicators>
                     <li data-target=#carousel-example-generic data-slide-to=0 class=active></li>
@@ -245,7 +269,7 @@
             
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
-                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание!  В декабре 2018 На первый ремонт промышленной электроники скидка 10%</b></p>
+                <p class="salesUp" style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый ремонт <?php Get_utm();?> скидка 10%</b></p>
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style=" height: 55px;">
                 <img class="index_sale" src=img/percent.png alt=скидка style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
 
@@ -254,7 +278,7 @@
             <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
                 <!--search block-->
 
-                <button class="callme_button content__sellForm__button" style="margin-left:51%;"><span class="header__buttonCall__text">Оставить<br>заявку на ремонт</span></button>
+                <button class="callme_button content__sellForm__button"><span class="header__buttonCall__text">Оставить<br>заявку на ремонт</span></button>
 
                 <!--searsh begin -->
  
@@ -834,9 +858,9 @@
             
             <!--image-->
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
-                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В декабре 2018 На первый выезд на неисправное оборудование скидка 10%</b></p>
+                <p style="position: absolute; top:7%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?> 2018 На первый выезд на неисправное оборудование скидка 10%</b></p>
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style="height: 55px;">
-                <img src=img/percent.png class="index_sale" alt="скидка 10%" style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
+                <img src=img/percent.png class="index_sale_stanki" alt="скидка 10%">
 
 <!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={38599933}&utm_content={ad_id}&utm_term={cpu}  -->
 <!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={35411413}&utm_content={ad_id}&utm_term={encoder}  -->
@@ -847,7 +871,7 @@
 
                 <!--searsh begin -->
 
-                <div class="index__content__search">
+                <div class="index__content__search" >
                     <form class="index__content__searchForm">
                         <input type="text" placeholder="Найти оборудование">
                         <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
@@ -859,7 +883,7 @@
             <!--image-->
             
             
-            
+            <!--slider start -->
                   <div class="center slider" style="width:93%; max-width:1365px; height: 270px; margin:0 auto 70px;">
                         <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>
                             <div class="regular slider" style="width:100%; height: 240px;"> 
@@ -1019,7 +1043,7 @@
                                 </div>
                           </div> 
                         </div> 
-          
+          <!--slider end -->
         <!--    <div class=logomanufacturers>
                 <ul>
                     <li class=item><img src=img/mnf/1.jpg alt=allen-bradley title=1></li>
@@ -1062,16 +1086,105 @@
                 </div>
             </div>
         </main>
-    </div>
-    <footer class=foot>
-        <div class=f-logo-l><a href=https://www.remontservo.ru/><img src=img/logo3.png alt=kerneltlt></a>
-        </div>
-        <div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
-        <div class=f-logo-r><a href=https://www.remontservo.ru/><img src=img/logo3.png alt=kerneltlt></a>
-        </div>
-    </footer>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+			</div>
+			<div class="hidden-small col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
+    <div class="fields form-main my-form">    
+                 <span class="close" id="close">&#215;</span>   
+        <div class="form-wrap">
+                 
+        
+        
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
+                <span class="checkmark"></span>
+            </label>   
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div id="form_remont" class="frm">
+             
+                  <div class="form-group">
+                    <label for="contactFF" style="color:#000;">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telFF" style="color:#000;">Телефон:</label>
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+                  </div>
+                  <div class="control-file">
+                    <label for="fileFF" style="color:#000;"s>Прикрепить файл:</label>
+                    <input id="fileFF" name="fileFF" type="file">
+                   <!-- <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> -->
+                  </div>
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+       
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
+            </form>
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <div id="form_viezd" class="frm">
+              <div class="form-group">
+                <label for="contactFF1">Ваш почтовый адрес</label>
+                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="telFF1">Телефон:</label>
+                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="nameFF2">Тип/модель неисправного станка</label>
+                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+                <div class="form-group">
+                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>            
+              <div class="form-group">
+                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
+                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
+              </div>
+              <div class="control-file">
+                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
+                <input id="fileFF1" name="fileFF" type="file">
+                <input id="fileFF2" name="fileFF2" type="file">
+              <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
+              </div>
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
+                 
+            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
+        </form>
+
+        </div>
+    </div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../js/jquery-2.2.0.min.js"></script>
 <!--<script async src=js/moredetails.js></script> -->
 <!-- moredetails start -->
@@ -1085,100 +1198,13 @@
                 $("span", this).text(text != "&#9660;" ? "" : "&#9650;")
             });
         });
-</script>
-<!-- moredetails end-->
-<script src="../js/slick.js"></script>
- <!--for slider begin-->
-    <script async src=js/bootstrap.min.js></script>
-    <!--for slider end-->
-    <!--form to take call from client start-->
-    
-<link href="css/jquery.jbcallme.css" rel=stylesheet>
-    <script async src="js/jquery.jbcallme.js"></script>
-   <!-- <script src="js/cat_contactform.js"></script> -->
-   <!-- cat_contactform start -->
-    <script>
-        $(function() {
-  console.log(77)
-  document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
-    console.log(66)
-    var http = new XMLHttpRequest(), f = this;
-    var th = $(this);
-    evt.preventDefault();
-    http.open("POST", "js/contact.php", true);
-    http.onreadystatechange = function() {
-      if (http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-        if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
-          th.trigger("reset");
-        }
-      }
-    }
-    http.onerror = function() {
-      alert('Ошибка, попробуйте еще раз');
-    }
-    http.send(new FormData(f));
-  }, false);
+</script>    
+<script src="/js/slick.js"></script>
+<script async src=js/bootstrap.min.js></script>    
+<script src="/js/jquery.jbcallme.js"></script>
 
-
-  document.getElementById('ajax-contact-form1').addEventListener('submit', function(evt){
-    console.log(55)
-    var http = new XMLHttpRequest(), f = this;
-    var th = $(this);
-    evt.preventDefault();
-    http.open("POST", "js/contact.php", true);
-    http.onreadystatechange = function() {
-      if (http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-        if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
-          th.trigger("reset");
-        }
-      }
-    }
-    http.onerror = function() {
-      alert('Ошибка, попробуйте еще раз');
-    }
-    http.send(new FormData(f));
-  }, false);
- 
-});
-</script>
-   <!-- cat_contactform end -->
-    <!--form to take call from client end-->
-   
-    <!-- fixed menu start  -->
-  <!--  <script src=js/fixedmenu.js></script> -->
-    <!-- fixedmenu start  -->
-    <script>   
-        var num = 50; //number of pixels before modifying styles
-
-        $(window).bind('scroll', function() {
-            if ($(window).scrollTop() > num) {
-                $('.nav').addClass('nav-fixed');
-            } else {
-                $('.nav').removeClass('nav-fixed');
-            }
-        });
-</script>
-    <!-- fixedmenu end  -->
-    <!-- mail form start-->
- <!--   <script src=js/callmefile.js></script> -->
-    <!-- callmefile start  -->
-    <script>
-         $(function() {
-            //$('.callme_button').jbcallme();
-            $('.callme_button').on("click", function() {
-                $(".form-main").css({"display": "flex"})
-            })
-            $('.form-main .close').on("click", function() {
-                $(".form-main").hide();
-            })
-        });
-</script>
-   <!-- callmefile end -->
-    <!-- mail form end-->
-   <!-- <script src=js/gorizontalmenu.js></script>-->
-   <!-- gorizontalmenu start -->
+<script src="/js/scripts.js"></script>
+    <!-- gorizontalmenu start -->
     <script>
    jQuery(function($) {
             function fixDiv() {
@@ -1202,7 +1228,7 @@
         });
 </script>
 <!-- gorizontalmenu end -->
-<!--slider start-->
+    <!--slider start-->
 <script>
 
     $(document).on('ready', function() {
@@ -1254,110 +1280,8 @@
         });
 
 </script>
-    <!--slider end-->
-      <!-- Yandex.Metrika counter -->  <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
 
-<!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
-    <div class="fields form-main my-form">    
-                 <span class="close" id="close">&#215;</span>   
-        <div class="form-wrap">
-                 
-        
-        
-            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
-                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
-                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
-                <span class="checkmark"></span>
-            </label>   
-
-            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
-                <div id="form_remont" class="frm">
-             
-                  <div class="form-group">
-                    <label for="contactFF">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
-                  </div>
-                  <div class="form-group">
-                    <label for="telFF">Телефон:</label>
-                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
-                  </div>
-                  <div class="form-group">
-                    <label for="nameFF">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
-                  </div>
-                  <div class="form-group">
-                    <label for="projectFF">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
-                  </div>
-                  <div class="control-file">
-                    <label for="fileFF">Прикрепить файл:</label>
-                    <input id="fileFF" name="fileFF" type="file">
-                    <input id="fileFF2" name="fileFF2" type="file">
-                    <input id="fileFF3" name="fileFF3" type="file"> 
-                  </div>
-                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
-       
-                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
-            </form>
-            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
-            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
-            <div id="form_viezd" class="frm">
-              <div class="form-group">
-                <label for="contactFF1">Ваш почтовый адрес</label>
-                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
-              </div>
-              <div class="form-group">
-                <label for="telFF1">Телефон:</label>
-                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
-              </div>
-              <div class="form-group">
-                <label for="nameFF2">Тип/модель неисправного станка</label>
-                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
-              </div>
-                <div class="form-group">
-                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
-                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
-              </div>            
-              <div class="form-group">
-                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
-                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
-              </div>
-              <div class="control-file">
-                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
-                <input id="fileFF1" name="fileFF" type="file">
-                <input id="fileFF2" name="fileFF2" type="file">
-                <input id="fileFF3" name="fileFF3" type="file"> 
-              </div>
-              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
-                 
-            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
-        </form>
-
-        </div>
-    </div> 
-
-<script>
-    $('.my-form .form_change').on('change', function() {
-        var formID = $('input[name=radio]:checked', '.my-form').data('id');
-        console.log(formID);
-        DisplayForm(formID); 
-    });
-    $( document ).ready(function() {
-        var formID = $('input[name=radio]:checked', '.my-form').data('id');
-        console.log(formID);
-        DisplayForm(formID);
-    });
-    function DisplayForm(formID){
-        $('.frm').parent().css('display','none');
-        $('#'+formID).parent().css('display','block');
-    }
-    var txt = document.getElementById('ajax-contact-form1').innerHTML ;
-//console.log('***'+txt);
-</script>
+<!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
 
 </body>
-
 </html>

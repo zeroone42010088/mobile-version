@@ -15,7 +15,7 @@
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;    
 }
 
 .slick-list
@@ -88,7 +88,7 @@
 }
 .slick-slide img
 {
-    display: block;
+    display: block;    
 }
 .slick-slide.slick-loading img
 {
