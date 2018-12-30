@@ -22,7 +22,7 @@
   width: 100%;
   height: 20em;
   cursor: pointer;
-  background-color: transparent;
+    background-color: transparent;}
 
 /* Индикатор загрузки, который показывается до загрузки карты */
 .loader {
@@ -82,3 +82,4 @@
     opacity: 1;
   }
 }
+.contacts_main_h1 {font-size: 1.25rem; margin-top: 1.25rem;}    

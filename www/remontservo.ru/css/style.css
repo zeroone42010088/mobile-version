@@ -1088,7 +1088,7 @@ nav ul {
 }
  
 @media (max-width: 375px)  {
-    .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}  
+ /*   .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}  */
    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {display:none;}
     .salesUp, .index_sale {display: none;} 
     .content__sellForm__button {margin-left: 30%;}  
@@ -1803,16 +1803,16 @@ span#close {
 .contacts_main_map-yandex {min-width:500px; max-width: 500px; height: 400px; }
 .goriz_menu_width {max-width: 100%;}
 nav {z-index: 10;}
-html{
 
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body
+{
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-  body
-  {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
