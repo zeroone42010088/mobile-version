@@ -10,8 +10,11 @@
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+    min-width:500px; max-width: 500px; height: 400px; margin-top: -3rem;
 }
- 
+@media (max-width:500px) {
+    .ymap-container {margin-top: 0;}  
+}
 /* Блок, в котором появится Яндекс.Карта */
 #map-yandex {
   position: relative;

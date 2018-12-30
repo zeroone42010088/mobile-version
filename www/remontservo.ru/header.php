@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,7 +40,7 @@
 		<div class="row order_wrap">
 
 			<div class="col-12 col-sm-12 col-md-5 col-lg-4 logo">
-				<img src="/img/logo1.png" alt="">
+                <div class=h-logo><a href=https://www.remontservo.ru/><img src="/img/logo1.png" alt="Логотип Кернел"></a></div>
 			</div>
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
@@ -70,7 +70,7 @@
 <div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
 <nav class="primary" data-id="<?= $menuID;?>">
 	<i class="fas fa-times"></i>
-	<ul class="container">
+	<ul class="container goriz_menu_width">
 		<li>
 			<a href="/" id="item-1">О компании</a>
 		</li>
@@ -84,7 +84,7 @@
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
-		<!-- <li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>-->
+		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
 		<li><a href="/pages/contacts.html" id="item-8">Контакты</a></li>
 	</ul>

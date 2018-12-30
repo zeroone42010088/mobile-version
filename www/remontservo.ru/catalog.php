@@ -26,7 +26,7 @@ require 'config.php';
         <link href=css/style.css rel=stylesheet>        
         <link href="css/slick.css" rel="stylesheet">
         <link href="css/slick-theme.css" rel="stylesheet">
-     <!--   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
         <!-- Begin Talk-Me {literal} -->
      <!--   <script>
             (function(d, w, m) {

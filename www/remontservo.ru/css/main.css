@@ -154,6 +154,9 @@ nav.primary ul li ul.submenu li {
 ul.submenu a {
     width: 218px;
     border-bottom: 1px solid #9c9a9a;
+    background-color: #DFDFDF;
+}
+@media {min-width:748px} {
     background-color: #F0F8FF;
 }
 
@@ -436,6 +439,10 @@ article h3 {
 @media (min-width: 770px) and (max-width: 990px) {
     .delivery_advantage_text_center {overflow:hidden; padding-left: 10px;}
     .delivery_advantage_text_center {overflow:hidden; padding-left: 10px;}
-    .delivery_advantage_block_right {margin-left: 10px;}
-    
+    .delivery_advantage_block_right {margin-left: 10px;}    
 }
+.goriz_menu_width {max-width: 100%;}
+.p-public {text-indent: 30px; text-align: left;}
+.h1-public {font-size: 20px; margin: 15px; text-align: center;}
+.h2-public {font-size: 18px; margin: 15px; text-align: center;}
+.image-public {display: block; margin: auto;}
