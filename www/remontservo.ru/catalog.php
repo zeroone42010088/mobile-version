@@ -21,12 +21,15 @@ require 'config.php';
         <link rel="shortcut icon" type=image/png href=img/logo2.png>
         <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain" />
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
-        <!--<link href=css/normalize.css rel=stylesheet>-->
-        <link href=css/shop.css rel=stylesheet>
-        <link href=css/style.css rel=stylesheet>        
-        <link href="css/slick.css" rel="stylesheet">
-        <link href="css/slick-theme.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+        <link href="/css/bootstrap.min.css" rel="stylesheet">	
+       <link href="/css/all.css" rel="stylesheet">
+       <link href="/css/slick.css" rel="stylesheet">
+    <link href="/css/slick-theme.css" rel="stylesheet">        
+        <link href="/css/style.css" rel=stylesheet>         
+        <link href="/css/main.css"  rel="stylesheet">
+	<link href="/css/form.css"  rel="stylesheet">
+       <link href="/css/shop.css" rel=stylesheet>
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">        
         <!-- Begin Talk-Me {literal} -->
      <!--   <script>
             (function(d, w, m) {
@@ -54,38 +57,59 @@ require 'config.php';
   min-height: 100vh;
   flex-direction: column; margin:0 auto;">
         <div class=container-catalog style="">
-            <header class="header">
-                <div class=h-logo><a href=https://www.remontservo.ru/><img src=img/logo1.png alt=KERNEL></a>
-                </div>
-                <div class=h-title>
-                    <p class="h1-main-page cardPagesHeader">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
-                    <p class="h2-main-page"><span class="header__fontSize">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ<span class="header__fontSize__part1">, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ</span><span class="header__fontSize__part2">, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</span></span>
-                    </p>
-                </div>
-                <div class=h-contacts>
-                    <p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-                        <a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
-                        <a class="mail" href=89171215301@mail.ru>89171215301@mail.ru</a></p>
-                    <button class="callme_button header__buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>
-                </div>
-            </header>
-            <nav class=nav>
-                <ul class="menu topmenu">
-                    <li><a href=index.html>О компании</a></li>
-                    <li><a href=#><span class="nav__drop__iconText">Условия работ</span> <img class="nav__drop__icon" src="img/drop-down-arrow.svg" alt="Раскрыть"></a>
-                        <ul class="submenu">
-                            <li><a href="pages/guarantees.html">Гарантия</a></li>
-                            <li><a href="pages/delivery.html">Доставка в ремонт</a></li>
-                           <!-- <li><a href="pages/oplata.html">Порядок оплаты</a></li>-->
-                            <li><a href="pages/request.html">Заявка на ремонт</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=pages/our-works.html>Выполненные работы</a></li>
-                    <li><a style="background:linear-gradient(to top,#FF7E00,white)" href=catalog.php>Ремонт электроники в сервисном центре</a></li>
-                    <li><a href=pages/departure.html>Выезд специалиста к Заказчику</a></li>
-                    <li><a href=pages/contacts.html>Контакты</a></li>
-                </ul>
-            </nav>
+          <header>
+	<div class="container">
+		<div class="row order_wrap">
+
+			<div class="col-12 col-sm-12 col-md-5 col-lg-4 logo">
+                <div class=h-logo><a href=https://www.remontservo.ru/><img src="/img/logo1.png" alt="Логотип Кернел"></a></div>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
+				<p class="site-name">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
+				<p class="site-desc">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-7 col-lg-4 h-contacts">
+				<div class="row">
+					<div class="col-12 col-sm-7  col-md-8  contacts-info">
+						<a href="tel:+78482797854" class="phone">+7(8482) 79-78-54</a>
+						<a href="tel:+79171215301" class="phone">+7(917)  121-53-01</a>
+						<a href="mailto:89171215301@mail.ru" class="mail">89171215301@mail.ru</a>
+					</div>
+					<div class="col-12 col-sm-5 col-md-4 ">
+						<button class="callme_button header__buttonCall orange_btn">
+							<span class="header__buttonCall__text">Оставить<br>заявку</span>
+						</button>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</div>
+</header>
+         <div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
+<nav class="primary" data-id="<?= $menuID;?>">
+	<i class="fas fa-times"></i>
+	<ul class="container goriz_menu_width">
+		<li>
+			<a href="/" id="item-1">О компании</a>
+		</li>
+        <li class="has-submenu">
+        	<a href="#" id="item-2">Условия работ</a> <i class="fas fa-sort-down"></i>
+			<ul class="submenu">
+				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
+				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
+				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+			</ul>
+		</li>
+        <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
+		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
+		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
+		<li><a href="/pages/contacts.html" id="item-8">Контакты</a></li>
+	</ul>
+</nav>
             <main class=content>
 
                 <div class="top_wrap">
@@ -413,11 +437,21 @@ if($query_pro->num_rows > 0){
                             <? } ?>
 
             </main>
-            <footer class="foot" style="width:100%; flex: 0;">
-                <div class=f-logo-l><img src=img/logo3.png alt=kerneltlt></div>
-                <div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
-                <div class=f-logo-r><img src=img/logo3.png alt=kerneltlt></div>
-            </footer>
+           <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+			</div>
+			<div class="hidden-small col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+		</div>
+	</div>
+</footer>
         </div>
         <link href="css/jquery.jbcallme.css" rel=stylesheet>
         <!-- container -->

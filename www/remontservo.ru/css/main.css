@@ -446,3 +446,24 @@ article h3 {
 .h1-public {font-size: 20px; margin: 15px; text-align: center;}
 .h2-public {font-size: 18px; margin: 15px; text-align: center;}
 .image-public {display: block; margin: auto;}
+@media (max-width: 500px) {
+    #projectFF {max-width: 100%; border:1.5px solid #C0C0C0;}
+}
+@media (max-width: 450px) {
+    .slider_img1>.item>img {transform: scale(0.3); height: auto; display: none;}
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+    a.phone {font-size:1.3em;}
+}
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img {max-width: 100%; height: auto;}
