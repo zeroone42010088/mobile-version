@@ -332,7 +332,7 @@ ul.pagination {
 /*---------------------------------*/
 
 .title-unit {
-    height: 30px;
+    height: auto;
     padding: 0;
     text-align: center;
     font-size: 20px;
@@ -471,7 +471,7 @@ ul.pagination {
 .contacts {
     float: center;
     width: 40%; 
-    margin-left: 125px;
+    margin-left: 125px;    
 }
 
 .phone-main, .phone-second, .mail {
@@ -749,7 +749,7 @@ nav ul {
 .index__carousel__textRasxodomer {top:20%; font-size: 1.5em;}
 .index__carousel__textRasxodomerCor {top:10%; font-size: 1.3em;}
 .index__carousel__textRasxodomerVp {top:7%; font-size: 1.2em;}
-.index__carousel__service {top:7%; font-size: 1.4em;}
+.index__carousel__service {top:7%; font-size: 1.25em;}
 
 
 .index__carousel__text__datails {
@@ -1798,12 +1798,11 @@ span#close {
 .contacts_adress_tel {
     height: 31,25rem;
 }
-.contacts {margin-top: 3.75rem;}
+.contacts {margin-top: 0.625rem;}
 .contacts_main_h3 {font-size: 1.25rem; font-weight: bold;}
-.contacts_main_map-yandex {min-width:500px; max-width: 500px; height: 400px; }
+/*.contacts_main_map-yandex {min-width:500px; max-width: 500px; height: 400px; }*/
 .goriz_menu_width {max-width: 100%;}
 nav {z-index: 10;}
-
 html{
     width: 100%;
     max-width: 100%;
@@ -1851,16 +1850,13 @@ body
   .product-one{
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing:border-box;
-  }
+    box-sizing:border-box;}
  }
 
  @media (max-width: 600px) {
   .product-row, .product_row_button{
-    flex-flow: row wrap;
-  }
+    flex-flow: row wrap;}
   .product-row > div, .product_row_button > div {
-    width: 100%!important;
-  }
+    width: 100%!important;}
  }
 /* catalog end*/

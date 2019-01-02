@@ -22,7 +22,7 @@ require 'config.php';
         <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain" />
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
         <link href="/css/bootstrap.min.css" rel="stylesheet">	
-       <link href="/css/all.css" rel="stylesheet">
+       <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
     <link href="/css/slick-theme.css" rel="stylesheet">        
         <link href="/css/style.css" rel=stylesheet>         
