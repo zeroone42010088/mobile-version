@@ -119,7 +119,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
+} /*
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -130,11 +130,12 @@
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
-}
+}*/
 
 .img-responsive
  {
@@ -838,5 +839,5 @@ a.button28:active {
   .catalog__top-nav__equipment {margin-left: -2rem;}
   .sources {margin-left: -4rem;}     
 } 
-
+header .logo img {margin-top: 0;}
 

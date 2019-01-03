@@ -24,11 +24,11 @@ require 'config.php';
         <link href="/css/bootstrap.min.css" rel="stylesheet">	
        <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
-    <link href="/css/slick-theme.css" rel="stylesheet">        
+    <link href="/css/slick-theme.css" rel="stylesheet">               
         <link href="/css/style.css" rel=stylesheet>         
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
-       <link href="/css/shop.css" rel=stylesheet>
+      <link href="/css/shop.css" rel=stylesheet>       
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">        
         <!-- Begin Talk-Me {literal} -->
      <!--   <script>
@@ -135,7 +135,7 @@ require 'config.php';
 								if (strlen($type)) {
 									?>
                             <!-- выборка -->
-                            <div style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span>
+                            <div class="catalog_select_wrap diller_manufacterName" style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span>
                                 <?
 
 									$query = $db->query("SELECT diller FROM products ".$type_cond." GROUP by diller");

@@ -1852,7 +1852,8 @@ body
     padding-right: 15px;
     box-sizing:border-box;}
  }
-
+.custom-select {border:#fff; background: none;}
+.catalog__top-nav__equipment {margin-left: 3%;}
  @media (max-width: 600px) {
   .product-row, .product_row_button{
     flex-flow: row wrap;}
