@@ -1846,6 +1846,7 @@ body
 @media (min-width:1000px) and (max-width:1600px) {
 .index_cards_list_works {margin-left:10em;}    
 }
+
 @media (max-width: 1200px) {
   .product-one{
     padding-left: 15px;
