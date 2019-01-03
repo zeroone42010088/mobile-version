@@ -209,15 +209,19 @@ h1.title {
     background-color: #465DCF;
     color: #fff;
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
+}
+@media (max-width:700px) and (orientation:portrait) {
+    .pages__linkOurWorks__button  {margin-top:15px;}
 }
 form.pages__content__searchForm {
     position: relative;
     width: 100%;
     display: block;
-    margin: 23px auto 15px auto;
+    margin: -10px auto 15px auto;
     max-width: 338px;
 }
+
 .index__content__searchForm__button, 
 .pages__content__searchForm__button {
     position: absolute;

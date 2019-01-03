@@ -362,8 +362,8 @@ left: -1.3em;
 top: 50%;
 margin-top: -1.3em;
 background: #8FD4C1;
-height: 2em;
-width: 2em;
+height: 2.5em;
+width: 2.5em;
 line-height: 2em;
 border: .3em solid white;
 text-align: center;
@@ -846,17 +846,23 @@ header .logo img {margin-top: 0;}
 @media (max-width:1150px) {
     ul.pagination {left:25%;}
 }
-@media (max-width:700px) {
+@media (max-width:700px) and (orientation:portrait) {
 .p-left, .catalog {max-width: 100%;}
     .col-md-4 {max-width: 100%;}
     ul.pagination {left:0; transform: scale(0.9);}
+    .catalog_item_buttonCall {margin-top: 40px;}
+    .rounded a {margin-left: 15px;}    
 }
-@media (max-width:380px) {
+@media (max-width:380px) and (orientation:portrait) {
     ul.pagination {left:0; transform: scale(0.8);left:-1rem;}
+    .catalog_item_buttonCall {margin-top: 50px;}
+    .rounded a {margin-left: 15px;}
 }
-@media (max-width:360px) {
+@media (max-width:360px) and (orientation:portrait) {
     ul.pagination {left:0; transform: scale(0.75);left:-2.5rem;}
 }
-@media (max-width:320px) {
+@media (max-width:320px) and (orientation:portrait) {
     ul.pagination {left:0; transform: scale(0.7);left:-3.1rem;}
+    .catalog_item_buttonCall {margin-top: 70px;}
 }
+    
