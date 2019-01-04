@@ -8,7 +8,7 @@
 	<meta name="keywords" content="<?= $keywords;?>"/>
     <meta name="description" content="<?= $description;?>"/>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/all.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/slick.css" rel="stylesheet">
     <link href="/css/slick-theme.css" rel="stylesheet">
     <link href="/css/jquery.jbcallme.css" rel="stylesheet">
@@ -67,15 +67,15 @@
 	</div>
 </header>
 
-<div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
+<div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
 <nav class="primary" data-id="<?= $menuID;?>">
-	<i class="fas fa-times"></i>
+	<i class="fa fa-times"></i>
 	<ul class="container goriz_menu_width">
 		<li>
 			<a href="/" id="item-1">О компании</a>
 		</li>
         <li class="has-submenu">
-        	<a href="#" id="item-2">Условия работ</a> <i class="fas fa-sort-down"></i>
+        	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
 				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
 				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>

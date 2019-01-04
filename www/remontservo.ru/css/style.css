@@ -961,7 +961,7 @@ nav ul {
 
 @media (min-width:1600px) {    
     .phone-main, .phone-second, .mail {padding-left: 7%;}
-    .index_sale {margin-left: -50px;}
+   /* .index_sale {margin-left: -50px;}*/
     .index__carousel__service {top:12%;}
 }
 

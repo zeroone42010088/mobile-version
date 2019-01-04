@@ -7,6 +7,7 @@ $('i.fas.fa-times').click(function(){
 
 $(".slider_img1").slick({
         infinite: true,
+        lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
@@ -80,7 +81,7 @@ console.log(11)
     var http = new XMLHttpRequest(), f = this;
     var th = $(this);
     evt.preventDefault();
-    http.open("POST", "js/contact.php", true);
+    http.open("POST", "/js/contact.php", true);
     http.onreadystatechange = function() {
       if (http.readyState == 4 && http.status == 200) {
         alert(http.responseText);
@@ -101,7 +102,7 @@ console.log(11)
     var http = new XMLHttpRequest(), f = this;
     var th = $(this);
     evt.preventDefault();
-    http.open("POST", "js/contact.php", true);
+    http.open("POST", "/js/contact.php", true);
     http.onreadystatechange = function() {
       if (http.readyState == 4 && http.status == 200) {
         alert(http.responseText);

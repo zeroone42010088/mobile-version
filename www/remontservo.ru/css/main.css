@@ -91,7 +91,7 @@ header button.callme_button.header__buttonCall {
 /*cover*/
 
 /*nav*/
-i.fas.fa-times{
+i.fa.fa-times{
 	display: none;
 }
 .mobmenu{
@@ -163,7 +163,7 @@ ul.submenu a {
 li.has-submenu:hover .submenu{
 	display: block;
 }
-i.fas.fa-sort-down {
+i.fa.fa-sort-down {
     position: absolute;
     top: 11px;
     right: 5px;
@@ -211,6 +211,32 @@ h1.title {
     display: block;
     margin: 0 auto;
 }
+
+/*our-works*/
+.our-works section.slider_img1 {
+    width: 700px;
+    max-width: 80%;
+    margin: 30px auto;
+}
+.our-works .slick-slide img {
+    display: block;
+    margin: 20px auto;
+}
+.our-works .slick-slide p {
+    text-align: center;
+}
+.our-works .slick-slide ul {
+    display: table;
+    margin: 0 auto;
+}
+.our-works .slick-prev, 
+.our-works .slick-next{
+    top: 37%;
+}
+
+/*our-works*/
+
+
 @media (max-width:700px) and (orientation:portrait) {
     .pages__linkOurWorks__button  {margin-top:15px;}
 }
@@ -346,10 +372,6 @@ article h3 {
 	nav.primary {
 	    display: none;
 	}
-	.slider_img1 {
-	    width: calc(100vw - 50px);
-	    left: 25px;
-	}
 	button.callme_button.header__buttonCall.orange_btn {
 	    margin: 12px auto;
 	    display: block;
@@ -367,7 +389,7 @@ article h3 {
         display: inline-block;
         padding: 5px 22px;
     }
-    i.fas.fa-bars {
+    i.fa.fa-bars {
         font-size: 38px;
         float: right;
     }
@@ -404,7 +426,7 @@ article h3 {
 	    padding-left: 40px;
 	    display: none;
 	}
-	i.fas.fa-times {
+	i.fa.fa-times {
 	    float: right;
 	    font-size: 36px;
 	    display: inline-block;
