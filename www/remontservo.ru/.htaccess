@@ -15,6 +15,7 @@ Redirect /pages/soft_starters.html  /pages/soft_starters
 Redirect /pages/resolver.html  /pages/resolver
 Redirect /pages/departure.html   /pages/departure
 Redirect /pages/our-works.html   /pages/our-works
+Redirect /pages/contacts.html   /pages/contacts
 Redirect /pages/chpu_repair.html   /pages/chpu_repair
 Redirect /pages/encoder_and_roter.html   /pages/encoder_and_roter
 Redirect /pages/preobrazovatel.html   /pages/preobrazovatel

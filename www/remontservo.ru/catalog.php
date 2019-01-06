@@ -107,7 +107,7 @@ require 'config.php';
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
 		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
-		<li><a href="/pages/contacts.html" id="item-8">Контакты</a></li>
+		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
 	</ul>
 </nav>
             <main class=content>

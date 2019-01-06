@@ -493,3 +493,159 @@ body
     overflow-x: hidden;
 }
 img {max-width: 100%; height: auto;}
+
+/*contacts begin*/
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container {
+  /*width: 50%;
+  height: 50%;*/
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../img/map.jpg') #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+  min-width:500px; max-width: 500px; height: 400px;}
+
+@media (max-width:500px) and (orientation:portrait) {
+    .ymap-container {transform: scale(0.7)}    
+}
+@media (max-width:400px) and (orientation:portrait) {
+    .ymap-container {transform: scale(0.6)}    
+}
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 20em;
+  cursor: pointer;
+    background-color: transparent;}
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+ /* top: -100%;*/
+  left: 0;
+  box-sizing: border-box;
+/*  width: 100%;
+  height: 100%; */
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+ 
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+ 
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+ 
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+ 
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+ 
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* align contacts */
+.contacts_main_h1 {font-size: 1.25rem; margin-top: 1.25rem;}    
+
+.contacts_adress_tel {
+
+padding: 0 15px; /* для отступа от краев экрана */
+
+max-width: 1200px; /*примерно */
+
+width: 100%;
+
+margin: 0 auto; /* выравниваем по центру */
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+}
+.contacts {
+
+width: auto; /* даем пространство тексту */
+
+margin-left: 0;
+
+}
+
+.map{
+
+float: none;
+
+height: 400px;
+
+width: 500px;
+
+margin-top: 0;
+
+margin-left: 0;
+
+}
+
+.ymap-container{
+
+margin-top: 0;
+
+}
+.contacts_adress_tel{
+
+flex-wrap: wrap;
+
+}
+.map{
+
+margin-left: 30px;
+
+}
+@media only screen and (max-width: 992px){
+
+.contacts{flex-basis: 100%;text-align: center;}
+.map{margin: 40px 0 0 0;}
+
+}
+.contacts_main_h1 {text-align: center;}
+.contacts_main_h3 {font-size: 1.25rem; font-weight: bold;}
+/*contacts end*/
