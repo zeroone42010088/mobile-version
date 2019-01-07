@@ -199,7 +199,8 @@ h1.title {
 }
 .pages__linkOurWorks{
 	text-decoration: none; 
-	display: block; 
+	display: inline-block;
+    margin-left: 1.3em;
 }
 .pages__linkOurWorks__button{
 	height: 50px;
@@ -243,8 +244,8 @@ h1.title {
 form.pages__content__searchForm {
     position: relative;
     width: 100%;
-    display: block;
-    margin: -10px auto 15px auto;
+    display: inline-block;
+    margin: 10px auto 15px 1.3em;
     max-width: 338px;
 }
 
@@ -584,21 +585,21 @@ img {max-width: 100%; height: auto;}
   }
 }
 /* align contacts */
-.contacts_main_h1 {font-size: 1.25rem; margin-top: 1.25rem;}    
+.contacts_main_h1 {font-size: 1.25rem; margin-top: 1.25rem;    margin-bottom: 35px;}    
 
 .contacts_adress_tel {
 
-padding: 0 15px; /* для отступа от краев экрана */
+padding: 0 15px; 
 
-max-width: 1200px; /*примерно */
+max-width: 1200px; 
 
 width: 100%;
 
-margin: 0 auto; /* выравниваем по центру */
+margin: 0 auto; 
 
 display: flex;
 
-align-items: center;
+align-items: flex-start;
 
 justify-content: center;
 
@@ -635,11 +636,7 @@ margin-top: 0;
 flex-wrap: wrap;
 
 }
-.map{
 
-margin-left: 30px;
-
-}
 @media only screen and (max-width: 992px){
 
 .contacts{flex-basis: 100%;text-align: center;}
@@ -649,3 +646,22 @@ margin-left: 30px;
 .contacts_main_h1 {text-align: center;}
 .contacts_main_h3 {font-size: 1.25rem; font-weight: bold;}
 /*contacts end*/
+
+.catalog_page button.pages__linkOurWorks__button {
+    margin-left: 1.3em;
+}
+.catalog_page .pages__content__search.repair_search.catalog_search {
+    margin-top: 0;
+}
+.catalog_page .pages__linkOurWorks{
+    margin-left: 0
+}
+.contacts.col-md-6 p {
+    margin-bottom: 45px;
+    line-height: 1.2;
+}
+body.contacts form.pages__linkOurWorks {
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-top: 0;
+}

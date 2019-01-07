@@ -53,7 +53,7 @@ require 'config.php';
         <!-- End Talk-Me {literal} -->
     </head>
 
-    <body style="/*display: flex;*/
+    <body class="catalog_page" style="/*display: flex;*/
   min-height: 100vh;
   flex-direction: column; margin:0 auto;">
         <div class=container-catalog style="">
@@ -353,9 +353,9 @@ if($query_pro->num_rows > 0){
         
 								echo '
                                 <h1 class="catalog__h1 catalog__h1__item" >'.$row_pro["block"].' '.$row_pro["name"].'</h1>
-                                <div class="product-row catalog_item_content">
+                                <div class="product-row catalog_item_content row">
                                 
-								<div class="">
+								<div class="col-md-5">
 								<div class="simpleCart_shelfItem catalog_item_slider ">
 								<section class="regular">';
 								 
@@ -378,7 +378,7 @@ if($query_pro->num_rows > 0){
 								</div>
 							</div>
                             
-                            <div class="catalog_cardinfo">
+                            <div class="catalog_cardinfo offset-1 col-md-6">
                             
                             <ol class="rounded">
                               <li><a href="#">Диагностика от 1 дня</a></li>
@@ -399,9 +399,9 @@ if($query_pro->num_rows > 0){
 } }} 
                          
 ?>
-<div class="product_row_button">
-    <div class=""> <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>  </div>
-    <div class="list_works">
+<div class="product_row_button row">
+    <div class="col-md-5"> <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>  </div>
+    <div class="list_works offset-1 col-md-6">
                         <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
                         
                         
