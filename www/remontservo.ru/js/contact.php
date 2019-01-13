@@ -18,8 +18,8 @@ if (isset ($_POST['contactFF'])) {
 
 	$from = "new_client@remontservo.ru";
 	$subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
-	$message = "<br>Email".$_POST['contactFF'].
-    "<br>Телефон".$_POST['telFF'].
+	$message = "<br>Email: ".$_POST['contactFF'].
+    "<br>Телефон: ".$_POST['telFF'].
     "<br>Тип, модель неисправного блока: ".$_POST['nameFF'];
 
     if(isset($_POST['nameFF1']) and $_POST['nameFF1']!= ''):

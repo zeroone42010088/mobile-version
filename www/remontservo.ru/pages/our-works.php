@@ -37,8 +37,8 @@ require '../header.php';
 </div>
     
 <div class="item">
-<img class="lazy"  data-lazy=/img/our-works/servomotor_control_technigues_115u2c305bacaa115190.jpg alt="Ремонт серводвигателя CONTROL-TECHNIGUES 115U2C305BACAA115190" title="Сервомотор CONTROL-TECHNIGUES 115U2C305BACAA115190">
-<p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя CONTROL-TECHNIGUES 115U2C305BACAA115190</p>
+<img class="lazy"  data-lazy=/img/our-works/servomotor_control_technigues_115u2c305bacaa115190.jpg alt="Ремонт серводвигателя CONTROL-TECHNIQUES 115U2C305BACAA115190" title="Сервомотор CONTROL-TECHNIQUES 115U2C305BACAA115190">
+<p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя CONTROL-TECHNIQUES 115U2C305BACAA115190</p>
 <p class=ourworks_description>Проводились следующие работы:</p>
 <ul>
 <li class=ourworks_description>- разборка;</li>

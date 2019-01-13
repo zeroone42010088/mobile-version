@@ -14,10 +14,12 @@ require '../header.php';
 		<div class="filling-page">       
               
                     <h2 style="font-size:1.25rem; text-align:center;margin-top:1.25rem; margin-bottom:1.25rem;">Мы готовы предоставить гарантии на выполненные работы:</h2>
-                    <div class="badge"><img src="../img/galka.png" style="margin-top:2rem;"></div>
+            <article style="display:flex; justify-content:center; flex-wrap:wrap;">
+                <div>
+                    <div class="badge"><img style="padding-top:34%;" src="../img/galka.png"></div>
                     <h3>Гарантия на ремонт</h3>
                     <p>Предоставляем гарантию на ремонт электронного оборудования:<br>
-                        <span style="font-size: 1.875rem; color: green;"> - 6 месяцев.</span></p>
+                        <span style="font-size: 1.875rem; color: green;"> - 6 месяцев.</span></p></div></article>
             </div>
 	</div>
 

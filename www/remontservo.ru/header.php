@@ -14,7 +14,15 @@
     <link href="/css/jquery.jbcallme.css" rel="stylesheet">
 	<link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-131780255-1');
+</script>
 	<!-- Begin Talk-Me {literal} -->
 	<!--<script>
 		(function(d, w, m) {

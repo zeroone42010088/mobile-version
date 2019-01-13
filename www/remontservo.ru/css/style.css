@@ -2019,3 +2019,14 @@ margin-left: 30px;
 
 }
 /*contacts end*/
+.index_sliderDown_img:hover {transform: scale(1.07); transition: 0.5s;}
+.sell_divOutline {border: 1.5px solid #DCDCDC; width:33%; height: 10wh; overflow: hidden; min-height: 28.125rem; max-height: 28.125rem; outline: 1.5px solid #DCDCDC;}
+.sell_divOutline img {margin: 10px 5%;}
+
+@media (max-width:900px) {
+    .sell_divOutline {width:50%;}    
+}
+@media (max-width:700px) {
+    .sell_divOutline {width:100%;}    
+}
+.sell_divOutline_pImg {text-align: center;}

@@ -451,8 +451,8 @@ article h3 {
 .index_card_h2, .index_card_h3 {font-size: 1.2rem;}
 .delivery_badge_img {margin-top:2rem; margin-top:-10%;} 
 .delivery__companyes {display: inline-block;}
-.badge {width: 100px; height: 100px; float: left; border-radius: 50px; background-color: #FF7E00; margin-right: 10px;}
-.badge span {color: white; font-size: 30px; padding: 35%;}
+.badge {width: 100px; height: 100px; float: left; border-radius: 50px; background-color: #FF7E00; margin-right: 10px; /*background-image:url(../img/galka.png); background-repeat: no-repeat; background-position: center;*/}
+.badge span {color: white; font-size: 30px; padding: 35%; padding-top: 34%;}
 .glyphicon {position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1;}
 .whyus {font-size: 0,8125rem;}
 .whyus li {vertical-align: top; width: 31%; display: inline-block; padding: 1,875rem 0.5%;}
@@ -669,3 +669,12 @@ a.phone:hover {
     letter-spacing: 1.3px;
     text-decoration: none;
 }
+@media (max-width:750px) {
+    .departure .slider_img1 img {transform: scale(0.8);}
+    .slick-next, .slick-prev, .slick-arrow {display: none;}
+}
+
+.slider-down__text {font-weight: bold;}
+.delivery_bold_upTextH2 {font-size:1.1rem; text-align:center; margin-bottom:2rem;font-weight:bold;}
+.delivery_bold_upText {font-size:1.1rem; text-align:center; font-weight:bold;}
+
