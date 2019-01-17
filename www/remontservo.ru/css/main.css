@@ -636,6 +636,23 @@ margin-top: 0;
 flex-wrap: wrap;
 
 }
+.guarantees .badge-right {
+    display: inline-block;
+}
+.guarantees .badge-right h3 {
+    padding-bottom: 0;
+}
+.catalog_page .search-bar {
+    top: 39px;
+}
+.catalog_page span.sorting_name {
+    top: 5px;
+    position: relative;
+}
+.callme_button {
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 992px){
 
@@ -677,4 +694,31 @@ a.phone:hover {
 .slider-down__text {font-weight: bold;}
 .delivery_bold_upTextH2 {font-size:1.1rem; text-align:center; margin-bottom:2rem;font-weight:bold;}
 .delivery_bold_upText {font-size:1.1rem; text-align:center; font-weight:bold;}
-
+section.repair_block_aboutUs {margin-bottom: 120px; width: 100%; margin-top: 30px;}
+.aboutUs_block {display:flex; justify-content:center;}
+.aboutUs_section_block {display:flex; justify-content:center; flex-basis: 50%; flex-grow: 1;}
+.repair_block_aboutUs_outline {outline: #DCDCDC solid 3px;}
+@media (min-width:700px) {
+    .aboutUs_right_block {margin-left: 50px;}    
+}
+@media (max-width:1370px) {
+    .repair_block_aboutUs_outline{padding:10px; margin-left: 10px;}    
+}
+@media (max-width:700px) {
+    .repair_block_aboutUs_outline{margin-left: 20px; outline: none;}    
+}
+@media (min-width:980px) and (max-width:1190px) {
+.container_aboutUs {max-width: 1100px;}
+}
+@media (min-width:1200px) and (max-width:1399px) {
+.container_aboutUs {max-width: 1200px;}
+}
+@media (min-width:1400px) {
+.container_aboutUs {max-width: 1300px;}
+}
+@media (min-width:1600px) {
+.container_aboutUs {max-width: 1500px;}
+}
+@media (min-width:1700px) {
+.container_aboutUs {max-width: 1600px;}
+}

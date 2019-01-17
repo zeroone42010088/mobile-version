@@ -763,7 +763,7 @@ require '../header.php';
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/videojet_1220_6238.jpg alt="Промышленный принтер Videojet 1220 изображение" title="Videojet 1220">
-<p class=ourworks_description style=margin-top:5px>Ремонт промышленнго принтера VIDEOJET 1220</p>
+<p class=ourworks_description style=margin-top:5px>Ремонт промышленного принтера VIDEOJET 1220</p>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/allen-bradley_2711p_6239.jpg alt="Панель оператора Allen-Bradley 2711P-RP8D" title="Allen-Bradley 2711P-RP8D">
@@ -882,8 +882,8 @@ require '../header.php';
 <p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя V&T E5-H-4T37GA</p>
 </div>
 <div class="item">
-<img class="lazy"  data-lazy=/img/our-works/df51_6269.jpg alt="Частотный преобразователь DF51-322-055" title="V&T E5-H-4T37GA вх 6269">
-<p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя V&T E5-H-4T37GA</p>
+<img class="lazy"  data-lazy=/img/our-works/df51_6269.jpg alt="Частотный преобразователь DF51-322-055" title="DF51-322-055 вх 6269">
+<p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя DF51-322-055</p>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/toshiba_6270.jpg alt="Частотный преобразователь TOSHIBA VF-PS1" title="TOSHIBA VF-PS1 вх 6270">
@@ -903,7 +903,7 @@ require '../header.php';
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/danfoss_6274.jpg alt="Частотный преобразователь Danfoss VLT FC-302P5K5T5E20H1BXXXXXSXXXXAXBXCXXXXD" title=" VLT FC-302P5K5T5E20H1BXXXXXSXXXXAXBXCXXXXD вх 6274">
-<p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя преобразователь Danfoss VLT FC-302P5K5T5E20H1BXXXXXSXXXXAXBXCXXXXD</p>
+<p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя Danfoss VLT FC-302P5K5T5E20H1BXXXXXSXXXXAXBXCXXXXD</p>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/plata_6276.jpg alt="Электронная плата Waspmote PRO V1.5 5 разъемов" title="Waspmote PRO V1.5 5 разъемов вх 6276">
@@ -2103,8 +2103,8 @@ require '../header.php';
 </div>
     
 <div class="item">
-<img class="lazy"  data-lazy=/img/our-works/berges_block_6455.jpg alt="Элетронный блок BERGES ACP6015-0CSLV" title="BERGES ACP6015-0CSLV вх 6455">
-<p class=ourworks_description style=margin-top:5px>Ремонт элетронного блока BERGES ACP6015-0CSLV</p>
+<img class="lazy"  data-lazy=/img/our-works/berges_block_6455.jpg alt="Электронный блок BERGES ACP6015-0CSLV" title="BERGES ACP6015-0CSLV вх 6455">
+<p class=ourworks_description style=margin-top:5px>Ремонт электронного блока BERGES ACP6015-0CSLV</p>
 </div>
     
 <div class="item">
@@ -2219,8 +2219,8 @@ require '../header.php';
 </div>
     
 <div class="item">
-<img class="lazy"  data-lazy=/img/our-works/hitech_6485.jpg alt="Сенсорая панель оператора HITECH PWS5610T-S" title="HITECH PWS5610T-S вх 6485">
-<p class=ourworks_description style=margin-top:5px>Ремонт сенсорой панели оператора HITECH PWS5610T-S</p>
+<img class="lazy"  data-lazy=/img/our-works/hitech_6485.jpg alt="Сенсорная панель оператора HITECH PWS5610T-S" title="HITECH PWS5610T-S вх 6485">
+<p class=ourworks_description style=margin-top:5px>Ремонт сенсорной панели оператора HITECH PWS5610T-S</p>
 </div>
 
 <div class="item">
@@ -2230,7 +2230,7 @@ require '../header.php';
 
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/toshiba_6486.jpg alt="Серводвигатель TOSHIBA VLBSV-10030" title="TOSHIBA VLBSV-10030 вх 6486">
-<p class=ourworks_description style=margin-top:5px>Ремонт аналогового блока Panasonic AFP0480-A</p>
+<p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя TOSHIBA VLBSV-10030</p>
 </div>
 
 <div class="item">
@@ -2314,8 +2314,8 @@ require '../header.php';
 </div>
     
 <div class="item">
-<img class="lazy"  data-lazy=/img/our-works/bastion_ibp_6503.jpg alt="Источник бесперебейного питания BASTiON TEPLOCOM-1000" title="BASTiON TEPLOCOM-1000 вх 6503">
-<p class=ourworks_description style=margin-top:5px>Ремонт источника бесперебейного питания BASTiON TEPLOCOM-1000</p>
+<img class="lazy"  data-lazy=/img/our-works/bastion_ibp_6503.jpg alt="Источник бесперебойного питания BASTiON TEPLOCOM-1000" title="BASTiON TEPLOCOM-1000 вх 6503">
+<p class=ourworks_description style=margin-top:5px>Ремонт источника бесперебойного питания BASTiON TEPLOCOM-1000</p>
 </div>
 
 <div class="item">

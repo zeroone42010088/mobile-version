@@ -18,7 +18,7 @@ require '../header.php';
 				<article><h2 class="delivery_bold_upTextH2">Наш Сервисный центр обслуживает оборудование по всей России. Неисправное оборудование отправляется в г. Тольятти.</h2>                
                     <p class="delivery_bold_upText">Заказчики отправляют оборудование разными транспортными компаниями, такими как:</p>
                                    
-                  <div><ul class="col-1 col-sm-1 col-md-12 col-lg-12">  
+                  <div class="row"><ul class="col-12 col-sm-12 col-md-12 col-lg-12">  
                     <li class="delivery__companyes" style="display:inline;"><img src="../img/logos/DHL.jpg" alt="DHL"></li>
                     <li class="delivery__companyes"><img src="../img/logos/del.jpg" alt="Delovye linii"></li>
                     <li class="delivery__companyes"><img src="../img/logos/EMS.jpg" alt="EMS"></li>

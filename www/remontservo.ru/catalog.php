@@ -135,7 +135,7 @@ require 'config.php';
 								if (strlen($type)) {
 									?>
                             <!-- выборка -->
-                            <div class="catalog_select_wrap diller_manufacterName" style="margin: 10px 0 10px 15px;"><span style="margin-right: 5px;">Производитель:</span>
+                            <div class="catalog_select_wrap diller_manufacterName" ><span class="sorting_name">Производитель:</span>
                                 <?
 
 									$query = $db->query("SELECT diller FROM products ".$type_cond." GROUP by diller");
@@ -170,7 +170,7 @@ require 'config.php';
 						         $req_uri = str_replace('/catalog.php', '', $_SERVER['REQUEST_URI']);
 						         	?>
                         <div class="top-nav">
-                            <span class="catalog__top-nav__equipment">Оборудование </span>
+                            <span class="catalog__top-nav__equipment sorting_name">Оборудование </span>
                             <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
 										<?php 
 										$arr_types = array(

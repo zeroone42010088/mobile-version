@@ -1758,9 +1758,7 @@ span#close {
     padding-left: 10%; max-width: 600px; padding-right: 15px; margin-bottom: 10px;
 }
 .index_sale_stanki {position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);}
-/*@media (min-width:1890px) {
-    .index_sale_stanki {left:38%;}
-}*/
+.index_sliderTop_item active, .index_sliderTop_item {background-color: rgb(255,188,1);}
 @media (max-width:480px) {
 .card-group {flex-direction: row;}
     }
