@@ -686,6 +686,9 @@ a.phone:hover {
     letter-spacing: 1.3px;
     text-decoration: none;
 }
+body.catalog_page {
+    overflow: hidden;
+}
 @media (max-width:750px) {
     .departure .slider_img1 img {transform: scale(0.8);}
     .slick-next, .slick-prev, .slick-arrow {display: none;}
@@ -694,19 +697,25 @@ a.phone:hover {
 .slider-down__text {font-weight: bold;}
 .delivery_bold_upTextH2 {font-size:1.1rem; text-align:center; margin-bottom:2rem;font-weight:bold;}
 .delivery_bold_upText {font-size:1.1rem; text-align:center; font-weight:bold;}
-section.repair_block_aboutUs {margin-bottom: 120px; width: 100%; margin-top: 30px;}
+section.repair_block_aboutUs {width: 100%; margin-top: 30px;}
+section.repair_block_aboutUs_footer {margin-bottom: 120px;}
 .aboutUs_block {display:flex; justify-content:center;}
 .aboutUs_section_block {display:flex; justify-content:center; flex-basis: 50%; flex-grow: 1;}
 .repair_block_aboutUs_outline {outline: #DCDCDC solid 3px;}
-@media (min-width:700px) {
+@media (min-width:900px) {
     .aboutUs_right_block {margin-left: 50px;}    
 }
+@media (min-width:770px) and (max-width:920px) {
+    .aboutUs_right_block {margin-left: 20px;}    
+}
 @media (max-width:1370px) {
-    .repair_block_aboutUs_outline{padding:10px; margin-left: 10px;}    
+    .repair_block_aboutUs_outline{padding:10px;}    
+   /* .repair_block_aboutUs_outline{margin-left: 10px;}  */  
 }
 @media (max-width:700px) {
     .repair_block_aboutUs_outline{margin-left: 20px; outline: none;}    
 }
+/*
 @media (min-width:980px) and (max-width:1190px) {
 .container_aboutUs {max-width: 1100px;}
 }
@@ -722,3 +731,14 @@ section.repair_block_aboutUs {margin-bottom: 120px; width: 100%; margin-top: 30p
 @media (min-width:1700px) {
 .container_aboutUs {max-width: 1600px;}
 }
+*/
+.aboutUs_p_firstLine {text-indent:2em;}
+.aboutUs_logo {float:left; margin-right:20px; height:auto;}
+.aboutUs_text {text-align:justify;}
+.aboutUs_section_marginTop {margin-top:-500px;}
+.aboutUs_h {font-size:16px; font-weight: bold;}
+.aboutUs_slider_secondBlock {margin: auto;}
+.aboutUs_text_first {overflow: hidden;}
+.aboutUs_vertical_center {vertical-align:middle;}
+.aboutUs_goriz_center {text-align:center;}
+.abousUs_li_center {text-align:center; list-style: none;}

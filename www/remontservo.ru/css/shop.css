@@ -865,4 +865,19 @@ header .logo img {margin-top: 0;}
     ul.pagination {left:0; transform: scale(0.7);left:-3.1rem;}
     .catalog_item_buttonCall {margin-top: 70px;}
 }
+@media (min-width:1361px)  {
+.search-bar input {margin-top: 2px;}
+}
+@media (min-width:770px) and (max-width:1340px) {
+.search-bar input {margin-top: 27px;}
+}
+@media (min-width:770px) and (max-width:1150px) {
+.search-bar input {margin-top: 22px;}
+}
+@media (min-width:900px) and (max-width:1000px) {
+.search-bar input, .search-bar {margin-top: 12px;}
+}
+@media (max-width:900px) {
+.search-bar input, .search-bar {display: none;}
+}
     

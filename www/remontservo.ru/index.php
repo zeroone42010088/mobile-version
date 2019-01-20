@@ -84,10 +84,10 @@
 		<li class="has-submenu">			
             <a href="/" id="item-1">О компании</a> <i class="fa fa-sort-down"></i>
             <ul class="submenu">
-				<li><a href="/pages/about_us.php">О нас</a></li>
+				<li><a href="/pages/about_us">О нас</a></li>
 				<li><a href="/pages/sell.html">На продажу</a></li>
 				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
-				<li><a href="/pages/list-publications.php" id="item-5">Список статей</a></li>
+				<li><a href="/pages/list-publications" id="item-5">Список статей</a></li>
 			</ul>
 		</li>
         <li class="has-submenu">
