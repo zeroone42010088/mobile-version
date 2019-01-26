@@ -85,14 +85,13 @@
         <li class="has-submenu">
         	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
-				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
-				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
-				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
-				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+				<li><a href="/pages/guarantees" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>				
+				<li><a href="/pages/request" id="item-5">Заявка на ремонт</a></li>
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
-		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
+		<li><a href=/catalog>Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
 		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
 	</ul>

@@ -9,16 +9,16 @@ require '../header.php';
 <div class="container container_aboutUs">
 <div class="main-content">
 	
-    <section class="repair_block_aboutUs">
+    <div class="repair_block_aboutUs">
 		
 		<div class="row">
 			<div class="left-block repair_block_aboutUs_outline">
 			
 
-    <div class="col-md-2 col-lg-2">            
+    <div class="col-12 col-sm-12 col-md-2 col-lg-2 aboutUs_logo_div">            
         <img class="aboutUs_logo" src="../img/logo2.png" alt="Логотип серсиного центра"></div>
-  <div class="col-md-12 col-lg-12">              
-<p class="aboutUs_text aboutUs_p_firstLine aboutUs_text_first"> ООО "Кернел" Сервисный центр работает с 2002 г.
+  <section class="col-12 col-sm-12 col-md-12 col-lg-12">              
+      <p class="aboutUs_text aboutUs_p_firstLine aboutUs_text_first aboutUs_text_justify"> <b>ООО "Кернел" Сервисный центр</b> работает с 2002 г.
 С начала существования организации, фирма занималась модернизациями электронного оборудования.
 Проводила замену устаревшей электроники на станках и внедряла современную электронику.
 Проводила внедрение промышленных контроллеров, внедрение промышленных панелей операторов,
@@ -31,26 +31,29 @@ require '../header.php';
 оборудования стало актуальным.
 Сервисный центр "Кернел" решили поменять направление своей работы на диагностику и ремонт
 промышленной электроники.
-Мы стали проводить восстановление существующего оборудования Заказчиков.<br>
-В данный момент Сервисный центр имеет два направления деятельности:
-      </p></div>  
-                 
-				
+Мы стали проводить восстановление существующего оборудования Заказчиков.<br>    
+      </p></section>			
 			</div>
 			
 </div><!--end div row-->
-	</section>
+	</div>
 
+      <section>
+          <div class="row repair_block_aboutUs_outline aboutUs_string">
+         <article style="padding:10px; margin:auto;"> <p class="aboutUs_p_firstLine aboutUs_2directions"><b>В данный момент Сервисный центр имеет два направления деятельности:</b></p> </article>
+          </div><!-- row -->
+    </section> 
+    
 	<section class="repair_block_aboutUs aboutUs_section_marginTop">
 		
 		<div class="row repair_block_aboutUs_outline">
 			<div class="col-md-5 col-lg-5  left-block repair_block_aboutUs_outline">
 			
 				
-								<div class="aboutUs_vertical_center">
-                                    <h1 class="aboutUs_p_firstLine aboutUs_h aboutUs_goriz_center">✓ Направление № 1 диагностика и ремонт электронного оборудования в Сервисном Центре Исполнителя.</h1>
+								<article class="aboutUs_vertical_center aboutUs_vertical_text">
+                                    <h1 class="aboutUs_p_firstLine aboutUs_h aboutUs_goriz_center aboutUs_text aboutUs_slider_secondBlock_center aboutUs_vertical_center">✓ Направление № 1 диагностика и ремонт электронного оборудования в Сервисном Центре Исполнителя.</h1>
        <p class="aboutUs_p_firstLine aboutUs_text">Сервисный центр производит ремонт разнообразного электронного оборудования:</p>
-<ul>    
+<ul class="aboutUs_ul">    
     <li class="abousUs_li_center">✓частотных преобразователей;</li>
     <li class="abousUs_li_center">✓сервоприводов;</li>
     <li class="abousUs_li_center">✓серводвигателей;</li>
@@ -64,17 +67,17 @@ require '../header.php';
     <li class="abousUs_li_center">✓устройств плавного пуска;</li>    
     <li class="abousUs_li_center">✓промышленной электроники.</li>
     </ul>
-                </div>
+                </article>
                  
 				
 			</div>
-			<div class="right-block aboutUs_right_block  col-md-6 col-lg-6 ">
+			<div class="right-block aboutUs_right_block  col-md-6 col-lg-6 aboutUs_Slider">
 			
 		
-            <div class="slider_img1 aboutUs_slider_secondBlock aboutUs_slider_secondBlock_center aboutUs_vertical_center">
+            <div class="slider_img1 aboutUs_slider_secondBlock aboutUs_slider_secondBlock_center">
 			<figure>
                                    <img class="departure_slider_img" src="../img/about_us/1foto_otdela_centre.jpg" alt="Фото технического отдела центр">
-                                    <figcaption class="slider-down__text">Технический отдел. Общий план</figcaption>
+                                    <figcaption class="slider-down__text">Технический отдел проводит ремонт</figcaption>
                                 </figure> 
                                 <figure>
                                     <img class="departure_slider_img" src="../img/about_us/2foto_otdela_right.jpg" alt="Фотография отдела справа">
@@ -85,37 +88,37 @@ require '../header.php';
                                     <figcaption class="slider-down__text">Технический отдел</figcaption>
                                 </figure>
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/4technical_department.jpg" alt="Процесс настройки">
-                                    <figcaption class="slider-down__text">Сотрудник технического отдела</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/4technical_department.jpg" alt="Ремонт панели оператора фото">
+                                    <figcaption class="slider-down__text">Ремонт панели оператора</figcaption>
                                 </figure>
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/5department-analysis.jpg" alt="Провека узлов оборудования">
-                                    <figcaption class="slider-down__text">Технический отдел. Процесс работы</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/5department-analysis.jpg" alt="Настройка энкодера фотография">
+                                    <figcaption class="slider-down__text">Технический отдел. Настройка энкодера</figcaption>
                                 </figure>
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/6diagnostic_process.jpg" alt="Пайка">
-                                    <figcaption class="slider-down__text">Технический отдел. Процесс диагностики</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/6diagnostic_process.jpg" alt="Ремонт промышленного контроллера фотография">
+                                    <figcaption class="slider-down__text">Технический отдел. Ремонт промышленного контроллера</figcaption>
                                 </figure>
                                  <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/7working.jpg" alt="Работа с платой">
-                                     <figcaption class="slider-down__text">Технический отдел. Работа с платой</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/7working.jpg" alt="Ремот сервопривода фотография">
+                                     <figcaption class="slider-down__text">Технический отдел. Ремот сервопривода</figcaption>
                                 </figure>
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/8specialist.jpg" alt="Осмотр деталей электронного блока">
-                                    <figcaption class="slider-down__text">Технический отдел. Осмотр деталей</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/8specialist.jpg" alt="Осмотр сервомотора фото">
+                                    <figcaption class="slider-down__text">Технический отдел. Осмотр сервомотора</figcaption>
                                 </figure>
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/9scheme.jpg" alt="Анализ схемы">
-                                    <figcaption class="slider-down__text">Технический отдел. Рабочее место</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/9scheme.jpg" alt="Диагностика электронной платы от пульта управления фото">
+                                    <figcaption class="slider-down__text">Технический отдел. Диагностика электронной платы от пульта управления</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/about_us/10during_diagnosis.jpg" alt="Осмотр блока">
-                                    <figcaption class="slider-down__text">Технический отдел. Во время проведения диагностики</figcaption>
+                                    <figcaption class="slider-down__text">Технический отдел. Проверка работоспособности серводвигателя с сервоприводом</figcaption>
                                 </figure>
                                 
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/11appliances.jpg" alt="Сотрудник работает с оборудованием">
-                                    <figcaption class="slider-down__text">Технический отдел. Рабочий процесс</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/11appliances.jpg" alt="Технический отдел. Перемотка обмоток резольвера фото">
+                                    <figcaption class="slider-down__text">Технический отдел. Перемотка обмоток резольвера</figcaption>
                                 </figure>
                                 
                                 <figure>
@@ -124,8 +127,8 @@ require '../header.php';
                                 </figure>
                                 
                                 <figure>
-                                    <img class="departure_slider_img" src="../img/about_us/13data_study.jpg" alt="Сотрудник изучает фотографии оборудования">
-                                    <figcaption class="slider-down__text">Сотрудник технического отдела</figcaption>
+                                    <img class="departure_slider_img" src="../img/about_us/13data_study.jpg" alt="Ремонт панели от стойки ЧПУ фото">
+                                    <figcaption class="slider-down__text">Ремонт панели от стойки ЧПУ</figcaption>
                                 </figure>
                                 
                                 <figure>
@@ -163,16 +166,18 @@ require '../header.php';
 </div><!--right block-->
 </div><!--end div row-->
 	</section>
+   
     
-    <section class="repair_block_aboutUs aboutUs_section_marginTop repair_block_aboutUs_footer">
+    
+    <section class="repair_block_aboutUs aboutUs_section_marginTop">
 		
 		<div class="row repair_block_aboutUs_outline">
 			<div class="col-md-5 col-lg-5  left-block repair_block_aboutUs_outline">
 			
 				
-			<div class="<article aboutUs_vertical_center">					
-    <h2 class="aboutUs_p_firstLine aboutUs_h abousUs_li_center">✓ Направление № 2 выезд специалистов на неисправное электронное оборудования Заказчика.</h2>
-    <ul>
+			<div class="aboutUs_vertical_textViezd">					
+    <h2 class="aboutUs_p_firstLine aboutUs_h abousUs_li_center aboutUs_text">✓ Направление № 2 выезд специалистов на неисправное электронное оборудования Заказчика.</h2>
+    <ul class="aboutUs_ul_bottom">
         <li class="abousUs_li_center">✓аварийный выезд на оборудование;</li>
         <li class="abousUs_li_center">✓диагностика электроники оборудования;</li>
         <li class="abousUs_li_center">✓определения неисправности;</li>
@@ -184,7 +189,31 @@ require '../header.php';
         <li class="abousUs_li_center">✓аварийная диагностика на оборудовании;</li>
         <li class="abousUs_li_center">✓устранение электронных сбоев;</li>
         </ul> 
-    <p class="aboutUs_text">
+     
+                </div>  
+				
+			</div>
+			<div class="right-block aboutUs_right_block col-md-6 col-lg-6 aboutUs_right_block_viezd">
+			
+		
+            
+			<figure>
+                <img class="departure_slider_img aboutUs_right_block_viezdImg" src="../img/about_us/viezd.jpg" alt="Выезд специалиста">
+                <figcaption style="text-align:center;"><b>Специалист производит запуск ЧПУ на оборудовании Заказчика</b></figcaption>
+                </figure>
+                                   
+                
+                                
+		
+</div><!--right block-->
+</div><!--end div row-->
+	</section >
+   
+   
+    <section class="repair_block_aboutUs aboutUs_section_marginTop repair_block_aboutUs_footer">
+        <div class="row repair_block_aboutUs_outline">
+         <div class="col-md-12 col-lg-12">
+    <p class="aboutUs_text aboutUs_text_justify aboutUs_p_firstLine">
 За время работы мы провели ремонтные работы более чем 5000 предприятий по Всей России, СНГ и
 ближнему зарубежью.
 Проводили аварийные выезды по запуску оборудования от Калининграда до Хабаровска.
@@ -193,24 +222,10 @@ require '../header.php';
 Работаем по безналичному расчету.
 Заключаем договор.
 Предоставляем гарантию на ремонт 6 месяцев.
-        Стоимость ремонта составляет от 20% до 40% от стоимости нового оборудования.</p>  
-                </div>  
-				
-			</div>
-			<div class="right-block aboutUs_right_block col-md-6 col-lg-6">
-			
-		
-            
-			
-                                   <img class="departure_slider_img" src="../img/about_us/viezd.jpg" alt="Выезд специалиста">
-                                   
-                
-                                
-		
-</div><!--right block-->
-</div><!--end div row-->
-	</section>
-		
+        Стоимость ремонта составляет от 20% до 40% от стоимости нового оборудования.</p>
+              </div>
+        </div><!--row -->
+    </section>
 		
     </div> <!-- end main-content-->
 

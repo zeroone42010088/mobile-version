@@ -235,3 +235,7 @@ textarea#projectFF {
     .card {flex-basis: 33%;}
 }
 /*form*/
+@media (min-width:800px) {
+    .request_padding {margin-bottom:0.625rem; padding-left:1.875rem;}
+    .request_hTop {padding-top:0.625rem }
+}

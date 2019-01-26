@@ -26,8 +26,14 @@ function Get_utm(){
 		case 'remont_cpu':
 			$utm = ' CPU ';
 			break;
-		case 'remont_ibp':
-			$utm = ' ИБП ';
+        case 'remont_bankomatov':
+			$utm = ' банкоматов ';
+			break;
+		case 'remont_bespereboinik':
+			$utm = ' источников бесперебойного питания ';
+			break;
+        case 'remont_kupuropriemnik':
+			$utm = ' купюроприемников ';
 			break;
 		case 'laboratory':
 			$utm = ' лабораторного оборудования ';
@@ -63,7 +69,7 @@ function Get_utm(){
 			$utm = ' промышленных контроллеров ';
 			break;
         case 'servo_klapan':
-			$utm = ' сервоклапанов ';
+			$utm = ' пропорциональных клапанов ';
 			break;
         case 'rashodomer':
 			$utm = ' расходомеров ';
@@ -80,11 +86,17 @@ function Get_utm(){
         case 'servodrive_peremotka':
 			$utm = ' и перемотку серводвигателей ';
 			break;
+        case 'servomotor_repair':
+			$utm = ' сервомотора ';
+			break;
         case 'servoprivod_repair':
 			$utm = ' сервопривода ';
 			break;
         case 'servodriver_repair':
 			$utm = ' серводрайвера ';
+			break;
+         case 'stanki_repair':
+			$utm = ' станков ';
 			break;
         case 'chpu_repair':
 			$utm = ' станков с ЧПУ ';
@@ -107,6 +119,9 @@ function Get_utm(){
         case 'chpu':
 			$utm = ' ЧПУ ';
 			break;
+        case 'electrical_equipment':
+			$utm = ' ЧПУ ';
+			break;           
         case 'encoder':
 			$utm = ' энкодера ';
 			break;
@@ -123,18 +138,21 @@ function Get_utmH1(){
 		case 'remont_cpu':
 			$utm = ' и CPU ';
 			break;
-		case 'remont_ibp':
-			$utm = ' и ИБП ';
+        case 'bankomatov':
+			$utm = ' и банкоматов ';
+			break;
+		case 'remont_bespereboinik':
+			$utm = ' и источников бесперебойного питания ';
+			break;
+        case 'remont_kupuropriemnik':
+			$utm = ' и купюроприемников ';
 			break;
 		case 'laboratory':
 			$utm = ' и лабораторного оборудования ';
 			break;
         case 'medical':
 			$utm = ' и медицинского оборудования ';
-			break;
-        case 'metal_detectors':
-			$utm = ' и металлодетекторов ';
-			break;
+			break;       
         case 'equipment_repair':
 			$utm = ' и оборудования ';
 			break;
@@ -160,7 +178,7 @@ function Get_utmH1(){
 			$utm = ' и промышленных контроллеров ';
 			break;
         case 'servo_klapan':
-			$utm = ' и сервоклапанов ';
+			$utm = ' и пропорциональных клапанов ';
 			break;
         case 'rashodomer':
 			$utm = ' и расходомеров ';
@@ -169,7 +187,7 @@ function Get_utmH1(){
 			$utm = ' и резольверов ';
 			break;
         case 'operator_panel':
-			$utm = ' панели оператора ';
+			$utm = ' и панелей оператора ';
 			break;
         case 'servomotor_repair':
 			$utm = ' серводвигателей ';
@@ -177,11 +195,17 @@ function Get_utmH1(){
         case 'servodrive_peremotka':
 			$utm = ' и перемотку серводвигателей ';
 			break;
+        case 'servomotor_repair':
+			$utm = ' и сервомоторов ';
+			break;
         case 'servoprivod_repair':
 			$utm = ' и сервоприводов ';
 			break;
         case 'servodriver_repair':
 			$utm = ' и серводрайверов ';
+			break;
+        case 'stanki_repair':
+			$utm = ' и станков ';
 			break;
         case 'chpu_repair':
 			$utm = ' и станков с ЧПУ ';
@@ -203,6 +227,9 @@ function Get_utmH1(){
 			break;
         case 'chpu':
 			$utm = ' и ЧПУ ';
+			break;
+        case 'electrical_equipment':
+			$utm = ' и электрооборудования ';
 			break;
         case 'encoder':
 			$utm = ' и энкодеров ';

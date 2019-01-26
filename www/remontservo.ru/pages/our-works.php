@@ -14,12 +14,12 @@ require '../header.php';
 <div class="item">
 <img data-lazy=../img/our-works/servomotor_abb_8n02409a0079.jpg alt="Ремонт серводвигателя ABB 8N02409A0079" title="Серводвигатель ABB 8N02409A0079">
 <p class=ourworks_description style=margin-top:5px>Ремонт сервомотора ABB 08N02409A0079</p>
-<p class=ourworks_description>Проводвились следующие рыботы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводвились следующие рыботы:</p>
 <ul>
-<li class=ourworks_description>диагностика двигателя;</li>
-<li class=ourworks_description>замена подшипников;</li>
-<li class=ourworks_description>перемотка статор серводвигателя;</li>
-<li class=ourworks_description>настройка резольвера серводвигателя.</li>
+<li class="ourworks_description ourworks_description_fontNormal">диагностика двигателя;</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена подшипников;</li>
+<li class="ourworks_description ourworks_description_fontNormal">перемотка статор серводвигателя;</li>
+<li class="ourworks_description ourworks_description_fontNormal">настройка резольвера серводвигателя.</li>
 </ul>
 </div>
 
@@ -27,46 +27,46 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/servomotor_b_r_automation_8msa42.ro-31.jpg alt="Ремонт сервомотора B&R_Automation_8MSA42.RO-31" title="Сервомотор B&R_AUTOMATION_8MSA42.RO-31">
 <p class=ourworks_description style=margin-top:5px>Ремонт сервомотора B&R AUTOMATION 8MSA42.RO-31</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>диагностика серводвигателя;</li>
-<li class=ourworks_description>перемонтка вращающегося трансформатора резольвера;</li>
-<li class=ourworks_description>настройка резольвера</li>
-<li class=ourworks_description>проверка работы с приводом.</li>
+<li class="ourworks_description ourworks_description_fontNormal">диагностика серводвигателя;</li>
+<li class="ourworks_description ourworks_description_fontNormal">перемонтка вращающегося трансформатора резольвера;</li>
+<li class="ourworks_description ourworks_description_fontNormal">настройка резольвера</li>
+<li class="ourworks_description ourworks_description_fontNormal">проверка работы с приводом.</li>
 </ul>
 </div>
     
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/servomotor_control_technigues_115u2c305bacaa115190.jpg alt="Ремонт серводвигателя CONTROL-TECHNIQUES 115U2C305BACAA115190" title="Сервомотор CONTROL-TECHNIQUES 115U2C305BACAA115190">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя CONTROL-TECHNIQUES 115U2C305BACAA115190</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>- разборка;</li>
-<li class=ourworks_description>- ремонт тормоза;</li>
-<li class=ourworks_description>- замена подшипников и сальника;</li>
-<li class=ourworks_description>- сборка и настройка энкодера.</li>
+<li class="ourworks_description ourworks_description_fontNormal">- разборка;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- ремонт тормоза;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена подшипников и сальника;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- сборка и настройка энкодера.</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/servomotor_indramat_mkd041b-144-kg1-kn.jpg alt="Ремонт сервомотора Indramat MKD041B-144-KG1-KN" title="Серводвигатель Indramat MKD041B-144-KG1-KN">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя Indramat MKD041B-144-KG1-KN</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>диагностика серводвигателя;</li>
-<li class=ourworks_description>замена микросхемы EEPROM;</li>
-<li class=ourworks_description>настройка положения резольвера;</li>
-<li class=ourworks_description>сборка с подключением к приводу и проверкой на вращение.</li>
+<li class="ourworks_description ourworks_description_fontNormal">диагностика серводвигателя;</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена микросхемы EEPROM;</li>
+<li class="ourworks_description ourworks_description_fontNormal">настройка положения резольвера;</li>
+<li class="ourworks_description ourworks_description_fontNormal">сборка с подключением к приводу и проверкой на вращение.</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/servomotor_yaskawa_sgmuh-30dca61.jpg alt="Ремонт серводвигателя YASKAWA SGMUH-30DCA61-OY" title="Сервомотор YASKAWA SGMUH-30DCA61-OY">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя YASKAWA SGMUH-30DCA61-OY</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>- диагностика серводвигателя;</li>
-<li class=ourworks_description>- замена подшипников, установка сальника;</li>
-<li class=ourworks_description>- настройка энкодера;</li>
-<li class=ourworks_description>- проверка с приводом Yaskawa.</li>
+<li class="ourworks_description ourworks_description_fontNormal">- диагностика серводвигателя;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена подшипников, установка сальника;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- настройка энкодера;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- проверка с приводом Yaskawa.</li>
 </ul>
 </div>
 <div class="item">
@@ -76,40 +76,40 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_fanuc_6007.jpg alt="Ремонт Энкодера FANUC A860-2020-T301" title="Энкодер FANUC A860-2020-T301">
 <p class=ourworks_description style=margin-top:5px>Ремонт энкодера FANUC A860-2020-T301</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>проверка сигналов обмена данными;</li>
-<li class=ourworks_description>ремонт шлейфа (один из штырей был продавлен);</li>
-<li class=ourworks_description>ремонт энкодера.</li>
+<li class="ourworks_description ourworks_description_fontNormal">проверка сигналов обмена данными;</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт шлейфа (один из штырей был продавлен);</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт энкодера.</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_graco_6009.jpg alt="Ремонт пульта управления GRACO PROGRAMMABLE SKIPLINE CONTROL 24F472 G13D" title="Пульт управления GRACO PROGRAMMABLE SKIPLINE CONTROL 24F472 G13D">
 <p class=ourworks_description>Ремонт пульта управления GRACO PROGRAMMABLE SKIPLINE CONTROL 24F472 G13D</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>- проверка внутренних источников питания;</li>
-<li class=ourworks_description>- проверка источников сигнала на дисплее;</li>
-<li class=ourworks_description>- проверка шлейфа дисплея на непропай;</li>
-<li class=ourworks_description>- замена неисправного дисплея.</li>
+<li class="ourworks_description ourworks_description_fontNormal">- проверка внутренних источников питания;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- проверка источников сигнала на дисплее;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- проверка шлейфа дисплея на непропай;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена неисправного дисплея.</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_siemens_6010.jpg alt="Ремонт промышленного компьютера SIEMENS SINUMERIC PCU 50 A5E00150883 6FC5210-0DF22-0AA0" title="Промышленный компьютер SIEMENS SINUMERIC PCU 50 A5E00150883 6FC5210-0DF22-0AA0">
 <p class=ourworks_description style=margin-top:5px>Ремонт промышленного компьютера SIEMENS SINUMERIC PCU 50 A5E00150883 6FC5210-0DF22-0AA0</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>ремонт северного моста</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт северного моста</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_siemens_6011.jpg alt="Ремонт привода SIEMENS SIMODRIVE LT-MODUL 1P 6SN1123-1AB00-0HA1" title="Привод SIEMENS SIMODRIVE LT-MODUL 1P 6SN1123-1AB00-0HA1">
 <p class=ourworks_description style=margin-top:5px>Ремонт привода SIEMENS SIMODRIVE LT-MODUL 1P 6SN1123-1AB00-0HA1</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>ремонт силовой части блока, замена неисправных компонентов;</li>
-<li class=ourworks_description>замена силового модуля и ремонт каналов управления;</li>
-<li class=ourworks_description>профилактическя замена электролитических конденсаторов. Сборка, проверка на двигателе.</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт силовой части блока, замена неисправных компонентов;</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена силового модуля и ремонт каналов управления;</li>
+<li class="ourworks_description ourworks_description_fontNormal">профилактическя замена электролитических конденсаторов. Сборка, проверка на двигателе.</li>
 </ul>
 </div>
 <div class="item">
@@ -119,11 +119,11 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_mitsubishi_6014.jpg alt="Ремонт серводвигателя MITSUBISHI AC SERVO MOTOR HF204BS" title="СерводвигателЬ MITSUBISHI AC SERVO MOTOR HF204BS">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя MITSUBISHI AC SERVO MOTOR HF204BS</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>- перемотка;</li>
-<li class=ourworks_description>- замена подшипников и сальника;</li>
-<li class=ourworks_description>- сборка и настройка энкодера.</li>
+<li class="ourworks_description ourworks_description_fontNormal">- перемотка;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена подшипников и сальника;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- сборка и настройка энкодера.</li>
 </ul>
 </div>
 <div class="item">
@@ -133,12 +133,12 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_power_supply_6016.jpg alt="Ремонт электронного блока POWER SUPPLY AL-GRF 3839 IPI 83300501" title="Ремонт электронного блока POWER SUPPLY AL-GRF 3839 IPI 83300501">
 <p class=ourworks_description style=margin-top:5px>Ремонт электронного блока POWER SUPPLY AL-GRF 3839 IPI 83300501</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>ремонт DC-DC преобразователя +15В и +5В;</li>
-<li class=ourworks_description>замена неисправных компонентов и восстановление дорожки;</li>
-<li class=ourworks_description>профилактическая замена электрических конденсаторов;</li>
-<li class=ourworks_description>сборка, проверка.</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт DC-DC преобразователя +15В и +5В;</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена неисправных компонентов и восстановление дорожки;</li>
+<li class="ourworks_description ourworks_description_fontNormal">профилактическая замена электрических конденсаторов;</li>
+<li class="ourworks_description ourworks_description_fontNormal">сборка, проверка.</li>
 </ul>
 </div>
 <div class="item">
@@ -148,11 +148,11 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_travelmaster3_6020.jpg alt="Ремонт частотного преобразователя TravelMaster3 D2S004NF1N00" title="Частотный преобразователь TravelMaster3 D2S004NF1N00">
 <p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя TRAVELMASTER3 D2S004NF1N00</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>- замена модулся IGBT, ремонт каналов управления силовыми ключами;</li>
-<li class=ourworks_description>- замена неисправных компонентов;</li>
-<li class=ourworks_description>- профилактическая замена электролитических конденсаторов.</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена модулся IGBT, ремонт каналов управления силовыми ключами;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- замена неисправных компонентов;</li>
+<li class="ourworks_description ourworks_description_fontNormal">- профилактическая замена электролитических конденсаторов.</li>
 </ul>
 </div>
 <div class="item">
@@ -162,21 +162,21 @@ require '../header.php';
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_laferservo_6022.jpg alt="Ремонт серводвигателя smigroup LAFERTSERVO" title="Ремонт серводвигателя smigroup LAFERTSERVO">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя SMIGROUP LAFERTSERVO</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>замена подшипников и энкодера;</li>
-<li class=ourworks_description>сборка и настройка и энкодера;</li>
-<li class=ourworks_description>установка сальника.</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена подшипников и энкодера;</li>
+<li class="ourworks_description ourworks_description_fontNormal">сборка и настройка и энкодера;</li>
+<li class="ourworks_description ourworks_description_fontNormal">установка сальника.</li>
 </ul>
 </div>
 <div class="item">
 <img class="lazy"  data-lazy=/img/our-works/remont_lafertservo_6023.jpg alt="Ремонт серводвигателя smigroup LAFERTSERVO B7116P-03178" title="Серводвигатель smigroup LAFERTSERVO B7116P-03178">
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя SMIGROUP LAFERTSERVO B7116P-03178</p>
-<p class=ourworks_description>Проводились следующие работы:</p>
+<p class="ourworks_description ourworks_description_fontNormal">Проводились следующие работы:</p>
 <ul>
-<li>- замена подшипников;</li>
-<li>- ремонт посадочного места переднего подшипника;</li>
-<li>- сборка и настройка энкодера.</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена подшипников;</li>
+<li class="ourworks_description ourworks_description_fontNormal">ремонт посадочного места переднего подшипника;</li>
+<li class="ourworks_description ourworks_description_fontNormal">сборка и настройка энкодера.</li>
 </ul>
 </div>
 <div class="item">
@@ -196,8 +196,8 @@ require '../header.php';
 <p class=ourworks_description style=margin-top:5px>Ремонт серводвигателя FANUC BIS 8/3000 A06B-0075-B103</p>
 <p>Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>замена силового разъёма;</li>
-<li class=ourworks_description>настройка энкодера.</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена силового разъёма;</li>
+<li class="ourworks_description ourworks_description_fontNormal">настройка энкодера.</li>
 </ul>
 </div>
 <div class="item">
@@ -209,8 +209,8 @@ require '../header.php';
 <p class=ourworks_description style=margin-top:5px>Ремонт частотного преобразователя BAUMULLER BM4435-SI1-01200-03</p>
 <p class=ourworks_description>Проводились следующие работы:</p>
 <ul>
-<li class=ourworks_description>восстановление неисправных элементов в предварительном каскаде и канале управление теристорами;</li>
-<li class=ourworks_description>замена силовых модулей;</li>
+<li class="ourworks_description ourworks_description_fontNormal">восстановление неисправных элементов в предварительном каскаде и канале управление теристорами;</li>
+<li class="ourworks_description ourworks_description_fontNormal">замена силовых модулей;</li>
 </ul>
 </div>
 <div class="item">

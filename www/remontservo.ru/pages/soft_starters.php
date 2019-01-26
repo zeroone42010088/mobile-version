@@ -12,7 +12,7 @@ require '../header.php';
 	<section class="repair_block">
                               <h1 class="title"> Ремонт устройства плавного пуска</h1>
                                <div class="row">
-			<div class="col-md-6 left-block">
+			<div class="col-md-6 left-block index_pages_slider">
 				<div class="slider_img1">
                                 <div>
                                     <img src="../img/soft_starters-slider-pictures/starter_abb.jpg" alt="Ремонт устройств плавного пуска ABB">

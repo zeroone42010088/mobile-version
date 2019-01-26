@@ -11,8 +11,8 @@ require '../header.php';
 	
 	<div class="filling-page">
 
-                <div class="form-container transparent">
-            <h1 style="margin-bottom:10px; text-align: center; color: rgba(0,0,0,0.6);
+                <div class="form-container transparent delievery_company request_padding">
+            <h1 class="request_hTop" style="margin-bottom:10px; text-align: center; color: rgba(0,0,0,0.6);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                      0px -5px 35px rgba(255,255,255,0.3); font-size:1.3rem;">Заявка на ремонт</h1>
             <div class="fields">                    

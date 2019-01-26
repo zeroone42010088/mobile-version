@@ -29,6 +29,7 @@ Redirect /pages/guarantees.html  /pages/guarantees
 Redirect /pages/repairs.html  /pages/repairs
 Redirect /pages/request.html  /pages/request
 Redirect /pages/list-publications.html  /pages/list-publications
+
 Redirect /pages/publications/article-1-2018-04-26/article-1-2018-04-26.html  /pages/publications/article-1-2018-04-26/article-frequency-control
 Redirect /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types.php
 Redirect /pages/publications/article-3-2018-04-26/article-3-2018-04-26.html  /pages/publications/article-3-2018-04-26/article-servo-motor-winding

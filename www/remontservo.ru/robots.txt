@@ -1,6 +1,29 @@
 User-agent: *
 Disallow: /js/
+Disallow: /inc/
+Disallow: /text/
 Disallow: /pages/
 Disallow: /img/
 Disallow: /
 Disallow: /*utm_source=
+Clean-param: *utm_source= /
+
+//User-agent: *
+//Disallow: /js/
+//Disallow: /inc/
+//Disallow: /text/
+//Disallow: /header.php
+//Disallow: /footer.php
+//Disallow: /functions.php
+//Disallow: /postmaster.php
+//Disallow: /config.php
+//Disallow: /contactform.php
+//Disallow: /catalog_archive.php
+//Disallow: /catalog_single.php
+//Disallow: /*utm_source=
+//Clean-param: *utm_source= 
+//Allow: /pages/
+//Allow: /img/
+//Sitemap: https://www.remontservo.ru/sitemap.xml
+//Host: https://www.remontservo.ru/
+

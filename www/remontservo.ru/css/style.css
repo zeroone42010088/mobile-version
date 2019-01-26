@@ -561,7 +561,7 @@ ul.pagination {
 }
 .ourworks_description {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 16px;   
 }
 .filling-page-public-our {
     ;
@@ -866,7 +866,7 @@ nav ul {
     box-shadow: 0 2px 1px rgba(0,0,0,.07);
     background: #fff;
     transition: all .4s ease-in-out;
-    
+    background-color: #dee2e6;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

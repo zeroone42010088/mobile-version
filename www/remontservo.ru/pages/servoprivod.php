@@ -11,7 +11,7 @@ require '../header.php';
 	<section class="repair_block">
                    <h1 class="title">Ремонт сервоприводов, ремонт серводрайверов</h1>
 		<div class="row">
-			<div class="col-md-6 left-block">
+			<div class="col-md-6 left-block index_pages_slider">
 				<div class="slider_img1">
                                 <div>
                                     <img src="../img/servoprivod-slider-pictures/siemens_simodrive.jpg" alt="Работы по ремонту сервопривода">

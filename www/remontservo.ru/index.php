@@ -55,7 +55,7 @@
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
 				<p class="site-name">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
-				<p class="site-desc">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
+				<p class="site-desc">РЕМОНТ БЛОКА , ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
 			</div>
 
 			<div class="col-12 col-sm-12 col-md-7 col-lg-4 h-contacts">
@@ -77,7 +77,7 @@
 	</div>
 </header>
 
-<div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
+<div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
 <nav class="primary nav-gorizontalmenu" data-id="<?= $menuID;?>">
 	<i class="fa fa-times"></i>
 	<ul class="container goriz_menu_width">
@@ -87,7 +87,7 @@
 				<li><a href="/pages/about_us">О нас</a></li>
 				<li><a href="/pages/sell.html">На продажу</a></li>
 				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
-				<li><a href="/pages/list-publications" id="item-5">Список статей</a></li>
+				<li><a href="/pages/list-publications" id="item-9">Список статей</a></li>
 			</ul>
 		</li>
         <li class="has-submenu">
@@ -100,7 +100,7 @@
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
-		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
+		<li><a href=/catalog>Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
 		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
 	</ul>
@@ -818,47 +818,47 @@
                         <h2 style="text-align:center; margin: 20px 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em; margin-top: -20px;">Выезд на неисправное оборудование Заказчика</h2>
                             <div class="regular slider" style="width:100%; height: 240px;"> 
                                <div>
-                                   <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/chpu_stanki.jpg" alt="Токарные станки с ЧПУ фото"></a>
+                                   <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/chpu_stanki.jpg" alt="Токарные станки с ЧПУ фото"></a>
                                    <p class="slider-down__text"><b>Ремонт токарных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img"  src="img/slider-down/frezer_stanki.jpg" alt="Фрезерные станки с ЧПУ после ремонта"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img"  src="img/slider-down/frezer_stanki.jpg" alt="Фрезерные станки с ЧПУ после ремонта"></a>
                                     <p class="slider-down__text"><b>Ремонт фрезерных станков с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/chpu_centre.jpg" alt="Обрабатывающие центры с ЧПУ ремонт"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/chpu_centre.jpg" alt="Обрабатывающие центры с ЧПУ ремонт"></a>
                                     <p class="slider-down__text"><b>Ремонт обрабатывающих центров с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/ecstruder.jpg" alt="Экструдеры ремонт и диагностика"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/ecstruder.jpg" alt="Экструдеры ремонт и диагностика"></a>
                                     <p class="slider-down__text"><b>Ремонт экструдеров</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/metall_chpu.jpg" alt="Металлобрабатывающий центр с ЧПУ ремонт"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/metall_chpu.jpg" alt="Металлобрабатывающий центр с ЧПУ ремонт"></a>
                                     <p class="slider-down__text"><b>Ремонт металлообрабатывающего центра с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/wood_chpu.jpg" alt="Деревообрабатывающий центр с ЧПУ ремонтируем"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img"  src="img/slider-down/wood_chpu.jpg" alt="Деревообрабатывающий центр с ЧПУ ремонтируем"></a>
                                     <p class="slider-down__text"><b>Ремонт деревообрабатывающего центра с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/laser_chpu.jpg" alt="Лазерные станки с ЧПУ ремонт"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/laser_chpu.jpg" alt="Лазерные станки с ЧПУ ремонт"></a>
                                     <p class="slider-down__text"><b>Ремонт лазерных резок с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/listogib.jpg" alt="Листогибы с ЧПУ фотография"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/listogib.jpg" alt="Листогибы с ЧПУ фотография"></a>
                                     <p class="slider-down__text"><b>Ремонт листогибов с ЧПУ</b><p>
                                 </div>
                                 
                                 <div>
-                                    <a href="/pages/departure"><img class="index_sliderDown_img" class="index_sliderBottom_img" src="img/slider-down/termo_avtomat.jpg" alt="Термопластавтоматы ремонт и диагностика"></a>
+                                    <a href="/pages/departure"><img class="index_sliderDown_img index_sliderBottom_img" src="img/slider-down/termo_avtomat.jpg" alt="Термопластавтоматы ремонт и диагностика"></a>
                                     <p class="slider-down__text"><b>Ремонт термопластавтоматов</b><p>
                                 </div>
                                 
@@ -1045,7 +1045,7 @@
                     <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
                   </div>
                   <div class="control-file">
-                    <label for="fileFF" style="color:#000;"s>Прикрепить файл:</label>
+                    <label for="fileFF" style="color:#000;">Прикрепить файл:</label>
                     <input id="fileFF" name="fileFF" type="file">
                    <!-- <input id="fileFF2" name="fileFF2" type="file">
                     <input id="fileFF3" name="fileFF3" type="file"> -->

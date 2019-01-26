@@ -13,11 +13,11 @@ require '../header.php';
 	<div class="container">
 		<div class="filling-page">       
               
-                    <h2 style="font-size:1.25rem; text-align:center;margin-top:1.25rem; margin-bottom:1.25rem;">Мы готовы предоставить гарантии на выполненные работы:</h2>
+                    <h2 style="font-size:1.25rem; text-align:center;margin-top:2.25rem; margin-bottom:1.25rem;">Мы готовы предоставить гарантии на выполненные работы:</h2>
             <article style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <div>
                     <div class="badge">
-                        <img style="padding-top:34%;" src="../img/galka.png">
+                        <img style="padding-top:34%;" src="../img/galka.png" alt="Знак подтверждения">
                     </div>
                     <div class="badge-right">
                         <h3>Гарантия на ремонт</h3>

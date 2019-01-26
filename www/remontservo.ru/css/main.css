@@ -78,12 +78,12 @@ header button.callme_button.header__buttonCall {
 }
 /*cover*/
 .cover{
-	height: 260px;
+	height: 150px;
 	background: url('/img/title-bg.jpg');
 	font-size: 30px;
     color: white;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 55px;
 }
 #departure{
 	background: url('/img/title-bg.jpg');
@@ -187,9 +187,10 @@ h1.title {
     font-size: 31px;
     color: #000;
 }
+/*
 .left-block {
     padding-left: 50px;
-}
+}*/
 .repair_sellForm.orange_btn {
     max-width: 350px;
     width: 100%;
@@ -253,7 +254,7 @@ form.pages__content__searchForm {
 .pages__content__searchForm__button {
     position: absolute;
     top: 0;
-    right: 18px;
+    right: 17px;
     width: 42px;
     height: 42px;
     border: none;
@@ -452,7 +453,7 @@ article h3 {
 .delivery_badge_img {margin-top:2rem; margin-top:-10%;} 
 .delivery__companyes {display: inline-block;}
 .badge {width: 100px; height: 100px; float: left; border-radius: 50px; background-color: #FF7E00; margin-right: 10px; /*background-image:url(../img/galka.png); background-repeat: no-repeat; background-position: center;*/}
-.badge span {color: white; font-size: 30px; padding: 35%; padding-top: 34%;}
+.badge span {color: white; font-size: 30px;  padding-top: 34%;}
 .glyphicon {position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1;}
 .whyus {font-size: 0,8125rem;}
 .whyus li {vertical-align: top; width: 31%; display: inline-block; padding: 1,875rem 0.5%;}
@@ -695,46 +696,61 @@ body.catalog_page {
 }
 
 .slider-down__text {font-weight: bold;}
-.delivery_bold_upTextH2 {font-size:1.1rem; text-align:center; margin-bottom:2rem;font-weight:bold;}
-.delivery_bold_upText {font-size:1.1rem; text-align:center; font-weight:bold;}
+.delivery_bold_upTextH2 {font-size:1rem; text-align:center; margin-bottom:-0.6rem; font-weight: normal;}
+.delivery_bold_upText {font-size:1rem; text-align:center; font-weight: normal;}
+.delievery_company_badge {padding-left: 5px;}
 section.repair_block_aboutUs {width: 100%; margin-top: 30px;}
 section.repair_block_aboutUs_footer {margin-bottom: 120px;}
+.aboutUs_block_main {outline: #DCDCDC solid 2px;}
 .aboutUs_block {display:flex; justify-content:center;}
 .aboutUs_section_block {display:flex; justify-content:center; flex-basis: 50%; flex-grow: 1;}
 .repair_block_aboutUs_outline {outline: #DCDCDC solid 3px;}
+
 @media (min-width:900px) {
     .aboutUs_right_block {margin-left: 50px;}    
 }
 @media (min-width:770px) and (max-width:920px) {
     .aboutUs_right_block {margin-left: 20px;}    
 }
-@media (max-width:1370px) {
-    .repair_block_aboutUs_outline{padding:10px;}    
-   /* .repair_block_aboutUs_outline{margin-left: 10px;}  */  
+@media (max-width:800px) {
+   .repair_block_aboutUs_outline{padding:10px;}    
+   .aboutUs_logo {max-width: 50px;} 
 }
 @media (max-width:700px) {
-    .repair_block_aboutUs_outline{margin-left: 20px; outline: none;}    
+   .repair_block_aboutUs_outline{outline: none;}    
 }
 /*
 @media (min-width:980px) and (max-width:1190px) {
-.container_aboutUs {max-width: 1100px;}
+.aboutUs_logo, {margin-top: 10%;}
 }
-@media (min-width:1200px) and (max-width:1399px) {
-.container_aboutUs {max-width: 1200px;}
+@media (min-width:1191px) and (max-width:1399px) {
+.aboutUs_logo, .aboutUs_logo_div {margin-top: 10%;}
 }
 @media (min-width:1400px) {
-.container_aboutUs {max-width: 1300px;}
+.aboutUs_logo {max-width:}
 }
 @media (min-width:1600px) {
-.container_aboutUs {max-width: 1500px;}
+.aboutUs_logo {max-width:}
 }
 @media (min-width:1700px) {
-.container_aboutUs {max-width: 1600px;}
+.aboutUs_logo {max-width:}
 }
+
+.aboutUs_logo, .aboutUs_logo_div {display: inline; vertical-align: middle;}
 */
+/*.aboutUs_logo {margin-top: 40px;}*/
+.aboutUs_logo {margin-top: 25%; margin-left: 5%;}
+.aboutUs_vertical_text {margin-top: 7%;}
+.aboutUs_vertical_textViezd {margin-top: 9%;}
+.aboutUs_Slider {margin-top: 3%;}
+.delievery_company img {padding-left: 3px; padding-right: 3px;}
+.aboutUs_2directions {display:inline; vertical-align:middle;}
 .aboutUs_p_firstLine {text-indent:2em;}
 .aboutUs_logo {float:left; margin-right:20px; height:auto;}
-.aboutUs_text {text-align:justify;}
+.aboutUs_text {margin-bottom: 0; padding: 5px;}
+.aboutUs_text_justify {text-align:justify;}
+.aboutUs_ul {margin-bottom: 0; padding-top:5px; padding-bottom: 5px;}
+.aboutUs_ul_bottom {margin-bottom: 0; padding-top:5px;}
 .aboutUs_section_marginTop {margin-top:-500px;}
 .aboutUs_h {font-size:16px; font-weight: bold;}
 .aboutUs_slider_secondBlock {margin: auto;}
@@ -742,3 +758,38 @@ section.repair_block_aboutUs_footer {margin-bottom: 120px;}
 .aboutUs_vertical_center {vertical-align:middle;}
 .aboutUs_goriz_center {text-align:center;}
 .abousUs_li_center {text-align:center; list-style: none;}
+@media (min-width:800px) {
+    .aboutUs_right_block_viezd {position: relative; overflow: hidden;}
+.aboutUs_right_block_viezdImg {/* position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); max-height:97%;*/ margin-top: 25px; margin-bottom: 10px;}
+    .aboutUs_slider_secondBlock_center {margin:auto;}
+    .badge_margin {margin: 5px;} 
+    .badge_margin_number3 {margin-bottom: 15px;}
+    }
+.aboutUs_string {margin-top:30px;}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .dilivery_image_size {max-width: 16%; height: 100px; vertical-align: top;} 
+    .badge_margin_number3 {margin-bottom: 37px;}
+}
+
+.ourworks_description {   
+    font-weight: bold;
+}
+.ourworks_description_fontNormal {font-weight: normal;}
+@media (max-width:800px) {
+    .aboutUs_logo {display: none;}
+    .aboutUs_logo_div {width: 100%;} 
+    .aboutUs_text_first {margin-bottom: -3rem;}
+    .aboutUs_string {margin-bottom: -5rem;}
+    .aboutUs_Slider {margin-bottom: -7rem;}
+    .aboutUs_right_block_viezdImg {margin-bottom: -5rem;}
+    article.repair_block_aboutUs_footer {margin-bottom: 60px;}
+    .slick-prev {position:absolute; width:1px; height:1px; visibility: hidden;} 
+    .slick-next {position:absolute; width:1px; height:1px; visibility: hidden;}
+    .departure .slider_img1 {margin-bottom: 0;}
+    
+}
+@media (max-width:950px) {
+    .index_pages_slider {padding-left: 15px;}
+}
+.pages_contacts_delivery:hover {cursor: pointer;}

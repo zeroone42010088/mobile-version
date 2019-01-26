@@ -753,7 +753,7 @@ a.button28:active {
 .catalog__h1 {
     text-align:center; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); margin:20px auto 10px; white-space:nowrap;
+	                 0px -5px 35px rgba(255,255,255,0.3); margin:20px auto 10px; /*white-space:nowrap;*/
 }
 
 .p-left {
