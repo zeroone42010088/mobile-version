@@ -1,129 +1,229 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://www.remontservo.ru/</loc>
+	<loc>https://www.remontservo.ru/</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/about_us.html</loc>  
+	<loc>https://www.remontservo.ru/pages/about_us</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/guarantees.html</loc>
+	<loc>https://www.remontservo.ru/pages/list-publications</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/delivery.html</loc>
+	<loc>https://www.remontservo.ru/pages/sell.html</loc>		
+</url>            
+<url>
+	<loc>https://www.remontservo.ru/pages/our-works</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/request.html</loc>
+	<loc>https://www.remontservo.ru/pages/departure</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/our-works.html</loc>
+	<loc>https://www.remontservo.ru/pages/contacts</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/departure.html</loc>
+	<loc>https://www.remontservo.ru/pages/guarantees</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/contacts.html</loc>
+	<loc>https://www.remontservo.ru/pages/delivery</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/servodrive.html</loc>
+	<loc>https://www.remontservo.ru/pages/request</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/encoder_and_roter.html</loc>
+	<loc>https://www.remontservo.ru/pages/servodrive</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/servoprivod.html</loc>
+	<loc>https://www.remontservo.ru/pages/servoprivod</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/preobrazovatel.html</loc>
+	<loc>https://www.remontservo.ru/pages/preobrazovatel</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/operator_panel.html</loc>
+	<loc>https://www.remontservo.ru/pages/operator-panel</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/industrial_computers.html</loc>
+	<loc>https://www.remontservo.ru/pages/industrial_computers</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/chpu_repair.html</loc>
+	<loc>https://www.remontservo.ru/pages/chpu_repair</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/logic_controllers.html</loc>
+	<loc>https://www.remontservo.ru/pages/logic_controllers</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/industrial_electronics.html</loc>
+	<loc>https://www.remontservo.ru/pages/industrial_electronics</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/soft_starters.html</loc>
+	<loc>https://www.remontservo.ru/pages/soft_starters</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/resolver.html</loc>
+	<loc>https://www.remontservo.ru/pages/resolver</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/list-publications.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-1-2018-04-26/article-frequency-control</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/sell.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-2-2018-04-26/article-servomotor-types.php</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/repairs.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-3-2018-04-26/article-servo-motor-winding</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-1-2018-04-26/article-1-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-4-2018-04-26/article-design-machine-series</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-2-2018-04-26/article-2-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-5/article-servo-driver</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-3-2018-04-26/article-3-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-6-2018-04-26/article-materials</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-4-2018-04-26/article-4-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-7-2018-04-26/servo_motor_brushes</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-5/article-5-servodriver.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-8-2018-04-26/servo-motor-cooling</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-6-2018-04-26/article-6-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-9-2018-04-26/article-servo-design</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-7-2018-04-26/article-7-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-10/article-about-servodriver</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-8-2018-04-26/article-8-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-11-2018-04-26/article-rotor-core</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-9-2018-04-26/article-9-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-12/article-servo-motor-controller</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-10/article-10-servo-driver.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-13/article-pokupka-servomotora</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-11-2018-04-26/article-11-2018-04-26.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-15-2018-05-10/article-repair-servomotor-yourself</loc>	
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-12/article-12-servocontroller.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-16-2018-05-10/windings-of-electrical-equipment</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-13/article-13-pokupkaservomotora.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-17/servo-brake-repair</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-14/article-14-peremotka-servo.html</loc>
+	<loc>https://www.remontservo.ru/pages/publications/article-18/service-servomotor-brake-failures</loc>		
 </url>
 <url>
-  <loc>https://www.remontservo.ru/pages/publications/article-15-2018-05-10/article-15-2018-05-10.html</loc>
+	<loc>https://www.remontservo.ru/catalog</loc>		
 </url>
-<url>
-  <loc>https://www.remontservo.ru/pages/publications/article-16-2018-05-10/article-16-2018-05-10.html</loc>
-</url>
-<url>
-  <loc>https://www.remontservo.ru/pages/publications/article-17/article-17-remont-servomotor.html</loc>
-</url>
-<url>
-  <loc>https://www.remontservo.ru/pages/publications/article-18/article-18-remont-servo-encoder.html</loc>
-</url>
-
-
+<url><loc>https://www.remontservo.ru/catalog.php?id=-1</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=1</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=2</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=3</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=4</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=5</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=6</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=7</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=8</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=9</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=10</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=11</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=12</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=13</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=14</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=15</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=16</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=17</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=18</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=19</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=20</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=21</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=22</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=23</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=24</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=25</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=26</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=27</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=28</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=29</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=30</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=31</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=32</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=33</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=34</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=35</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=36</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=37</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=38</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=39</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=40</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=41</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=42</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=43</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=44</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=45</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=46</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=47</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=48</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=49</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=50</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=51</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=52</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=53</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=54</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=55</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=56</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=57</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=58</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=59</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=60</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=61</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=62</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=63</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=64</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=65</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=66</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=67</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=68</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=69</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=70</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=71</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=72</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=73</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=74</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=75</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=76</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=77</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=78</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=79</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=80</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=81</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=82</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=83</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=84</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=85</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=86</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=87</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=88</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=89</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=90</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=91</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=92</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=93</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=94</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=95</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=96</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=97</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=98</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=99</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=100</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=101</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=102</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=103</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=104</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=105</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=106</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=107</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=108</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=109</loc></url>
+<url><loc>https://www.remontservo.ru/catalog.php?id=110</loc></url>
 </urlset>

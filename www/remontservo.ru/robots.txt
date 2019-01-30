@@ -1,11 +1,22 @@
 User-agent: *
 Disallow: /js/
-Disallow: /pages/publications/article-5-2018-04-26/article-5-2018-04-26.html
-Disallow: /pages/publications/article-10-2018-04-26/article-10-2018-04-26.html
-Disallow: /pages/publications/article-12-2018-04-26/article-12-2018-04-26.html
-Disallow: /pages/publications/article-13-2018-04-27/article-13-2018-04-27.html
-Disallow: /pages/publications/article-14-2018-04-27/article-14-2018-04-27.html
-Disallow: /*utm_source=
+Disallow: /inc/
+Disallow: /text/
+Disallow: /header.php
+Disallow: /footer.php
+Disallow: /functions.php
+Disallow: /postmaster.php
+Disallow: /config.php
+Disallow: /contactform.php
+Disallow: /catalog_archive.php
+Disallow: /catalog_single.php
+Clean-param: utm_source /
+Clean-param: utm_replace /
+Clean-param: q /
+Clean-param: search /catalog.php
+Clean-param: pageno /catalog.php
+Clean-param: type /catalog.php
+Clean-param: diller /catalog.php
 Allow: /pages/
 Allow: /img/
 Sitemap: https://www.remontservo.ru/sitemap.xml
