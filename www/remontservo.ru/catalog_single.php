@@ -20,7 +20,10 @@
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
       <link href="/css/shop.css" rel=stylesheet>             
-       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">        
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+#item-10 {background:linear-gradient(to top,#FF7E00,white);}
+</style>	   
         <!-- Begin Talk-Me {literal} -->
         <script>
             (function(d, w, m) {
@@ -79,6 +82,7 @@
 		</div>
 	</div>
 </header>
+
         <div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
 <nav class="primary" data-id="<?= $menuID;?>">
 	<i class="fa fa-times"></i>
@@ -383,6 +387,22 @@ if($query_pro->num_rows > 0){
             });
 
         </script>
+		<!--пагинация-->
+<script>
+(function($){
+ 
+	//find active url in menu
+	var $curURL = document.location.href;
+	$('.button28').each(function() {
+		var $linkHref = $(this).find('a').attr('href');
+		if ($curURL.indexOf($linkHref) > -1) {
+			$(this).addClass('.activePagination');
+		}
+	});
+ 
+})(jQuery);
+</script>
+<!--пагинация-->
 
     </body>
 

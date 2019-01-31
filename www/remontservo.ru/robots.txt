@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /js/
 Disallow: /inc/
 Disallow: /text/
 Disallow: /header.php
@@ -14,10 +13,16 @@ Clean-param: utm_source /
 Clean-param: utm_replace /
 Clean-param: q /
 Clean-param: search /catalog.php
-Clean-param: pageno /catalog.php
-Clean-param: type /catalog.php
-Clean-param: diller /catalog.php
+# Clean-param: pageno /catalog.php
+# Clean-param: type /catalog.php
+# Clean-param: diller /catalog.php
 Allow: /pages/
 Allow: /img/
 Sitemap: https://www.remontservo.ru/sitemap.xml
 Host: https://www.remontservo.ru/
+
+User-agent: Yandex
+Disallow: /js/
+
+User-agent: Googlebot
+Allow: /js/

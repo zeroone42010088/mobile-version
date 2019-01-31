@@ -14,6 +14,7 @@ require '../header.php';
     .slick-prev {left:10px; top:110px;} 
     .slick-next {right:10px; top:110px;}
 }
+#item-7 {background:linear-gradient(to top,#FF7E00,white);}
 	</style>
 
 	<section class="repair_block">

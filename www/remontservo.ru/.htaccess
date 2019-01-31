@@ -31,7 +31,7 @@ Redirect 301 /pages/request.html  /pages/request
 Redirect 301 /pages/list-publications.html  /pages/list-publications
 
 Redirect 301 /pages/publications/article-1-2018-04-26/article-1-2018-04-26.html  /pages/publications/article-1-2018-04-26/article-frequency-control
-Redirect 301 /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types.php
+Redirect 301 /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types
 Redirect 301 /pages/publications/article-3-2018-04-26/article-3-2018-04-26.html  /pages/publications/article-3-2018-04-26/article-servo-motor-winding
 Redirect 301 /pages/publications/article-4-2018-04-26/article-4-2018-04-26.html  /pages/publications/article-4-2018-04-26/article-design-machine-series
 Redirect 301 /pages/publications/article-5/article-5-servodriver.html  /pages/publications/article-5/article-servo-driver
@@ -81,3 +81,5 @@ ErrorDocument 404 /404.html
  #кэшировать xml файлы на десять минут
  ExpiresByType application/xhtml+xml "access plus 10 minutes"
 </ifModule>
+
+

@@ -11,8 +11,10 @@ require '../header.php';
 </section>
 <div class="main-content">
 	<div class="container">
-		<div class="filling-page">       
-              
+	<style>
+   #item-3 {background:linear-gradient(to top,#FF7E00,white);}
+   </style>
+		<div class="filling-page"> 
                     <h2 style="font-size:1.25rem; text-align:center;margin-top:2.25rem; margin-bottom:1.25rem;">Мы готовы предоставить гарантии на выполненные работы:</h2>
             <article style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <div class="guarantees_tel">

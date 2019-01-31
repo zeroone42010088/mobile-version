@@ -1,919 +1,961 @@
 ﻿<!DOCTYPE html>
-<html lang=ru style=height:100%>
+<html lang="ru">
 <head>
-<meta charset=utf-8 />
-<title>Электроника на продажу</title>
-<link rel="shortcut icon" type=image/png href=../img/logo2.png>
-<meta name=keywords content="купить промышленную электронику оборудование, цена, энкодер" />
-<meta name=description content="Оборудование на продажу. Продаём промышленную электронику после ремонта" />
-<link href=../css/style.css rel=stylesheet>
-<script defer src=../js/sell.min.js></script>
-<script defer src=../js/popup_img.js></script>
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-     <!-- Begin Talk-Me {literal} -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Электроника на продажу</title>
+	<link rel="shortcut icon" type="image/png" href="/img/logo2.png">
+	<meta name="keywords" content="купить промышленную электронику оборудование, после ремонта, панель оператора, цена, энкодер"/>
+    <meta name="description" content="Оборудование на продажу. Продаём промышленную электронику после ремонта"/>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">	
+    <link href="/css/jquery.jbcallme.css" rel="stylesheet">
+    <link href="/css/style.css"  rel="stylesheet">
+	<link href="/css/main.css"  rel="stylesheet">
+	<link href="/css/form.css"  rel="stylesheet">    
+    <script defer src=/js/sell.min.js></script>
+<script defer src=/js/popup_img.js></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
 <script>
-	(function(d, w, m) {
-		window.supportAPIMethod = m;
-		var s = d.createElement('script');
-		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-		s.async = true;
-		var id = '641ef44ddd81dd7022bfea6ab1737d9a';
-		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
-		var sc = d.getElementsByTagName('script')[0];
-		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-		if (sc) sc.parentNode.insertBefore(s, sc); 
-		else d.documentElement.firstChild.appendChild(s);
-	})(document, window, 'TalkMe');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131780255-1');
 </script>
+
+	<!-- Begin Talk-Me {literal} -->
+	<script>
+		(function(d, w, m) {
+			window.supportAPIMethod = m;
+			var s = d.createElement('script');
+			s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+			s.async = true;
+			var id = '641ef44ddd81dd7022bfea6ab1737d9a';
+			s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+			var sc = d.getElementsByTagName('script')[0];
+			w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+			if (sc) sc.parentNode.insertBefore(s, sc); 
+			else d.documentElement.firstChild.appendChild(s);
+		})(document, window, 'TalkMe');
+	</script>
     <!-- End Talk-Me {literal} -->
 </head>
-<body>
-<div class=container style=position:relative>
-<header class=header>
-<div class=h-logo><a href=https://www.remontservo.ru/><img src=../img/logo1.png alt=KERNEL></a></div>
-<div class=h-title>
-<h2 style="margin:1.8em 0 .8em;font-size:15px;color:#ff7e00;font-weight:bold">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ</h2>
-<h2 class="h2-main-page">Ремонт настройка перемотка серводвигателей энкодеров резольверов сервомоторов сервоприводов</h2>
-</div>
-<div class=h-contacts>
-<p><a class="phone-main" href=tel:+7(8482)79-78-54 style=color:#FFF;text-decoration:none;font-size:1em>+7(8482)<b>79-78-54</b></a><br>
-<a class="phone-second" href=tel:+79171215301 style=color:#FFF;text-decoration:none;font-size:1em>+79171215301</a><br>
-<a class="mail" href=mailto:89171215301@mail.ru>89171215301@mail.ru</a></p>
-</div>
+
+<body class="<?= $classes;?>">
+
+<header>
+	<div class="container">
+		<div class="row order_wrap">
+
+			<div class="col-12 col-sm-12 col-md-5 col-lg-4 logo">
+                <div class=h-logo><a href=https://www.remontservo.ru/><img src="/img/logo1.png" alt="Логотип Кернел"></a></div>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
+				<p class="site-name">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
+				<p class="site-desc">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
+			</div>
+
+			<div class="col-12 col-sm-12 col-md-7 col-lg-4 h-contacts">
+				<div class="row">
+					<div class="col-12 col-sm-7  col-md-8  contacts-info">
+						<a href="tel:+78482797854" class="phone">+7(8482) 79-78-54</a>
+						<a href="tel:+79171215301" class="phone">+7(917)  121-53-01</a>
+						<a href="mailto:89171215301@mail.ru" class="mail">89171215301@mail.ru</a>
+					</div>
+					<div class="col-12 col-sm-5 col-md-4 ">
+						<button class="callme_button header__buttonCall orange_btn">
+							<span class="header__buttonCall__text">Оставить<br>заявку</span>
+						</button>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</div>
 </header>
-<nav class=nav>
-<div class=n-menu>
-<ul class=menu>
-<li><a class=a-public href=../index.html>главная</a></li>
-<li><a class=a-public href=about_us.html>о нас</a></li>
-<li><a class=a-public href=guarantees.html>гарантии</a></li>
-<li><a class=a-public href=our-works.html>выполненные работы</a></li>
-<li><a class=a-public href=repairs.html>ремонт электроники</a></li>
-<li><a class=a-public href=delivery.html>доставка в ремонт</a></li>
-<li><a class=a-public href=departure.html>выезд специалиста</a></li>
-<li><a class=a-public href=contacts.html>контакты</a></li>
-<li><a class=a-public href=list-publications.html>публикации</a></li>
-<li><a class=a-public style="background:#ff7e00;background:linear-gradient(to top,#FF7E00,white)" href=sell.html>на продажу</a></li>
-</ul>
-</div>
+
+<div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
+<nav class="primary" data-id="<?= $menuID;?>">
+	<i class="fa fa-times"></i>
+	<ul class="container goriz_menu_width">
+		<li>
+			<a href="/" id="item-1">О компании</a>
+		</li>
+        <li class="has-submenu">
+        	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
+			<ul class="submenu">
+				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
+				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
+				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+			</ul>
+		</li>
+        <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
+		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
+		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
+		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
+	</ul>
 </nav>
-<main class=content>
-<div class="filling-page background-public" style=min-height:100%;padding-top:10px>
+<main>
+<div class="filling-page" style=min-height:100%;padding-top:10px>
 <section>
-<h1 style="text-align:center;margin:15px auto 15px">Продажа электронного оборудования со склада. В наличии</h1>
+<h1 style="text-align:center;margin:15px auto 15px">Продажа электронного оборудования со склада.<br> В наличии</h1>
 <div style="display:flex;flex-wrap:wrap;flex-direction:row;align-items:flex-start;justify-content:center" class="sell-motors">
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/plata-touch.jpg" alt="Сенсорная панель оператора TOUCH 6AV6643-0CD01-1AX0 фото" class="img-sell">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/plata-touch.jpg" alt="Сенсорная панель оператора TOUCH 6AV6643-0CD01-1AX0 фото" class="img-sell"></p>
 <p class=p-sell>№1 Сенсорная панель оператора TOUCH</p>
 <p class=p-sell>6AV6643-0CD01-1AX0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/touch-sign.jpg" class="img-sell" alt="данные cенсорной панели оператора TOUCH 6AV6643-0CD01-1AX0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/touch-sign.jpg" class="img-sell" alt="данные cенсорной панели оператора TOUCH 6AV6643-0CD01-1AX0"></p>
 <p class=p-sell>№1.1 Заводская табличка от</p>
 <p class=p-sell>cенсорной панели оператора TOUCH</p>
 <p class=p-sell>6AV6643-0CD01-1AX0</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/sensor_siemens.jpg" class="img-sell" alt="электронный блок SIEMENS SINAMICS Sensor Module SMC20 1P 6SL3055-0AA00-5BA3 фотография">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/sensor_siemens.jpg" class="img-sell" alt="электронный блок SIEMENS SINAMICS Sensor Module SMC20 1P 6SL3055-0AA00-5BA3 фотография"></p>
 <p class=p-sell>№2 Электронный блок</p>
 <p class=p-sell>SIEMENS SINAMICS Sensor</p>
 <p class=p-sell>Module SMC20 1P 6SL3055-0AA00-5BA3</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/sensor-siemens-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20 1P 6SL3055-0AA00-5BA3">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/sensor-siemens-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20 1P 6SL3055-0AA00-5BA3"></p>
 <p class=p-sell>№2.1 Заводская табличка</p>
 <p class=p-sell>SIEMENS SINAMICS Sensor</p>
 <p class=p-sell>Module SMC20 1P 6SL3055-0AA00-5BA3</p>
 <p class=p-sell-bottom>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens_6es7.jpg" class="img-sell" alt="SIEMENS 6ES7221-1BF22-OXAO фото">
+<div class="sell_divOutline">
+    <p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens_6es7.jpg" class="img-sell" alt="SIEMENS 6ES7221-1BF22-OXAO фото"></p>
 <p class=p-sell>№3 SIEMENS</p>
 <p class=p-sell>6ES7221-1BF22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-simatic-6es7sign.jpg" class="img-sell" alt="характеристики 6ES7221-1BF22-OXAO 6ES7221-1BF22-0XA0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-simatic-6es7sign.jpg" class="img-sell" alt="характеристики 6ES7221-1BF22-OXAO 6ES7221-1BF22-0XA0"></p>
 <p class=p-sell>№3.1 Заводские данные</p>
 <p class=p-sell>6ES7221-1BF22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-sitop-power.jpg" class="img-sell" alt="SIEMENS SITOP power 20 6EP1436-3BA00">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-sitop-power.jpg" class="img-sell" alt="SIEMENS SITOP power 20 6EP1436-3BA00"></p>
 <p class=p-sell>№5 Блок питания</p>
 <p class=p-sell>SIEMENS SITOP power 20</p>
 <p class=p-sell>6EP1436-3BA00</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-sitop-sign.jpg" class="img-sell" alt="SIEMENS SITOP power 2 6EP1436-3BA00 изображение">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-sitop-sign.jpg" class="img-sell" alt="SIEMENS SITOP power 2 6EP1436-3BA00 изображение"></p>
 <p class=p-sell>№5.1 Заводская табличка</p>
 <p class=p-sell>SIEMENS SITOP power 2</p>
 <p class=p-sell>6EP1436-3BA00</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/panasonic-block.jpg" class="img-sell" alt="FPE-C32 CONTROL UNIT Panasonic">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/panasonic-block.jpg" class="img-sell" alt="FPE-C32 CONTROL UNIT Panasonic"></p>
 <p class=p-sell>№6 Электронный блок</p>
 <p class=p-sell>FPE-C32 CONTROL UNIT Panasonic</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/panasonic-control-unit.jpg" class="img-sell" alt="FPE-C32 CONTROL UNIT Panasonic">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/panasonic-control-unit.jpg" class="img-sell" alt="FPE-C32 CONTROL UNIT Panasonic"></p>
 <p class=p-sell>№7 Заводские данные</p>
 <p class=p-sell>FPE-C32 CONTROL UNIT Panasonic</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-output-unit.jpg" class="img-sell" alt="Блок Omron С200H-OA221">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-output-unit.jpg" class="img-sell" alt="Блок Omron С200H-OA221"></p>
 <p class=p-sell>№8 Блок Omron</p>
 <p class=p-sell>С200H-OA221</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-output-sign.jpg" class="img-sell" alt="Omron С200H-0A221">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-output-sign.jpg" class="img-sell" alt="Omron С200H-0A221"></p>
 <p class=p-sell>№9 Заводская табличка </p>
 <p class=p-sell>Omron С200H-OA221</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/mitsubishi-drive.jpg" class="img-sell" alt="Серводвигатель Mitsubishi HC-KFS43K фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/mitsubishi-drive.jpg" class="img-sell" alt="Серводвигатель Mitsubishi HC-KFS43K фото"></p>
 <p class=p-sell>№10 Серводвигатель Mitsubishi</p>
 <p class=p-sell>HC-KFS43K</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/encoder-heidenhain.jpg" class="img-sell" alt="Энкодер Heidenhain ERN 1387 035-2048">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/encoder-heidenhain.jpg" class="img-sell" alt="Энкодер Heidenhain ERN 1387 035-2048"></p>
 <p class=p-sell>№11 Энкодер Heidenhain</p>
 <p class=p-sell>ERN 1387 035-2048</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Новый, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/encoder-heidenhain-sign.jpg" class="img-sell" alt="энкодер Heidenhain ERN 1387 035-2048">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/encoder-heidenhain-sign.jpg" class="img-sell" alt="энкодер Heidenhain ERN 1387 035-2048"></p>
 <p class=p-sell>№12 Заводские данные энкодера</p>
 <p class=p-sell>Heidenhain ERN 1387 035-2048</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Новый, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/encoder-sick.jpg" class="img-sell" alt="Энкодер Sick">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/encoder-sick.jpg" class="img-sell" alt="Энкодер Sick"></p>
 <p class=p-sell>№13 Энкодер Sick</p>
 <p class=p-sell>SRM50-HFA0-K21</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Новый, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-block-222.jpg" class="img-sell" alt="SIEMENS 6ES7222-1EF22-0XA0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-block-222.jpg" class="img-sell" alt="SIEMENS 6ES7222-1EF22-0XA0"></p>
 <p class=p-sell>№15 SIEMENS 6ES7222-1EF22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-6es7222-sign.jpg" class="img-sell" alt="SIEMENS 6ES7222-1EF22-0XA0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-6es7222-sign.jpg" class="img-sell" alt="SIEMENS 6ES7222-1EF22-0XA0"></p>
 <p class=p-sell>№15.1 Заводские данные SIEMENS</p>
 <p class=p-sell>6ES7222-1EF22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-block-1bd22.jpg" class="img-sell" alt="SIEMENS 6ES7222-1BD22-0XA0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-block-1bd22.jpg" class="img-sell" alt="SIEMENS 6ES7222-1BD22-0XA0"></p>
 <p class=p-sell>№16 SIEMENS 6ES7222-1BD22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1bd22-sign.jpg" class="img-sell" alt="SIEMENS 6ES7222-1BD22-0XA0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1bd22-sign.jpg" class="img-sell" alt="SIEMENS 6ES7222-1BD22-0XA0"></p>
 <p class=p-sell>№16.1 Заводские данные SIEMENS</p>
 <p class=p-sell>6ES7222-1BD22-0XA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-simatic-6es5.jpg" class="img-sell" alt="SIEMENS SIMATIC S5 6ES5375-0LA41">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-simatic-6es5.jpg" class="img-sell" alt="SIEMENS SIMATIC S5 6ES5375-0LA41"></p>
 <p class=p-sell>№17 SIEMENS SIMATIC S5</p>
 <p class=p-sell>6ES5375-0LA41</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1p-216.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1p-216.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0"></p>
 <p class=p-sell>№18 SIEMENS 1P </p>
 <p class=p-sell>6ES7216-2BD22-0XB0</p>
 <p class=p-sell-bottom>Цена договорная</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1p-216sign.jpg" class="img-sell" alt="данные SIEMENS 1P 6ES7216-2BD22-0XB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1p-216sign.jpg" class="img-sell" alt="данные SIEMENS 1P 6ES7216-2BD22-0XB0"></p>
 <p class=p-sell>№18.1 Заводские данные SIEMENS</p>
 <p class=p-sell>1P 6ES7216-2BD22-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-nt631c.jpg" class="img-sell" alt="OMRON NT631C-ST141-EV2 фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-nt631c.jpg" class="img-sell" alt="OMRON NT631C-ST141-EV2 фото"></p>
 <p class=p-sell>№19 Сенсорная панель</p>
 <p class=p-sell>оператора OMRON</p>
 <p class=p-sell>NT631C-ST141-EV2</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-nt631c-sign.jpg" class="img-sell" alt="OMRON NT631C-ST141-EV2">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-nt631c-sign.jpg" class="img-sell" alt="OMRON NT631C-ST141-EV2"></p>
 <p class=p-sell>№19.1 Заводские данные OMRON</p>
 <p class=p-sell>NT631C-ST141-EV2</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-0xb0.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-0xb0.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0"></p>
 <p class=p-sell>№20 SIEMENS</p>
 <p class=p-sell>1P 6ES7216-2BD22-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-0xb0-sign.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-0xb0-sign.jpg" class="img-sell" alt="SIEMENS 1P 6ES7216-2BD22-0XB0"></p>
 <p class=p-sell>№20.1 Заводские данные SIEMENS</p>
 <p class=p-sell>1P 6ES7216-2BD22-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/htk-110c.jpg" class="img-sell" alt="HITek Power HTK-110C фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/htk-110c.jpg" class="img-sell" alt="HITek Power HTK-110C фото"></p>
 <p class=p-sell>№21 HITek Power</p>
 <p class=p-sell>HTK-110C</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/htk-110c-sign.jpg" class="img-sell" alt="Характеристики HITek Power HTK-110C">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/htk-110c-sign.jpg" class="img-sell" alt="Характеристики HITek Power HTK-110C"></p>
 <p class=p-sell>№21.1 Заводские данные</p>
 <p class=p-sell>HITek Power HTK-110C</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ax1.jpg" class="img-sell" alt="SIEMENS 6AV6642-0DA01-1AX1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ax1.jpg" class="img-sell" alt="SIEMENS 6AV6642-0DA01-1AX1"></p>
 <p class=p-sell>№22 Сенсорная панель</p>
 <p class=p-sell>SIEMENS</p>
 <p class=p-sell>6AV6642-0DA01-1AX1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ax1-sign.jpg" class="img-sell" alt="SIEMENS 6AV6642-0DA01-1AX1 фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ax1-sign.jpg" class="img-sell" alt="SIEMENS 6AV6642-0DA01-1AX1 фото"></p>
 <p class=p-sell>№22.1 Заводские данные</p>
 <p class=p-sell>SIEMENS 6AV6642-0DA01-1AX1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-216-0xb0.jpg" class="img-sell" alt="SIEMENS 6ES7216-2AD23-0XB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-216-0xb0.jpg" class="img-sell" alt="SIEMENS 6ES7216-2AD23-0XB0"></p>
 <p class=p-sell>№23 SIEMENS</p>
 <p class=p-sell>6ES7216-2AD23-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-216-0xb0sign.jpg" class="img-sell" alt="SIEMENS 6ES7216-2AD23-0XB0 фотография">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-216-0xb0sign.jpg" class="img-sell" alt="SIEMENS 6ES7216-2AD23-0XB0 фотография"></p>
 <p class=p-sell>№23.1 Заводские данные</p>
 <p class=p-sell>SIEMENS 6ES7216-2AD23-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/mitsubishi-mr-j2s.jpg" class="img-sell" alt="MITSUBISHI MR-J2S-40A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/mitsubishi-mr-j2s.jpg" class="img-sell" alt="MITSUBISHI MR-J2S-40A"></p>
 <p class=p-sell>№24 Сервопривод</p>
 <p class=p-sell>MITSUBISHI MR-J2S-40A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/mitsubishi-mr-sign.jpg" class="img-sell" alt="MITSUBISHI MR-J2S-40A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/mitsubishi-mr-sign.jpg" class="img-sell" alt="MITSUBISHI MR-J2S-40A"></p>
 <p class=p-sell>№24.1 Заводские данные</p>
 <p class=p-sell>MITSUBISHI MR-J2S-40A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/toshiba-vfnc1s.jpg" class="img-sell" alt=VFNC1S-2007P-W(3)>
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/toshiba-vfnc1s.jpg" class="img-sell" alt=VFNC1S-2007P-W(3)></p>
 <p class=p-sell>№25 Частотный</p>
 <p class=p-sell>преобразователь TOSHIBA</p>
 <p class=p-sell>VFNC1S-2007P-W(3)</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/toshiba-vfnc1s-sign.jpg" class="img-sell" alt="TOSHIBA VFNC1S-2007P-W(3)">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/toshiba-vfnc1s-sign.jpg" class="img-sell" alt="TOSHIBA VFNC1S-2007P-W(3)"></p>
 <p class=p-sell>№25.1 Заводские данные</p>
 <p class=p-sell>TOSHIBA VFNC1S-2007P-W(3)</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/schneider-atv.jpg" class="img-sell" alt="Schneider ATV28HU72N4">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/schneider-atv.jpg" class="img-sell" alt="Schneider ATV28HU72N4"></p>
 <p class=p-sell>№26 Частотный</p>
 <p class=p-sell>преобразователь Schneider</p>
 <p class=p-sell>ATV28HU72N4</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/schneider-atv-sign.jpg" class="img-sell" alt="Schneider ATV28HU72N4">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/schneider-atv-sign.jpg" class="img-sell" alt="Schneider ATV28HU72N4"></p>
 <p class=p-sell>№26.1 Заводские данные</p>
 <p class=p-sell>Schneider ATV28HU72N4</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/vesper-e2-8300.jpg" class="img-sell" alt="Веспер E2-8300-010H">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/vesper-e2-8300.jpg" class="img-sell" alt="Веспер E2-8300-010H"></p>
 <p class=p-sell>№27 Частотный</p>
 <p class=p-sell>преобразователь Веспер</p>
 <p class=p-sell>E2-8300-010H</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/vesper-e2-sign.jpg" class="img-sell" alt="Веспер E2-8300-010H характеристики">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/vesper-e2-sign.jpg" class="img-sell" alt="Веспер E2-8300-010H характеристики"></p>
 <p class=p-sell>№27.1 Заводские данные</p>
 <p class=p-sell>Веспер E2-8300-010H</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b.jpg" class="img-sell" alt="FANUC A06B-6096-H102 фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b.jpg" class="img-sell" alt="FANUC A06B-6096-H102 фото"></p>
 <p class=p-sell>№28 FANUC</p>
 <p class=p-sell>A06B-6096-H102</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b-sign.jpg" class="img-sell" alt="FANUC A06B-6096-H102 фотография">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b-sign.jpg" class="img-sell" alt="FANUC A06B-6096-H102 фотография"></p>
 <p class=p-sell>№28.1 Заводские данные</p>
 <p class=p-sell>FANUC A06B-6096-H102</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b624.jpg" class="img-sell" alt="FANUC A06B-6077-H111">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b624.jpg" class="img-sell" alt="FANUC A06B-6077-H111"></p>
 <p class=p-sell>№29 FANUC</p>
 <p class=p-sell>A06B-6077-H111</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b624-sign.jpg" class="img-sell" alt="FANUC A06B-6077-H111 картинка">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b624-sign.jpg" class="img-sell" alt="FANUC A06B-6077-H111 картинка"></p>
 <p class=p-sell>№29.1 Заводские данные</p>
 <p class=p-sell>FANUC A06B-6077-H111</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b625.jpg" class="img-sell" alt="FANUC C/N 625 A06B-6077-H111">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b625.jpg" class="img-sell" alt="FANUC C/N 625 A06B-6077-H111"></p>
 <p class=p-sell>№30 FANUC C/N 625</p>
 <p class=p-sell>A06B-6077-H111</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b625-sign.jpg" class="img-sell" alt="FANUC A06B-6077-H111">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/fanuc-a06b625-sign.jpg" class="img-sell" alt="FANUC A06B-6077-H111"></p>
 <p class=p-sell>№30.1 Заводские данные C/N 625</p>
 <p class=p-sell>FANUC A06B-6077-H111</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-21inv1.jpg" class="img-sell" alt="OMRON V1000">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-21inv1.jpg" class="img-sell" alt="OMRON V1000"></p>
 <p class=p-sell>№31 Частотный</p>
 <p class=p-sell>преобразователь OMRON</p>
 <p class=p-sell>V1000 VZA4015FAA</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-21inv1-sign.jpg" class="img-sell" alt="OMRON V1000">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-21inv1-sign.jpg" class="img-sell" alt="OMRON V1000"></p>
 <p class=p-sell>№31.1 Заводские данные </p>
 <p class=p-sell>OMRON V1000 VZA4015FAA</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/emerson_sp2402.jpg" class="img-sell" alt="UNIDRIVE SP2402">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/emerson_sp2402.jpg" class="img-sell" alt="UNIDRIVE SP2402"></p>
 <p class=p-sell>№32 Частотный</p>
 <p class=p-sell>преобразователь EMERSON</p>
 <p class=p-sell>UNIDRIVE SP2402</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/emerson_sp2402-sign.jpg" class="img-sell" alt="MERSON UNIDRIVE SP2402">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/emerson_sp2402-sign.jpg" class="img-sell" alt="MERSON UNIDRIVE SP2402"></p>
 <p class=p-sell>№32.1 Заводские данные </p>
 <p class=p-sell>EMERSON UNIDRIVE SP2402</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-20inv1.jpg" class="img-sell" alt="OMRON 20INV1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-20inv1.jpg" class="img-sell" alt="OMRON 20INV1"></p>
 <p class=p-sell>№33 Частотный</p>
 <p class=p-sell>преобразователь OMRON</p>
 <p class=p-sell>VZA45P5FAA</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/omron-20inv1-sign.jpg" class="img-sell" alt="OMRON 20INV1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/omron-20inv1-sign.jpg" class="img-sell" alt="OMRON 20INV1"></p>
 <p class=p-sell>№33.1 Заводские данные </p>
 <p class=p-sell>OMRON VZA45P5FAA</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/commander-vtc.jpg" class="img-sell" alt="COMMANDER UNI2402VTC">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/commander-vtc.jpg" class="img-sell" alt="COMMANDER UNI2402VTC"></p>
 <p class=p-sell>№34 Частотный</p>
 <p class=p-sell>преобразователь COMMANDER</p>
 <p class=p-sell>UNI2402VTC</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/commander-vtc-sign.jpg" class="img-sell" alt="COMMANDER UNI2402VTC характеристики">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/commander-vtc-sign.jpg" class="img-sell" alt="COMMANDER UNI2402VTC характеристики"></p>
 <p class=p-sell>№34.1 Заводские данные </p>
 <p class=p-sell>COMMANDER UNI2402VTC</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-sinamics-320.jpg" class="img-sell" alt="SIEMENS SINAMICS Control UNIT CU320 6SL3040-0MA00-0AA1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-sinamics-320.jpg" class="img-sell" alt="SIEMENS SINAMICS Control UNIT CU320 6SL3040-0MA00-0AA1"></p>
 <p class=p-sell>№35 SIEMENS SINAMICS</p>
 <p class=p-sell>Control UNIT CU320</p>
 <p class=p-sell>6SL3040-0MA00-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-320-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Control UNIT CU320 6SL3040-0MA00-0AA1 фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-320-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Control UNIT CU320 6SL3040-0MA00-0AA1 фото"></p>
 <p class=p-sell>№35.1 Заводские данные SIEMENS</p>
 <p class=p-sell>SINAMICS Control UNIT CU320</p>
 <p class=p-sell>6SL3040-0MA00-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-sensor-smc20.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-sensor-smc20.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20"></p>
 <p class=p-sell>№36 SIEMENS SINAMICS</p>
 <p class=p-sell>Sensor Module SMC20</p>
 <p class=p-sell>6SL3055-0AA00-5BA3</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-smc20-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20 6SL3055-0AA00-5BA3">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-smc20-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Sensor Module SMC20 6SL3055-0AA00-5BA3"></p>
 <p class=p-sell>№36.1 Заводские данные SIEMENS</p>
 <p class=p-sell>SINAMICS Sensor Module SMC20</p>
 <p class=p-sell>6SL3055-0AA00-5BA3</p>    
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-320-2dp.jpg" class="img-sell" alt="SIEMENS SINAMICS Control Unit CU320-2DP 6SL3055-0AA00-5BA3 изображение">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-320-2dp.jpg" class="img-sell" alt="SIEMENS SINAMICS Control Unit CU320-2DP 6SL3055-0AA00-5BA3 изображение"></p>
 <p class=p-sell>№37 SIEMENS SINAMICS</p>
 <p class=p-sell>Control Unit CU320-2DP</p>
 <p class=p-sell>6SL3040-1MA00-0AA0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-3202dp-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Control Unit CU320-2DP">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-3202dp-sign.jpg" class="img-sell" alt="SIEMENS SINAMICS Control Unit CU320-2DP"></p>
 <p class=p-sell>№37.1 Заводские данные SIEMENS</p>
 <p class=p-sell>SINAMICS Control Unit CU320-2DP</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-d445-1.jpg" class="img-sell" alt="SIEMENS SIMOTION D445-1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-d445-1.jpg" class="img-sell" alt="SIEMENS SIMOTION D445-1"></p>
 <p class=p-sell>№38 SIEMENS</p>
 <p class=p-sell>SIMOTION D445-1</p>
 <p class=p-sell>6AU1445-0AA00-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-d4451-sign.jpg" class="img-sell" alt="SIEMENS SIMOTION D445-1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-d4451-sign.jpg" class="img-sell" alt="SIEMENS SIMOTION D445-1"></p>
 <p class=p-sell>№38.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMOTION D445-1</p>
 <p class=p-sell>6AU1445-0AA00-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ab23-0xb0.jpg" class="img-sell" alt="SIEMENS 6ES7212-1AB23-OXBO">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ab23-0xb0.jpg" class="img-sell" alt="SIEMENS 6ES7212-1AB23-OXBO"></p>
 <p class=p-sell>№39 SIEMENS</p>
 <p class=p-sell>6ES7212-1AB23-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ab23-sign.jpg" class="img-sell" alt="SIEMENS 6ES7212-1AB23-OXBO">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ab23-sign.jpg" class="img-sell" alt="SIEMENS 6ES7212-1AB23-OXBO"></p>
 <p class=p-sell>№39.1 Заводские данные SIEMENS</p>
 <p class=p-sell>6ES7212-1AB23-0XB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-2ag10.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7315-2AG10-0AB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-2ag10.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7315-2AG10-0AB0"></p>
 <p class=p-sell>№40 SIEMENS SIMATIC S7</p>
 <p class=p-sell>6ES7315-2AG10-0AB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-2ag10-sign.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7315-2AG10-0AB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-2ag10-sign.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7315-2AG10-0AB0"></p>
 <p class=p-sell>№40.1 Заводские данные SIEMENS</p>
 <p class=p-sell>SIMATIC S7 6ES7315-2AG10-0AB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ad02.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7313-1AD02-0AB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ad02.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7313-1AD02-0AB0"></p>
 <p class=p-sell>№41 SIEMENS SIMATIC S7</p>
 <p class=p-sell>6ES7313-1AD02-0AB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1ad02-sign.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7313-1AD02-0AB0">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1ad02-sign.jpg" class="img-sell" alt="SIEMENS SIMATIC S7 6ES7313-1AD02-0AB0"></p>
 <p class=p-sell>№41.1 Заводские данные SIEMENS</p>
 <p class=p-sell>SIMATIC S7 6ES7313-1AD02-0AB0</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/elau-mc-4.jpg" class="img-sell" alt="ELAU MC-4/11/10/400/00">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/elau-mc-4.jpg" class="img-sell" alt="ELAU MC-4/11/10/400/00"></p>
 <p class=p-sell>№42 ELAU PacDrive</p>
 <p class=p-sell>MC-4/11/10/400/00</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/elau-mc-4sign.jpg" class="img-sell" alt="ELAU MC-4/11/10/400/00 фото">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/elau-mc-4sign.jpg" class="img-sell" alt="ELAU MC-4/11/10/400/00 фото"></p>
 <p class=p-sell>№42.1 Заводские данные </p>
 <p class=p-sell>ELAU MC-4/11/10/400/00</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1te23.jpg" class="img-sell" alt="SIEMENS 6SL3120-1TE23-0AA1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1te23.jpg" class="img-sell" alt="SIEMENS 6SL3120-1TE23-0AA1"></p>
 <p class=p-sell>№43 SIEMENS</p>
 <p class=p-sell>6SL3120-1TE23-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/siemens-1te23-sign.jpg" class="img-sell" alt="SIEMENS 6SL3120-1TE23-0AA1">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens-1te23-sign.jpg" class="img-sell" alt="SIEMENS 6SL3120-1TE23-0AA1"></p>
 <p class=p-sell>№43.1 Заводские данные</p>
 <p class=p-sell>SIEMENS 6SL3120-1TE23-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/delta-c43a.jpg" class="img-sell" alt="DELTA VFD075C43A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/delta-c43a.jpg" class="img-sell" alt="DELTA VFD075C43A"></p>
 <p class=p-sell>№44 Частотный</p>
 <p class=p-sell>преобразователь DELTA</p>
 <p class=p-sell>VFD075C43A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/delta-c43a-sign.jpg" class="img-sell" alt="DELTA VFD075C43A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/delta-c43a-sign.jpg" class="img-sell" alt="DELTA VFD075C43A"></p>
 <p class=p-sell>№44.1 Заводские данные</p>
 <p class=p-sell>DELTA VFD075C43A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number64.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number64.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№64 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number64-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number64-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№64.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number65.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number65.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№65 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number65-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number65-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№65 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number66.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number66.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№66 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number66-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number66-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№66.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div> 
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number67.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number67.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№67 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number67-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number67-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№67.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number68.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number68.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-3A0A"></p>
 <p class=p-sell>№68 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number68-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number68-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-3A0A"></p>
 <p class=p-sell>№68.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>12.F5.B1B-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number69.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number69.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№69 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number69-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number69-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№69.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number70.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number70.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№70 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number70-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number70-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№70.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number71.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number71.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№71 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number71-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number71-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№71.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number72.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number72.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№72 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number72-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number72-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№72.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number73.jpg" class="img-sell" alt="Частотный преобразователь KEB 15.F5.B1E-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number73.jpg" class="img-sell" alt="Частотный преобразователь KEB 15.F5.B1E-350A"></p>
 <p class=p-sell>№73 Частотный преобразователь</p>
 <p class=p-sell>KEB 15.F5.B1E-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number73-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 15.F5.B1E-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number73-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 15.F5.B1E-350A"></p>
 <p class=p-sell>№73.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 15.F5.B1E-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number74.jpg" class="img-sell" alt="Частотный преобразователь KEB 07.F5.B1B-380A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number74.jpg" class="img-sell" alt="Частотный преобразователь KEB 07.F5.B1B-380A"></p>
 <p class=p-sell>№74 Частотный преобразователь</p>
 <p class=p-sell>KEB 07.F5.B1B-380A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number74-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 07.F5.B1B-380A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number74-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 07.F5.B1B-380A"></p>
 <p class=p-sell>№74.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 07.F5.B1B-380A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number75.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number75.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№75 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number75-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number75-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№75.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number76.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number76.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№76 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number76-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number76-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№76.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number76.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number76.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№76 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number76-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number76-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№76.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number77.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number77.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№77 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number77-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number77-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№77.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number78.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number78.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№78 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number78-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number78-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№78.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number79.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number79.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№79 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number79-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number79-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№79.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number80.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number80.jpg" class="img-sell" alt="Частотный преобразователь KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№80 Частотный преобразователь</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div>
-<img src="../img/preload.gif" data-src="../img/sell/keb-number80-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A">
+<div class="sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number80-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 14.F5.B1E-3A0A"></p>
 <p class=p-sell>№80.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 14.F5.B1E-3A0A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/keb-number81.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number81.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№81 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/keb-number81-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number81-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№81.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/keb-number82.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"> -
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number82.jpg" class="img-sell" alt="Частотный преобразователь KEB 12.F5.B1B-350A"></p>
 <p class=p-sell>№82 Частотный преобразователь</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/keb-number82-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"> 
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/keb-number82-sign.jpg" class="img-sell" alt="Заводские данные частотного преобразователя KEB 12.F5.B1B-350A"></p> 
 <p class=p-sell>№82.1 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KEB 12.F5.B1B-350A</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens83.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT 2X15A 1P 6SN1124-AB00-0AA1"> 
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens83.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT 2X15A 1P 6SN1124-AB00-0AA1"></p> 
 <p class=p-sell>№83 SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT 2X15A</p>
 <p class=p-sell>1P 6SN1124-AB00-0AA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens83-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT 2X15A 1P 6SN1124-AB00-0AA1 изображение">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens83-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT 2X15A 1P 6SN1124-AB00-0AA1 изображение"></p>
 <p class=p-sell>№83.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT 2X15A</p>
@@ -921,16 +963,16 @@
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens84.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AB00-0BA1 картинка">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens84.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AB00-0BA1 картинка"></p>
 <p class=p-sell>№84 SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
 <p class=p-sell>1P 6SN1124-1AB00-0BA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens84-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AB00-0BA1 фотография">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens84-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AB00-0BA1 фотография"></p>
 <p class=p-sell>№84.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
@@ -938,16 +980,16 @@
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens85.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1 фото">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens85.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1 фото"></p>
 <p class=p-sell>№85 SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
 <p class=p-sell>1P 6SN1124-1AA00-0DA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens85-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens85-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1"></p>
 <p class=p-sell>№85.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
@@ -955,16 +997,16 @@
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations">
-<img src="../img/preload.gif" data-src="../img/sell/siemens85.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens85.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1"></p>
 <p class=p-sell>№85 SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
 <p class=p-sell>1P 6SN11224-1AA00-0DA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens85-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens85-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1124-1AA00-0DA1"></p>
 <p class=p-sell>№85.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
@@ -972,16 +1014,16 @@
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens86.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1123-1AA00-0EA1 фото">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens86.jpg" class="img-sell" alt="SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1123-1AA00-0EA1 фото"></p>
 <p class=p-sell>№86 SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
 <p class=p-sell>1P 6SN1123-1AA00-0EA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens86-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1123-1AA00-0EA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens86-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE LT-MODUL EXT.2X25A 1P 6SN1123-1AA00-0EA1"></p>
 <p class=p-sell>№86.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>LT-MODUL EXT.2X25A</p>
@@ -989,108 +1031,116 @@
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/heidenhain87.jpg" class="img-sell" alt="SIEMENS SIMODRIVE HEIDENHAIN UM 115 ID.NR. 359385-01">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/heidenhain87.jpg" class="img-sell" alt="SIEMENS SIMODRIVE HEIDENHAIN UM 115 ID.NR. 359385-01"></p>
 <p class=p-sell>№87 HEIDENHAIN</p>
 <p class=p-sell>UM 115 ID.NR. 359385-01</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/heidenhain87-sign.jpg" class="img-sell" alt="Заводские данные HEIDENHAIN UM 115 ID.NR. 359385-01">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/heidenhain87-sign.jpg" class="img-sell" alt="Заводские данные HEIDENHAIN UM 115 ID.NR. 359385-01"></p>
 <p class=p-sell>№87.1 Заводские данные</p>
 <p class=p-sell>HEIDENHAIN UM 115 ID.NR. 359385-01</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens88.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens88.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1"></p>
 <p class=p-sell>№88 SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1145-1BA02-0CA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens88-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens88-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1"></p>
 <p class=p-sell>№88.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1145-1BA02-0CA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens89.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0BA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens89.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0BA1"></p>
 <p class=p-sell>№89 SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1123-1AA00-0BA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens89-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0BA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens89-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0BA1"></p>
 <p class=p-sell>№89.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1123-1AA00-0BA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens90.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens90.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1"></p>
 <p class=p-sell>№90 SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1123-1AA00-0BA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens90-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1">
+<div class="illustrations sell_divOutline" >
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens90-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1145-1BA02-0CA1"></p>
 <p class=p-sell>№90.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1145-1BA02-0CA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens91.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0EA1">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens91.jpg" class="img-sell" alt="SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0EA1"></p>
 <p class=p-sell>№91 SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1123-1AA00-0EA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/siemens91-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0EA1">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/siemens91-sign.jpg" class="img-sell" alt="Заводские данные SIEMENS SIMODRIVE 1P 6SN1123-1AA00-0EA1"></p>
 <p class=p-sell>№91.1 Заводские данные</p>
 <p class=p-sell>SIEMENS SIMODRIVE</p>
 <p class=p-sell>1P 6SN1123-1AA00-0EA1</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/y, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/kone95.jpg" class="img-sell" alt="KONE V3F16L фото">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/kone95.jpg" class="img-sell" alt="KONE V3F16L фото"></p>
 <p class=p-sell>№95 Частотный преобразователь</p>
 <p class=p-sell>KONE V3F16L</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/У, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/kone95-sign.jpg" class="img-sell" alt="Шильдик KONE V3F16L фотография">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/kone95-sign.jpg" class="img-sell" alt="Шильдик KONE V3F16L фотография"></p>
 <p class=p-sell>№95 Заводские данные</p>
 <p class=p-sell>частотного преобразователя</p>
 <p class=p-sell>KONE V3F16L</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/У, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/preobrazovatel96.jpg" class="img-sell" alt="KONE V3F16L изображение">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/preobrazovatel96.jpg" class="img-sell" alt="KONE V3F16L изображение"></p>
 <p class=p-sell>№96 Лифтовой</p>
 <p class=p-sell>частотный преобразователь</p>
 <p class=p-sell>KONE V3F16L</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/У, в наличии</p>
 </div>
-<div class="illustrations" >
-<img src="../img/preload.gif" data-src="../img/sell/baltsystem97.jpg" alt="Балт-Систем ( Balt-system ) NC-210 фотография" class="img-sell">
+<div class="illustrations sell_divOutline">
+<p class="sell_divOutline_pImg"><img src="../img/preload.gif" data-src="../img/sell/baltsystem97.jpg" alt="Балт-Систем ( Balt-system ) NC-210 фотография" class="img-sell"></p>
 <p class=p-sell>№97 Система ЧПУ</p>
 <p class=p-sell>Балт-Систем ( Balt-system )</p>
 <p class=p-sell>NC-210</p>
+<p class=p-sell>Цена договорная</p>
+<p class=p-sell-bottom>Б/У, в наличии</p>
+</div>
+<div class="illustrations sell_divOutline">
+<img src="../img/preload.gif" data-src="../img/our-works/plata_repair_6035.jpg" alt="Плата SIEMENS A5E00994795-02 A5E00994796 фото" class="img-sell">
+<p class=p-sell>№98 Плата</p>
+<p class=p-sell>SIEMENS A5E00994795-02,</p>
+<p class=p-sell>A5E00994796</p>
 <p class=p-sell>Цена договорная</p>
 <p class=p-sell-bottom>Б/У, в наличии</p>
 </div>
@@ -1098,18 +1148,123 @@
 </section>
 </div> <!-- filling-page -->
 </main>
-<footer class=foot style=position:absolute;width:100%>
-<div class=f-logo-l><img src=../img/logo3.png alt=kerneltlt></div>
-<div class=f-title>ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
-<div class=f-logo-r><img src=../img/logo3.png alt=kerneltlt></div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+			</div>
+			<div class="hidden-small col-sm-3 col-md-3">
+				<img src="/img/logo3.png" alt="">
+			</div>
+		</div>
+	</div>
 </footer>
-</div>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    <!-- форма обратной связи -->
-   <!-- <script>(function(){var c="ON5DROotFX";var e=document;var b=window;function a(){var f=document.createElement("script");f.type="text/javascript";f.async=true;f.src="//code.jivosite.com/script/widget/"+c;var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(f,d)}if(e.readyState=="complete"){a()}else{if(b.attachEvent){b.attachEvent("onload",a)}else{b.addEventListener("load",a,false)}}})();</script> -->
-    <!-- форма обратной связи -->
-    <!-- последовательная загрузка изображений  -->
+<!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
+    <div class="fields form-main my-form">    
+                 <span class="close" id="close">&#215;</span>   
+        <div class="form-wrap">
+                 
+        
+        
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
+                <span class="checkmark"></span>
+            </label>   
+
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div id="form_remont" class="frm">
+             
+                  <div class="form-group">
+                    <label for="contactFF" style="color:#000;">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telFF" style="color:#000;">Телефон:</label>
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+                  </div>
+                  <div class="control-file">
+                    <label for="fileFF" style="color:#000;">Прикрепить файл:</label>
+                    <input id="fileFF" name="fileFF" type="file">
+                   <!-- <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> -->
+                  </div>
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+       
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
+            </form>
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <div id="form_viezd" class="frm">
+              <div class="form-group">
+                <label for="contactFF1">Ваш почтовый адрес</label>
+                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="telFF1">Телефон:</label>
+                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="nameFF2">Тип/модель неисправного станка</label>
+                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+                <div class="form-group">
+                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>            
+              <div class="form-group">
+                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
+                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
+              </div>
+              <div class="control-file">
+                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
+                <input id="fileFF1" name="fileFF" type="file">
+                <input id="fileFF2" name="fileFF2" type="file">
+              <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
+              </div>
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
+                 
+            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
+        </form>
+
+        </div>
+    </div> 
+
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/slick.js"></script>
+<script src="/js/jquery.jbcallme.js"></script>
+<script src="/js/scripts.js"></script>
+
+
+<!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
+
+ <!-- последовательная загрузка изображений  -->
 <script>function isVisible(c){var d=c.getBoundingClientRect();var e=document.documentElement.clientHeight;var b=d.top>0&&d.top<e;var a=d.bottom<e&&d.bottom>0;return b||a}function showVisible(){var d=document.getElementsByTagName("img");for(var b=0;b<d.length;b++){var a=d[b];var c=a.getAttribute("data-src");if(!c){continue}if(isVisible(a)){a.src=c;a.setAttribute("data-src","")}}}window.onscroll=showVisible;showVisible();</script>
     <!-- последовательная загрузка изображений  -->
+
+
 </body>
 </html>
+
+
+
+
+    
+   

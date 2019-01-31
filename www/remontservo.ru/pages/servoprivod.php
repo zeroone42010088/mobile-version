@@ -89,15 +89,15 @@ require '../header.php';
                         <!--slider-->
                         <div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul"> 
-                                <h2 class="index_card_h2"> Разновидности блоков для ремонта:</h2>
+                                <li style="list-style-type:none;"><b>Разновидности блоков для ремонта:</b></li>
                                 <li class="pages_cards_liLetterA"> Ремонт сервоусилитей.</li>
                                 <li class="pages_cards_liLetterB"> Ремонт сервоконтроллеров.</li>
                                 <li class="pages_cards_liLetterV"> Ремонт servo drive.</li>
                                 <li class="pages_cards_liLetterG"> Ремонт драйверов двигателя.</li>
                                 <li class="pages_cards_liLetterD"> Ремонт блока управления сервомоторов и серводвигателей.</li>
                                 <li class="pages_cards_liLetterE"> Ремонт блока управления серводвигателей.</li>
-                                <h3 class="index_card_h3">Услуги в сервисном центре:</h3>
-                                <li class="pages_cards_li"> диагностика поэлементная ;</li>
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>
+                                <li class="pages_cards_li"> диагностика поэлементная;</li>
                                 <li class="pages_cards_li"> определение неисправных микросхем;</li>
                                 <li class="pages_cards_li"> замена неисправных микросхем;</li>
                                 <li class="pages_cards_li"> ремонт неисправных плат;</li>

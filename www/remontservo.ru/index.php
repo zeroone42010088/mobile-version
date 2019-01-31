@@ -14,7 +14,13 @@
     <link href="/css/jquery.jbcallme.css" rel="stylesheet">
     <link href="/css/form.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-	<link href="/css/main.css" rel="stylesheet">	
+	<link href="/css/main.css" rel="stylesheet">
+<style>
+@media (max-width:800px) and (orientation:landscape) {
+.content__sellForm__button_stanki,.content__sellForm__button {margin-left: 40%;}
+}
+#item-1 {background:linear-gradient(to top,#FF7E00,white);}
+</style>	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
 <script>
@@ -75,12 +81,9 @@
 
 		</div>
 	</div>
+	
 </header>
-<style>
-@media (max-width:800px) and (orientation:landscape) {
-.content__sellForm__button_stanki,.content__sellForm__button {margin-left: 40%;}
-}
-</style>
+
 <div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
 <nav class="primary nav-gorizontalmenu" data-id="<?= $menuID;?>">
 	<i class="fa fa-times"></i>
@@ -1240,7 +1243,7 @@
 
 </script>
 
-<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 

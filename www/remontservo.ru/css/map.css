@@ -10,8 +10,15 @@
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+  min-width:500px; max-width: 500px; height: 400px;}
+
+@media (max-width:500px) and (orientation:portrait) {
+    .ymap-container {transform: scale(0.7)}    
 }
- 
+@media (max-width:400px) and (orientation:portrait) {
+    .ymap-container {transform: scale(0.6)}    
+}
+
 /* Блок, в котором появится Яндекс.Карта */
 #map-yandex {
   position: relative;
@@ -19,7 +26,7 @@
   width: 100%;
   height: 20em;
   cursor: pointer;
-  background-color: transparent;
+    background-color: transparent;}
 
 /* Индикатор загрузки, который показывается до загрузки карты */
 .loader {
@@ -79,3 +86,78 @@
     opacity: 1;
   }
 }
+/* align contacts */
+.contacts_main_h1 {font-size: 1.25rem; margin-top: 1.25rem;}    
+
+.contacts_adress_tel {
+
+padding: 0 15px; /* для отступа от краев экрана */
+
+max-width: 1200px; /*примерно */
+
+width: 100%;
+
+margin: 0 auto; /* выравниваем по центру */
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+}
+.contacts {
+
+width: auto; /* даем пространство тексту */
+
+margin-left: 0;
+
+}
+
+.map{
+
+float: none;
+
+height: 400px;
+
+width: 500px;
+
+margin-top: 0;
+
+margin-left: 0;
+
+}
+
+.ymap-container{
+
+margin-top: 0;
+
+}
+.contacts_adress_tel{
+
+flex-wrap: wrap;
+
+}
+.map{
+
+margin-left: 30px;
+
+}
+@media only screen and (max-width: 992px){
+
+.contacts{
+
+flex-basis: 100%;
+
+text-align: center;
+
+}
+
+.map{
+
+margin: 40px 0 0 0;
+
+}
+
+}
+
