@@ -23,7 +23,16 @@
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <style>
 #item-10 {background:linear-gradient(to top,#FF7E00,white);}
-</style>	   
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131780255-1');
+</script>		   
         <!-- Begin Talk-Me {literal} -->
         <script>
             (function(d, w, m) {
@@ -388,7 +397,7 @@ if($query_pro->num_rows > 0){
 
         </script>
 		<!--пагинация-->
-<script>
+<!--<script>
 (function($){
  
 	//find active url in menu
@@ -401,7 +410,7 @@ if($query_pro->num_rows > 0){
 	});
  
 })(jQuery);
-</script>
+</script>-->
 <!--пагинация-->
 
     </body>

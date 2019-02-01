@@ -54,7 +54,7 @@ header button.callme_button.header__buttonCall {
     margin-top: 40px;
 }
 .orange_btn{
-	box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .0.5em .0.5em .1em;
+	/*box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .0.5em .0.5em .1em;*/
     background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
     text-align: center;
     text-decoration: none;
