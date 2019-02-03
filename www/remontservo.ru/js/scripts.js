@@ -1,7 +1,7 @@
 $('.mobmenu').click(function(){
     $('nav.primary').slideToggle();
 });
-$('i.fas.fa-times').click(function(){
+$('i.fa.fa-times').click(function(){
     $('nav.primary').slideToggle();
 });
 

@@ -30,7 +30,7 @@ function Get_utm(){
 			$utm = ' банкоматов ';
 			break;
 		case 'remont_bespereboinik':
-			$utm = ' источников бесперебойного питания ';
+			$utm = ' ИБП ';
 			break;
         case 'remont_kupuropriemnik':
 			$utm = ' купюроприемников ';
@@ -40,10 +40,7 @@ function Get_utm(){
 			break;
         case 'medical':
 			$utm = ' медицинского оборудования ';
-			break;
-        case 'metal_detectors':
-			$utm = ' металлодетекторов ';
-			break;
+			break;        
         case 'equipment_repair':
 			$utm = ' оборудования ';
 			break;
@@ -86,7 +83,7 @@ function Get_utm(){
         case 'servodrive_peremotka':
 			$utm = ' и перемотку серводвигателей ';
 			break;
-        case 'servomotor_repair':
+        case 'servomotors_repair':
 			$utm = ' сервомотора ';
 			break;
         case 'servoprivod_repair':
@@ -118,12 +115,18 @@ function Get_utm(){
 			break;
         case 'chpu':
 			$utm = ' ЧПУ ';
+			break;        
+		case 'electrical_equipment':
+			$utm = ' электрооборудования ';
 			break;
-        case 'electrical_equipment':
-			$utm = ' ЧПУ ';
-			break;           
         case 'encoder':
 			$utm = ' энкодера ';
+			break;
+		case 'encoderNastroika':
+			$utm = ' и настройку энкодера ';
+			break;
+		case 'server':
+			$utm = ' сервера ';
 			break;
          
 		default:
@@ -138,7 +141,7 @@ function Get_utmH1(){
 		case 'remont_cpu':
 			$utm = ' и CPU ';
 			break;
-        case 'bankomatov':
+        case 'remont_bankomatov':
 			$utm = ' и банкоматов ';
 			break;
 		case 'remont_bespereboinik':
@@ -190,12 +193,12 @@ function Get_utmH1(){
 			$utm = ' и панелей оператора ';
 			break;
         case 'servomotor_repair':
-			$utm = ' серводвигателей ';
+			$utm = ' и серводвигателей ';
 			break;
         case 'servodrive_peremotka':
-			$utm = ' и перемотку серводвигателей ';
+			$utm = ' и перемоткой серводвигателей ';
 			break;
-        case 'servomotor_repair':
+        case 'servomotors_repair':
 			$utm = ' и сервомоторов ';
 			break;
         case 'servoprivod_repair':
@@ -220,7 +223,7 @@ function Get_utmH1(){
 			$utm = ' и устройств плавного пуска ';
 			break;
         case 'chastotnic_preobrazovatel':
-			$utm = ' и частотного преобразователя ';
+			$utm = ' и частотных преобразователей ';
 			break;
         case 'chiller':
 			$utm = ' и чиллеров ';
@@ -233,6 +236,12 @@ function Get_utmH1(){
 			break;
         case 'encoder':
 			$utm = ' и энкодеров ';
+			break;
+		case 'encoderNastroika':
+			$utm = ' и настройкой энкодеров ';
+			break;
+		case 'server':
+			$utm = ' и серверов ';
 			break;
          
 		default:

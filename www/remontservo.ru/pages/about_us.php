@@ -5,20 +5,40 @@ $description = 'Сервисный по ремонту, настройке и д
 $menuID = 'item-11';
 require '../header.php';
 ?>
-
+<style>
+@media (min-width:760px) and (max-width:780px) and (orientation:portrait) {
+ .aboutUs_block_main {outline:none;}
+.slick-next {top:120px;}
+.slick-prev {top:120px;}
+.viezd_p {position:absolute; top: 240px;}
+.aboutUs_ipadOutline {outline:none;}
+}
+@media (max-width:440px) and (orientation:portrait) {
+.slick-next {top:130px;}
+.slick-prev {top:130px;}
+}
+@media (max-width:361px) and (orientation:portrait) {
+.slick-next {top:110px;}
+.slick-prev {top:110px;}
+}
+@media (max-width:330px) and (orientation:portrait) {
+.slick-next {top:100px;}
+.slick-prev {top:100px;}
+}
+ </style>
 <div class="container container_aboutUs">
 <div class="main-content">
 	
     <div class="repair_block_aboutUs">
 		
 		<div class="row">
-			<div class="left-block repair_block_aboutUs_outline">
+			<div class="left-block repair_block_aboutUs_outline aboutUs_ipadOutline">
 			
 
     <div class="col-12 col-sm-12 col-md-2 col-lg-2 aboutUs_logo_div">            
         <img class="aboutUs_logo" src="../img/logo2.png" alt="Логотип серсиного центра"></div>
   <section class="col-12 col-sm-12 col-md-12 col-lg-12">              
-      <p class="aboutUs_text aboutUs_p_firstLine aboutUs_text_first aboutUs_text_justify"> <b>ООО "Кернел" Сервисный центр</b> работает с 2002 г.
+      <p class="aboutUs_text aboutUs_p_firstLine aboutUs_text_first aboutUs_text_justify "> <b>ООО "Кернел" Сервисный центр</b> работает с 2002 г.
 С начала существования организации, фирма занималась модернизациями электронного оборудования.
 Проводила замену устаревшей электроники на станках и внедряла современную электронику.
 Проводила внедрение промышленных контроллеров, внедрение промышленных панелей операторов,
@@ -39,8 +59,8 @@ require '../header.php';
 	</div>
 
       <section>
-          <div class="row repair_block_aboutUs_outline aboutUs_string">
-         <article style="padding:10px; margin:auto;"> <p class="aboutUs_p_firstLine aboutUs_2directions"><b>В данный момент Сервисный центр имеет два направления деятельности:</b></p> </article>
+          <div class="row repair_block_aboutUs_outline aboutUs_string aboutUs_ipadOutline">
+         <article style="padding:10px; margin:auto;"> <p class="aboutUs_p_firstLine aboutUs_2directions aboutUs_fontSize"><b>В данный момент Сервисный центр имеет два направления деятельности:</b></p> </article>
           </div><!-- row -->
     </section> 
     
@@ -199,7 +219,7 @@ require '../header.php';
             
 			<figure>
                 <img class="departure_slider_img aboutUs_right_block_viezdImg" src="../img/about_us/viezd.jpg" alt="Выезд специалиста">
-                <figcaption style="text-align:center;"><b>Специалист производит запуск ЧПУ на оборудовании Заказчика</b></figcaption>
+                <figcaption class="viezd_p"style="text-align:center;"><b>Специалист производит запуск ЧПУ на оборудовании Заказчика</b></figcaption>
                 </figure>
                                    
                 

@@ -9,7 +9,13 @@ require '../header.php';
 
 <div class="container">
 <div class="main-content">
-	
+	<style>
+	@media (max-width:500px) {
+    .slick-prev {left:10px; top:110px;} 
+    .slick-next {right:10px; top:110px;}
+}
+#item-7 {background:linear-gradient(to top,#FF7E00,white);}
+	</style>
 
 	<section class="repair_block">
 		<h1 class="title">Выезд специалиста</h1>

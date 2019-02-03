@@ -44,7 +44,7 @@ require '../header.php';
 			</div>
 			<div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul">                        
-                                <li style="text-decoration: underline;">Разновидность названий сенсорных панелей оператора для ремонта:</li>
+                                <li style="list-style-type:none;"><b>Разновидность названий сенсорных панелей оператора для ремонта:</b></li>
                                 <li class="pages_cards_liLetterA">ремонт сенсорной панели оператора;</li>
                                 <li class="pages_cards_liLetterB">ремонт панели оператора;</li>
                                 <li class="pages_cards_liLetterV">ремонт панели оператора с тачскрин экраном;</li>
@@ -71,7 +71,7 @@ require '../header.php';
                                 <li class="pages_cards_liLetterSH">ремонт HMI;</li>
                                 <li class="pages_cards_liLetterSHH">ремонт human-machine-interface;</li>
                                 <li class="pages_cards_liLetterW">ремонт human machine interface;</li>                               
-                                <li style="text-decoration: underline;">Услуги в сервисном центре:</li>
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>
                                 <li class="pages_cards_li">Диагностика;</li>
                                 <li class="pages_cards_li">Настройка;</li>
                                 <li class="pages_cards_li">Подключение;</li>

@@ -13,8 +13,10 @@ require '../header.php';
 
 <div class="main-content">
 	<div class="container aboutUs_block_main">
+	<style>
+   #item-4 {background:linear-gradient(to top,#FF7E00,white);}
+   </style>
 		<div class="filling-page">
-
 				<article><h2 class="delivery_bold_upTextH2">Наш Сервисный центр обслуживает оборудование по всей России. Неисправное оборудование отправляется в г. Тольятти.</h2> 
                     
                 <p style="text-align:justify;" class="aboutUs_p_firstLine">

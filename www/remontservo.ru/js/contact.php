@@ -8,12 +8,12 @@ if (isset ($_POST['contactFF'])) {
     +79171215301 с ПН-ВС с 8.00-22.00
     или на рабочий номер 
     +7(8482)79-78-54 с ПН-ПТ с 8.00-18.00';
-  $fromName = 'glebwebsite';
+  $fromName = 'remontservo.ru';
 
   $succesMessage = 'Ваша заявка по ремонту будет рассмотрена в ближайшее время! Если у Вас срочный вопрос, то позвоните по телефону +79171215301 ПН-ВС с 8.00-22.00';
   $errorMessage = 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';
 
-	$to = "114polaris@gmail.com";//"114polaris@gmail.com";
+	$to = "89171215301@mail.ru";//"114polaris@gmail.com";
 
 
 	$from = "new_client@remontservo.ru";
@@ -26,7 +26,7 @@ if (isset ($_POST['contactFF'])) {
       $message .= "<br>Тип/модель неисправного чпу, либо контроллера с панелью оператора: ".$_POST['nameFF1'];
     endif;
   $message .=
-    "<br>Описание неисправности. номер ошибки: ".$_POST['projectFF'].
+    "<br>Описание неисправности, номер ошибки: ".$_POST['projectFF'].
     "<br><br>Адрес сайта: ".$_SERVER['HTTP_REFERER'];
  
 

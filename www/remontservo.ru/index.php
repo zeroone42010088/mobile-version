@@ -15,6 +15,12 @@
     <link href="/css/form.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 	<link href="/css/main.css" rel="stylesheet">
+<style>
+@media (max-width:800px) and (orientation:landscape) {
+.content__sellForm__button_stanki,.content__sellForm__button {margin-left: 40%;}
+}
+#item-1 {background:linear-gradient(to top,#FF7E00,white);}
+</style>	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
 <script>
@@ -26,7 +32,7 @@
 </script>
 
 	<!-- Begin Talk-Me {literal} -->
-	<!--<script>
+	<script>
 		(function(d, w, m) {
 			window.supportAPIMethod = m;
 			var s = d.createElement('script');
@@ -39,7 +45,7 @@
 			if (sc) sc.parentNode.insertBefore(s, sc); 
 			else d.documentElement.firstChild.appendChild(s);
 		})(document, window, 'TalkMe');
-	</script>-->
+	</script>
     <!-- End Talk-Me {literal} -->
 </head>
 <?php include 'functions.php';?>
@@ -55,7 +61,7 @@
 
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 site-info">
 				<p class="site-name">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ, СЕРВОПРИВОДОВ, ЭНКОДЕРОВ, РЕЗОЛЬВЕРОВ</p>
-				<p class="site-desc">РЕМОНТ БЛОКА , ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
+				<p class="site-desc">РЕМОНТ ПАНЕЛЕЙ ОПЕРАТОРА, ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, СИСТЕМ ЧПУ, ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ, ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ</p>
 			</div>
 
 			<div class="col-12 col-sm-12 col-md-7 col-lg-4 h-contacts">
@@ -75,6 +81,7 @@
 
 		</div>
 	</div>
+	
 </header>
 
 <div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
@@ -286,7 +293,7 @@
             <div class="index__content__centerButtonAndSearch" style="position: relative;">
                 <p class="salesUp" style="position: absolute; top:3%; left:3%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%;"><b>Внимание! В <?php echo CurrentMonth(); ?><?php echo date("Y");?> На первый ремонт <?php Get_utm();?> скидка 10%</b></p>
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style=" height: 55px;">
-                <img class="index_sale" src=img/percent.png alt=скидка style="position: absolute; top:-10px; left:38%; color:#fff; font-size: 1.2em; word-wrap:break-word; max-width:35%; transform: scale(0.9);">
+                <img class="index_sale" src=img/percent.png alt=скидка>
 
 <!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={38599933}&utm_content={ad_id}&utm_term={cpu}  -->
 <!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={35411413}&utm_content={ad_id}&utm_term={encoder}  -->
@@ -309,13 +316,13 @@
             <!--image-->
                       
             <div>
-                <h2 style="text-align:center; margin: 0 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em;">Мы занимаемся ремонтом промышленной электроники <?php Get_utmH1();?></h2>
+                <h1 style="text-align:center; margin: 0 0 20px; display: inline-block; min-width: 100%; font-size: 1.4em;">Мы занимаемся ремонтом промышленной электроники <?php Get_utmH1();?></h1>
             </div>
 
 
             <div class="card-group">
                 <div class="card">
-                    <a href="pages/servodrive.html"><img class="card-img-top" src="img/index-pictures/picture1.png" alt="Серводвигатель, сервомотор"></a>
+                    <a href="pages/servodrive.html"><img class="card-img-top" src="img/index-pictures/servomotors.png" alt="Серводвигатель, сервомотор"></a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт серводвигателей,<br>ремонт сервомоторов</h3>                      
 
@@ -362,7 +369,7 @@
 
 
                 <div class="card" style="border-left:2px solid rgba(0, 0, 0, 0.125); margin-left: -2px;">
-                    <a href="pages/servoprivod.html">  <img class="card-img-top" src="img/index-pictures/picture4.png" alt="Сервоприводы"></a>
+                    <a href="pages/servoprivod.html">  <img class="card-img-top" src="img/index-pictures/servoprivod.png" alt="Сервоприводы"></a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт сервоприводов,<br>ремонт серводрайверов</h3>                        
                            <div class="index_detailsCards_box"><i>Узнать подробности...</i></div> 
@@ -405,7 +412,7 @@
 
 
                 <div class="card">
-                    <a href="pages/preobrazovatel.html"> <img class="card-img-top" src="img/index-pictures/picture5.jpg" alt="Частотные преобразователи"></a>
+                    <a href="pages/preobrazovatel.html"> <img class="card-img-top" src="img/index-pictures/preobrazovatel.jpg" alt="Частотные преобразователи"></a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт частотных преобразователей</h3>
                        <!-- <ul class="card-text" style="text-align: left;">
@@ -459,7 +466,7 @@
 
 
                 <div class="card">
-                    <a href="pages/operator_panel.html"> <img class="card-img-top" src="img/index-pictures/picture7.jpg" alt="Панели оператора"> </a>
+                    <a href="pages/operator_panel.html"> <img class="card-img-top" src="img/index-pictures/operator_panel.jpg" alt="Панели оператора"> </a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт<br>панелей оператора</h3>
                      <!--   <ul class="card-text" style="text-align: left;">
@@ -542,7 +549,7 @@
             <!-- группа 2 -->
             <div class="card-group">
                 <div class="card">
-                    <a href="pages/chpu_repair.html"> <img class="card-img-top" src="img/index-pictures/picture10.png" alt="Система ЧПУ"> </a>
+                    <a href="pages/chpu_repair.html"> <img class="card-img-top" src="img/index-pictures/chpu_repair.png" alt="Система ЧПУ"> </a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт<br>систем ЧПУ</h3>
                      <!--    <p class="card-text"></p>
@@ -615,54 +622,60 @@
                 </div>
 
                 <div class="card">
-                    <a href="pages/industrial_computers.html"> <img class="card-img-top" src="img/index-pictures/picture8.png" alt="Промышленные компьютеры"> </a>
+                    <a href="pages/industrial_computers.html"> <img class="card-img-top" src="img/index-pictures/industrial_computers.png" alt="Промышленные компьютеры"> </a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт промышленных компьютеров</h3>
-                    <!--    <p class="card-text"></p>
-
-                        <ul class="card-text" style="text-align: left;">
-                            <li>&#10004; Текст</li>
-                            <li>&#10004; Текст</li>
-                            <li>&#10004; Текст</li> 
-                        </ul> -->
-
-                      <!--  <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
-                          <ul class="ulSport">
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>                            
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li> ремонтируем:</li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                            <li>&#10004; </li>
-                        </ul> -->
+						<div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
+                    <ul class="ulSport">
+                            <li style="text-decoration: underline;">Разновидность названий промышленного компьютера для ремонта:</li>
+                            <li>а) ремонт промышленного компьютера;</li>
+                            <li>б) ремонт промышленных компьютеров моноблочных;</li>
+                            <li>в) ремонт промышленных компьютеров от станков;</li>                            
+                            <li>г) ремонт систем управления станков;</li>
+                            <li>д) ремонт систем управления оборудования;</li>
+                            <li>е) ремонт PC;</li>
+                            <li>ж) ремонт PCU;</li>
+                            <li>з) ремонт NCU;</li>
+                            <li>и) ремонт CNC;</li>                            
+                            <li style="text-decoration: underline;">В промышленных компьютерах ремонтируем:</li>
+                            <li>&#10004; ремонт интерфейса;</li>
+                            <li>&#10004; ремонт интерфейса связи;</li>
+                            <li>&#10004; ремонт блока питания;</li>
+                            <li>&#10004; ремонт блоков питания;</li>
+                            <li>&#10004; ремонт источника питания;</li>
+                            <li>&#10004; ремонт импульсного источника питания,;</li>
+                            <li>&#10004; ремонт аналоговых выходов;</li>
+                            <li>&#10004; ремонт аналоговых входов;</li>
+                            <li>&#10004; ремонт жестких дисков;</li>
+                            <li>&#10004; ремонт винчестера;</li>
+                            <li>&#10004; восстановление данных с жесткого диска;</li>
+                            <li>&#10004; ремонт дискретных входов выходов;</li>
+                            <li>&#10004; ремонт плат расширения;</li>
+                            <li>&#10004; ремонт плат энкодера;</li>
+                            <li>&#10004; ремонт профибас Profibus;</li>
+                            <li>&#10004; ремонт can open интерфейс;</li>
+                            <li>&#10004; ремонт canopen;</li>
+                            <li>&#10004; ремонт profibus, HDMI, DVI,;</li>
+                            <li>&#10004; ремонт FieldBus, RS232, RS485;</li>
+                            <li>&#10004; ремонт плат управления осями;</li>
+                            <li>&#10004; ремонт плат управления;</li>
+                            <li>&#10004; ремонт процессорных плат;</li>
+                            <li>&#10004; ремонт системных плат;</li>
+                            <li>&#10004; ремонт блока управления ЧПУ;</li>
+                            <li>&#10004; ремонт блока управления ЧПУ;</li>
+                            <li>&#10004; ремонт блока питания;</li>
+                            <li>&#10004; ремонт источника питания;</li>
+                            <li>&#10004; ремонт импульсного источника питания;</li>
+                            <li>&#10004; ремонт систем управления;</li>
+                            <li>&#10004; ремонт плат электронных.</li>                            
+                        </ul>
 
                     </div>
                 </div>
 
 
                 <div class="card">
-                    <a href="pages/encoder_and_roter.html"> <img class="card-img-top" src="img/index-pictures/picture2.jpg" alt="Энкодер и датчик положения воды"></a>
+                    <a href="pages/encoder_and_roter.html"> <img class="card-img-top" src="img/index-pictures/encoder_and_roter.jpg" alt="Энкодер и датчик положения воды"></a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт энкодеров и ремонт датчиков положения ротора</h3>
                  
@@ -700,7 +713,7 @@
                 </div>
 
                 <div class="card">
-                    <a href="pages/resolver.html">  <img class="card-img-top" src="img/index-pictures/picture3.png" alt="Резольверы"></a>
+                    <a href="pages/resolver.html">  <img class="card-img-top" src="img/index-pictures/resolver.png" alt="Резольверы"></a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт<br>резольверов</h3>
                   
@@ -723,10 +736,49 @@
             <!-- группа 3 -->
             <div class="card-group">
                 <div class="card">
-                    <a href="pages/logic_controllers.html"> <img class="card-img-top" src="img/index-pictures/picture11.jpg" alt="Логические контроллеры"> </a>
+                    <a href="pages/logic_controllers.html"> <img class="card-img-top" src="img/index-pictures/logic_controllers.jpg" alt="Логические контроллеры"> </a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт промышленных логических контроллеров</h3>
-                        <p class="card-text"></p>
+                        <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
+                         <ul class="ulSport">
+                            <li>Разновидность названий контроллеров для ремонта:</li>
+                            <li>а) ремонт промышленного контроллера;</li>
+                            <li>б) ремонт программироваемого контролера;</li>
+                            <li>в) ремонт промышленного логического контролера;</li>                            
+                            <li>г) ремонт контроллеров от станков;</li>
+                            <li>д) ремонт систем управления от станков;</li>
+                            <li>е) ремонт систем управления оборудования;</li>
+							<li>ж) ремонт PC;</li>
+							<li>з) ремонт ПЛК;</li>
+							<li>и) PLC.</li>                            
+							<li style="text-decoration: underline;">В промышленных компьютерах ремонтируем:</li>
+							<li>&#10004; ремонт интерфейса;</li>
+                            <li>&#10004; ремонт интерфейса связи;</li>
+                            <li>&#10004; ремонт блока питания;</li>
+                            <li>&#10004; ремонт блоков питания;</li>
+                            <li>&#10004; ремонт источника питания;</li>
+                            <li>&#10004; ремонт импульсного источника питания;</li>
+							<li>&#10004; ремонт аналоговых выходов;</li>
+							<li>&#10004; ремонт аналоговых входов;</li>
+							<li>&#10004; ремонт дискретных входов выходов;</li>
+							<li>&#10004; ремонт плат расширения;</li>
+							<li>&#10004; ремонт плат энкодера;</li>
+							<li>&#10004; ремонт профибас Profibus;</li>
+							<li>&#10004; ремонт can open интерфейс;</li>
+							<li>&#10004; ремонт canopen;</li>
+							<li>&#10004; ремонт profibus, HDMI, DVI;</li>
+							<li>&#10004; ремонт FieldBus, RS232, RS485;</li>
+							<li>&#10004; ремонт плат управления осями;</li>
+							<li>&#10004; ремонт плат управления;</li>
+							<li>&#10004; ремонт процессорных плат;</li>
+							<li>&#10004; ремонт системных плат;</li>
+							<li>&#10004; ремонт блока управления;</li>
+							<li>&#10004; ремонт блока питания;</li>
+							<li>&#10004; ремонт источника питания;</li>
+							<li>&#10004; ремонт импульсного источника питания;</li>
+							<li>&#10004; ремонт систем управления;</li>
+							<li>&#10004; ремонт плат электронных;</li>						
+                        </ul>
 
                         
                     </div>
@@ -734,7 +786,7 @@
 
 
                 <div class="card">
-                    <a href="pages/soft_starters.html"> <img class="card-img-top" src="img/index-pictures/picture6.jpg" alt="Устройство плавного пуска"> </a>
+                    <a href="pages/soft_starters.html"> <img class="card-img-top" src="img/index-pictures/soft_starters.jpg" alt="Устройство плавного пуска"> </a>
                     <div class="card-body">
                         <h3 class="card-title">Ремонт устройства плавного пуска</h3>
                   
@@ -777,8 +829,9 @@
                 </div>
 
                 <div class="card">
-                    <a href="pages/industrial_electronics.html"> <img class="card-img-top" src="img/index-pictures/picture9.png" alt="Промышленная электроника"> </a>
-                    <div class="card-body">
+                    <!--<a href="pages/industrial_electronics.html"> <img class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>-->
+                    <a href="pages/our-works"> <img class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>
+					<div class="card-body">
                         <h3 class="card-title">Ремонт промышленной электроники</h3>
                     
 
@@ -981,7 +1034,7 @@
                     <p class="index_howweareworking_how-body_p">Как мы работаем:</p>
                 </div>
                 <div class="how-body callme_button">
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" style=height:100px src=fonts/mess.png alt=message /><br><strong>1.</strong> Вы оставляете заявку</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/mess.png alt=message /><br><strong>1.</strong> Вы оставляете заявку</p>
                 </div>
                 <div class=how-body>
                     <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/phone.png alt=telephone /><br><strong>2.</strong> Мы связываемся с Вами<br>уточняем детали</p>
@@ -1190,7 +1243,7 @@
 
 </script>
 
-<!-- Yandex.Metrika counter -->  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44532427 = new Ya.Metrika({ id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Данные
 $dbHost     = "localhost";
 $dbUsername = "new";

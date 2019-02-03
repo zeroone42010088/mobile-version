@@ -11,9 +11,10 @@
 	<link href="/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/slick.css" rel="stylesheet">
     <link href="/css/slick-theme.css" rel="stylesheet">
-    <link href="/css/jquery.jbcallme.css" rel="stylesheet">
+    <link href="/css/jquery.jbcallme.css" rel="stylesheet">	
 	<link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
+	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
 <script>
@@ -91,7 +92,7 @@
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
-		<li><a href=/catalog>Ремонт электроники в сервисном центре</a></li>
+		<li><a href="/catalog">Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
 		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
 	</ul>

@@ -9,42 +9,77 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
-Redirect /pages/servodrive.html  /pages/servodrive
-Redirect /pages/servoprivod.html  /pages/servoprivod
-Redirect /pages/soft_starters.html  /pages/soft_starters
-Redirect /pages/resolver.html  /pages/resolver
-Redirect /pages/departure.html   /pages/departure
-Redirect /pages/our-works.html   /pages/our-works
-Redirect /pages/contacts.html   /pages/contacts
-Redirect /pages/chpu_repair.html   /pages/chpu_repair
-Redirect /pages/encoder_and_roter.html   /pages/encoder_and_roter
-Redirect /pages/preobrazovatel.html   /pages/preobrazovatel
-Redirect /pages/industrial_computers.html   /pages/industrial_computers
-Redirect /pages/industrial_electronics.html   /pages/industrial_electronics
-Redirect /pages/logic_controllers.html  /pages/logic_controllers
-Redirect /pages/operator_panel.html  /pages/operator-panel
-Redirect /pages/about_us.html  /pages/about_us
-Redirect /pages/delivery.html  /pages/delivery
-Redirect /pages/guarantees.html  /pages/guarantees
-Redirect /pages/repairs.html  /pages/repairs
-Redirect /pages/request.html  /pages/request
-Redirect /pages/list-publications.html  /pages/list-publications
+Redirect 301 /pages/servodrive.html  /pages/servodrive
+Redirect 301 /pages/servoprivod.html  /pages/servoprivod
+Redirect 301 /pages/soft_starters.html  /pages/soft_starters
+Redirect 301 /pages/resolver.html  /pages/resolver
+Redirect 301 /pages/departure.html   /pages/departure
+Redirect 301 /pages/our-works.html   /pages/our-works
+Redirect 301 /pages/contacts.html   /pages/contacts
+Redirect 301 /pages/chpu_repair.html   /pages/chpu_repair
+Redirect 301 /pages/encoder_and_roter.html   /pages/encoder_and_roter
+Redirect 301 /pages/preobrazovatel.html   /pages/preobrazovatel
+Redirect 301 /pages/industrial_computers.html   /pages/industrial_computers
+Redirect 301 /pages/industrial_electronics.html   /pages/industrial_electronics
+Redirect 301 /pages/logic_controllers.html  /pages/logic_controllers
+Redirect 301 /pages/operator_panel.html  /pages/operator-panel
+Redirect 301 /pages/about_us.html  /pages/about_us
+Redirect 301 /pages/delivery.html  /pages/delivery
+Redirect 301 /pages/guarantees.html  /pages/guarantees
+Redirect 301 /pages/repairs.html  /pages/repairs
+Redirect 301 /pages/request.html  /pages/request
+Redirect 301 /pages/list-publications.html  /pages/list-publications
 
-Redirect /pages/publications/article-1-2018-04-26/article-1-2018-04-26.html  /pages/publications/article-1-2018-04-26/article-frequency-control
-Redirect /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types.php
-Redirect /pages/publications/article-3-2018-04-26/article-3-2018-04-26.html  /pages/publications/article-3-2018-04-26/article-servo-motor-winding
-Redirect /pages/publications/article-4-2018-04-26/article-4-2018-04-26.html  /pages/publications/article-4-2018-04-26/article-design-machine-series
-Redirect /pages/publications/article-5/article-5-servodriver.html  /pages/publications/article-5/article-servo-driver
-Redirect /pages/publications/article-6-2018-04-26/article-6-2018-04-26.html  /pages/publications/article-6-2018-04-26/article-materials
-Redirect /pages/publications/article-7-2018-04-26/article-7-2018-04-26.html  /pages/publications/article-7-2018-04-26/servo_motor_brushes
-Redirect /pages/publications/article-8-2018-04-26/article-8-2018-04-26.html  /pages/publications/article-8-2018-04-26/servo-motor-cooling
-Redirect /pages/publications/article-9-2018-04-26/article-9-2018-04-26.html  /pages/publications/article-9-2018-04-26/article-servo-design
-Redirect /pages/publications/article-10/article-10-servo-driver.html  /pages/publications/article-10/article-about-servodriver
-Redirect /pages/publications/article-11-2018-04-26/article-11-2018-04-26.html  /pages/publications/article-11-2018-04-26/article-rotor-core
-Redirect /pages/publications/article-12/article-12-servocontroller.html  /pages/publications/article-12/article-servo-motor-controller
-Redirect /pages/publications/article-13/article-13-pokupkaservomotora.html  /pages/publications/article-13/article-pokupka-servomotora
-Redirect /pages/publications/article-14/article-14-peremotka-servo.html  /pages/publications/article-14/faults-and-rewind-seromotor
-Redirect /pages/publications/article-15-2018-05-10/article-15-2018-05-10.html  /pages/publications/article-15-2018-05-10/article-repair-servomotor-yourself
-Redirect /pages/publications/article-16-2018-05-10/article-16-2018-05-10.html  /pages/publications/article-16-2018-05-10/windings-of-electrical-equipment
-Redirect /pages/publications/article-17/article-17-remont-servomotor.html  /pages/publications/article-17/servo-brake-repair
-Redirect /pages/publications/article-18/article-18-remont-servo-encoder.html  /pages/publications/article-18/service-servomotor-brake-failures
+Redirect 301 /pages/publications/article-1-2018-04-26/article-1-2018-04-26.html  /pages/publications/article-1-2018-04-26/article-frequency-control
+Redirect 301 /pages/publications/article-2-2018-04-26/article-2-2018-04-26.html  /pages/publications/article-2-2018-04-26/article-servomotor-types
+Redirect 301 /pages/publications/article-3-2018-04-26/article-3-2018-04-26.html  /pages/publications/article-3-2018-04-26/article-servo-motor-winding
+Redirect 301 /pages/publications/article-4-2018-04-26/article-4-2018-04-26.html  /pages/publications/article-4-2018-04-26/article-design-machine-series
+Redirect 301 /pages/publications/article-5/article-5-servodriver.html  /pages/publications/article-5/article-servo-driver
+Redirect 301 /pages/publications/article-6-2018-04-26/article-6-2018-04-26.html  /pages/publications/article-6-2018-04-26/article-materials
+Redirect 301 /pages/publications/article-7-2018-04-26/article-7-2018-04-26.html  /pages/publications/article-7-2018-04-26/servo_motor_brushes
+Redirect 301 /pages/publications/article-8-2018-04-26/article-8-2018-04-26.html  /pages/publications/article-8-2018-04-26/servo-motor-cooling
+Redirect 301 /pages/publications/article-9-2018-04-26/article-9-2018-04-26.html  /pages/publications/article-9-2018-04-26/article-servo-design
+Redirect 301 /pages/publications/article-10/article-10-servo-driver.html  /pages/publications/article-10/article-about-servodriver
+Redirect 301 /pages/publications/article-11-2018-04-26/article-11-2018-04-26.html  /pages/publications/article-11-2018-04-26/article-rotor-core
+Redirect 301 /pages/publications/article-12/article-12-servocontroller.html  /pages/publications/article-12/article-servo-motor-controller
+Redirect 301 /pages/publications/article-13/article-13-pokupkaservomotora.html  /pages/publications/article-13/article-pokupka-servomotora
+Redirect 301 /pages/publications/article-14/article-14-peremotka-servo.html  /pages/publications/article-14/faults-and-rewind-seromotor
+Redirect 301 /pages/publications/article-15-2018-05-10/article-15-2018-05-10.html  /pages/publications/article-15-2018-05-10/article-repair-servomotor-yourself
+Redirect 301 /pages/publications/article-16-2018-05-10/article-16-2018-05-10.html  /pages/publications/article-16-2018-05-10/windings-of-electrical-equipment
+Redirect 301 /pages/publications/article-17/article-17-remont-servomotor.html  /pages/publications/article-17/servo-brake-repair
+Redirect 301 /pages/publications/article-18/article-18-remont-servo-encoder.html  /pages/publications/article-18/service-servomotor-brake-failures
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+# Редирект с index.html на главную страницу
+
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^(.*)/index\.php$ /$1/ [R=301,L]
+# Редирект с index.phpна главную страницу
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^remontservo.ru
+RewriteRule (.*) http://www.remontservo.ru/$1 [R=301,L]
+ErrorDocument 404 /404.html
+# Конец редиректа
+
+<ifModule mod_expires.c>
+ ExpiresActive On
+ #кэшировать флэш и изображения на месяц
+ ExpiresByType image/x-icon "access plus 7 days"
+ ExpiresByType image/jpeg "access plus 7 days"
+ ExpiresByType image/png "access plus 7 days"
+ ExpiresByType image/gif "access plus 7 days"
+ ExpiresByType application/x-shockwave-flash "access plus 7 days"
+ #кэшировать css, javascript и текстовые файлы на одну неделю
+ ExpiresByType text/css "access plus 7 days"
+ ExpiresByType text/javascript "access plus 7 days"
+ ExpiresByType application/javascript "access plus 7 days"
+ ExpiresByType application/x-javascript "access plus 7 days"
+ #кэшировать html и htm файлы на один день
+ ExpiresByType text/html "access plus 1 day"
+ #кэшировать xml файлы на десять минут
+ ExpiresByType application/xhtml+xml "access plus 10 minutes"
+</ifModule>
+
+

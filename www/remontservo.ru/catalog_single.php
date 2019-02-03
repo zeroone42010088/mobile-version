@@ -13,16 +13,28 @@
         <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain" />
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
         <link href="/css/bootstrap.min.css" rel="stylesheet">	
-       <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+       <link href="/css/font-awesome.min.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
     	<link href="/css/slick-theme.css" rel="stylesheet">               
         <link href="/css/style.css" rel=stylesheet>         
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
-      <link href="/css/shop.css" rel=stylesheet>       
-       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">        
+      <link href="/css/shop.css" rel=stylesheet>             
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+#item-10 {background:linear-gradient(to top,#FF7E00,white);}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131780255-1');
+</script>		   
         <!-- Begin Talk-Me {literal} -->
-     <!--   <script>
+        <script>
             (function(d, w, m) {
                 window.supportAPIMethod = m;
                 var s = d.createElement('script');
@@ -40,7 +52,7 @@
                 else d.documentElement.firstChild.appendChild(s);
             })(document, window, 'TalkMe');
 
-        </script> -->
+        </script> 
         <!-- End Talk-Me {literal} -->
     </head>
 
@@ -79,7 +91,8 @@
 		</div>
 	</div>
 </header>
-         <div class="mobmenu">МЕНЮ<i class="fas fa-bars"></i></div>
+
+        <div class="mobmenu">МЕНЮ<i class="fa fa-bars"></i></div>
 <nav class="primary" data-id="<?= $menuID;?>">
 	<i class="fa fa-times"></i>
 	<ul class="container goriz_menu_width">
@@ -89,14 +102,13 @@
         <li class="has-submenu">
         	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
-				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
-				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
-				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
-				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+				<li><a href="/pages/guarantees" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>				
+				<li><a href="/pages/request" id="item-5">Заявка на ремонт</a></li>
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
-		<li><a href=/catalog.php>Ремонт электроники в сервисном центре</a></li>
+		<li><a href=/catalog>Ремонт электроники в сервисном центре</a></li>
 		<li><a href="/pages/departure" id="item-7">Выезд специалиста к Заказчику</a></li>
 		<li><a href="/pages/contacts" id="item-8">Контакты</a></li>
 	</ul>
@@ -273,7 +285,8 @@ if($query_pro->num_rows > 0){
         
         <!--form to take call from client start-->
         <script src="js/jquery.jbcallme.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="/js/custom.js"></script>
+        <script src="/js/scripts.js"></script>
         <script src="js/cat_contactform.js"></script>
         <!--form to take call from client end-->
 
@@ -383,6 +396,23 @@ if($query_pro->num_rows > 0){
             });
 
         </script>
+		<!--пагинация-->
+<!--<script>
+(function($){
+ 
+	//find active url in menu
+	var $curURL = document.location.href;
+	$('.button28').each(function() {
+		var $linkHref = $(this).find('a').attr('href');
+		if ($curURL.indexOf($linkHref) > -1) {
+			$(this).addClass('.activePagination');
+		}
+	});
+ 
+})(jQuery);
+</script>-->
+<!--пагинация-->
+    <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     </body>
 

@@ -6,28 +6,31 @@ $classes = 'contacts';
 $menuID = 'item-8';
 require '../header.php';
 ?>
-   
-            <div class="title-unit">
-                <h1 class="contacts_main_h1">Сервисный центр по ремонту промышленной электроники ООО "КЕРНЕЛ"</h1>
+   <style>
+   #item-8 {background:linear-gradient(to top,#FF7E00,white);}
+   </style>
+            
+
+
+            <div class="contacts_adress_tel row" itemscope itemtype="http://schema.org/Organization">
+               <div class="title-unit">
+                <h1 class="contacts_main_h1" itemprop="name">Сервисный центр по ремонту промышленной электроники ООО "КЕРНЕЛ"</h1>
             </div>
-
-
-            <div class="contacts_adress_tel row">
                 <div class="contacts col-md-6">
                     <h3 class="contacts_main_h3">Фактический / Юридический адрес:</h3>
-                    <p>
-                        445030, РФ, Самарская область, г. Тольятти, <br> ул. 40 лет Победы, д. 17, этаж 1 <br> офис 1004, 1005
+                    <p >
+                        445030,<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> РФ, Самарская область, г. Тольятти, <br> ул. 40 лет Победы, д. 17, этаж 1 <br> офис 1004, 1005</span>
                     </p>
                     
                     <h3 class="contacts_main_h3">Почтовый адрес:</h3>
                     <p>
-                        445030, РФ, Самарская область, <br> г. Тольятти, А/Я 4924
+                        <span>445030</span>, РФ, Самарская область, <br> г. Тольятти, А/Я 4924
                     </p>
-                    
+                   
                     <h3 class="contacts_main_h3">Телефоны и эл. почта</h3>
                     <p>
-                        тел. офис. +7(8482) 79-78-54 <br> тел. для связи +79171215301 <br> E-mail: <a href="mailto:89171215301@mail.ru">89171215301@mail.ru</a>
-                    <br>Режим работы: пн-пт 8.00-18.00</p>
+                        тел. офис. <span itemprop="telephone">+7(8482) 79-78-54</span> <br> тел. для связи <span itemprop="telephone">+79171215301</span> <br> E-mail: <a itemprop="email" href="mailto:89171215301@mail.ru">89171215301@mail.ru</a>
+                        <br>Режим работы:<time> пн-пт 8.00-18.00</time></p>
                     
                     <form action="delivery.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages_contacts_delivery" type="submit" style="padding: 20px; padding-top: 20px; border-radius: 10px; background-color: #465DCF; color:#fff;">Доставка в ремонт</button> </form> 
                 </div>
@@ -41,7 +44,7 @@ require '../header.php';
 
                 </div>
             </div>
-    
+    <script src="../js/map.js"></script>
  <?php require '../footer.php';?>   
     
     

@@ -70,7 +70,7 @@ require '../header.php';
 			</div>
 			<div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul">                        
-                                <li style="text-decoration: underline;">Разновидность названий систем ЧПУ для ремонта:</li>
+                                <li style="list-style-type:none;"><b>Разновидность названий систем ЧПУ для ремонта:</b></li>
                                 <li class="pages_cards_liLetterA">ремонт промышленной электроники ЧПУ;</li>
                                 <li class="pages_cards_liLetterB">ремонт систем ЧПУ;</li>
                                 <li class="pages_cards_liLetterV">ремонт стоики ЧПУ;</li>
@@ -87,7 +87,7 @@ require '../header.php';
                                 <li class="pages_cards_liLetterO">ремонт пульта управления ЧПУ;</li>
                                 <li class="pages_cards_liLetterP">ремонт пульта оператора;</li>
                                 <li class="pages_cards_liLetterR">ремонт контроллера ЧПУ.</li>
-                                <li style="text-decoration: underline;">Услуги в сервисном центре:;</li>
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>
                                 <li class="pages_cards_li">диагностика поэлементная;</li>
                                 <li class="pages_cards_li">определение неисправных микросхем;</li>
                                 <li class="pages_cards_li">замена неисправных микросхем;</li>

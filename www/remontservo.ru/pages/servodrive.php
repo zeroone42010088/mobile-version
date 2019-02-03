@@ -132,20 +132,20 @@ require '../header.php';
 			</div>
 			<div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul">                        
-                                <h2 class="index_card_h2">Разновидности серводвигателей для ремонта:</h2>
+                                <li style="list-style-type:none;"><b>Разновидности серводвигателей для ремонта:</b></li>
                                 <li class="pages_cards_liLetterA"> ремонт Servomotor;</li>
                                 <li class="pages_cards_liLetterB"> ремонт Servo motor;</li>
                                 <li class="pages_cards_liLetterV"> ремонт серводвигателя переменного тока;</li>
                                 <li class="pages_cards_liLetterG"> ремонт серводвигателя постоянного тока;</li>
                                 <li class="pages_cards_liLetterD"> ремонт шагового двигателя.</li>                                
-                                <h3 class="index_card_h3">Услуги в сервисном центре:</h3>
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>
                                 <li class="pages_cards_li">диагностика серводвигателя;</li>
                                 <li class="pages_cards_li">настройка энкодера;</li>
                                 <li class="pages_cards_li">ремонт энкодера;</li>
                                 <li class="pages_cards_li">замена энкодера;</li>
                                 <li class="pages_cards_li">списывание прошивок с микросхем;</li>
                                 <li class="pages_cards_li">запись прошивок в микросхемы;</li>
-                                <li class="pages_cards_li">проверка работоспособности серводвигателей на стэнде;</li>
+                                <li class="pages_cards_li">проверка работоспособности серводвигателей на стенде;</li>
                                 <li class="pages_cards_li">подключение на оборудовании серводвигатель;</li>
                                 <li class="pages_cards_li">пуско-наладка серводвигателя;</li>
                                 <li class="pages_cards_li">настройка серводвигателя;</li>

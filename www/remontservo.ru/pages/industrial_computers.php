@@ -142,35 +142,45 @@ require '../header.php';
 			</div>
 			<div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul">                        
-                                <li class="pages_cards_liLetterA"> Ремонт сервоусилитей.</li>
-                                <li class="pages_cards_liLetterB"> Ремонт сервоконтроллеров.</li>
-                                <li class="pages_cards_liLetterV"> Ремонт servo drive.</li>
-                                <li class="pages_cards_liLetterG"> Ремонт драйверов двигателя.</li>
-                                <li class="pages_cards_liLetterD"> Ремонт блока управления сервомоторов и серводвигателей.</li>
-                                <li class="pages_cards_liLetterE"> Ремонт блока управления серводвигателей.</li>
-                                <li>&#160;&#160;&#160; Услуги в сервисном центре:</li>
-                                <li class="pages_cards_li"> диагностика поэлементная ;</li>
+                                <li style="list-style-type:none;"> <b>Разновидность названий промышленного компьютера для ремонта:</b></li>
+                                <li class="pages_cards_liLetterB"> ремонт промышленного компьютера;</li>
+                                <li class="pages_cards_liLetterV"> ремонт промышленных компьютеров моноблочных;</li>
+                                <li class="pages_cards_liLetterG"> ремонт промышленных компьютеров от станков;</li>
+                                <li class="pages_cards_liLetterD"> ремонт систем управления станков;</li>
+                                <li class="pages_cards_liLetterE"> ремонт систем управления оборудования;</li>
+								<li class="pages_cards_liLetterE"> ремонт PC;</li>
+								<li class="pages_cards_liLetterE"> ремонт PCU;</li>
+								<li class="pages_cards_liLetterE"> ремонт NCU;</li>
+								<li class="pages_cards_liLetterE"> ремонт CNC;</li>
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>
+                                <li class="pages_cards_li"> диагностика поэлементная;</li>
                                 <li class="pages_cards_li"> определение неисправных микросхем;</li>
                                 <li class="pages_cards_li"> замена неисправных микросхем;</li>
                                 <li class="pages_cards_li"> ремонт неисправных плат;</li>
                                 <li class="pages_cards_li"> списывание прошивок с микросхем;</li>
                                 <li class="pages_cards_li"> запись прошивок в микросхемы;</li>
+                                <li class="pages_cards_li"> ремонт жестких дисков;</li>
+                                <li class="pages_cards_li"> ремонт винчестера;</li>
+                                <li class="pages_cards_li"> восстановление данных с жесткого диска;</li>
                                 <li class="pages_cards_li"> проверка работоспособности оборудования на стэнде;</li>
                                 <li class="pages_cards_li"> настройка;</li>
                                 <li class="pages_cards_li"> подключение;</li>
                                 <li class="pages_cards_li"> параметрирование;</li>
                                 <li class="pages_cards_li"> программирование;</li>
                                 <li class="pages_cards_li"> устранение электронных сбоев;</li>
+                                <li class="pages_cards_li"> программирование;</li>
+                                <li class="pages_cards_li"> параметрирование;</li>
                                 <li class="pages_cards_li"> наладка;</li>
-                                <li class="pages_cards_li"> написание и изменение программ;</li>
-                                <li class="pages_cards_li"> обслуживание;</li>
+                                <li class="pages_cards_li"> написание изменение программ;</li>
+                                <li class="pages_cards_li"> обслуживания;</li>
                                 <li class="pages_cards_li"> без электро-схем на оборудование;</li>
-                                <li class="pages_cards_li"> ремонтируем устаревшее оборудование,<br> которое снято с производства;</li>
-                                <li class="pages_cards_li"> ремонтируем любые производители оборудование;</li>
-                                <li class="pages_cards_li"> заключение договора;</li>
-                                <li class="pages_cards_li"> предоставление гарантии на ремонт электронного устройства 6 месяцев;</li>
-                                <li class="pages_cards_li"> ремонтируем гарантийное оборудование;</li>
-                                <li class="pages_cards_li"> ремонтируем послегарантийное оборудование.</li>
+								<li class="pages_cards_li"> ремонтируем устаревшее оборудование которое снято с производства;</li>
+								<li class="pages_cards_li"> ремонтируем любые производители оборудование;</li>
+								<li class="pages_cards_li"> заключение договора;</li>
+								<li class="pages_cards_li"> предоставление гарантии на ремонт электронного устройства 6 месяцев;</li>
+								<li class="pages_cards_li"> ремонтируем гарантийное оборудование;</li>
+								<li class="pages_cards_li"> ремонтируем послегарантийное оборудование.</li>
+                                
                             </ul> 
 			</div>
 		</div>

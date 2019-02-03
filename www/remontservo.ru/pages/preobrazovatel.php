@@ -136,7 +136,7 @@ require '../header.php';
 			</div>
 			<div class="col-md-6 right-block">
 				<ul class="indexCard__right_block__ul">                        
-                                <li style="text-decoration: underline;">Разновидность названий частотных преобразователей для ремонта:</li>
+                                <li style="list-style-type:none;"><b>Разновидность названий частотных преобразователей для ремонта:</b></li>
                                 <li class="pages_cards_liLetterA">ремонт частотного преобразователя;</li>
                                 <li class="pages_cards_liLetterB">ремонт приводов;</li>
                                 <li class="pages_cards_liLetterV">ремонт частотников;</li>
@@ -147,7 +147,7 @@ require '../header.php';
                                 <li class="pages_cards_liLetterZ">ремонт частнотных преобразователей;</li>
                                 <li class="pages_cards_liLetterI">ремонт регулятора частоты;</li>
                                 <li class="pages_cards_liLetterK">ремонт ЧРП;</li>
-                                <li style="text-decoration: underline;">Услуги в сервисном центре:</li>               
+                                <li style="list-style-type:none;"><b>Услуги в сервисном центре:</b></li>               
                                 <li class="pages_cards_li">диагностика поэлементная;</li>
                                 <li class="pages_cards_li">определение неисправных микросхем;</li>
                                 <li class="pages_cards_li">замена неисправных микросхем;</li>
