@@ -84,10 +84,26 @@ console.log(11)
     http.open("POST", "/js/contact.php", true);
     http.onreadystatechange = function() {
       if (http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-        if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
+        var succesMessage = 'Ваша заявка по ремонту будет рассмотрена в ближайшее время! Если у Вас срочный вопрос, то позвоните по телефону +79171215301 ПН-ВС с 8.00-22.00';
+        var errorMessage = 'Ошибка, попробуйте еще раз';
+        //alert(http.responseText);
+       /* if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
           th.trigger("reset");
+        }*/
+        if(http.responseText == 'sent'){
+          //alert(succesMessage);
+          th.trigger("reset");
+          $('#sendemail').html(succesMessage);
+          $(".form-main").hide();
+          PopUpShow();
+
         }
+        else if(http.responseText == 'error'){
+          alert(errorMessage);
+          $('#sendemail').html(errorMessage);
+          PopUpShow();
+        }
+
       }
     }
     http.onerror = function() {
@@ -105,9 +121,28 @@ console.log(11)
     http.open("POST", "/js/contact.php", true);
     http.onreadystatechange = function() {
       if (http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
+        /*alert(http.responseText);
         if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
           th.trigger("reset");
+        }*/
+        var succesMessage = 'Ваша заявка по ремонту будет рассмотрена в ближайшее время! Если у Вас срочный вопрос, то позвоните по телефону +79171215301 ПН-ВС с 8.00-22.00';
+        var errorMessage = 'Ошибка, попробуйте еще раз';
+        //alert(http.responseText);
+       /* if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
+          th.trigger("reset");
+        }*/
+        if(http.responseText == 'sent'){
+          //alert(succesMessage);
+          th.trigger("reset");
+          $('#sendemail').html(succesMessage);
+          $(".form-main").hide();
+          PopUpShow();
+
+        }
+        else if(http.responseText == 'error'){
+          alert(errorMessage);
+          $('#sendemail').html(errorMessage);
+          PopUpShow();
         }
       }
     }
@@ -130,4 +165,19 @@ else{ //comp
       $(this).find('.submenu').css('display','block');
       console.log('hover');
   });*/
+}
+
+
+
+/*popup*/
+$(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+function PopUpShow(){
+  $("#popup1").show();
+}
+//Функция скрытия PopUp
+function PopUpHide(){
+  $("#popup1").hide();
 }

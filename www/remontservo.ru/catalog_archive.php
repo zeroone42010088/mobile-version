@@ -118,7 +118,7 @@
                     <div class="select_wrap diller">
                         <?  
                         	$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
-								if (strlen($type)) {
+								if (strlen($type) && $type != 'all') {
 									$type_cond = " WHERE type like '".$type."'";
 									$type_pages = "&type=".$type;
 
@@ -129,7 +129,7 @@
 								}
 
 								$diller = filter_var($_GET["diller"],  FILTER_SANITIZE_STRING);
-								if (strlen($diller)) {
+								if (strlen($diller) && $diller !='all') {
 									$diller_cond = " AND diller like '".$diller."'";
 									$diller_pages = "&diller=".$diller;
 
@@ -146,6 +146,17 @@
 
 									$query = $db->query("SELECT diller FROM products  GROUP by diller");
 									echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\" class=\"custom-select\" placeholder=\"выбрать\" size=\"8\">";
+
+									$sel = '';
+									if(isset($_GET['diller']) && $_GET['diller'] == 'all'): $sel = 'selected'; endif;
+
+									$url = strtok($_SERVER['REQUEST_URI']);
+									$url .= '?diller=all';
+									if(isset($_GET['type'])):
+										$url .= '&type='.$_GET['type'];
+									endif;
+
+									echo "<option data-name='Все' value='".$url."' ".$sel." >Все</option>";
 
 									while($row = $query->fetch_assoc()){
 
@@ -181,6 +192,16 @@
                             <span class="catalog__top-nav__equipment sorting_name">Оборудование </span>
                             <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
 										<?php 
+
+									$url = '?type=all';
+									if(isset($_GET['diller'])):
+										$url .= '&diller='.strip_tags($_GET['diller']);
+									endif;
+									$sel = '';
+									if(isset($_GET['type']) && $_GET['type'] == 'all'): $sel = 'selected'; endif;
+
+									echo "<option data-name='Все' value='".$url."' ".$sel." >Все</option>";
+
 										$arr_types = array(
 											'Серводвигатели',
 											'Сервоприводы',
@@ -474,6 +495,8 @@ if($query->num_rows > 0){
             $(document).ready(function() {
                 var type = "<?php echo $_GET['type'];?>";
                 var diller = "<?php echo $_GET['diller'];?>";
+                if(diller == 'all') diller = 'Все';
+                if(type == 'all') type = 'Все';
                 if (type.length != 0) {
                     $(".top-nav span.custom-select-trigger").html(type);
                 }
@@ -499,6 +522,7 @@ if($query->num_rows > 0){
 })(jQuery);
 </script>-->
 <!--пагинация-->
+   <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     </body>
 
 </html>

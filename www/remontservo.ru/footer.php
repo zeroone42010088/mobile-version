@@ -96,12 +96,27 @@
         </div>
     </div> 
 
+<!--popup-->
+<div class="b-popup" id="popup1" style="display: none;">
+    <div class="b-popup-content">
+    <div id="sendemail">
+     
+    
+          </div>
+        
+    <a href="javascript:PopUpHide()" class="closeform">+</a>
+    </div>
+</div><!--popup end-->
+
+
 
 <script src="/js/jquery.min.js"></script>
 <script src="/js/slick.js"></script>
 <script src="/js/jquery.jbcallme.js"></script>
 <script src="/js/scripts.js"></script>
-
+<?php if($_SERVER['REQUEST_URI'] == '/pages/contacts'): ?>
+<script src="../js/map.js"></script>
+<?php endif;?>
 <!-- Yandex.Metrika counter -->  <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->  
 
 </body>

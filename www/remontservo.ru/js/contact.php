@@ -10,15 +10,18 @@ if (isset ($_POST['contactFF'])) {
     +7(8482)79-78-54 с ПН-ПТ с 8.00-18.00';
   $fromName = 'remontservo.ru';
 
-  $succesMessage = 'Ваша заявка по ремонту будет рассмотрена в ближайшее время! Если у Вас срочный вопрос, то позвоните по телефону +79171215301 ПН-ВС с 8.00-22.00';
-  $errorMessage = 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';
+ /* $succesMessage = 'Ваша заявка по ремонту будет рассмотрена в ближайшее время! Если у Вас срочный вопрос, то позвоните по телефону +79171215301 ПН-ВС с 8.00-22.00';
+  $errorMessage = 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';*/
 
-	$to = "89171215301@mail.ru";//"114polaris@gmail.com";
+	//$to = "89171215301@mail.ru";//"114polaris@gmail.com";
+	$to = "114polaris@gmail.com";
+	//$to = "lilka_8@mail.ru";
 
+	$client_email = strip_tags($_POST['contactFF']);
 
 	$from = "new_client@remontservo.ru";
 	$subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
-	$message = "<br>Email: ".$_POST['contactFF'].
+	$message = "<br>Email: ".$client_email.
     "<br>Телефон: ".$_POST['telFF'].
     "<br>Тип, модель неисправного блока: ".$_POST['nameFF'];
 
@@ -65,7 +68,7 @@ require '../inc/class.phpmailer.php';
         $mail->FromName = $fromName;   // от кого 
         $mail->AddAddress($to, 'Имя'); // кому - адрес, Имя 
         $mail->IsHTML(true);        // выставляем формат письма HTML 
-        $mail->Subject = $subj;  // тема письма 
+        $mail->Subject = $subject;  // тема письма 
         foreach ($picture as $key => $pic) {
           $mail-> AddAttachment($pic);
         }
@@ -75,12 +78,27 @@ require '../inc/class.phpmailer.php';
         // отправляем наше письмо 
 
   if( $mail->Send() ):
-    echo $succesMessage;
+    echo 'sent';
+    unset($mail);
+
+    	$mail = new PHPMailer(); 
+        $mail->From = $from;      // от кого 
+        $mail->FromName = $fromName;   // от кого 
+        $mail->AddAddress($client_email, 'Имя'); // кому - адрес, Имя 
+        $mail->IsHTML(true);        // выставляем формат письма HTML 
+        $mail->Subject = $subject;  // тема письма 
+        /*foreach ($picture as $key => $pic) {
+          $mail-> AddAttachment($pic);
+        }*/
+        
+        $mail->Body = $message_client;
+        $mail->Send();
+
     foreach ($picture as $key => $pic) {
       unlink($pic);
     }
   else:
-    echo $errorMessage;
+    echo 'error';
   endif;
 
 }
