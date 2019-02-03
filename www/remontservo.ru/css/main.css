@@ -540,6 +540,9 @@ img {max-width: 100%; height: auto;}
 
 /*contacts begin*/
 /* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container.col-sm-1.col-md-6.col-lg-6 {
+    padding: 0;
+}
 .ymap-container {
   /*width: 50%;
   height: 50%;*/
@@ -551,7 +554,7 @@ img {max-width: 100%; height: auto;}
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
-  min-width:500px; max-width: 500px; height: 400px;}
+  /*min-width:500px; */max-width: 500px; height: 400px;}
 
 @media (max-width:500px) and (orientation:portrait) {
     .ymap-container {transform: scale(0.7); left:-0.9rem; top:-5rem;}    
@@ -572,6 +575,7 @@ img {max-width: 100%; height: auto;}
   z-index: 7;
   width: 100%;
   height: 20em;
+  min-height: 400px;
   cursor: pointer;
     background-color: transparent;}
 
@@ -744,6 +748,69 @@ body.catalog_page {
 .custom-options {
     height: 352px;
     overflow: auto;
+}
+
+/*popup*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 5000;
+
+}
+.b-popup .b-popup-content{
+    margin: calc(50vh - 100px) auto 0px auto;
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    padding: 58px 43px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    min-height: 150px;
+    background-color: #4169E1;
+    background: linear-gradient(to top, #4169E1, #1A4780);
+    color: #e8e3e3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.closeform{
+    color: #fff;
+    position: absolute;;
+    top:0;
+    right: 5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 30px;    
+}
+.closeform:hover,.closeform:focus,.closeform:active{
+    text-decoration: none;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    -webkit-transition: linear .6s all;
+    -moz-transition: linear .6s all;
+    -ms-transition: linear .6s all;
+    -o-transition: linear .6s all;
+    transition: linear .6s all;
+    
+    
+    color: #e4011a;
+}
+/*popup*/
+.pagination a.active {
+    background: linear-gradient(rgb(255, 127, 3), rgb(255, 128, 3)), rgb(255, 254, 252);
+    color: #fff;
 }
 
 @media (max-width:750px) {

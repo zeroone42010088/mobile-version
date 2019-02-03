@@ -25,7 +25,7 @@
   gtag('config', 'UA-131780255-1');
 </script>
 	<!-- Begin Talk-Me {literal} -->
-	<!--<script>
+	<script>
 		(function(d, w, m) {
 			window.supportAPIMethod = m;
 			var s = d.createElement('script');
@@ -38,7 +38,7 @@
 			if (sc) sc.parentNode.insertBefore(s, sc); 
 			else d.documentElement.firstChild.appendChild(s);
 		})(document, window, 'TalkMe');
-	</script>-->
+	</script>
     <!-- End Talk-Me {literal} -->
 </head>
 <?php include 'functions.php';?>

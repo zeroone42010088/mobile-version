@@ -118,7 +118,7 @@
                     <div class="select_wrap diller">
                         <?  
                         	$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
-								if (strlen($type)) {
+								if (strlen($type) && $type != 'all') {
 									$type_cond = " WHERE type like '".$type."'";
 									$type_pages = "&type=".$type;
 
@@ -129,7 +129,7 @@
 								}
 
 								$diller = filter_var($_GET["diller"],  FILTER_SANITIZE_STRING);
-								if (strlen($diller)) {
+								if (strlen($diller) && $diller !='all') {
 									$diller_cond = " AND diller like '".$diller."'";
 									$diller_pages = "&diller=".$diller;
 
@@ -146,6 +146,17 @@
 
 									$query = $db->query("SELECT diller FROM products  GROUP by diller");
 									echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\" class=\"custom-select\" placeholder=\"выбрать\" size=\"8\">";
+
+									$sel = '';
+									if(isset($_GET['diller']) && $_GET['diller'] == 'all'): $sel = 'selected'; endif;
+
+									$url = strtok($_SERVER['REQUEST_URI']);
+									$url .= '?diller=all';
+									if(isset($_GET['type'])):
+										$url .= '&type='.$_GET['type'];
+									endif;
+
+									echo "<option data-name='Все' value='".$url."' ".$sel." >Все</option>";
 
 									while($row = $query->fetch_assoc()){
 
@@ -181,6 +192,16 @@
                             <span class="catalog__top-nav__equipment sorting_name">Оборудование </span>
                             <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
 										<?php 
+
+									$url = '?type=all';
+									if(isset($_GET['diller'])):
+										$url .= '&diller='.strip_tags($_GET['diller']);
+									endif;
+									$sel = '';
+									if(isset($_GET['type']) && $_GET['type'] == 'all'): $sel = 'selected'; endif;
+
+									echo "<option data-name='Все' value='".$url."' ".$sel." >Все</option>";
+
 										$arr_types = array(
 											'Серводвигатели',
 											'Сервоприводы',
@@ -362,16 +383,43 @@ if($query->num_rows > 0){
                     </div>
                     <!-- product-top -->
                     <!-- buttons -->
-                  
+
                         <ul class="pagination" style="display:flex;">
-                            <li><a href="?pageno=1<? echo $type_pages.$diller_pages; ?>" class="button28">Первая</a></li>
+                        	<?php 
+                        	$current_page = (int)$_GET['pageno'];
+                            $page_class = '';
+                            $FirstPage_url = $type_pages.$diller_pages;
+                            if( (isset($_GET['pageno']) && $_GET['pageno'] == 1) || !isset($_GET['pageno'])):
+                            	$page_class = 'active';
+                            endif;
+                            ?>
+                            <li><a href="?pageno=1<? echo $FirstPage_url; ?>" class="button28 <?php echo $page_class; ?>">Первая</a></li>
+
+
+
                             <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
                                 <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1).$type_pages.$diller_pages; } ?>" class="button28">Предыдущая</a>
                             </li>
+                            
+                            <?php if($current_page >= 2 && $current_page < $total_pages): 
+								$page_class = 'active'; ?>
+							<li><a href="?pageno=<? echo $current_page.$FirstPage_url; ?>" class="button28 <?php echo $page_class; ?>"><?php echo $current_page; ?></a></li>
+							<?php endif; ?>
+
+
                             <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
                                 <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo " ?pageno=".($pageno + 1).$type_pages.$diller_pages; } ?>" class="button28">Следующая</a>
                             </li>
-                            <li><a href="?pageno=<?php echo $total_pages.$type_pages.$diller_pages; ?>" class="button28">Последняя</a></li>
+                            <?php 
+                            $page_class = '';
+                            $LastPage_url = $total_pages.$type_pages.$diller_pages;
+                          //  echo $_GET['pageno'].'*';
+                           // echo $LastPage.'*';
+                            if(isset($_GET['pageno']) && $_GET['pageno'] == $total_pages):
+                            	$page_class = 'active';
+                            endif;
+                            ?>
+                            <li><a href="?pageno=<?php echo $LastPage_url; ?>" class="button28 <?php echo $page_class;  ?>">Последняя</a></li>
                         </ul>
                       
                             <!-- buttons -->
@@ -474,6 +522,8 @@ if($query->num_rows > 0){
             $(document).ready(function() {
                 var type = "<?php echo $_GET['type'];?>";
                 var diller = "<?php echo $_GET['diller'];?>";
+                if(diller == 'all') diller = 'Все';
+                if(type == 'all') type = 'Все';
                 if (type.length != 0) {
                     $(".top-nav span.custom-select-trigger").html(type);
                 }

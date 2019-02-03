@@ -1143,7 +1143,17 @@
 
         </div>
     </div> 
-
+<!--popup-->
+<div class="b-popup" id="popup1" style="display: none;">
+    <div class="b-popup-content">
+    <div id="sendemail">
+     
+    
+          </div>
+        
+    <a href="javascript:PopUpHide()" class="closeform">+</a>
+    </div>
+</div><!--popup end-->
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 <script src="/js/jquery3.2.1.min.js"></script>

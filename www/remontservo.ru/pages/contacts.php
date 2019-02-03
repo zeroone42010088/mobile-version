@@ -44,7 +44,5 @@ require '../header.php';
 
                 </div>
             </div>
-    <script src="../js/map.js"></script>
+   
  <?php require '../footer.php';?>   
-    
-    
