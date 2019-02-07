@@ -754,6 +754,7 @@ a.button28:active {
     text-align:center; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3); margin:20px auto 10px; /*white-space:nowrap;*/
+    margin-top:46px;
 }
 
 .p-left {
@@ -843,9 +844,10 @@ header .logo img {margin-top: 0;}
 @media (max-width:1150px) {
 .p-left, .catalog {max-width: 50%;}
 }
+/*
 @media (max-width:1150px) {
     ul.pagination {left:25%;}
-}
+}*/
 @media (max-width:700px) and (orientation:portrait) {
 .p-left, .catalog {max-width: 100%;}
     .col-md-4 {max-width: 100%;}
@@ -885,4 +887,52 @@ a.button28:active {background-color: aqua; transform: scale(1.1);}
 .activePagination {
 	background-color:aqua; display:none;
 }
-  
+.catalog_pagination_activePageNumber {white-space:nowrap;}
+@media (max-width:900px) and (orientation:portrait) {
+ul.pagination {left: 35%;}
+}
+@media (max-width:805px) {
+ul.pagination {left: 25%;}
+}
+@media (max-width:769px) and (orientation:portrait) {
+ul.pagination {left: 30%;}
+}
+@media (max-width:436px) and (orientation:portrait) {
+ul.pagination {left: -2%;}
+}
+@media (max-width:415px) and (orientation:portrait) {
+ul.pagination {left: -4%;}
+}
+@media (max-width:376px) and (orientation:portrait) {
+ul.pagination {left: -9%;}
+}
+@media (max-width:361px) and (orientation:portrait) {
+ul.pagination {left: -12%;}
+}
+@media (max-width:321px) and (orientation:portrait) {
+ul.pagination {left: -20%;}
+}
+@media (min-width:1020px) and (max-width:1025px) and (orientation:landscape) {
+ul.pagination {left: 35%;}
+}
+@media (min-width:901px) and (max-width:1278px) {
+ul.pagination {left: 30%;}
+}
+@media (min-width:1279px) and (max-width:1365px) {
+ul.pagination {left: 33%;}
+}
+@media (min-width:1366px) and (max-width:1440px) and (max-height:950px) {
+ul.pagination {left: 35%;}
+}
+@media (min-width:1599px) and (max-width:1679px) {
+ul.pagination {left: 35%;}
+}
+@media (min-width:1680px) and (max-width:1690px) {
+ul.pagination {left: 36%;}
+}
+@media (min-width:1691px) {
+ul.pagination {left: 39%;}
+}
+.catalog_numbers_summa {
+text-align:center; 
+}

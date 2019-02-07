@@ -295,10 +295,15 @@ main {
     padding-bottom: 32px;
 }
 ul.pagination {
-    position: absolute;
-    bottom: 0;
-    left: 35%;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
+ul.pagination li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .glyphicon-chevron-right,
@@ -2047,3 +2052,6 @@ max-width:35%; transform: scale(0.9);}
 @media (min-width:760px) and (max-width:1080px)  {
 .sell_divOutline img, .img-sell {margin:0;}   
 }
+@media (min-width:400px) and (max-width: 750px) {
+ .top-nav {left:60px;} 
+ }

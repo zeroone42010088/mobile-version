@@ -16,7 +16,8 @@
        <link href="/css/font-awesome.min.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
     <link href="/css/slick-theme.css" rel="stylesheet">               
-        <link href="/css/style.css" rel=stylesheet>         
+        <link href="/css/style.css" rel=stylesheet>
+        <link href="css/jquery.jbcallme.css" rel=stylesheet>         
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
       <link href="/css/shop.css" rel=stylesheet>  
@@ -189,7 +190,7 @@
 						         $req_uri = str_replace('/catalog.php', '', $_SERVER['REQUEST_URI']);
 						         	?>
                         <div class="top-nav">
-                            <span class="catalog__top-nav__equipment sorting_name">Оборудование </span>
+                            <span  class="catalog__top-nav__equipment sorting_name">Оборудование </span>
                             <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
 										<?php 
 
@@ -207,7 +208,8 @@
 											'Сервоприводы',
 											'Частотные преобразователи',
 											'Сенсорные панели оператора',
-											'ПЛК',
+											'Промышленные логические контроллеры(ПЛК)',
+											'Блоки питания, источники питания',
 											'Промышленные компьютеры',
 											'Энкодеры',
 											'Сервоконтроллеры',
@@ -257,9 +259,12 @@ if(isset($_GET['type']) && $_GET['type'] != ''):
 		case 'Сенсорные панели оператора':
 			$def_word = 'сенсорных панелей оператора';
 			break;
-		case 'ПЛК':
-			$def_word = 'ПЛК';
-			break;	
+		case 'Промышленные логические контроллеры(ПЛК)':
+			$def_word = 'промышленных логических контроллеров(ПЛК)';
+			break;
+        case 'Блоки питания, источники питания':
+			$def_word = 'блоков питания, источников питания';
+			break;			
 		case 'Промышленные компьютеры':
 			$def_word = 'промышленных компьютеров';
 			break;
@@ -384,7 +389,7 @@ if($query->num_rows > 0){
                     <!-- product-top -->
                     <!-- buttons -->
 
-                        <ul class="pagination" style="display:flex;">
+                        <ul class="pagination">
                         	<?php 
                         	$current_page = (int)$_GET['pageno'];
                             $page_class = '';
@@ -393,38 +398,54 @@ if($query->num_rows > 0){
                             	$page_class = 'active';
                             endif;
                             ?>
-                            <li><a href="?pageno=1<? echo $FirstPage_url; ?>" class="button28 <?php echo $page_class; ?>">Первая</a></li>
 
-
-
-                            <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-                                <a href="<?php if($pageno <= 1){ echo '#'; } else { echo " ?pageno=".($pageno - 1).$type_pages.$diller_pages; } ?>" class="button28">Предыдущая</a>
+							<?php if($pageno > 1): ?>
+                            <li class="button28">
+                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28"><</a>
+                               
                             </li>
-                            
-                            <?php if($current_page >= 2 && $current_page < $total_pages): 
-								$page_class = 'active'; ?>
-							<li><a href="?pageno=<? echo $current_page.$FirstPage_url; ?>" class="button28 <?php echo $page_class; ?>"><?php echo $current_page; ?></a></li>
-							<?php endif; ?>
+                            <?php endif; ?>
+<?php 
+$count = 4;
+if(empty($current_page)): $current_page = 1; endif; 
+$start = $current_page - $count;
 
+if($start < 1): $start = 1; endif;
 
-                            <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
-                                <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo " ?pageno=".($pageno + 1).$type_pages.$diller_pages; } ?>" class="button28">Следующая</a>
-                            </li>
+for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) { 
+	if($end == ($count*2)+1) break;
+	//echo $end;
+	?>
+	<li>
+		<a href="?pageno=<?= $i.$type_pages.$diller_pages;?>"<?php echo $i; ?>" class="button28 <?php if($i==$current_page): echo 'active'; endif; ?>"><?php echo $i; ?>		
+		</a>
+	</li>
+	<?php 
+}
+
+ ?>
+ 							<?php if($current_page < $total_pages): ?>
+	                            <li class="button28">
+	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28">></a>
+	                               
+	                            </li>
+                            <?php endif; ?>
+
+                           
                             <?php 
                             $page_class = '';
                             $LastPage_url = $total_pages.$type_pages.$diller_pages;
-                          //  echo $_GET['pageno'].'*';
-                           // echo $LastPage.'*';
+
                             if(isset($_GET['pageno']) && $_GET['pageno'] == $total_pages):
                             	$page_class = 'active';
                             endif;
                             ?>
-                            <li><a href="?pageno=<?php echo $LastPage_url; ?>" class="button28 <?php echo $page_class;  ?>">Последняя</a></li>
-                        </ul>
+                        
+						</ul>
                       
                             <!-- buttons -->
                             <? } ?>
-
+<p class="catalog_numbers_summa"><<?php echo "b>Всего страниц: $total_pages; Всего товаров: $total_rows[0];</b>" ?></p>
             </main>
            <footer>
 	<div class="container">
@@ -442,27 +463,120 @@ if($query->num_rows > 0){
 	</div>
 </footer>
         </div>
-        <link href="css/jquery.jbcallme.css" rel=stylesheet>
+        
+         <!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
+    <div class="fields form-main my-form">    
+                 <span class="close" id="close">&#215;</span>   
+        <div class="form-wrap">
+                 
+        
+        
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
+                <span class="checkmark"></span>
+            </label>   
+
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div id="form_remont" class="frm">
+             
+                  <div class="form-group">
+                    <label for="contactFF" style="color:#000;">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telFF" style="color:#000;">Телефон:</label>
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+                  </div>
+                  <div class="control-file">
+                    <label for="fileFF" style="color:#000;">Прикрепить файл:</label>
+                    <input id="fileFF" name="fileFF" type="file">
+                   <!-- <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> -->
+                  </div>
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+       
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
+            </form>
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <div id="form_viezd" class="frm">
+              <div class="form-group">
+                <label for="contactFF1">Ваш почтовый адрес</label>
+                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="telFF1">Телефон:</label>
+                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="nameFF2">Тип/модель неисправного станка</label>
+                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+                <div class="form-group">
+                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>            
+              <div class="form-group">
+                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
+                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
+              </div>
+              <div class="control-file">
+                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
+                <input id="fileFF1" name="fileFF" type="file">
+                <input id="fileFF2" name="fileFF2" type="file">
+              <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
+              </div>
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
+                 
+            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
+        </form>
+
+        </div>
+    </div> 
+<!--popup-->
+<div class="b-popup" id="popup1" style="display: none;">
+    <div class="b-popup-content">
+    <div id="sendemail">
+     
+    
+          </div>
+        
+    <a href="javascript:PopUpHide()" class="closeform">+</a>
+    </div>
+</div><!--popup end-->
+        
         <!-- container -->
         
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery-2.2.0.min.js"></script>
-       <script src="js/slick.js"></script>
+        <script src="js/jquery-2.2.0.min.js"></script>        
+       <script src="/js/slick.js"></script>
         
         <!--form to take call from client start-->
-        <script src="js/jquery.jbcallme.js"></script>
+        <script src="/js/jquery.jbcallme.js"></script>
         <script src="/js/custom.js"></script>
         <script src="/js/scripts.js"></script>
-        <script src="js/cat_contactform.js"></script>
+       <!-- <script src="js/cat_contactform.js"></script>-->
         <!--form to take call from client end-->
 
 
         <!-- fixed menu start  -->
-        <script src=js/fixedmenu.js></script>
+        <script src="/js/fixedmenu.js"></script>
         <!-- mail form start-->
-        <script src=js/callmefile.js></script>
+      <!--  <script src=js/callmefile.js></script>-->
         <!-- mail form end-->
-        <script src=js/gorizontalmenu.js></script>
+        <script src="/js/gorizontalmenu.js"></script>
         
                 <!--slider start-->
 <script>
@@ -488,35 +602,7 @@ if($query->num_rows > 0){
 
 </script>
     <!--slider end-->
-
-        <!-- форма всплывающего окна формы обратной связи -->
-        <div class="fields form-main">
-            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
-                <div class="form-group">
-                    <label for="contactFF" style="color:#000">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE;">
-                </div>
-                <div class="form-group">
-                    <label for="telFF" style="color:#000;">Телефон:</label>
-                    <input id="telFF" name="telFF" type="tel" placeholder="Телефон" style="border: 1px solid #B0C4DE;">
-                </div>
-                <div class="form-group">
-                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-                    <input id="nameFF" name="nameFF" type="text" style="border: 1px solid #B0C4DE;" placeholder="Тип">
-                </div>
-                <div class="form-group">
-                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
-                </div>
-                <div class="control-file">
-                    <label for="fileFF" style="color:#000; border: 1px solid #B0C4DE;">Прикрепить файл:</label>
-                    <input id="fileFF" name="fileFF" type="file">
-                </div>
-                <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button>
-                <span class="close">&#215;</span>
-            </form>
-        </div>
-        <!-- форма всплывающего окна формы обратной связи -->
+        
 
         <script>
             $(document).ready(function() {

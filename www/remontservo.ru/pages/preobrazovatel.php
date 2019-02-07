@@ -10,7 +10,7 @@ require '../header.php';
 <div class="main-content">
 
 	<section class="repair_block">
-		<h1 class="title">Ремонт энкодеров</h1>
+		<h1 class="title">Ремонт частотных преобразователей</h1>
 		<div class="row">
 			<div class="col-md-6 left-block index_pages_slider">
 				<div class="slider_img1">
