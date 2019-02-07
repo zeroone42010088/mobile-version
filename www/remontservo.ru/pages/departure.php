@@ -7,7 +7,7 @@ $menuID = 'item-7';
 require '../header.php';
 ?>
 
-<div class="container">
+<div class="container departure_footerUp">
 <div class="main-content">
 	<style>
 	@media (max-width:500px) {
@@ -20,52 +20,52 @@ require '../header.php';
 	<section class="repair_block">
 		<h1 class="title">Выезд специалиста</h1>
 		<div class="row">
-			<div class="col-md-6 left-block">
+			<div class="col-md-6 left-block departure_slider_up">
 				<div class="slider_img1">
 								<figure>
                                    <img class="departure_slider_img" src="../img/slider-departure/chpu_stanki.jpg" alt="Выезд на токарные станки с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт токарных станков с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт токарных станков с ЧПУ</figcaption>
                                 </figure> 
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/frezer_stanki.jpg" alt="Фрезерные станки с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт фрезерных станков с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт фрезерных станков с ЧПУ</figcaption>
                                 </figure> 
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/chpu_centre.jpg" alt="Обрабатывающие центры с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт обрабатывающих центров с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт обрабатывающих центров с ЧПУ</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/ecstruder.jpg" alt="Экструдер">
-                                    <figcaption class="slider-down__text">Ремонт экструдеров</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт экструдеров</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/metall_chpu.jpg" alt="Металлобрабатывающий центр с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт металлообрабатывающего центра с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт металлообрабатывающего центра с ЧПУ</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/wood_chpu.jpg" alt="Деревообрабатывающие центры с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт деревообрабатывающего центра с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт деревообрабатывающего центра с ЧПУ</figcaption>
                                 </figure>
                                  <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/laser_chpu.jpg" alt="Лазерный станок с ЧПУ">
-                                     <figcaption class="slider-down__text">Ремонт лазерных резок с ЧПУ</figcaption>
+                                     <figcaption class="slider-down__text departure_slider-down__text">Ремонт лазерных резок с ЧПУ</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/listogib.jpg" alt="Листогиб с ЧПУ">
-                                    <figcaption class="slider-down__text">Ремонт листогибов с ЧПУ</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт листогибов с ЧПУ</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/termo_avtomat.jpg" alt="Термопластавтомат">
-                                    <figcaption class="slider-down__text">Ремонт термопластавтоматов</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт термопластавтоматов</figcaption>
                                 </figure>
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/compressor_industrial.jpg" alt="Компрессорное оборудование">
-                                    <figcaption class="slider-down__text">Ремонт компрессорного оборудования</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт компрессорного оборудования</figcaption>
                                 </figure>
                                 
                                 <figure>
                                     <img class="departure_slider_img" src="../img/slider-departure/manipulator.jpg" alt="Роботы промышленных манипуляторов">
-                                    <figcaption class="slider-down__text">Ремонт роботов промышленных манипуляторов</figcaption>
+                                    <figcaption class="slider-down__text departure_slider-down__text">Ремонт роботов промышленных манипуляторов</figcaption>
                                 </figure>
                                 
                                 <figure>

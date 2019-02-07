@@ -211,6 +211,8 @@
 											'Промышленные логические контроллеры(ПЛК)',
 											'Блоки питания, источники питания',
 											'Промышленные компьютеры',
+											'Промышленные роботы',
+											'Модули ввода-вывода',
 											'Энкодеры',
 											'Сервоконтроллеры',
 											'ЧПУ',
@@ -451,10 +453,10 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3 col-md-3">
-				<img src="/img/logo3.png" alt="">
+				<img class="catalog_footer_up" src="/img/logo3.png" alt="">
 			</div>
 			<div class="col-sm-6 col-md-6">
-				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+				<div class="sitename sitename_catalog">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
 			</div>
 			<div class="hidden-small col-sm-3 col-md-3">
 				<img src="/img/logo3.png" alt="">

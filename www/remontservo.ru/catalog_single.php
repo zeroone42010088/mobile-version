@@ -268,7 +268,7 @@ if($query_pro->num_rows > 0){
 				<img src="/img/logo3.png" alt="">
 			</div>
 			<div class="col-sm-6 col-md-6">
-				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+				<div class="sitename sitename_catalog">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
 			</div>
 			<div class="hidden-small col-sm-3 col-md-3">
 				<img src="/img/logo3.png" alt="">

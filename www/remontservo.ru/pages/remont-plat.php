@@ -11,7 +11,7 @@ require '../header.php';
 	
 
 	<section class="repair_block">
-		<h1 class="title">Ремонт плат</h1>
+		<h1 class="title">Ремонт электронных плат</h1>
 		<div class="row">
 			<div class="col-md-6 left-block index_pages_slider">
 				<div class="slider_img1">

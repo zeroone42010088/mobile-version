@@ -936,3 +936,15 @@ ul.pagination {left: 39%;}
 .catalog_numbers_summa {
 text-align:center; 
 }
+@@media (max-width:438px) {
+a.button28 {padding: .5em 0.8em;}
+}
+@media (max-width:411px) {
+a.button28 {padding: .5em 0.8em;}
+}
+@media (max-width:377px) {
+a.button28 {padding: .5em 0.7em; max-width:100px;}
+}
+@media (max-width: 411px){	
+	.sitename, .sitename_catalog, footer .sitename  {padding-bottom:30px; padding-top: 5px;}
+}

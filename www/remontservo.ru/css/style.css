@@ -412,6 +412,11 @@ ul.pagination li {
     text-align: center;
     color: white;
 }
+@media (max-width:375px) {
+	.how-body {margin-top:5px;}
+	.how-body:nth-child(even) {background-color:#54C554; }
+	}
+
 
 .how-title {
     height: 50px;
@@ -940,25 +945,7 @@ nav ul {
 .content__sellForm__button_stanki {margin-left:51%;}
 
 /* catalog slide end */
-/*
-@media (min-width:1900px) {
-.index_cards_list_works {margin-left:-3em;}    
-}
-@media (min-width:1800px) and (max-width:1860px) {
-.index_cards_list_works {margin-left:-5em;}    
-}
-@media (min-width:1770px) and (max-width:1899px) {
-.index_cards_list_works {margin-left:0;}    
-}
-@media (min-width:1600px) and (max-width:1769px) {
-.index_cards_list_works {margin-left:5em;}    
-}
-@media (min-width:1600px) and (max-width:1650px) {
-.index_cards_list_works {margin-left:8em;}    
-}
-@media (min-width:1000px) and (max-width:1600px) {
-.index_cards_list_works {margin-left:10em;}    
-}*/
+
 @media (max-width:1000px) {
 .pages__linkOurWorks__button, .pages__content__searchForm_input {display: none;}
     index_car_slider {display: block; max-width: 100%; min-width: 100%;}
@@ -966,31 +953,17 @@ nav ul {
 
 @media (min-width:1600px) {    
     .phone-main, .phone-second, .mail {padding-left: 7%;}
-   /* .index_sale {margin-left: -50px;}*/
+  
     .index__carousel__service {top:12%;}
 }
 
 @media (min-width:1670px) and (max-width: 1795px) {
     .index_sale {margin-left: 15px;}     
 }
-@media (max-width: 375px) {
-.salesUp, .index_sale {display: none;}
-}
 @media (max-width:800px) {
     .index__content__searchForm input, .index__content__searchForm__button {display: none;}
-   .salesUp .index_sale {display: none;}
+   .salesUp, .index_sale {display: none;}
 }
-/*
-@media (max-width:1366px) {
-    .header, .nav, .content, .foot, .container, .n-menu, .menu { max-width:1366px; 
-     overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;margin:auto;}
-    .main-motors {width: 100%;}    
-}
-@media (min-width:1310px) {
-    .phone-main, .phone-second, .mail {margin: auto auto;}     
-}*/
-
 @media (max-width:1300px) {
   .index__carousel__text {top:30%;}
   .index__carousel__textUp {top:15%;}  
@@ -999,110 +972,36 @@ nav ul {
  .index__carousel__textRasxodomerCor, .index__carousel__textRasxodomerVp {top:5%;}    
     .index__carousel__textRasxodomerVp {font-size: 1em; max-width: 45%;}
     .index__carousel__service {font-size:1.2em; line-height: 1.2em;}
-    .index__carousel__text__datails_vr {font-size:0.9em}
-   
-    
+    .index__carousel__text__datails_vr {font-size:0.9em}   
 }
 @media (max-width:1000px) { 
 .index__carousel__service {font-size:1em; line-height: 1em;}
 }
-/*
-@media (min-width:992px) and (max-width: 1199px) {
-    .header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:992px; max-width:1199px; 
-     overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;}
-    .header__fontSize {font-size:0.7em;}
-     
+
+@media (max-width:768px) and (orientation:portrait)   {   
+    .contacts {display:block;width: 100%; margin-left:3%;padding: 0;} 
 }
-
-@media (max-width:1060px) {
-    .header__fontSize__part2 {display: none;}
-}
-
-@media (max-width:1190px) {    
-    .h-contacts {float: right; margin-right: 5%;}
-}
-
-@media (min-width:769px) and (max-width: 979px) {
-.header, .nav, .content, .foot, .container, .n-menu, .menu {min-width:769px; max-width: 979px;
-     overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;}
-}
-
-
-*/
-@media (max-width:768px) and (orientation:portrait)   {
-   /* .map {display: block; margin-left: -40%; width: 100%;height: 60%;}*/
-    .contacts {display:block;width: 100%; margin-left:3%;padding: 0;}
-   /* .map {margin: auto;margin-left:2%;; margin-bottom: 15%; max-width:95%;} */
-    
-}/*
-@media (min-width:765px) and (max-width:768px) and (orientation:portrait)   {
-.header, .nav, .content, .foot, .container, .n-menu, .menu {max-width:768px; 
-     overflow-x:hidden; overflow:hidden;}
-    body {overflow-x:hidden;}
-    .f-title {text-align: left; max-width: 90%; margin-left: 25%; padding-top: 20px; margin-top: 2%;font-size: 0.9em}   
-    .f-logo-r img {position: absolute; right: 13%; top:12%;}    
-    .badge {margin: 5px;}
-    .about-us-text {word-break: normal;padding-left: 0px;overflow:hidden;}
-    .filling-page-whyus {width: 100%; margin:0; padding:0; }    
-}*/
 @media (max-width: 979px) {
     .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .index__carousel__textRasxodomerVp {font-size: 1em;}    
-}/*
-@media (max-width:480px) {
-    
 }
-*/
 @media (max-width:480px) {
-/*.header, .nav, .content, .foot, .container, .n-menu, .menu { max-width: 480px;}
-    body {overflow-x:hidden;}
-    .header {position: relative; height: 350px; background-color: #4169E1;}    
-    .h-logo {position: absolute; margin-left: 15%; margin-top: -2%; }
-    .h1-main-page {position: absolute; top:30%; left: 20%; }
-    .h2-main-page {position: absolute; top:45%; left: 2%; } 
-    .h2-main-page {max-width:400px; }
-    .phone-main {position: absolute; top:65%; left: 20%;} 
-    .phone-second {position: absolute; top:75%; left: 20%; }
-    .mail {position: absolute; top:85%; left: 20%; }
-    .main-motors {width:100%;}
-    .nav {height: 380px;} 
-    .menu {list-style-type: none; padding-left: 0; margin-left: 0;}     
-    .main-motors {width:100%;}
-     .card-img-top {max-height:150px;}
-    .how-body p {zoom:75%;}
-   .how-body p img {font-size:1em;}
-    .logomanufacturers ul li {height: 15px;}    
-    .f-title {text-align: left; max-width: 90%; margin-left: 30%; padding-top: 20px; margin-top: 2%;}
-    .f-logo-r img {display: none;}
-    .f-logo-l img {position: absolute; left: 5%; top:12%;} */
     .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__textRasxodomerVp {display:none;}
     .index__content__search, .index_sale_stanki, .index_stankiAction_text {display: none;}
     .content__sellForm__button {margin-left: 30%;}
 } 
-/*
-@media (max-width:414px) {
-    .map {margin: auto;}
-}*/
-@media (max-width:412px) {
-    /*.map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}  */
-    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {display:none;}
-    .index_carousel-inner_img, .index_carousel-inner_img_encoder, .index_carousel-inner_img_ibp, .index_carousel-inner-spisok_img {margin: auto;}
-    .salesUp, .index_sale {display: none;}
-    .content__sellForm__button {margin-left: 30%;}    
-}
- 
-@media (max-width: 375px)  {
- /*   .map {margin: auto;margin-left:2%;; margin-bottom: 25%; max-width:95%;}  */
-   .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {display:none;}
-    .salesUp, .index_sale {display: none;} 
-    .content__sellForm__button {margin-left: 30%;}  
-    
-}
- /*
 
-} */
-    
+@media (max-width:414px) {    
+    /*.index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {display:none;}*/
+    .index_carousel-inner_img, .index_carousel-inner_img_encoder, .index_carousel-inner_img_ibp, .index_carousel-inner-spisok_img {margin: auto;}
+    .content__sellForm__button {margin-left: 30%;}  
+	
+} 
+@media (max-width: 375px)  {
+    .index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {display:none;}
+    .content__sellForm__button {margin-left: 30%;}     
+	/*.index__carousel__text, .index__carousel__textUp, .index__carousel__textOneString, .index__carousel__textRasxodomer, .index__carousel__textRasxodomerCor, .carousel-indicators, .index__carousel__service {top:30%; width:400%; left:20px;} */
+}    
+
 /* cards  */
 .card {
   position: relative;
@@ -1123,16 +1022,6 @@ nav ul {
   max-width: 25%;
     
 }
-
-/*.card::child(1,5,9) {  
-  margin-left: 50px;     
-}
-
-.card::child(4,8) {
-  margin-right: 50px;  
-    
-}*/
-
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -1161,12 +1050,6 @@ nav ul {
   text-align:center;
   font-weight: bold;    
 }
-
-/*.card-subtitle {
-  margin-top: -0.375rem;
-  margin-bottom: 0;
-}*/
-
 .card-text {
   margin-bottom: 0;
   text-align:center; 
@@ -1241,7 +1124,6 @@ nav ul {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   height:auto;
-/*   margin-top:-20px; */
 }
 .card-img-top:hover {
  transform: scale(1.2);
@@ -1794,7 +1676,9 @@ span#close {
 }
 @media (max-width:375px) {
     .card, .card-body, .card-group {max-width:100%; width: 100%; flex-basis: 100%;}
-    .index_detailsCards_box {display: none;} 
+    .index_detailsCards_box {display: none;}
+   /* .index_sliderTop_item {height: 300px;}*/
+	
 }
 .contacts_main_h1 {
     margin-top: 1.25rem;
@@ -2045,7 +1929,7 @@ margin-left: 30px;
 color:#fff; font-size: 1.2em; word-wrap:break-word; 
 max-width:35%; transform: scale(0.9);}
 @media (max-width:800px) and (orientation:landscape) {
-.salesUp, .index_stankiAction_text {display:none;}
+
 .index_sale_stanki, .index_sale {left:18%;}
 }
 .product-one.catalog {justify-content:center;}
