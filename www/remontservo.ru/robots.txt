@@ -9,6 +9,7 @@ Disallow: /config.php
 Disallow: /contactform.php
 Disallow: /catalog_archive.php
 Disallow: /catalog_single.php
+Disallow: /2.php
 Allow: /pages/
 Allow: /img/
 Sitemap: https://www.remontservo.ru/sitemap.xml

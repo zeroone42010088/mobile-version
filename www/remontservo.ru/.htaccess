@@ -85,4 +85,8 @@ ErrorDocument 404 /404.html
  ExpiresByType application/xhtml+xml "access plus 10 minutes"
 </ifModule>
 
+<FilesMatch "config.php">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
 
