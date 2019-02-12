@@ -893,6 +893,7 @@ ul.pagination {left: 35%;}
 }
 @media (max-width:805px) {
 ul.pagination {left: 25%;}
+.catalog__h1__item {font-size:1.2em;}
 }
 @media (max-width:769px) and (orientation:portrait) {
 ul.pagination {left: 30%;}
@@ -936,15 +937,16 @@ ul.pagination {left: 39%;}
 .catalog_numbers_summa {
 text-align:center; 
 }
-@@media (max-width:438px) {
-a.button28 {padding: .5em 0.8em;}
+@media (max-width:438px) {
+a.button28 {padding: .5em 0.2em; min-width:15px;   max-width:140px;}
 }
-@media (max-width:411px) {
-a.button28 {padding: .5em 0.8em;}
+@media (max-width:414px) {
+a.button28 {padding: .5em 0.2em; min-width:14px;   max-width:140px;}
 }
-@media (max-width:377px) {
-a.button28 {padding: .5em 0.7em; max-width:100px;}
+@media  (max-width:377px) {
+a.button28 {padding: .5em 0.2em; min-width:15px; max-width:140px;}
 }
+
 @media (max-width: 411px){	
 	.sitename, .sitename_catalog, footer .sitename  {padding-bottom:30px; padding-top: 5px;}
 }

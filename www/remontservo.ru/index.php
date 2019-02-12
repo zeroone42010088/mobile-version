@@ -19,6 +19,8 @@
 #item-1 {background:linear-gradient(to top,#FF7E00,white);}
 @media (max-width:600px) and (orientation:landscape) {
 }
+    @media (max-width:500px) {
+        .active {height:400px;}}
 </style>	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>

@@ -197,7 +197,7 @@ if($query_pro->num_rows > 0){
 								foreach($fileList as $filename){
 									?>
 									<div>
-	                                    <img src="<?= $filename;?>" alt="Ремонт серводвигателей BERGER LAHR">
+	                                    <img src="<?= $filename;?>" alt="Ремонт электроники фотография">
 	                                </div>
 									<?php 
 								}
