@@ -412,6 +412,11 @@ $count = 4;
 if(empty($current_page)): $current_page = 1; endif; 
 $start = $current_page - $count;
 
+
+if($total_pages - $current_page <= $count):
+	$start = $start - $count + ($total_pages - $current_page);
+endif;
+
 if($start < 1): $start = 1; endif;
 
 for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) { 
