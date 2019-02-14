@@ -19,8 +19,6 @@
 #item-1 {background:linear-gradient(to top,#FF7E00,white);}
 @media (max-width:600px) and (orientation:landscape) {
 }
-    @media (max-width:500px) {
-        .active {height:400px;}}
 </style>	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
@@ -1063,16 +1061,16 @@
                     <p class="index_howweareworking_how-body_p">Как мы работаем:</p>
                 </div>
                 <div class="how-body callme_button">
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/mess.png alt=message /><br><strong>1.</strong> Вы оставляете заявку</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/mess.png alt=message /><br><b>1.</b> Вы оставляете заявку</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/phone.png alt=telephone /><br><strong>2.</strong> Мы связываемся с Вами<br>уточняем детали</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/phone.png alt=telephone /><br><b>2.</b> Мы связываемся с Вами<br>уточняем детали</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/compose.png alt=compose /><br><strong>3.</strong> Заключаем договор</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/compose.png alt=compose /><br><b>3.</b> Заключаем договор</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/check.png alt=check /><br><strong>4.</strong> Выполняем работу</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/check.png alt=check /><br><b>4.</b> Выполняем работу</p>
                 </div>
             </div>
         </main>

@@ -209,7 +209,7 @@
 											'Частотные преобразователи',
 											'Сенсорные панели оператора',
 											'Промышленные логические контроллеры(ПЛК)',
-											'Блоки питания, источники питания',
+											'Блоки питания, источники питания, блоки рекуперации',
 											'Промышленные компьютеры',
 											'Промышленные роботы',
 											'Модули ввода-вывода, модули расширения',
@@ -403,7 +403,7 @@ if($query->num_rows > 0){
 
 							<?php if($pageno > 1): ?>
                             <li class="button28">
-                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28"><</a>
+                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28" rel="prev"><</a>
                                
                             </li>
                             <?php endif; ?>
@@ -433,7 +433,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
  ?>
  							<?php if($current_page < $total_pages): ?>
 	                            <li class="button28">
-	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28">></a>
+	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28" rel="next">></a>
 	                               
 	                            </li>
                             <?php endif; ?>

@@ -217,61 +217,7 @@ if($query_pro->num_rows > 0){
 
 
 
-/**
 
-
-    	$folder = (int)$_GET['id'];
-		$folder = $row_pro['type'];
-    	$fileList = glob('img/slider-cat/'.$folder.'/*');
-    	//var_dump($fileList);
-
-
-								echo '
-                                <h1 class="catalog__h1 catalog__h1__item" >'.$row_pro["block"].' '.$row_pro["name"].'</h1>
-                                <div class="product-row catalog_item_content row">
-
-								<div class="col-md-5">
-								<div class="simpleCart_shelfItem catalog_item_slider ">
-								<section class="regular">';
-
-								foreach($fileList as $filename){
-									?>
-									<div>
-	                                    <img src="<?= $filename;?>" alt="Ремонт электроники фотография">
-	                                </div>
-									<?php
-								}
-
-
-
-
-                            echo '
-                              </section>
-
-                        <!--slider-->
-
-								</div>
-							</div>
-
-                            <div class="catalog_cardinfo offset-1 col-md-6">
-
-                            <ol class="rounded">
-                              <li><a href="#">Диагностика от 1 дня</a></li>
-                              <li><a href="#">Ремонт от 3 дней</a></li>
-                              <li><a href="#">Гарантия на ремонт 6 месяцев</a></li>
-                              <li><a href="#">Работаем по безналичному расчету и договору</a></li>
-                            </ol>
-                            </div>
-
-
-
-
-                </div>
-
-
-
-    ';
- ***/
 }
 
 }
