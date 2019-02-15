@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /inc/
+Disallow: /settings/
 Disallow: /text/
 Disallow: /header.php
 Disallow: /footer.php

@@ -403,7 +403,7 @@ if($query->num_rows > 0){
 
 							<?php if($pageno > 1): ?>
                             <li class="button28">
-                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28" rel="prev"><</a>
+                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="prev"><</a>
                                
                             </li>
                             <?php endif; ?>
@@ -424,7 +424,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 	//echo $end;
 	?>
 	<li>
-		<a href="?pageno=<?= $i.$type_pages.$diller_pages;?>"<?php echo $i; ?>" class="button28 <?php if($i==$current_page): echo 'active'; endif; ?>"><?php echo $i; ?>		
+		<a href="?pageno=<?= $i.$type_pages.$diller_pages;?>"<?php echo $i; ?>" class="button28 <?php if($i==$current_page): echo 'active'; endif; if($i>99): echo ' pdg0';endif;?>"><?php echo $i; ?>		
 		</a>
 	</li>
 	<?php 
@@ -433,7 +433,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
  ?>
  							<?php if($current_page < $total_pages): ?>
 	                            <li class="button28">
-	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28" rel="next">></a>
+	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="next">></a>
 	                               
 	                            </li>
                             <?php endif; ?>
@@ -452,7 +452,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
                       
                             <!-- buttons -->
                             <? } ?>
-<p class="catalog_numbers_summa"><<?php echo "b>Всего страниц: $total_pages; Всего товаров: $total_rows[0];</b>" ?></p>
+<p class="catalog_numbers_summa" <?php if(!empty($_GET['search'])) echo "style='display:none'"; ?>><<?php echo "b>Всего страниц: $total_pages; Всего товаров: $total_rows[0];</b>" ?></p>
             </main>
            <footer>
 	<div class="container">

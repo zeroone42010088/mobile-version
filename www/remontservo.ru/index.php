@@ -1130,6 +1130,7 @@
                    <!-- <input id="fileFF2" name="fileFF2" type="file">
                     <input id="fileFF3" name="fileFF3" type="file"> -->
                   </div>
+				  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
                   <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
        
                 </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
@@ -1163,6 +1164,7 @@
                 <input id="fileFF2" name="fileFF2" type="file">
               <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
               </div>
+			  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
               <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
                  
             </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->

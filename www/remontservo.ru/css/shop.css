@@ -954,3 +954,37 @@ a.button28 { padding: .5em 0.85em; /*min-width:15px; max-width:140px;*/}
 @media (max-width: 411px){	
 	.sitename, .sitename_catalog, footer .sitename  {padding-bottom:30px; padding-top: 5px;}
 }
+
+
+@media (max-width: 380px){
+	ul.pagination {
+	    margin: auto;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: -ms-flex;
+	    display: -o-flex;
+	    display: flex;
+	    flex-flow: row nowrap;
+	    justify-content: center;
+	    transform: scale(1);
+	}
+	a.button28 {
+	    margin-right: 2px;
+	    font-size: 11px;
+	}
+	a.button28.pdg0 {
+		padding: .5em 0.5em;
+	}
+}
+
+@media (max-width: 360px){
+	a.button28.pdg0 {
+		padding: .5em 0.4em;
+	}
+}
+
+@media (max-width: 340px){
+	a.button28.pdg0 {
+		padding: .5em 0.3em;
+	}
+}
