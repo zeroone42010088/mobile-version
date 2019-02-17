@@ -358,7 +358,7 @@
                 </div>
 
 
-                <div class="card" itemscope itemtype="http://schema.org/Product" <!--style="border-left:2px solid rgba(0, 0, 0, 0.125); margin-left: -2px;-->">
+                <div class="card" itemscope itemtype="http://schema.org/Product">
                     <a href="pages/servoprivod">  <img itemprop="image" class="card-img-top" src="img/index-pictures/servoprivod.png" alt="Сервоприводы"></a>
                     <div class="card-body">
                         <h3 class="card-title" itemprop="name">Ремонт сервоприводов,<br>ремонт серводрайверов</h3>
