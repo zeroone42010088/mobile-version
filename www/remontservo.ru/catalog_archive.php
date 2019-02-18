@@ -302,7 +302,7 @@ endif;
     if($_GET['search']) {
                    echo '<h2 style="margin-left:10px; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3);">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
+	                 0px -5px 35px rgba(255,255,255,0.3); font-size:1.4em;">Поисковый запрос: '.$_GET['search'].'</h2>';}?>
                     <div class="product-top">
                         <div class="product-one catalog">
 

@@ -1,9 +1,9 @@
 <?php 
 // Данные
 $dbHost     = "localhost";
-$dbUsername = "u0353001_default";
-$dbPassword = "UxpF1E_k";
-$dbName     = "u0353001_default";
+$dbUsername = "new";
+$dbPassword = "8F9p8K1s";
+$dbName     = "user361953_new";
 
 // Коннетк
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
