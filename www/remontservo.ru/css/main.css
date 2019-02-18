@@ -300,9 +300,15 @@ form.pages__content__searchForm {
     background: #F9F0DA;
     color: #9E9C9C;
 }
-.index__content__searchForm__button:before, 
-.pages__content__searchForm__button:before {
+.index__content__searchForm__button:before {
     position: absolute;
+    content: url(/img/search-white.png);
+    color: #F9F0DA;
+    margin-left: -0.4375rem;
+    top: 14px;
+} 
+.pages__content__searchForm__button:before {
+     position: absolute;
     content: url(/img/search-white.png);
     color: #F9F0DA;
     margin-left: 27%;

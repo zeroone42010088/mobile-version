@@ -295,10 +295,9 @@
                 <!--searsh begin -->
  
                 <div class="index__content__search">
-                    <form class="index__content__searchForm">
-                        <input type="text" placeholder="Найти оборудование">
-                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
-                        <!--</button>-->
+                    <form action="catalog.php" method="get" class="index__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="/catalog"></button>   
                     </form>
                 </div>
                 <!--searsh end -->
@@ -882,10 +881,9 @@
                 <!--searsh begin -->
 
                 <div class="index__content__search" >
-                    <form class="index__content__searchForm">
-                        <input type="text" placeholder="Найти оборудование">
-                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
-                        <!--</button>-->
+                    <form action="catalog.php" method="get" class="index__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="/catalog"></button>
                     </form>
                 </div>
                 <!--searsh end -->

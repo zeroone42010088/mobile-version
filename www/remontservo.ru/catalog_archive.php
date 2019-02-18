@@ -3,24 +3,24 @@
 
     <head>
         <meta charset="utf-8" />
-		
+
 		<?
 		$title='Каталог ремонтируемого оборудования и электроники';
 		?>
-		
+
         <title><?=$title?></title>
         <link rel="shortcut icon" type=image/png href=img/logo2.png>
         <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain" />
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet">	
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
        <link href="/css/font-awesome.min.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
-    <link href="/css/slick-theme.css" rel="stylesheet">               
+    <link href="/css/slick-theme.css" rel="stylesheet">
         <link href="/css/style.css" rel=stylesheet>
-        <link href="css/jquery.jbcallme.css" rel=stylesheet>         
+        <link href="css/jquery.jbcallme.css" rel=stylesheet>
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
-      <link href="/css/shop.css" rel=stylesheet>  
+      <link href="/css/shop.css" rel=stylesheet>
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <style>
 #item-10 {background:linear-gradient(to top,#FF7E00,white);}
@@ -33,7 +33,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-131780255-1');
-</script>	   
+</script>
         <!-- Begin Talk-Me {literal} -->
        <script>
             (function(d, w, m) {
@@ -53,7 +53,7 @@
                 else d.documentElement.firstChild.appendChild(s);
             })(document, window, 'TalkMe');
 
-        </script> 
+        </script>
         <!-- End Talk-Me {literal} -->
     </head>
 
@@ -84,7 +84,7 @@
 							<span class="header__buttonCall__text">Оставить<br>заявку</span>
 						</button>
 					</div>
-				</div>				
+				</div>
 			</div>
 
 		</div>
@@ -102,7 +102,7 @@
         	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
 				<li><a href="/pages/guarantees" id="item-3">Гарантия</a></li>
-				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>				
+				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>
 				<li><a href="/pages/request" id="item-5">Заявка на ремонт</a></li>
 			</ul>
 		</li>
@@ -117,8 +117,9 @@
                 <div class="top_wrap">
 
                     <div class="select_wrap diller">
-                        <?  
+                        <?
                         	$type = filter_var($_GET["type"],  FILTER_SANITIZE_STRING);
+
 								if (strlen($type) && $type != 'all') {
 									$type_cond = " WHERE type like '".$type."'";
 									$type_pages = "&type=".$type;
@@ -142,11 +143,11 @@
 
 									?>
                             <!-- выборка -->
-                            <div class="catalog_select_wrap diller_manufacterName" ><span class="sorting_name">Производитель:</span>
+                            <div class="catalog_select_wrap diller_manufacterName"><span class="sorting_name">Производитель:</span>
                                 <?
 
 									$query = $db->query("SELECT diller FROM products  GROUP by diller");
-									echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\" class=\"custom-select\" placeholder=\"выбрать\" size=\"8\">";
+									echo "<select onChange=\"location.href='?type=".$type."&diller='+this.value\" name=\"diller\" class=\"custom-select\" size=\"8\" data-placeholder=\"выбрать\">";
 
 									$sel = '';
 									if(isset($_GET['diller']) && $_GET['diller'] == 'all'): $sel = 'selected'; endif;
@@ -173,10 +174,10 @@
 											else $sel = "";
 											echo "<option data-name='".$row["diller"]."' value='" .$url. "'".$sel;
 
-											if($_GET['diller'] == $row["diller"] ) echo ' selected';
+//											if($_GET['diller'] == $row["diller"] ) echo ' selected';
 
 											echo ">".$row["diller"]."</option>";
-											
+
 										endif;
 									}
 									echo "</select>";?>
@@ -186,13 +187,13 @@
                     </div>
 
                     <div class="select_wrap">
-                        <?php 
+                        <?php
 						         $req_uri = str_replace('/catalog.php', '', $_SERVER['REQUEST_URI']);
 						         	?>
                         <div class="top-nav">
                             <span  class="catalog__top-nav__equipment sorting_name">Оборудование </span>
-                            <select name="sources" id="sources" class="custom-select sources" placeholder="выбрать">
-										<?php 
+                            <select name="sources" id="sources" class="custom-select sources" data-placeholder="выбрать">
+										<?php
 
 									$url = '?type=all';
 									if(isset($_GET['diller'])):
@@ -218,14 +219,14 @@
 											'ЧПУ',
 											'Электронные блоки'
 										);
-										for ($i=0; $i < count($arr_types); $i++) { 
+										for ($i=0; $i < count($arr_types); $i++) {
 											$url = '?type='.urlencode($arr_types[$i]);
 											if(isset($_GET['diller'])):
 												$url .= '&diller='.strip_tags($_GET['diller']);
 											endif;
 
 
-											echo '<option data-name="'.$arr_types[$i].'" value="'.$url.'"'; 
+											echo '<option data-name="'.$arr_types[$i].'" value="'.$url.'"';
 											if($_GET['type'] == $arr_types[$i] ) echo 'selected';
 											echo '>'.$arr_types[$i].'</option>';
 										}
@@ -236,6 +237,8 @@
                     <!--searsh -->
                     <div class="search-bar">
                         <form action="catalog.php" method="get">
+				<input type="hidden" name="type" value="<?php echo $type; ?>"/>
+				<input type="hidden" name="diller" value="<?php echo $diller; ?>"/>
                             <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
                             <input type="submit" value="">
                         </form>
@@ -244,7 +247,7 @@
                 </div>
                 <!--end top_wrap-->
 
-                <?php 
+                <?php
 $def_word = 'электроники';
 if(isset($_GET['type']) && $_GET['type'] != ''):
 	$type_ = strip_tags($_GET['type']);
@@ -266,7 +269,7 @@ if(isset($_GET['type']) && $_GET['type'] != ''):
 			break;
         case 'Блоки питания, источники питания':
 			$def_word = 'блоков питания, источников питания';
-			break;			
+			break;
 		case 'Промышленные компьютеры':
 			$def_word = 'промышленных компьютеров';
 			break;
@@ -278,7 +281,7 @@ if(isset($_GET['type']) && $_GET['type'] != ''):
 			break;
         case 'ЧПУ':
 			$def_word = 'ЧПУ';
-			break;			
+			break;
         case 'Электронные блоки':
 			$def_word = 'электронных блоков';
 			break;
@@ -305,12 +308,12 @@ endif;
 
 
                             <?php
-if($_GET['search']) {
+/*if($_GET['search']) {
 
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
-        
+
                                 echo '
                     <div class="col-md-4 product-left p-left">
                                 <div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
@@ -318,7 +321,7 @@ if($query->num_rows > 0){
                                     <div class="product-bottom">
                                         <p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
     line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #000;">'.$row["name"].'</p>
-                                         <p>'.$row["manefacter"].'</p> 
+                                         <p>'.$row["manefacter"].'</p>
                                         <p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
                                     </div>
                                     <div class="srch srch1">
@@ -326,27 +329,40 @@ if($query->num_rows > 0){
                                     </div>
                                 </div>
                             </div>
-                
-                
+
+
     ';
- } } 
-} else {
+ } }
+} else {*/
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
 } else {
     $pageno = 1;
 }
 $no_of_records_per_page = 12;
-$offset = ($pageno-1) * $no_of_records_per_page;                          
+$offset = ($pageno-1) * $no_of_records_per_page;
 
 
-$result = $db->query("SELECT COUNT(*) FROM products".$type_cond.$diller_cond);
+if(isset($_GET['search']) and !empty($_GET['search']))
+{
+	$q_serch = trim(filter_var($_GET["search"],  FILTER_SANITIZE_STRING));
+
+	$search = " AND name LIKE '%".$db->real_escape_string($q_serch)."%'";
+	$search_pages = '&search='.$q_serch;
+}
+
+
+$result = $db->query("SELECT COUNT(*) FROM products".$type_cond.$diller_cond.$search);
+
 $total_rows = $result->fetch_array();
 $total_pages = ceil($total_rows[0] / $no_of_records_per_page);
-$query = $db->query("SELECT * FROM products ".$type_cond.$diller_cond." LIMIT $offset, $no_of_records_per_page");
+
+
+
+$query = $db->query("SELECT * FROM products ".$type_cond.$diller_cond.$search." LIMIT $offset, $no_of_records_per_page");
 if($query->num_rows > 0){
-    
-    
+
+
     while($row = $query->fetch_assoc()){
 								echo '
 								<div class="col-md-4 product-left p-left catalog" style="">
@@ -355,7 +371,7 @@ if($query->num_rows > 0){
 									<div class="product-bottom">
 										<p class="catalog__marg" style=" word-break: normal; font-size: 1.13em;
     line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #000; margin-left:5%;;">'.$row["block"].'<br>'.$row["name"].'</p>
-										 <p>'.$row["manefacter"].'</p> 
+										 <p>'.$row["manefacter"].'</p>
 										<p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
 									</div>
 									<div class="srch srch1">
@@ -365,23 +381,23 @@ if($query->num_rows > 0){
 							</div>
 								';
 
-} } 
-                         
+} }
+
 ?>
 <div class="product_row_button row">
     <div class="col-md-5"> <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>  </div>
     <div class="list_works offset-1 col-md-6">
-                        <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
-                        
-                        
+                        <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>
+
+
                         <div class="pages__content__search repair_search catalog_search" style="">
                             <form class="pages__content__searchForm catalog_search__item_serchForm">
                                 <input type="text" placeholder="Найти оборудование">
                                   <a class="pages__content__searchForm__button" href="pages/our-works.html"></a>
-                                
+
                             </form>
                         </div>
-                        
+
                    </div>
 </div>
 
@@ -392,10 +408,10 @@ if($query->num_rows > 0){
                     <!-- buttons -->
 
                         <ul class="pagination">
-                        	<?php 
+                        	<?php
                         	$current_page = (int)$_GET['pageno'];
                             $page_class = '';
-                            $FirstPage_url = $type_pages.$diller_pages;
+                            $FirstPage_url = $type_pages.$diller_pages.$search_pages;
                             if( (isset($_GET['pageno']) && $_GET['pageno'] == 1) || !isset($_GET['pageno'])):
                             	$page_class = 'active';
                             endif;
@@ -403,13 +419,13 @@ if($query->num_rows > 0){
 
 							<?php if($pageno > 1): ?>
                             <li class="button28">
-                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="prev"><</a>
-                               
+                            	<a href="?pageno=<?= ($pageno - 1).$type_pages.$diller_pages.$search_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="prev"><</a>
+
                             </li>
                             <?php endif; ?>
-<?php 
+<?php
 $count = 4;
-if(empty($current_page)): $current_page = 1; endif; 
+if(empty($current_page)): $current_page = 1; endif;
 $start = $current_page - $count;
 
 
@@ -419,39 +435,39 @@ endif;
 
 if($start < 1): $start = 1; endif;
 
-for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) { 
+for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 	if($end == ($count*2)+1) break;
 	//echo $end;
 	?>
 	<li>
-		<a href="?pageno=<?= $i.$type_pages.$diller_pages;?>"<?php echo $i; ?>" class="button28 <?php if($i==$current_page): echo 'active'; endif; if($i>99): echo ' pdg0';endif;?>"><?php echo $i; ?>		
+		<a href="?pageno=<?= $i.$type_pages.$diller_pages.$search_pages;?>" class="button28 <?php if($i==$current_page): echo 'active'; endif; if($i>99): echo ' pdg0';endif;?>"><?php echo $i; ?>
 		</a>
 	</li>
-	<?php 
+	<?php
 }
 
  ?>
  							<?php if($current_page < $total_pages): ?>
 	                            <li class="button28">
-	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="next">></a>
-	                               
+	                            	<a href="?pageno=<?= ($pageno + 1).$type_pages.$diller_pages.$search_pages;?>" class="button28 <?php if($pageno>99): echo 'pdg0';endif;?>" rel="next">></a>
+
 	                            </li>
                             <?php endif; ?>
 
-                           
-                            <?php 
+
+                            <?php
                             $page_class = '';
-                            $LastPage_url = $total_pages.$type_pages.$diller_pages;
+                            $LastPage_url = $total_pages.$type_pages.$diller_pages.$search_pages;
 
                             if(isset($_GET['pageno']) && $_GET['pageno'] == $total_pages):
                             	$page_class = 'active';
                             endif;
                             ?>
-                        
+
 						</ul>
-                      
+
                             <!-- buttons -->
-                            <? } ?>
+                            <? //} ?>
 <p class="catalog_numbers_summa" <?php if(!empty($_GET['search'])) echo "style='display:none'"; ?>><<?php echo "b>Всего страниц: $total_pages; Всего товаров: $total_rows[0];</b>" ?></p>
             </main>
            <footer>
@@ -470,14 +486,14 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 	</div>
 </footer>
         </div>
-        
+
          <!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
-    <div class="fields form-main my-form">    
-                 <span class="close" id="close">&#215;</span>   
+    <div class="fields form-main my-form">
+                 <span class="close" id="close">&#215;</span>
         <div class="form-wrap">
-                 
-        
-        
+
+
+
             <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
                 <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
                 <span class="checkmark"></span>
@@ -485,11 +501,11 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
             <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
                 <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
                 <span class="checkmark"></span>
-            </label>   
+            </label>
 
             <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
                 <div id="form_remont" class="frm">
-             
+
                   <div class="form-group">
                     <label for="contactFF" style="color:#000;">ВАШ ПОЧТОВЫЙ АДРЕС</label>
                     <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
@@ -512,12 +528,12 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
                    <!-- <input id="fileFF2" name="fileFF2" type="file">
                     <input id="fileFF3" name="fileFF3" type="file"> -->
                   </div>
-                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
-       
-                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button>
+
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end -->
             </form>
-            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
-            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >
             <div id="form_viezd" class="frm">
               <div class="form-group">
                 <label for="contactFF1">Ваш почтовый адрес</label>
@@ -534,7 +550,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
                 <div class="form-group">
                 <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
                 <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
-              </div>            
+              </div>
               <div class="form-group">
                 <label for="projectFF1">Описание неисправности. Номер ошибки </label>
                 <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
@@ -545,31 +561,31 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
                 <input id="fileFF2" name="fileFF2" type="file">
               <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
               </div>
-              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
-                 
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button>
+
             </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
         </form>
 
         </div>
-    </div> 
+    </div>
 <!--popup-->
 <div class="b-popup" id="popup1" style="display: none;">
     <div class="b-popup-content">
     <div id="sendemail">
-     
-    
+
+
           </div>
-        
+
     <a href="javascript:PopUpHide()" class="closeform">+</a>
     </div>
 </div><!--popup end-->
-        
+
         <!-- container -->
-        
+
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery-2.2.0.min.js"></script>        
+        <script src="js/jquery-2.2.0.min.js"></script>
        <script src="/js/slick.js"></script>
-        
+
         <!--form to take call from client start-->
         <script src="/js/jquery.jbcallme.js"></script>
         <script src="/js/custom.js"></script>
@@ -584,7 +600,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
       <!--  <script src=js/callmefile.js></script>-->
         <!-- mail form end-->
         <script src="/js/gorizontalmenu.js"></script>
-        
+
                 <!--slider start-->
 <script>
 
@@ -601,7 +617,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 pauseOnHover:true,
-           
+
             });
 
 
@@ -609,7 +625,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 
 </script>
     <!--slider end-->
-        
+
 
         <script>
             $(document).ready(function() {
@@ -629,7 +645,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 <!--пагинация-->
 <!--<script>
 (function($){
- 
+
 	//find active url in menu
 	var $curURL = document.location.href;
 	$('button28').each(function() {
@@ -638,7 +654,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 			$(this).addClass('activePagination');
 		}
 	});
- 
+
 })(jQuery);
 </script>-->
 <!--пагинация-->
