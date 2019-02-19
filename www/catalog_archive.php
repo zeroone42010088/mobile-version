@@ -289,7 +289,7 @@ if(isset($_GET['type']) && $_GET['type'] != ''):
 endif;
 ?>
 
-<h1 class="catalog__h1" style="font-size:1.4em;">Диагностика и ремонт
+<h1 class="catalog__h1">Диагностика и ремонт
 	<?php echo $def_word ;?>
 </h1>
 
@@ -300,11 +300,7 @@ endif;
                 <!--      <div class="container">  -->
                 <?php
     if($_GET['search']) {
-    	//echo $_GET['search'];
-    	$query = $db->query("SELECT COUNT(`id`) FROM products where name LIKE '%".$_GET['search']."%'");
-    	$count = $query->fetch_array();
-    	//var_dump($count);
-                   echo '<h2 style="margin-left:10px; color: #000;
+                    echo '<h2 style="margin-left:10px; color: #000;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	                 0px -5px 35px rgba(255,255,255,0.3); font-size:1.2em;">Поисковый запрос: '.$_GET['search'].' / Всего найдено: '.$count[0].'
 					 </h2>';}?>
@@ -313,7 +309,7 @@ endif;
 
 
                             <?php
-if($_GET['search']) {
+/*if($_GET['search']) {
 
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
@@ -338,7 +334,7 @@ if($query->num_rows > 0){
 
     ';
  } }
-} /*else {*/
+} else {*/
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
 } else {
@@ -663,7 +659,7 @@ for ($i=$start, $end = 0; $i <= $total_pages ; $i++, $end++) {
 })(jQuery);
 </script>-->
 <!--пагинация-->
-   <!-- Yandex.Metrika counter --> <!-- <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript>--> <!-- /Yandex.Metrika counter -->
+   <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     </body>
 
 </html>
