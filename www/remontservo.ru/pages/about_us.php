@@ -20,6 +20,7 @@ require '../header.php';
 @media (max-width:361px) and (orientation:portrait) {
 .slick-next {top:110px;}
 .slick-prev {top:110px;}
+.slick-prev:before, .slick-next:before {color: white; opacity: 0.75;}
 }
 @media (max-width:330px) and (orientation:portrait) {
 .slick-next {top:100px;}
@@ -72,26 +73,26 @@ require '../header.php';
 				
 								<article class="aboutUs_vertical_center aboutUs_vertical_text">
                                     <h1 class="aboutUs_p_firstLine aboutUs_h aboutUs_goriz_center aboutUs_text aboutUs_slider_secondBlock_center aboutUs_vertical_center">✓ Направление № 1 диагностика и ремонт электронного оборудования в Сервисном Центре Исполнителя.</h1>
-       <p class="aboutUs_p_firstLine aboutUs_text">Сервисный центр производит ремонт разнообразного электронного оборудования:</p>
+       <p class="aboutUs_p_firstLine aboutUs_text aboutUs_text_size">Сервисный центр производит ремонт разнообразного электронного оборудования:</p>
 <ul class="aboutUs_ul">    
-    <li class="abousUs_li_center">✓частотных преобразователей;</li>
-    <li class="abousUs_li_center">✓сервоприводов;</li>
-    <li class="abousUs_li_center">✓серводвигателей;</li>
-    <li class="abousUs_li_center">✓энкодеров;</li>
-    <li class="abousUs_li_center">✓резольверов;</li>
-    <li class="abousUs_li_center">✓панелей операторов;</li>
-    <li class="abousUs_li_center">✓промышленных компьютеров;</li>
-    <li class="abousUs_li_center">✓промышленных контроллеров и ПЛК;</li>
-    <li class="abousUs_li_center">✓систем ЧПУ;</li>
-    <li class="abousUs_li_center">✓панелей оператора;</li>
-    <li class="abousUs_li_center">✓устройств плавного пуска;</li>    
-    <li class="abousUs_li_center">✓промышленной электроники.</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓частотных преобразователей;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓сервоприводов;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓серводвигателей;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓энкодеров;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓резольверов;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓панелей операторов;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓промышленных компьютеров;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓промышленных контроллеров и ПЛК;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓систем ЧПУ;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓панелей оператора;</li>
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓устройств плавного пуска;</li>    
+    <li class="abousUs_li_center abousUs_li_left aboutUs_text_size">✓промышленной электроники.</li>
     </ul>
                 </article>
                  
 				
 			</div>
-			<div class="right-block aboutUs_right_block  col-md-6 col-lg-6 aboutUs_Slider">
+			<div class="right-block aboutUs_right_block  col-md-6 col-lg-6 aboutUs_Slider aboutUs_slider_up">
 			
 		
             <div class="slider_img1 aboutUs_slider_secondBlock aboutUs_slider_secondBlock_center">
@@ -198,16 +199,16 @@ require '../header.php';
 			<div class="aboutUs_vertical_textViezd">					
     <h2 class="aboutUs_p_firstLine aboutUs_h abousUs_li_center aboutUs_text">✓ Направление № 2 выезд специалистов на неисправное электронное оборудования Заказчика.</h2>
     <ul class="aboutUs_ul_bottom">
-        <li class="abousUs_li_center">✓аварийный выезд на оборудование;</li>
-        <li class="abousUs_li_center">✓диагностика электроники оборудования;</li>
-        <li class="abousUs_li_center">✓определения неисправности;</li>
-        <li class="abousUs_li_center">✓устранение электронных сбоев;</li>
-        <li class="abousUs_li_center">✓пуско-наладка оборудования;</li>
-        <li class="abousUs_li_center">✓программирование оборудования;</li>
-        <li class="abousUs_li_center">✓параметрирование оборудования;</li>
-        <li class="abousUs_li_center">✓диагностика электроники оборудования, определения неисправного электронного узла, электронного блока, электронной платы;</li>
-        <li class="abousUs_li_center">✓аварийная диагностика на оборудовании;</li>
-        <li class="abousUs_li_center">✓устранение электронных сбоев;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓аварийный выезд на оборудование;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓диагностика электроники оборудования;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓определения неисправности;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓устранение электронных сбоев;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓пуско-наладка оборудования;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓программирование оборудования;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓параметрирование оборудования;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓диагностика электроники оборудования, определения неисправного электронного узла, электронного блока, электронной платы;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓аварийная диагностика на оборудовании;</li>
+        <li class="abousUs_li_center abousUs_li_left">✓устранение электронных сбоев;</li>
         </ul> 
      
                 </div>  
@@ -233,7 +234,7 @@ require '../header.php';
     <section class="repair_block_aboutUs aboutUs_section_marginTop repair_block_aboutUs_footer">
         <div class="row repair_block_aboutUs_outline">
          <div class="col-md-12 col-lg-12">
-    <p class="aboutUs_text aboutUs_text_justify aboutUs_p_firstLine">
+    <p class="aboutUs_text aboutUs_text_justify aboutUs_p_firstLine aboutUs_footerUp">
 За время работы мы провели ремонтные работы более чем 5000 предприятий по Всей России, СНГ и
 ближнему зарубежью.
 Проводили аварийные выезды по запуску оборудования от Калининграда до Хабаровска.

@@ -10,7 +10,7 @@ require '../header.php';
 <div class="main-content">
 
 	<section class="repair_block">
-		<h1 class="title">Ремонт энкодеров</h1>
+		<h1 class="title">Ремонт частотных преобразователей</h1>
 		<div class="row">
 			<div class="col-md-6 left-block index_pages_slider">
 				<div class="slider_img1">
@@ -188,11 +188,10 @@ require '../header.php';
                         
 				<!--searsh start -->
 				<div class="pages__content__search repair_search">
-					<form class="pages__content__searchForm">
-						<input class="pages__content__searchForm_input" type="text" placeholder="Найти оборудование">
-						<!--  <button type="submit">--><a class="pages__content__searchForm__button" href="our-works.html"></a>
-						<!--</button>-->
-                	</form>
+					<form action="../catalog.php" method="get" class="pages__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="../catalog"></button>   
+                    </form>
 				</div>
 				<!--searsh end -->
 			</div>

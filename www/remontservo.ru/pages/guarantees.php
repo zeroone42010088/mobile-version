@@ -7,7 +7,7 @@ require '../header.php';
 ?>
 
 <section class="cover" id="departure">
-	<h1>Гарантии</h1>
+	<h1 class="guarantees_h1">Гарантия</h1>
 </section>
 <div class="main-content">
 	<div class="container">
@@ -23,9 +23,9 @@ require '../header.php';
                     </div>
                     <div class="badge-right">
                         <h3>Гарантия на ремонт</h3>
-                        <p>
+                        <p class="guarantees_p">
                             Предоставляем гарантию на ремонт электронного оборудования:<br>
-                            <span style="font-size: 1.875rem; color: green;"> - 6 месяцев.</span>
+                            <span class="guarantees_p_span" style="font-size: 1.875rem; color: green;"> - 6 месяцев.</span>
                         </p>
                     </div>
                 </div>

@@ -15,11 +15,10 @@
     <link href="/css/form.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 	<link href="/css/main.css" rel="stylesheet">
-<style>
-@media (max-width:800px) and (orientation:landscape) {
-.content__sellForm__button_stanki,.content__sellForm__button {margin-left: 40%;}
-}
+<style> 
 #item-1 {background:linear-gradient(to top,#FF7E00,white);}
+@media (max-width:600px) and (orientation:landscape) {
+}
 </style>	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131780255-1"></script>
@@ -92,18 +91,16 @@
             <a href="/" id="item-1">О компании</a> <i class="fa fa-sort-down"></i>
             <ul class="submenu">
 				<li><a href="/pages/about_us">О нас</a></li>
-				<li><a href="/pages/sell.html">На продажу</a></li>
-				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
+				<li><a href="/pages/sell.html">На продажу</a></li>				
 				<li><a href="/pages/list-publications" id="item-9">Список статей</a></li>
 			</ul>
 		</li>
         <li class="has-submenu">
         	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
-				<li><a href="/pages/guarantees.html" id="item-3">Гарантия</a></li>
-				<li><a href="/pages/delivery.html" id="item-4">Доставка в ремонт</a></li>
-				<!-- <li><a href="/pages/oplata.html">Порядок оплаты</a></li>-->
-				<li><a href="/pages/request.html" id="item-5">Заявка на ремонт</a></li>
+				<li><a href="/pages/guarantees" id="item-3">Гарантия</a></li>
+				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>				
+				<li><a href="/pages/request" id="item-5">Заявка на ремонт</a></li>
 			</ul>
 		</li>
         <li><a href="/pages/our-works" id="item-6">Выполненные работы</a></li>
@@ -144,138 +141,131 @@
                 </ol>              
                 <div class=carousel-inner role=listbox>
                     <div class="item index_sliderTop_item active" style="margin-top: 0;">
-                        <p class="index__carousel__service">1.РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ<br> <a class="index__carousel__text__datails" href="index.html#cards-spisok"> Узнать больше...</a><br><br>2.ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<br><a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
-                        <!--<form class="carousel-inner__item__buttonDetails" action="pages/about_us.html">
-<button class="carousel-inner__item__buttonDetails__button" type="submit"><p>Узнать подробнее</p></button>
-                        </form>-->
-                        <img class="index_carousel-inner-spisok_img" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">                        
+                        <p class="index__carousel__service index_up_text1">1.РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ В СЕРВИСНОМ ЦЕНТРЕ <a class="index__carousel__text__datails" href="index.html#cards-spisok"> <br>Узнать больше...<br></a>2.ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<a class="index__carousel__text__datails" href="index.html#stanki"><br>Узнать больше...<br></a></p>
+                        
+                        <img class="index_carousel-inner-spisok_img index_up_slider1" src=img/slider/kernel20.jpg alt="Ремонт в сервисном центре">                        
                     </div><a id="cards-spisok" style="position: absolute; top:150px;"></a>  
-                 <!--   <div class=item style="background-color:#F6BE00;">
-                        <p class="index__carousel__textUp">ВЫЕЗД НА НЕИСПРАВНОЕ ОБОРУДОВАНИЕ К ЗАКАЗЧИКУ<br><a class="index__carousel__text__datails" href="index.html#stanki"> Узнать больше...</a></p>
-
-                        <img class="index_carousel-inner_img" src=img/slider/kernel24-sl.jpg alt="Выезд на неисправное оборудование">
-                    </div>   -->                
+					
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<br><a class="index__carousel__text__datails" href="pages/servodrive.html"> Узнать подробнее...</a></p>
+                        <p class="index__carousel__textUp index_up_text2">РЕМОНТ СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<a class="index__carousel__text__datails" href="pages/servodrive"><br>Узнать подробнее...<br></a></p>
 
-                        <img class="index_carousel-inner_img" src=img/slider/kernel2.jpg alt="Настройка серводвигателя">
+                        <img class="index_carousel-inner_img index_up_slider2" src=img/slider/kernel2.jpg alt="Настройка серводвигателя">
                     </div>
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">НАСТРОЙКА (ЮСТИРОВКА) СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<br><a class="index__carousel__text__datails" href="pages/servodrive.html"> Узнать подробнее...</a></p>
+                        <p class="index__carousel__textUp index_up_text3">НАСТРОЙКА (ЮСТИРОВКА) СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<a class="index__carousel__text__datails" href="pages/servodrive"> <br>Узнать подробнее...<br></a></p>
 
-                        <img class="index_carousel-inner_img" src=img/slider/kernel2.jpg alt="Настройка серводвигателя">
+                        <img class="index_carousel-inner_img index_up_slider3" src=img/slider/kernel2.jpg alt="Настройка серводвигателя">
                     </div>
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">ПЕРЕМОТКА СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<br><a class="index__carousel__text__datails" href="pages/servodrive.html"> Узнать подробнее...</a></p>
+                        <p class="index__carousel__textUp index_up_text4">ПЕРЕМОТКА СЕРВОДВИГАТЕЛЕЙ И СЕРВОМОТОРОВ<a class="index__carousel__text__datails" href="pages/servodrive"><br>Узнать подробнее...<br></a></p>
 
-                        <img class="index_carousel-inner_img index__carousel__text__imgUp" src=img/slider/kernel3.jpg alt="Перемотка серводвигателя">
+                        <img class="index_carousel-inner_img index__carousel__text__imgUp index_up_slider4" src=img/slider/kernel3.jpg alt="Перемотка серводвигателя">
                     </div>
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ, НАСТРОЙКА (ЮСТИРОВКА)<br> ЭНКОДЕРОВ И РЕЗОЛЬВЕРОВ<br><a class="index__carousel__text__datails" href="pages/encoder_and_roter.html"> Узнать подробнее...</a></p>
+                        <p class="index__carousel__textRasxodomer index_up_text5">РЕМОНТ, НАСТРОЙКА (ЮСТИРОВКА) ЭНКОДЕРОВ И РЕЗОЛЬВЕРОВ<a class="index__carousel__text__datails" href="pages/encoder_and_roter"><br>Узнать подробнее...<br></a></p>
 
-                        <img class="index_carousel-inner_img_encoder" src=img/slider/kernel4.jpg alt="Ремонт и настройка энкодера">
+                        <img class="index_carousel-inner_img_encoder index_up_slider5" src=img/slider/kernel4.jpg alt="Ремонт и настройка энкодера">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ СЕРВОПРИВОДОВ, СЕРВОДРАЙВЕРОВ, СЕРВОКОНТРОЛЛЕРОВ<br><a class="index__carousel__text__datails" href="pages/servoprivod.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img index__carousel__text__imgUp" src=img/slider/kernel5.jpg alt="Ремонт сервоприводов">
+                        <p class="index__carousel__textRasxodomer index_up_text6">РЕМОНТ СЕРВОПРИВОДОВ, СЕРВОДРАЙВЕРОВ, СЕРВОКОНТРОЛЛЕРОВ<a class="index__carousel__text__datails" href="pages/servoprivod"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index__carousel__text__imgUp index_up_slider6" src=img/slider/kernel5.jpg alt="Ремонт сервоприводов">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, ЧАСТОТНИКОВ И ПРИВОДОВ<br><a class="index__carousel__text__datails" href="pages/preobrazovatel.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img index__carousel__text__imgUp" src=img/slider/kernel6.jpg alt="Ремонт частотного преобразователя">
+                        <p class="index__carousel__textRasxodomer index_up_text7">РЕМОНТ ЧАСТОТНЫХ ПРЕОБРАЗОВАТЕЛЕЙ, ЧАСТОТНИКОВ И ПРИВОДОВ<a class="index__carousel__text__datails" href="pages/preobrazovatel"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index__carousel__text__imgUp index_up_slider7" src=img/slider/kernel6.jpg alt="Ремонт частотного преобразователя">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ СЕНСОРНЫХ ПАНЕЛЕЙ ОПЕРАТОРА, МОНИТОРОВ И ПУЛЬТОВ УПРАВЛЕНИЯ<br><a class="index__carousel__text__datails" href="pages/operator_panel.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img index__carousel__text__imgUp" src=img/slider/kernel7.jpg alt="Ремонт панели оператора">
+                        <p class="index__carousel__textRasxodomer index_up_text8">РЕМОНТ СЕНСОРНЫХ ПАНЕЛЕЙ ОПЕРАТОРА, МОНИТОРОВ И ПУЛЬТОВ УПРАВЛЕНИЯ<a class="index__carousel__text__datails" href="pages/operator_panel"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index__carousel__text__imgUp index_up_slider8" src=img/slider/kernel7.jpg alt="Ремонт панели оператора">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ<br><a class="index__carousel__text__datails" href="pages/industrial_computers.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel8.jpg alt="Ремонт промышленного компьютера">
+                        <p class="index__carousel__textRasxodomer index_up_text9">РЕМОНТ ПРОМЫШЛЕННЫХ КОМПЬЮТЕРОВ<a class="index__carousel__text__datails" href="pages/industrial_computers"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider9" src=img/slider/kernel8.jpg alt="Ремонт промышленного компьютера">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textOneString">РЕМОНТ СИСТЕМ ЧПУ<br><a class="index__carousel__text__datails" href="pages/chpu_repair.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel9.jpg alt="Ремонт ЧПУ">
+                        <p class="index__carousel__textOneString index_up_text10">РЕМОНТ СИСТЕМ ЧПУ<a class="index__carousel__text__datails" href="pages/chpu_repair"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider10" src=img/slider/kernel9.jpg alt="Ремонт ЧПУ">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ<br>ПРОМЫШЛЕННЫХ<br>ЛОГИЧЕСКИХ<br>КОНТРОЛЛЕРОВ<br><a class="index__carousel__text__datails" href="pages/logic_controllers.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel10.jpg alt="Ремонт логического контроллера">
+                        <p class="index__carousel__textRasxodomer index_up_text11">РЕМОНТ ПРОМЫШЛЕННЫХ ЛОГИЧЕСКИХ КОНТРОЛЛЕРОВ<a class="index__carousel__text__datails" href="pages/logic_controllers"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider11" src=img/slider/kernel10.jpg alt="Ремонт логического контроллера">
                     </div>
 
                     <div class="item index_sliderTop_item"> 
-                        <p class="index__carousel__textUp">РЕМОНТ ЭЛЕКТРОННЫХ ПЛАТ<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel13.jpg alt="Ремонтируем электронные платы">
+                        <p class="index__carousel__textUp index_up_text12">РЕМОНТ ЭЛЕКТРОННЫХ ПЛАТ<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider12" src=img/slider/kernel13.jpg alt="Ремонтируем электронные платы">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">РЕМОНТ УСТРОЙСТВ ПЛАВНОГО ПУСКА, УПП, МЯГКОГО ПУСКА<br><a class="index__carousel__text__datails" href="pages/soft_starters.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel18.jpg alt="Ремонтируем устройства плавного пуска">
+                        <p class="index__carousel__textUp index_up_text13">РЕМОНТ УСТРОЙСТВ ПЛАВНОГО ПУСКА, УПП, МЯГКОГО ПУСКА<a class="index__carousel__text__datails" href="pages/soft_starters"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider13" src=img/slider/kernel18.jpg alt="Ремонтируем устройства плавного пуска">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class=index__carousel__textUp>РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel20.jpg alt="Ремонтируем промышленную электронику">
+                        <p class="index__carousel__textUp index_up_text14">РЕМОНТ ПРОМЫШЛЕННОЙ ЭЛЕКТРОНИКИ<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider14" src=img/slider/kernel20.jpg alt="Ремонтируем промышленную электронику">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ ЛИФТОВОГО И ЭСКАЛАТОРНОГО ОБОРУДОВАНИЯ (ЭЛЕКТРОНИКИ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel11.jpg alt="Ремонтируем лифитовую электронику">
+                        <p class="index__carousel__textRasxodomer index_up_text15">РЕМОНТ ЛИФТОВОГО И ЭСКАЛАТОРНОГО ОБОРУДОВАНИЯ (ЭЛЕКТРОНИКИ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider15" src=img/slider/kernel11.jpg alt="Ремонтируем лифитовую электронику">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class=index__carousel__textRasxodomer>РЕМОНТ ИСТОЧНИКОВ<br>БЕСПЕРЕБОЙНОГО<br>ПИТАНИЯ (ИБП)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img_ibp" src=img/slider/kernel17.jpg alt="Ремонтируем источники бесперебойного питания. ИБП">
+                        <p class="index__carousel__textRasxodomer index_up_text16">РЕМОНТ ИСТОЧНИКОВ БЕСПЕРЕБОЙНОГО ПИТАНИЯ (ИБП)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img_ibp index_up_slider16" src=img/slider/kernel17.jpg alt="Ремонтируем источники бесперебойного питания. ИБП">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class=index__carousel__textRasxodomer>РЕМОНТ ИСТОЧНИКОВ ПИТАНИЯ,<br>БЛОКОВ ПИТАНИЯ,<br>БЛОКОВ РЕКУПЕРАЦИИ<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel16-sl.jpg alt="Ремонтируем источники бесперебойного питания. ИБП">
+                        <p class="index__carousel__textRasxodomer index_up_text17">РЕМОНТ ИСТОЧНИКОВ ПИТАНИЯ, БЛОКОВ ПИТАНИЯ, БЛОКОВ РЕКУПЕРАЦИИ <a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider17" src=img/slider/kernel16-sl.jpg alt="Ремонтируем источники бесперебойного питания. ИБП">
                     </div>
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomerVp">РЕМОНТ ПРОМЫШЛЕННЫХ<br>ВЫПРЯМИТЕЛЕЙ,<br>ВЫПРЯМИТЕЛЕЙ<br> ПЕРЕМЕННОГО ТОКА,<br>ВЫПРЯМИТЕЛЕЙ<br>ПОСТОЯННОГО ТОКА,<br> ВЫПРЯМИТЕЛЬНЫХ<br>СИСТЕМ<br><a class="index__carousel__text__datails index__carousel__text__datails_vr" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img_ibp" src=img/slider/kernel17-sl.jpg alt="Ремонтируем промышленные выпрямители, выпрямители переменного и постоянного тока, выпрямительные системы">
-                    </div>
-
-                    <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomer">РЕМОНТ ПРОПОРЦИОНАЛЬНЫХ КЛАПАНОВ, СЕРВОКЛАПАНОВ (ЭЛЕКТРОНИКИ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img index__carousel__text__imgUp" src=img/slider/kernel14.jpg alt="Ремонтируем пропорциональные клапаны">
+                        <p class="index__carousel__textRasxodomerVp index_up_text18">РЕМОНТ ПРОМЫШЛЕННЫХ ВЫПРЯМИТЕЛЕЙ, ВЫПРЯМИТЕЛЕЙ ПЕРЕМЕННОГО ТОКА, ВЫПРЯМИТЕЛЕЙ ПОСТОЯННОГО ТОКА, ВЫПРЯМИТЕЛЬНЫХ СИСТЕМ<a class="index__carousel__text__datails index__carousel__text__datails_vr" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img_ibp index_up_slider18" src=img/slider/kernel17-sl.jpg alt="Ремонтируем промышленные выпрямители, выпрямители переменного и постоянного тока, выпрямительные системы">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomerCor">РЕМОНТ РАСХОДОМЕРОВ (УЛЬТРАЗВУКОВЫХ, ЭЛЕКТРОМАГНИТНЫХ, МАССОВЫХ, КОРИОЛИСОВЫХ, ТУРБИННЫХ, МАГНИТНО-ИНДУКТИВНЫХ, ВИХРЕВЫХ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel15.jpg alt="Ремонтируем расходомеры">
+                        <p class="index__carousel__textRasxodomer index_up_text19">РЕМОНТ ПРОПОРЦИОНАЛЬНЫХ КЛАПАНОВ, СЕРВОКЛАПАНОВ (ЭЛЕКТРОНИКИ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index__carousel__text__imgUp index_up_slider19" src=img/slider/kernel14.jpg alt="Ремонтируем пропорциональные клапаны">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class=index__carousel__textUp>РЕМОНТ УЛЬТРАЗВУКОВЫХ ГЕНЕРАТОРОВ<br>
-                            <a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel20-sl.jpg alt="Ремонтируем ультразвуковые генераторы">
+                        <p class="index__carousel__textRasxodomerCor index_up_text20">РЕМОНТ РАСХОДОМЕРОВ (УЛЬТРАЗВУКОВЫХ, ЭЛЕКТРОМАГНИТНЫХ, МАССОВЫХ, КОРИОЛИСОВЫХ, ТУРБИННЫХ, МАГНИТНО-ИНДУКТИВНЫХ, ВИХРЕВЫХ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider20" src=img/slider/kernel15.jpg alt="Ремонтируем расходомеры">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">РЕМОНТ ЛАБОРАТОРНОГО ОБОРУДОВАНИЯ (ЭЛЕКТРОНИКИ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-
-                        <img class="index_carousel-inner_img" src=img/slider/kernel12.jpg alt="Ремонтируем лабораторное оборудование и электронику">
+                        <p class="index__carousel__textUp index_up_text21">РЕМОНТ УЛЬТРАЗВУКОВЫХ ГЕНЕРАТОРОВ
+                            <a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider21" src=img/slider/kernel20-sl.jpg alt="Ремонтируем ультразвуковые генераторы">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textRasxodomerCor">РЕМОНТ ЧИЛЛЕРОВ, СИСТЕМ ОХЛАЖДЕНИЯ, СПЛИТ-СИСТЕМ, ФАНКОЙЛОВ, КОНДИЦИОНЕРОВ (ЭЛЕКТРОНИКИ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel19.jpg alt="Ремонтируем чиллеры">
+                        <p class="index__carousel__textUp index_up_text22">РЕМОНТ ЛАБОРАТОРНОГО ОБОРУДОВАНИЯ (ЭЛЕКТРОНИКИ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider22" src=img/slider/kernel12.jpg alt="Ремонтируем лабораторное оборудование и электронику">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class="index__carousel__textUp">РЕМОНТ МЕТАЛЛОДЕТЕКТОРОВ (ЭЛЕКТРОНИКИ)<br><a class="index__carousel__text__datails" href="pages/industrial_electronics.html"> Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel16.jpg alt="Ремонтируем металлодетекторов">
+                        <p class="index__carousel__textRasxodomerCor index_up_text23">РЕМОНТ ЧИЛЛЕРОВ, СИСТЕМ ОХЛАЖДЕНИЯ, СПЛИТ-СИСТЕМ, ФАНКОЙЛОВ, КОНДИЦИОНЕРОВ (ЭЛЕКТРОНИКИ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider23" src=img/slider/kernel19.jpg alt="Ремонтируем чиллеры">
                     </div>
 
                     <div class="item index_sliderTop_item">
-                        <p class=index__carousel__textUp>РЕМОНТ ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ<br>
-                            <a class="index__carousel__text__datails" href="pages/industrial_electronics.html">Узнать подробнее...</a></p>
-                        <img class="index_carousel-inner_img" src=img/slider/kernel24-sl.jpg alt="Ремонтируем промышленное оборудование">
+                        <p class="index__carousel__textUp index_up_text24">РЕМОНТ МЕТАЛЛОДЕТЕКТОРОВ (ЭЛЕКТРОНИКИ)<a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider24" src=img/slider/kernel16.jpg alt="Ремонтируем металлодетекторов">
+                    </div>
+
+                    <div class="item index_sliderTop_item">
+                        <p class="index__carousel__textUp index_up_text25">РЕМОНТ ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ
+                            <a class="index__carousel__text__datails" href="pages/industrial_electronics"><br>Узнать подробнее...<br></a></p>
+                        <img class="index_carousel-inner_img index_up_slider25" src=img/slider/kernel24-sl.jpg alt="Ремонтируем промышленное оборудование">
                     </div>
 
                 </div>
@@ -305,10 +295,9 @@
                 <!--searsh begin -->
  
                 <div class="index__content__search">
-                    <form class="index__content__searchForm">
-                        <input type="text" placeholder="Найти оборудование">
-                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
-                        <!--</button>-->
+                    <form action="catalog.php" method="get" class="index__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="/catalog"></button>   
                     </form>
                 </div>
                 <!--searsh end -->
@@ -321,11 +310,12 @@
 
 
             <div class="card-group">
-                <div class="card">
-                    <a href="pages/servodrive.html"><img class="card-img-top" src="img/index-pictures/servomotors.png" alt="Серводвигатель, сервомотор"></a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/servodrive"><img itemprop="image" class="card-img-top" src="img/index-pictures/servomotors.png" alt="Серводвигатель, сервомотор"></a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт серводвигателей,<br>ремонт сервомоторов</h3>                      
-
+                        <h3 class="card-title" itemprop="name">Ремонт серводвигателей,<br>ремонт сервомоторов</h3>                      
+<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box">
                            <i>Узнать подробности...</i></div>
                       
@@ -362,16 +352,17 @@
                             <li>&#10004; замена подшипников;</li>
                             <li>&#10004; замена силовых разъемов.</li>
 
-                        </ul>
-                        <!--  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </ul>                       
                     </div>
                 </div>
 
 
-                <div class="card" style="border-left:2px solid rgba(0, 0, 0, 0.125); margin-left: -2px;">
-                    <a href="pages/servoprivod.html">  <img class="card-img-top" src="img/index-pictures/servoprivod.png" alt="Сервоприводы"></a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/servoprivod">  <img itemprop="image" class="card-img-top" src="img/index-pictures/servoprivod.png" alt="Сервоприводы"></a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт сервоприводов,<br>ремонт серводрайверов</h3>                        
+                        <h3 class="card-title" itemprop="name">Ремонт сервоприводов,<br>ремонт серводрайверов</h3>
+<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">                        
                            <div class="index_detailsCards_box"><i>Узнать подробности...</i></div> 
                            <ul class="ulSport">
                             <li style="text-decoration: underline;">Разновидности блоков для ремонта:</li>
@@ -411,18 +402,12 @@
 
 
 
-                <div class="card">
-                    <a href="pages/preobrazovatel.html"> <img class="card-img-top" src="img/index-pictures/preobrazovatel.jpg" alt="Частотные преобразователи"></a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/preobrazovatel"> <img itemprop="image" class="card-img-top" src="img/index-pictures/preobrazovatel.jpg" alt="Частотные преобразователи"></a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт частотных преобразователей</h3>
-                       <!-- <ul class="card-text" style="text-align: left;">
-                            <li>&#10004; Ремонт частотников,</li>
-                            <li>&#10004; ремонт приводов,</li>
-                            <li>&#10004; ремонт преобразователей частоты,</li>
-                            <li>&#10004; ремонт привода переменного тока,</li> 
-                            <li>&#10004; ремонт ПЧ.</li> 
-                        </ul> -->
-
+                        <h3 class="card-title" itemprop="name">Ремонт частотных преобразователей</h3> 
+<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                         <ul class="ulSport">
                             <li style="text-decoration: underline;">Разновидность названий частотных преобразователей для ремонта:</li>
@@ -465,21 +450,12 @@
                 </div>
 
 
-                <div class="card">
-                    <a href="pages/operator_panel.html"> <img class="card-img-top" src="img/index-pictures/operator_panel.jpg" alt="Панели оператора"> </a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/operator-panel"> <img itemprop="image" class="card-img-top" src="img/index-pictures/operator_panel.jpg" alt="Панели оператора"> </a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт<br>панелей оператора</h3>
-                     <!--   <ul class="card-text" style="text-align: left;">
-                              <li>&#10004; Ремонт сенсорных панелей оператора,</li>
-                            <li>&#10004; ремонт пультов управления,</li>
-                            <li>&#10004; ремонт мониторов,</li>
-                            <li>&#10004; ремонт мониторов от станков,</li>
-                            <li>&#10004; ремонт монитора от ЧПУ,</li>
-                            <li>&#10004; ремонт монитора промышленного,</li>
-                            <li>&#10004; ремонт пульта оператора,</li>
-                            <li>&#10004; ремонт панели оператора.</li>
-                        </ul> -->
-
+                        <h3 class="card-title" itemprop="name">Ремонт<br>панелей оператора</h3>                     
+<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                           <ul class="ulSport">
                             <li style="text-decoration: underline;">Разновидность названий сенсорных панелей оператора для ремонта: </li>
@@ -548,18 +524,12 @@
 
             <!-- группа 2 -->
             <div class="card-group">
-                <div class="card">
-                    <a href="pages/chpu_repair.html"> <img class="card-img-top" src="img/index-pictures/chpu_repair.png" alt="Система ЧПУ"> </a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/chpu_repair"> <img itemprop="image" class="card-img-top" src="img/index-pictures/chpu_repair.png" alt="Система ЧПУ"> </a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт<br>систем ЧПУ</h3>
-                     <!--    <p class="card-text"></p>
-
-                       <ul class="card-text" style="text-align: left;">
-                            <li>&#10004; Текст</li>
-                            <li>&#10004; Текст</li>
-                            <li>&#10004; Текст</li> 
-                        </ul> -->
- 
+                        <h3 class="card-title" itemprop="name">Ремонт<br>систем ЧПУ</h3>
+<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">						
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                           <ul class="ulSport">
                             <li style="text-decoration: underline;">Разновидность названий систем ЧПУ для ремонта:</li>
@@ -621,10 +591,12 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <a href="pages/industrial_computers.html"> <img class="card-img-top" src="img/index-pictures/industrial_computers.png" alt="Промышленные компьютеры"> </a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/industrial_computers"> <img itemprop="image" class="card-img-top" src="img/index-pictures/industrial_computers.png" alt="Промышленные компьютеры"> </a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт промышленных компьютеров</h3>
+                        <h3 class="card-title" itemprop="name">Ремонт промышленных компьютеров</h3>
+						<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
 						<div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                     <ul class="ulSport">
                             <li style="text-decoration: underline;">Разновидность названий промышленного компьютера для ремонта:</li>
@@ -674,12 +646,12 @@
                 </div>
 
 
-                <div class="card">
-                    <a href="pages/encoder_and_roter.html"> <img class="card-img-top" src="img/index-pictures/encoder_and_roter.jpg" alt="Энкодер и датчик положения воды"></a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/encoder_and_roter"> <img itemprop="image" class="card-img-top" src="img/index-pictures/encoder_and_roter.jpg" alt="Энкодер и датчик положения воды"></a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт энкодеров и ремонт датчиков положения ротора</h3>
-                 
-
+                        <h3 class="card-title" itemprop="name">Ремонт энкодеров и ремонт датчиков положения ротора</h3>
+                 <meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                          <ul class="ulSport">
                             <li>&#10004; Ремонт энкодеров.</li>
@@ -712,11 +684,12 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <a href="pages/resolver.html">  <img class="card-img-top" src="img/index-pictures/resolver.png" alt="Резольверы"></a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/resolver">  <img itemprop="image" class="card-img-top" src="img/index-pictures/resolver.png" alt="Резольверы"></a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт<br>резольверов</h3>
-                  
+                        <h3 class="card-title" itemprop="name">Ремонт<br>резольверов</h3>
+                  <meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                          <ul class="ulSport">
                             <li>&#10004; Диагностика резольвера.</li>
@@ -735,10 +708,66 @@
 <a id="stanki"></a>
             <!-- группа 3 -->
             <div class="card-group">
-                <div class="card">
-                    <a href="pages/logic_controllers.html"> <img class="card-img-top" src="img/index-pictures/logic_controllers.jpg" alt="Логические контроллеры"> </a>
+			
+			<div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/remont-plat.php"> <img itemprop="image" class="card-img-top" src="img/index-pictures/plat.jpg" alt="Логические контроллеры"> </a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт промышленных логических контроллеров</h3>
+                        <h3 class="card-title" itemprop="name">Ремонт электронных плат</h3>
+						<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
+                        <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
+                         <ul class="ulSport">
+                            <li>Разновидность названий контроллеров для ремонта:</li>
+                            <li>а) ремонт промышленного контроллера;</li>
+                            <li>б) ремонт программироваемого контролера;</li>
+                            <li>в) ремонт промышленного логического контролера;</li>                            
+                            <li>г) ремонт контроллеров от станков;</li>
+                            <li>д) ремонт систем управления от станков;</li>
+                            <li>е) ремонт систем управления оборудования;</li>
+							<li>ж) ремонт PC;</li>
+							<li>з) ремонт ПЛК;</li>
+							<li>и) PLC.</li>                            
+							<li style="text-decoration: underline;">В промышленных компьютерах ремонтируем:</li>
+							<li>&#10004; ремонт интерфейса;</li>
+                            <li>&#10004; ремонт интерфейса связи;</li>
+                            <li>&#10004; ремонт блока питания;</li>
+                            <li>&#10004; ремонт блоков питания;</li>
+                            <li>&#10004; ремонт источника питания;</li>
+                            <li>&#10004; ремонт импульсного источника питания;</li>
+							<li>&#10004; ремонт аналоговых выходов;</li>
+							<li>&#10004; ремонт аналоговых входов;</li>
+							<li>&#10004; ремонт дискретных входов выходов;</li>
+							<li>&#10004; ремонт плат расширения;</li>
+							<li>&#10004; ремонт плат энкодера;</li>
+							<li>&#10004; ремонт профибас Profibus;</li>
+							<li>&#10004; ремонт can open интерфейс;</li>
+							<li>&#10004; ремонт canopen;</li>
+							<li>&#10004; ремонт profibus, HDMI, DVI;</li>
+							<li>&#10004; ремонт FieldBus, RS232, RS485;</li>
+							<li>&#10004; ремонт плат управления осями;</li>
+							<li>&#10004; ремонт плат управления;</li>
+							<li>&#10004; ремонт процессорных плат;</li>
+							<li>&#10004; ремонт системных плат;</li>
+							<li>&#10004; ремонт блока управления;</li>
+							<li>&#10004; ремонт блока питания;</li>
+							<li>&#10004; ремонт источника питания;</li>
+							<li>&#10004; ремонт импульсного источника питания;</li>
+							<li>&#10004; ремонт систем управления;</li>
+							<li>&#10004; ремонт плат электронных;</li>						
+                        </ul>
+
+                        
+                    </div>
+                </div>
+
+			
+			
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/logic_controllers"> <img itemprop="image" class="card-img-top" src="img/index-pictures/logic_controllers.jpg" alt="Логические контроллеры"> </a>
+                    <div class="card-body">
+                        <h3 class="card-title" itemprop="name">Ремонт промышленных логических контроллеров</h3>
+						<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                          <ul class="ulSport">
                             <li>Разновидность названий контроллеров для ремонта:</li>
@@ -785,12 +814,12 @@
                 </div>
 
 
-                <div class="card">
-                    <a href="pages/soft_starters.html"> <img class="card-img-top" src="img/index-pictures/soft_starters.jpg" alt="Устройство плавного пуска"> </a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <a href="pages/soft_starters"> <img itemprop="image" class="card-img-top" src="img/index-pictures/soft_starters.jpg" alt="Устройство плавного пуска"> </a>
                     <div class="card-body">
-                        <h3 class="card-title">Ремонт устройства плавного пуска</h3>
-                  
-
+                        <h3 class="card-title" itemprop="name">Ремонт устройства плавного пуска</h3>
+                  <meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                         <div class="index_detailsCards_box"><i>Узнать подробности...</i></div>
                       
                       <ul class="ulSport">
@@ -828,13 +857,13 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <!--<a href="pages/industrial_electronics.html"> <img class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>-->
-                    <a href="pages/our-works"> <img class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>
+                <div class="card" itemscope itemtype="http://schema.org/Product">
+                    <!--<a href="pages/industrial_electronics"> <img class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>-->
+                    <a href="pages/our-works"> <img itemprop="image" class="card-img-top" src="img/index-pictures/industrial_electronics.png" alt="Промышленная электроника"> </a>
 					<div class="card-body">
-                        <h3 class="card-title">Ремонт промышленной электроники</h3>
-                    
-
+                        <h3 class="card-title" itemprop="name">Ремонт промышленной электроники</h3>
+						<meta itemprop="price" content="от 10000">
+<meta itemprop="priceCurrency" content="RUB">
                     </div>
                 </div>
             </div>
@@ -845,9 +874,6 @@
                 <img class="main-motors" src=img/motors/how-it-works-stock.jpg alt="разделительная картинка" style="height: 55px;">
                 <img src=img/percent.png class="index_sale_stanki" alt="скидка 10%">
 
-<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={38599933}&utm_content={ad_id}&utm_term={cpu}  -->
-<!--  www.remontservo.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign={35411413}&utm_content={ad_id}&utm_term={encoder}  -->
-            <!--   http://www.glebwebsite.ru/?utm_replace=spb -->
                 <!--search block-->
 
                 <button class="callme_button content__sellForm__button_stanki content__sellForm__button"><span class="header__buttonCall__text">Оставить<br>заявку на выезд</span></button>
@@ -855,10 +881,9 @@
                 <!--searsh begin -->
 
                 <div class="index__content__search" >
-                    <form class="index__content__searchForm">
-                        <input type="text" placeholder="Найти оборудование">
-                        <!--  <button type="submit">--><a class="index__content__searchForm__button" href="pages/our-works.html"></a>
-                        <!--</button>-->
+                    <form action="catalog.php" method="get" class="index__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="/catalog"></button>
                     </form>
                 </div>
                 <!--searsh end -->
@@ -1034,16 +1059,16 @@
                     <p class="index_howweareworking_how-body_p">Как мы работаем:</p>
                 </div>
                 <div class="how-body callme_button">
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/mess.png alt=message /><br><strong>1.</strong> Вы оставляете заявку</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/mess.png alt=message /><br><b>1.</b> Вы оставляете заявку</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/phone.png alt=telephone /><br><strong>2.</strong> Мы связываемся с Вами<br>уточняем детали</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/phone.png alt=telephone /><br><b>2.</b> Мы связываемся с Вами<br>уточняем детали</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/compose.png alt=compose /><br><strong>3.</strong> Заключаем договор</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/compose.png alt=compose /><br><b>3.</b> Заключаем договор</p>
                 </div>
                 <div class=how-body>
-                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/check.png alt=check /><br><strong>4.</strong> Выполняем работу</p>
+                    <p class="index_howweareworking_how-body_p"><img class="index_howweareworking_how-body_img" src=fonts/check.png alt=check /><br><b>4.</b> Выполняем работу</p>
                 </div>
             </div>
         </main>
@@ -1103,6 +1128,7 @@
                    <!-- <input id="fileFF2" name="fileFF2" type="file">
                     <input id="fileFF3" name="fileFF3" type="file"> -->
                   </div>
+				  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
                   <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
        
                 </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
@@ -1136,6 +1162,7 @@
                 <input id="fileFF2" name="fileFF2" type="file">
               <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
               </div>
+			  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
               <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
                  
             </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->

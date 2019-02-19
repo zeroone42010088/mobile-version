@@ -34,9 +34,9 @@ require '../header.php';
                     
                     <form action="delivery.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages_contacts_delivery" type="submit" style="padding: 20px; padding-top: 20px; border-radius: 10px; background-color: #465DCF; color:#fff;">Доставка в ремонт</button> </form> 
                 </div>
-                <div class="map col-md-6">
+                <div class="map col-md-6 contacts_footerUp">
                  <!--  <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5fe842be51a02b35a388c09e34aa713bbb777b7fe95961e889a177763ce5a17b&amp;max-width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true;"></script> -->
-                    <div class="ymap-container col-sm-1 col-md-6 col-lg-6">
+                    <div class="ymap-container col-12 col-sm-1 col-md-6 col-lg-6">
     <div class="loader loader-default"></div>
     <div id="map-yandex" class="contacts_main_map-yandex"></div>
 </div><!-- .ymap-container -->

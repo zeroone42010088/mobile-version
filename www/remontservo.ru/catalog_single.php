@@ -5,21 +5,22 @@
     <meta charset="utf-8" />
 	<?  $query_pro = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 		$row_pro = $query_pro->fetch_assoc();
-		$title=$row_pro['block'].' '.$row_pro['name'];
+		$title = $row_pro['block'].' '.$row_pro['name'];
 	?>
-		
+
         <title><?=$title?></title>
         <link rel="shortcut icon" type=image/png href=img/logo2.png>
         <meta name=keywords content="FANUC DELTA ABB OMRON INDRAMAT Yaskawa Heidenhain" />
         <meta name=description content="Ремонт промышленной электроники и оборудования. Перемотка, настройка и диагностка. В том числе устаревшее оборудование. Гарантия" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet">	
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
        <link href="/css/font-awesome.min.css" rel="stylesheet">
        <link href="/css/slick.css" rel="stylesheet">
-    	<link href="/css/slick-theme.css" rel="stylesheet">               
-        <link href="/css/style.css" rel=stylesheet>         
+    	<link href="/css/slick-theme.css" rel="stylesheet">
+        <link href="/css/style.css" rel=stylesheet>
+        <link href="css/jquery.jbcallme.css" rel=stylesheet>
         <link href="/css/main.css"  rel="stylesheet">
 	<link href="/css/form.css"  rel="stylesheet">
-      <link href="/css/shop.css" rel=stylesheet>             
+      <link href="/css/shop.css" rel=stylesheet>
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <style>
 #item-10 {background:linear-gradient(to top,#FF7E00,white);}
@@ -32,7 +33,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-131780255-1');
-</script>		   
+</script>
         <!-- Begin Talk-Me {literal} -->
         <script>
             (function(d, w, m) {
@@ -52,7 +53,7 @@
                 else d.documentElement.firstChild.appendChild(s);
             })(document, window, 'TalkMe');
 
-        </script> 
+        </script>
         <!-- End Talk-Me {literal} -->
     </head>
 
@@ -85,7 +86,7 @@
 							<span class="header__buttonCall__text">Оставить<br>заявку</span>
 						</button>
 					</div>
-				</div>				
+				</div>
 			</div>
 
 		</div>
@@ -103,7 +104,7 @@
         	<a href="#" id="item-2">Условия работ</a> <i class="fa fa-sort-down"></i>
 			<ul class="submenu">
 				<li><a href="/pages/guarantees" id="item-3">Гарантия</a></li>
-				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>				
+				<li><a href="/pages/delivery" id="item-4">Доставка в ремонт</a></li>
 				<li><a href="/pages/request" id="item-5">Заявка на ремонт</a></li>
 			</ul>
 		</li>
@@ -115,7 +116,7 @@
 </nav>
             <main class=content>
 
-<?php 
+<?php
 	$def_word = 'электроники';
 
 	$id_ = (int)$_GET['id'];
@@ -145,7 +146,7 @@ if($_GET['search']) {
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
-        
+
                                 echo '
                     <div class="col-md-4 product-left p-left">
                                 <div class="product-main simpleCart_shelfItem" style="padding: 1em; margin: 5%;">
@@ -153,7 +154,7 @@ if($query->num_rows > 0){
                                     <div class="product-bottom">
                                         <p style="margin-left: 5%; max-width: 80%; word-break: normal; font-size: 1.13em;
     line-height: 1.25em; font-family: Arial, Helvetica Neue, Helvetica,sans-serif; color: #000;">'.$row["name"].'</p>
-                                         <p>'.$row["manefacter"].'</p> 
+                                         <p>'.$row["manefacter"].'</p>
                                         <p><a class="item_add" href="#"><i></i></a> <span class=" item_price">'.$row["price"].' </span></p>
                                     </div>
                                     <div class="srch srch1">
@@ -161,10 +162,10 @@ if($query->num_rows > 0){
                                     </div>
                                 </div>
                             </div>
-                
-                
+
+
     ';
- } } 
+ } }
 } else {
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
@@ -172,81 +173,69 @@ if (isset($_GET['pageno'])) {
     $pageno = 1;
 }
 $no_of_records_per_page = 12;
-$offset = ($pageno-1) * $no_of_records_per_page;                          
+$offset = ($pageno-1) * $no_of_records_per_page;
 
 
 $query_pro = $db->query("SELECT * FROM products where id = '".$_GET['id']."'");
 if($query_pro->num_rows > 0){
-    while($row_pro = $query_pro->fetch_assoc()){
-		
-    	$folder = (int)$_GET['id'];
-		$folder = $row_pro['type'];
-    	$fileList = glob('img/slider-cat/'.$folder.'/*');
-    	//var_dump($fileList);
-	
-        
-								echo '
-                                <h1 class="catalog__h1 catalog__h1__item" >'.$row_pro["block"].' '.$row_pro["name"].'</h1>
+	while($row_pro = $query_pro->fetch_assoc())
+	{
+?>
+                                <h1 class="catalog__h1 catalog__h1__item" > <?php echo $row_pro["block"].' '.$row_pro["name"];?></h1>
                                 <div class="product-row catalog_item_content row">
-                                
-								<div class="col-md-5">
-								<div class="simpleCart_shelfItem catalog_item_slider ">
-								<section class="regular">';
-								 
-								foreach($fileList as $filename){
-									?>
-									<div>
-	                                    <img src="<?= $filename;?>" alt="Ремонт серводвигателей BERGER LAHR">
-	                                </div>
-									<?php 
-								}
-                            
-                           
+					<div class="col-md-5">
+						<div class="simpleCart_shelfItem catalog_item_slider ">
+							<section class="regular">
+							<?php	$images = array();
+
+								if(empty($row_pro['CardImage']))
+								{
+								    	$folder = (int)$_GET['id'];
+									$folder = $row_pro['type'];
+								    	$images = glob('img/slider-cat/'.$folder.'/*');
+
+								}else $images = array($row_pro['CardImage']);
+
+								foreach($images as $img){ ?>
+								<div>
+				                                    <img src="<?php echo $img;?>" alt="Ремонт электроники фотография"/>
+	                        			        </div>
+								<?php } ?>
+			                              </section>
+                        			</div>
+					</div>
+		                        <div class="catalog_cardinfo offset-1 col-md-6">
+		                            <ol class="rounded">
+                		              <li><a href="#">Диагностика от 1 дня</a></li>
+		                              <li><a href="#">Ремонт от 3 дней</a></li>
+                		              <li><a href="#">Гарантия на ремонт 6 месяцев</a></li>
+		                              <li><a href="#">Работаем по безналичному расчету и договору</a></li>
+                		            </ol>
+	                            </div>
+		                </div>
+<?php
 
 
-                            echo '
-                              </section> 
-                         
-                        <!--slider-->      
-									
-								</div>
-							</div>
-                            
-                            <div class="catalog_cardinfo offset-1 col-md-6">
-                            
-                            <ol class="rounded">
-                              <li><a href="#">Диагностика от 1 дня</a></li>
-                              <li><a href="#">Ремонт от 3 дней</a></li>
-                              <li><a href="#">Гарантия на ремонт 6 месяцев</a></li>
-                              <li><a href="#">Работаем по безналичному расчету и договору</a></li>  
-                            </ol>
-                            </div>
-                         
-                    
-                    
-				
-                </div>
-             
-               
-                     
-    ';
-} }
-                         
+
+
+}
+
+}
+
 ?>
 <div class="product_row_button row">
     <div class="col-md-5"> <button class="callme_button catalog_item_buttonCall"><span class="header__buttonCall__text">Оставить<br>заявку</span></button>  </div>
     <div class="list_works offset-1 col-md-6">
-                        <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>  
-                        
-                        
-                        <div class="pages__content__search repair_search catalog_search" style="">
-                            <form class="pages__content__searchForm catalog_search__item_serchForm">
-                                <input type="text" placeholder="Найти оборудование">
-                                  <a class="pages__content__searchForm__button" href="pages/our-works.html"></a>
-                                
-                            </form>
+                        <form action="pages/our-works.html" class="pages__linkOurWorks" style="text-decoration: none; display: block; "><button class="pages__linkOurWorks__button" type="submit" style=" height: 50px; border-radius: 10px; padding-right: 10px; padding-left:10px; background-color: #465DCF; color:#fff;">Cписок всех выполненных работ (Посмотреть...)</button> </form>
+
+
+                        <div class="pages__content__search repair_search catalog_search">
+                            <form action="catalog.php" method="get" class="pages__content__searchForm">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
+                         <button type="submit" class="index__content__searchForm__button" href="catalog"></button>   
+                    </form>
                         </div>
-                        
+
                    </div>
 </div>
 
@@ -255,7 +244,7 @@ if($query_pro->num_rows > 0){
                     </div>
                     <!-- product-top -->
                     <!-- buttons -->
-               
+
                             <!-- buttons -->
                             <? } ?>
 
@@ -267,7 +256,7 @@ if($query_pro->num_rows > 0){
 				<img src="/img/logo3.png" alt="">
 			</div>
 			<div class="col-sm-6 col-md-6">
-				<div class="sitename">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
+				<div class="sitename sitename_catalog">ООО "КЕРНЕЛ" Ремонт промышленной электроники</div>
 			</div>
 			<div class="hidden-small col-sm-3 col-md-3">
 				<img src="/img/logo3.png" alt="">
@@ -276,18 +265,111 @@ if($query_pro->num_rows > 0){
 	</div>
 </footer>
         </div>
-        <link href="css/jquery.jbcallme.css" rel=stylesheet>
+
+         <!-- форма всплывающего окна формы обратной связи заявка на ремонт begin -->
+    <div class="fields form-main my-form">
+                 <span class="close" id="close">&#215;</span>
+        <div class="form-wrap">
+
+
+
+            <label class="container-radio"><span class="container-radio__span">Заявка на ремонт</span>
+                <input type="radio" checked="checked" name="radio" data-id="form_remont" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-radio"><span class="container-radio__span">Заявка на выезд</span>
+                <input type="radio"  name="radio" data-id="form_viezd" class="form_change">
+                <span class="checkmark"></span>
+            </label>
+
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+                <div id="form_remont" class="frm">
+
+                  <div class="form-group">
+                    <label for="contactFF" style="color:#000;">ВАШ ПОЧТОВЫЙ АДРЕС</label>
+                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" style="border: 1px solid #B0C4DE" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="telFF" style="color:#000;">Телефон:</label>
+                    <input id="telFF" name="telFF" type="tel" style="border: 1px solid #B0C4DE" placeholder="Номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
+                    <input id="nameFF" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
+                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
+                  </div>
+                  <div class="control-file">
+                    <label for="fileFF" style="color:#000;">Прикрепить файл:</label>
+                    <input id="fileFF" name="fileFF" type="file">
+                   <!-- <input id="fileFF2" name="fileFF2" type="file">
+                    <input id="fileFF3" name="fileFF3" type="file"> -->
+                  </div>
+                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button>
+
+                </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end -->
+            </form>
+            <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >
+            <div id="form_viezd" class="frm">
+              <div class="form-group">
+                <label for="contactFF1">Ваш почтовый адрес</label>
+                <input id="contactFF1" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="telFF1">Телефон:</label>
+                <input id="telFF1" name="telFF" type="tel" placeholder="Номер телефона" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="nameFF2">Тип/модель неисправного станка</label>
+                <input id="nameFF2" name="nameFF" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+                <div class="form-group">
+                <label for="nameFF1">Тип/модель неисправного чпу, либо контроллера с панелью оператора</label>
+                <input id="nameFF1" name="nameFF1" type="text" placeholder="Тип/модель" style="border: 1px solid #B0C4DE">
+              </div>
+              <div class="form-group">
+                <label for="projectFF1">Описание неисправности. Номер ошибки </label>
+                <textarea id="projectFF1" name="projectFF" cols="40" rows="4"></textarea>
+              </div>
+              <div class="control-file">
+                <label for="fileFF1">Прикрепить фотографии:<br>1.фото шкафа управления в момент неисправности;<br>2.фото стойки ЧПУ или контроллера с панелью оператора в момент неисправности;<!--<br>3.фото панели оператора в момент неисправности;--></label>
+                <input id="fileFF1" name="fileFF" type="file">
+                <input id="fileFF2" name="fileFF2" type="file">
+              <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
+              </div>
+              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button>
+
+            </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
+        </form>
+
+        </div>
+    </div>
+<!--popup-->
+<div class="b-popup" id="popup1" style="display: none;">
+    <div class="b-popup-content">
+    <div id="sendemail">
+
+
+          </div>
+
+    <a href="javascript:PopUpHide()" class="closeform">+</a>
+    </div>
+</div><!--popup end-->
+
         <!-- container -->
-        
+
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/jquery-2.2.0.min.js"></script>
        <script src="js/slick.js"></script>
-        
+
         <!--form to take call from client start-->
         <script src="js/jquery.jbcallme.js"></script>
         <script src="/js/custom.js"></script>
         <script src="/js/scripts.js"></script>
-        <script src="js/cat_contactform.js"></script>
+       <!-- <script src="js/cat_contactform.js"></script>-->
         <!--form to take call from client end-->
 
 
@@ -296,10 +378,10 @@ if($query_pro->num_rows > 0){
         <!-- fixed menu start  -->
         <script src=js/fixedmenu.js></script>
         <!-- mail form start-->
-        <script src=js/callmefile.js></script>
+     <!--   <script src=js/callmefile.js></script>-->
         <!-- mail form end-->
         <script src=js/gorizontalmenu.js></script>
-        
+
                 <!--slider start-->
 <script>
 
@@ -321,7 +403,7 @@ if($query_pro->num_rows > 0){
             /*     responsive: [
                       {
       breakpoint: 1200,
-      settings: {        
+      settings: {
       //  centerMode: true,
       //  centerPadding: '40px',
         slidesToShow: 4
@@ -354,34 +436,7 @@ if($query_pro->num_rows > 0){
 </script>
     <!--slider end-->
 
-        <!-- форма всплывающего окна формы обратной связи -->
-        <div class="fields form-main">
-            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
-                <div class="form-group">
-                    <label for="contactFF" style="color:#000">ВАШ ПОЧТОВЫЙ АДРЕС</label>
-                    <input id="contactFF" name="contactFF" type="email" placeholder="E-mail" required="" style="border: 1px solid #B0C4DE;">
-                </div>
-                <div class="form-group">
-                    <label for="telFF" style="color:#000;">Телефон:</label>
-                    <input id="telFF" name="telFF" type="tel" placeholder="Телефон" style="border: 1px solid #B0C4DE;">
-                </div>
-                <div class="form-group">
-                    <label for="nameFF" style="color:#000;">ТИП, МОДЕЛЬ НЕИСПРАВНОГО БЛОКА</label>
-                    <input id="nameFF" name="nameFF" type="text" style="border: 1px solid #B0C4DE;" placeholder="Тип">
-                </div>
-                <div class="form-group">
-                    <label for="projectFF" style="color:#000;">ОПИСАНИЕ, НЕИСПРАВНОСТИ. НОМЕР ОШИБКИ</label>
-                    <textarea id="projectFF" name="projectFF" cols="40" rows="9"></textarea>
-                </div>
-                <div class="control-file">
-                    <label for="fileFF" style="color:#000; border: 1px solid #B0C4DE;">Прикрепить файл:</label>
-                    <input id="fileFF" name="fileFF" type="file">
-                </div>
-                <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button>
-                <span class="close">&#215;</span>
-            </form>
-        </div>
-        <!-- форма всплывающего окна формы обратной связи -->
+
 
         <script>
             $(document).ready(function() {
@@ -396,22 +451,7 @@ if($query_pro->num_rows > 0){
             });
 
         </script>
-		<!--пагинация-->
-<!--<script>
-(function($){
- 
-	//find active url in menu
-	var $curURL = document.location.href;
-	$('.button28').each(function() {
-		var $linkHref = $(this).find('a').attr('href');
-		if ($curURL.indexOf($linkHref) > -1) {
-			$(this).addClass('.activePagination');
-		}
-	});
- 
-})(jQuery);
-</script>-->
-<!--пагинация-->
+
     <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     </body>
