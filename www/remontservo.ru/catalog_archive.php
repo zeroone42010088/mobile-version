@@ -300,9 +300,11 @@ endif;
                 <!--      <div class="container">  -->
                 <?php
     if($_GET['search']) {
-                    echo '<h2 style="margin-left:10px; color: #000;
-	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3); font-size:1.2em;">Поисковый запрос: '.$_GET['search'].' / Всего найдено: '.$count[0].'
+    	//echo $_GET['search'];
+    	$query = $db->query("SELECT COUNT(`id`) FROM products where name LIKE '%".$_GET['search']."%'");
+    	$count = $query->fetch_array();
+    	//var_dump($count);
+                   echo '<h2 class="catalog_searchPhrase">Поисковый запрос: '.$_GET['search'].' / Всего найдено: '.$count[0].'
 					 </h2>';}?>
                     <div class="product-top">
                         <div class="product-one catalog">
@@ -334,7 +336,7 @@ if($query->num_rows > 0){
 
     ';
  } }
-} else {*/
+}*/ /*else {*/
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
 } else {

@@ -182,7 +182,7 @@ if($query_pro->num_rows > 0){
 	{
 ?>
                                 <h1 class="catalog__h1 catalog__h1__item" > <?php echo $row_pro["block"].' '.$row_pro["name"];?></h1>
-                                <div class="product-row catalog_item_content row">
+                                <div class="product-row catalog_item_content row catalog_item_content_book">
 					<div class="col-md-5">
 						<div class="simpleCart_shelfItem catalog_item_slider ">
 							<section class="regular">
@@ -232,7 +232,7 @@ if($query_pro->num_rows > 0){
                         <div class="pages__content__search repair_search catalog_search">
                             <form action="catalog.php" method="get" class="pages__content__searchForm">
                         <input type="text" name="search" placeholder="Поиск по каталогу" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск по оборудованию';}" value="<? echo $_GET['search'] ?>">
-                         <button type="submit" class="index__content__searchForm__button" href="catalog"></button>   
+                         <button type="submit" class="index__content__searchForm__button catalogItem_searchButton" href="catalog"></button>   
                     </form>
                         </div>
 
