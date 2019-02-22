@@ -1,4 +1,4 @@
-.logo {
+﻿.logo {
     text-align: center;
     padding: 25px 0 20px 0px;
     border-bottom: 1px solid #DEDEDE;
@@ -724,6 +724,9 @@ a.button28:active {
 	                 0px -5px 35px rgba(255,255,255,0.3); margin:20px auto 10px; /*white-space:nowrap;*/
     margin-top:46px;
     font-size: 1.4em;
+}
+@media (min-width:1600px) {
+.catalog__h1 {font-size: 1.5em;}
 }
 
 .p-left {
