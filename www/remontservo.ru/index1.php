@@ -1103,7 +1103,8 @@
                 <span class="checkmark"></span>
             </label>   
 
-            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+            <form class="form-inner" id="ajax-contact-form" enctype="multipart/form-data" method="post" 
+			onsubmit="ym(52549123, 'reachGoal', 'submit_forms'); return true;">
                 <div id="form_remont" class="frm">
              
                   <div class="form-group">
@@ -1129,12 +1130,14 @@
                     <input id="fileFF3" name="fileFF3" type="file"> -->
                   </div>
 				  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
-                  <button class="btn form-button" type="submit" id="submitFF">Отправить заявку</button> 
+                  <button class="btn form-button" type="submit" id="submitFF" 
+onclick="ym(52549123, 'reachGoal', 'submit_button'); return true;">Отправить заявку</button> 
        
                 </div><!-- форма всплывающего окна формы обратной связи заявка на ремонт end --> 
             </form>
             <!-- форма всплывающего окна формы обратной связи заявка на выезд begin -->   
-            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" >               
+            <form class="form-inner" id="ajax-contact-form1" enctype="multipart/form-data" method="post" enctype="multipart/form-data" 
+			method="post" onsubmit="ym(52549123, 'reachGoal', 'submit_forms'); return true;">               
             <div id="form_viezd" class="frm">
               <div class="form-group">
                 <label for="contactFF1">Ваш почтовый адрес</label>
@@ -1163,7 +1166,8 @@
               <!--  <input id="fileFF3" name="fileFF3" type="file"> -->
               </div>
 			  <p>Нажимая кнопку "Отправить заявку", Вы даете согласие на обработку Ваших персональных данных<p>
-              <button class="btn form-button" type="submit" id="submitFF1">Отправить заявку на выезд</button> 
+              <button class="btn form-button" type="submit" id="submitFF1" 
+onclick="ym(52549123, 'reachGoal', 'submit_button'); return true;">Отправить заявку на выезд</button> 
                  
             </div> <!-- форма всплывающего окна формы обратной связи заявка на выезд end -->
         </form>
@@ -1280,7 +1284,7 @@
 
 </script>
 
-<!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(44532427, "init", { id:44532427, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44532427" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+ <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(52549123, "init", { id:52549123, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52549123" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> 
 
 
 

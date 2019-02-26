@@ -313,7 +313,7 @@ endif;
 
 
                             <?php
-if($_GET['search']) {
+/*if($_GET['search']) {
 
 $query = $db->query("SELECT * FROM products where name LIKE '%".$_GET['search']."%'");
 if($query->num_rows > 0){
@@ -338,7 +338,7 @@ if($query->num_rows > 0){
 
     ';
  } }
-} /*else {*/
+}*/ /*else {*/
 if (isset($_GET['pageno'])) {
     $pageno = $_GET['pageno'];
 } else {
